@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en" class="smooth">
+<head>
+<meta charset="UTF-8">
+<script id="ts-ga-consent">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});try{if(localStorage.getItem('ts_consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}gtag('js',new Date());gtag('config','G-TRGBC4HYEY');</script>
+<script src="/js/ts-analytics.js" defer></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saiful Islam | Salesforce System Architect | TwinStack</title>
+    <meta name="description" content="Saiful Islam is a Salesforce System Architect at TwinStack Solutions with 12+ years of experience and 9 Salesforce certifications. See his background and work.">
+    <link rel="canonical" href="https://twinstack.net/saiful-islam">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:title" content="Saiful Islam | Salesforce System Architect | TwinStack">
+    <meta property="og:description" content="Saiful Islam is a Salesforce System Architect at TwinStack Solutions with 12+ years of experience and 9 Salesforce certifications. See his background and work.">
+    <meta property="og:url" content="https://twinstack.net/saiful-islam">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="TwinStack Solutions">
+    <meta property="og:image" content="https://twinstack.net/assets/og-home.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Saiful Islam | Salesforce System Architect | TwinStack">
+    <meta name="twitter:description" content="Saiful Islam is a Salesforce System Architect at TwinStack Solutions with 12+ years of experience and 9 Salesforce certifications. See his background and work.">
+    <meta name="twitter:image" content="https://twinstack.net/assets/og-home.png">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preload" as="image" href="data:image/webp;base64,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" fetchpriority="high">
+
+<style>
+:root{
+  --bg:#0f172a;--bg2:#1e293b;--ink:#1e293b;--muted:#475569;--line:#e2e8f0;
+  --brand:#0ea5e9;--brand2:#0284c7;--brand-dk:#075985;--indigo:#6366f1;
+  --paper:#f8fafc;--white:#fff;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html.smooth{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block} a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* NAV, mirrors index.html exactly: left/transform NEVER change, only top/w/max-w/radius/h */
+.nav{
+  position:fixed;
+  top:1.5rem;
+  left:50%;
+  transform:translateX(-50%);
+  width:95%;
+  max-width:80rem;
+  border-radius:1rem;
+  background:#fff;
+  border:1px solid rgba(255,255,255,.4);
+  box-shadow:0 25px 50px -12px rgba(0,0,0,.25);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 1rem;
+  height:5rem;
+  z-index:50;
+  transition:all .5s cubic-bezier(.4,0,.2,1);
+}
+@media(min-width:768px){.nav{padding:0 2rem}}
+/* scrolled: only top/width/max-width/radius/height change, left & transform stay identical */
+.nav.scrolled{
+  top:0;
+  width:100%;
+  max-width:100%;
+  border-radius:0;
+  height:4rem;
+  box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.06);
+}
+.brand{display:flex;align-items:center;gap:8px;font-weight:800;font-size:1.25rem;letter-spacing:-.02em}
+.brand img{height:56px;width:56px;border-radius:10px}
+.brand .b1{color:#343453} .brand .b2{background:linear-gradient(90deg,var(--brand),var(--indigo));-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{color:#334155;font-weight:500;font-size:1rem} .nav-links a:hover{color:var(--brand2)}
+.nav-cta{background:var(--brand2);color:#fff!important;padding:10px 24px;border-radius:999px;font-weight:600;box-shadow:0 8px 20px -6px rgba(2,132,199,.5)}
+.nav-cta:hover{background:var(--brand-dk)}
+.menu-btn{display:none;background:none;border:0;font-size:1.5rem;color:#334155;cursor:pointer;padding:8px;border-radius:.5rem}.menu-btn:focus-visible{outline:2px solid #38bdf8}
+@media(max-width:1151px){.nav-links{display:none}.menu-btn{display:block}}
+.sm-menu{position:fixed;top:7rem;left:50%;transform:translateX(-50%);width:95%;max-width:80rem;z-index:49;background:#fff;border-radius:1rem;box-shadow:0 25px 50px -12px rgba(0,0,0,.25);padding:.75rem 1.25rem 1.25rem;display:flex;flex-direction:column}
+.sm-menu[hidden]{display:none}
+.sm-menu a{display:block;padding:.85rem .25rem;border-bottom:1px solid #f1f5f9;color:#1e293b;font-weight:500;font-size:1.05rem;text-decoration:none}
+.sm-menu a:hover{color:#0284c7}
+.sm-menu a.sm-out{margin-top:.9rem;border:2px solid #0284c7;border-radius:.6rem;text-align:center;color:#0284c7;font-weight:700}
+.sm-menu a.sm-cta{margin-top:.6rem;border:0;border-radius:.6rem;text-align:center;background:#0284c7;color:#fff;font-weight:700}
+
+/* HERO */
+.hero{position:relative;background:var(--bg);color:#fff;padding:140px 0 80px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;
+  background-image:radial-gradient(at 0% 0%,hsla(253,16%,7%,1) 0,transparent 50%),
+   radial-gradient(at 50% 0%,hsla(225,39%,30%,1) 0,transparent 50%),
+   radial-gradient(at 100% 0%,hsla(339,49%,30%,1) 0,transparent 50%)}
+.hero .wrap{position:relative;z-index:2}
+.hero-grid{display:grid;grid-template-columns:280px 1fr;gap:48px;align-items:center}
+@media(max-width:780px){.hero-grid{grid-template-columns:1fr;text-align:center;gap:28px;justify-items:center}}
+.avatar-ring{width:240px;height:240px;border-radius:50%;padding:6px;
+  background:linear-gradient(135deg,var(--brand),var(--indigo));box-shadow:0 25px 50px -12px rgba(14,165,233,.5)}
+.avatar-ring img{width:100%;height:100%;border-radius:50%;object-fit:cover;border:4px solid var(--bg)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(8,47,73,.5);
+  border:1px solid rgba(14,165,233,.35);color:#e0f2fe;font-size:.82rem;font-weight:600;
+  padding:7px 16px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:clamp(2.3rem,5vw,3.4rem);font-weight:800;line-height:1.1;letter-spacing:-.03em;margin-bottom:10px}
+.hero h1 .accent{background:linear-gradient(90deg,var(--brand),var(--indigo));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .role{font-size:1.2rem;color:#7dd3fc;font-weight:600;margin-bottom:16px}
+.hero .loc{display:inline-flex;align-items:center;gap:7px;color:#cbd5e1;font-size:.95rem;margin-bottom:18px}
+.hero .lede{color:#cbd5e1;font-size:1.08rem;max-width:560px;margin-bottom:26px}
+@media(max-width:780px){.hero .lede{margin-inline:auto}}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px}
+@media(max-width:780px){.hero-actions{justify-content:center}}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 24px;border-radius:12px;font-weight:700;font-size:.97rem;transition:transform .2s,background .2s}
+.btn svg{width:18px;height:18px}
+.btn-primary{background:var(--brand2);color:#fff;box-shadow:0 12px 24px -8px rgba(2,132,199,.6)}
+.btn-primary:hover{background:var(--brand);transform:translateY(-2px)}
+.btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.22)}
+.btn-ghost:hover{background:rgba(255,255,255,.18)}
+.hero-wave{position:absolute;bottom:-1px;left:0;width:100%;line-height:0;z-index:1}
+.hero-wave svg{width:100%;height:90px;display:block;color:var(--paper)}
+
+/* STATS, Salesforce brand blue, compact */
+.stats{background:#0284c7;padding:36px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;justify-content:center;max-width:720px;margin:0 auto;
+  divide-x:1px}
+@media(max-width:640px){.stats-grid{grid-template-columns:repeat(3,1fr);gap:0}}
+.stat{padding:20px 16px;color:#fff;position:relative}
+.stats-grid .stat+.stat::before{content:"";position:absolute;left:0;top:15%;height:70%;
+  width:1px;background:rgba(255,255,255,.25)}
+.stat .num{font-size:2.4rem;font-weight:800;line-height:1;color:#fff}
+.stat .lbl{font-size:.78rem;color:rgba(255,255,255,.8);margin-top:5px;font-weight:500}
+
+/* SECTIONS */
+section.block{padding:80px 0}
+.kicker{color:var(--brand2);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;margin-bottom:10px;text-align:center}
+.h-title{font-size:clamp(1.8rem,3.5vw,2.5rem);font-weight:800;color:#0f172a;text-align:center;letter-spacing:-.02em;margin-bottom:14px}
+.sub{color:var(--muted);text-align:center;max-width:620px;margin:0 auto 48px;font-size:1.05rem}
+
+/* ABOUT */
+.about{background:var(--white)}
+.about-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:48px;align-items:start}
+@media(max-width:820px){.about-grid{grid-template-columns:1fr;gap:32px}}
+.about-grid p{color:var(--muted);font-size:1.06rem;margin-bottom:18px}
+.about-grid h2{font-size:1.9rem;font-weight:800;color:#0f172a;letter-spacing:-.02em;margin-bottom:20px}
+.quote{border-left:4px solid var(--brand);background:var(--paper);padding:20px 24px;border-radius:0 14px 14px 0;font-style:italic;color:#334155;font-size:1.05rem}
+.facts{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:28px}
+.facts h3{font-size:1.05rem;font-weight:700;color:#0f172a;margin-bottom:18px}
+.fact{display:flex;align-items:flex-start;gap:13px;padding:11px 0;border-bottom:1px solid var(--line)}
+.fact:last-child{border-bottom:0}
+.fact svg{width:20px;height:20px;color:var(--brand2);flex-shrink:0;margin-top:2px}
+.fact .k{font-size:.78rem;color:#94a3b8;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.fact .v{font-size:.97rem;color:#1e293b;font-weight:600} .fact .v a{color:var(--brand2)}
+
+/* CERTS */
+.certs{background:var(--paper)}
+.cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media(max-width:720px){.cert-grid{grid-template-columns:1fr}}
+.cert-card{display:flex;gap:16px;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:22px;
+  transition:box-shadow .25s,transform .25s,border-color .25s}
+.cert-card:hover{box-shadow:0 18px 40px -14px rgba(15,23,42,.18);transform:translateY(-3px);border-color:#bae6fd}
+.cert-medal{flex-shrink:0;width:52px;height:52px;display:flex;align-items:center;justify-content:center}
+.cert-body h3{font-size:1.04rem;font-weight:700;color:#0f172a;line-height:1.3;margin-bottom:6px}
+.cert-tag{display:inline-block;margin-left:8px;vertical-align:middle;background:#e0f2fe;color:var(--brand-dk);
+  font-size:.64rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:3px 8px;border-radius:999px}
+.cert-body p{color:var(--muted);font-size:.9rem;margin-bottom:10px}
+.cert-date{font-size:.8rem;font-weight:600;color:var(--brand2)}
+
+/* EXPERTISE */
+.expertise{background:var(--white)}
+.exp-cols{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+@media(max-width:760px){.exp-cols{grid-template-columns:1fr;gap:36px}}
+.exp-cols h3{font-size:1.2rem;font-weight:800;color:#0f172a;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.exp-cols h3 svg{width:22px;height:22px;color:var(--brand2)}
+.pill-list{list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+.pill-list li{background:var(--paper);border:1px solid var(--line);color:#334155;font-weight:600;font-size:.92rem;padding:9px 16px;border-radius:999px}
+.skill-list{list-style:none;display:grid;gap:12px}
+.skill-list li{display:flex;align-items:center;gap:11px;color:#334155;font-weight:500}
+.skill-list svg{width:19px;height:19px;color:#10b981;flex-shrink:0}
+
+/* SPEAKING */
+.speaking{background:var(--bg);color:#fff;position:relative;overflow:hidden}
+.speaking::before{content:"";position:absolute;inset:0;opacity:.5;background:radial-gradient(circle at 80% 20%,rgba(14,165,233,.22),transparent 45%)}
+.speak-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+@media(max-width:820px){.speak-grid{grid-template-columns:1fr;gap:30px}}
+.speak-grid .kicker{text-align:left;color:var(--brand)}
+.speak-grid h2{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:800;line-height:1.25;margin-bottom:16px;letter-spacing:-.02em}
+.speak-grid p{color:#cbd5e1;margin-bottom:16px}
+.speak-meta{display:inline-flex;align-items:center;gap:9px;color:#7dd3fc;font-weight:600;font-size:.95rem}
+.speak-img{border-radius:18px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.1)}
+.speak-img img{width:100%;aspect-ratio:16/10;object-fit:cover;background:#1e293b}
+
+/* CLIENTS */
+.clients{background:var(--paper)}
+.client-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:860px){.client-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.client-grid{grid-template-columns:1fr}}
+.client-card{background:var(--white);border:1px solid var(--line);border-top:3px solid var(--brand);
+  border-radius:14px;padding:22px;transition:box-shadow .25s,transform .25s}
+.client-card:hover{box-shadow:0 16px 36px -16px rgba(15,23,42,.2);transform:translateY(-3px)}
+.client-card h4{font-size:1.06rem;font-weight:700;color:#0f172a;margin-bottom:9px}
+.client-card p{color:var(--muted);font-size:.9rem}
+
+/* CONTACT */
+.contact{background:var(--white)}
+.contact-card{background:var(--bg);border-radius:24px;padding:56px 40px;text-align:center;color:#fff;position:relative;overflow:hidden}
+.contact-card::before{content:"";position:absolute;inset:0;opacity:.6;background:radial-gradient(circle at 50% 0%,rgba(14,165,233,.25),transparent 55%)}
+.contact-card > *{position:relative;z-index:1}
+.contact-card h2{font-size:2rem;font-weight:800;margin-bottom:12px;letter-spacing:-.02em}
+.contact-card p{color:#cbd5e1;max-width:480px;margin:0 auto 30px}
+.contact-actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+
+/* ── Footer Tailwind utilities (exact footer parity) ── */
+.bg-slate-900{background-color:#0f172a}.text-slate-300{color:#cbd5e1}
+.py-12{padding-top:3rem;padding-bottom:3rem}.relative{position:relative}.overflow-hidden{overflow:hidden}
+.max-w-7xl{max-width:80rem}.mx-auto{margin-left:auto;margin-right:auto}
+.px-4{padding-left:1rem;padding-right:1rem}
+@media(min-width:640px){.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}
+@media(min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}
+.z-10{z-index:10}.grid{display:grid}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}
+@media(min-width:768px){.md\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.gap-12{gap:3rem}.col-span-1{grid-column:span 1/span 1}
+@media(min-width:768px){.md\:col-span-2{grid-column:span 2/span 2}}
+.mb-6{margin-bottom:1.5rem}.inline-block{display:inline-block}
+.absolute{position:absolute}.-top-6{top:-1.5rem}.-left-12{left:-3rem}
+.w-64{width:16rem}.h-64{height:16rem}
+.bg-brand-500\/10{background-color:rgba(14,165,233,.1)}
+.rounded-full{border-radius:9999px}.blur-3xl{filter:blur(64px)}
+.inset-y-0{top:0;bottom:0}.left-\[-3000px\]{left:-3000px}
+.right-\[-3rem\]{right:-3rem}.bg-white{background-color:#fff}
+.rounded-r-3xl{border-top-right-radius:1.5rem;border-bottom-right-radius:1.5rem}
+.z-0{z-index:0}.pl-2{padding-left:.5rem}
+.flex{display:flex}.items-center{align-items:center}.gap-2{gap:.5rem}
+.mb-4{margin-bottom:1rem}.text-slate-900{color:#0f172a}.font-bold{font-weight:700}
+.text-2xl{font-size:1.5rem;line-height:2rem}
+.h-12{height:3rem}.w-12{width:3rem}.rounded-lg{border-radius:.5rem}.object-contain{object-fit:contain}
+.text-\[\#343453\]{color:#343453}
+.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops,#0ea5e9,#6366f1))}
+.from-brand-500{--tw-gradient-from:#0ea5e9;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,rgba(14,165,233,0))}
+.to-indigo-500{--tw-gradient-to:#6366f1}
+.text-transparent{color:transparent}.bg-clip-text{-webkit-background-clip:text;background-clip:text}
+.text-sm{font-size:.875rem;line-height:1.25rem}.text-slate-700{color:#334155}
+.max-w-xs{max-width:20rem}.font-medium{font-weight:500}
+.mt-4{margin-top:1rem}
+@media(min-width:768px){.md\:mt-0{margin-top:0}}
+.text-white{color:#fff}.font-semibold{font-weight:600}
+.space-y-1>*+*{margin-top:.25rem}
+.list-none{list-style:none}
+/* Ensure footer ul has no bullets */
+footer ul{list-style:none}
+@media(hover:hover){.hover\:text-brand-400:hover{color:#38bdf8}}
+.transition{transition:color .15s,background-color .15s,border-color .15s,opacity .15s}
+.py-2{padding-top:.5rem;padding-bottom:.5rem}.block{display:block}
+.gap-3{gap:.75rem}.w-10{width:2.5rem}.h-10{height:2.5rem}
+.bg-slate-800{background-color:#1e293b}.justify-center{justify-content:center}
+@media(hover:hover){.hover\:bg-brand-600:hover{background-color:#0284c7}}
+.border-t{border-top:1px solid}.border-slate-800{border-color:#1e293b}
+.mt-12{margin-top:3rem}.pt-8{padding-top:2rem}.text-center{text-align:center}
+.text-slate-500{color:#64748b}.text-lg{font-size:1.125rem}
+
+/* reveal + misc */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+<style id="ts-nav-cta-styles">
+/* Cost Estimator nav button + blog Get App button */
+.nav-links a.ts-btn-outline,a.ts-btn-outline{display:inline-flex;align-items:center;justify-content:center;padding:calc(.625rem - 2px) calc(1.25rem - 2px);border:2px solid #0284c7;border-radius:9999px;color:#0284c7;font-weight:600;white-space:nowrap;text-decoration:none;transition:background-color .15s,color .15s}
+.nav-links a.ts-btn-outline:hover,a.ts-btn-outline:hover{background-color:#0284c7;color:#fff}
+a.ts-btn-outline-block{display:block;padding:calc(.875rem - 2px) 1.25rem;border:2px solid #0284c7;border-radius:.5rem;color:#0284c7;font-weight:600;text-align:center;text-decoration:none}
+a.ts-btn-outline-block:hover{background-color:#0284c7;color:#fff}
+.ts-get-app-wrap{margin-top:2rem;display:flex;justify-content:center}
+a.ts-get-app{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.75rem;border-radius:9999px;background-color:#0284c7;color:#fff;font-weight:600;text-decoration:none;box-shadow:0 10px 15px -3px rgba(2,132,199,.35);transition:background-color .15s,transform .15s}
+a.ts-get-app:hover{background-color:#0ea5e9;transform:translateY(-1px)}
+a.ts-get-app svg{width:1rem;height:1rem;display:inline-block}
+#navbar .ts-nav-links a{white-space:nowrap}@media (min-width:768px) and (max-width:1151px){#navbar .ts-nav-links{display:none!important}#navbar>.md\:hidden{display:flex!important}#mobile-menu.md\:hidden{display:flex!important}}
+.nav-links a{white-space:nowrap}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "url": "https://twinstack.net/saiful-islam",
+      "mainEntity": {
+        "@id": "https://twinstack.net/saiful-islam#person"
+      },
+      "name": "Saiful Islam | Salesforce System Architect | TwinStack",
+      "isPartOf": {
+        "@id": "https://twinstack.net/#website"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://twinstack.net/saiful-islam#person",
+      "name": "Saiful Islam",
+      "url": "https://twinstack.net/saiful-islam",
+      "jobTitle": "Salesforce System Architect",
+      "worksFor": [
+        {
+          "@id": "https://twinstack.net/#organization"
+        },
+        {
+          "@type": "Organization",
+          "name": "Twinforce Solutions Limited",
+          "url": "https://twinforce.net"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dhaka",
+        "addressCountry": "BD"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/saiful-neo"
+      ],
+      "knowsAbout": [
+        "Salesforce architecture",
+        "Salesforce integration",
+        "Apex",
+        "Lightning Web Components",
+        "AppExchange Security Review",
+        "Salesforce data migration",
+        "Sharing and visibility"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Salesforce Certified System Architect",
+          "credentialCategory": "certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Salesforce"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Salesforce Certified Platform Integration Architect",
+          "credentialCategory": "certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Salesforce"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Salesforce Certified Identity and Access Management Architect",
+          "credentialCategory": "certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Salesforce"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Salesforce Certified Development Lifecycle and Deployment Architect",
+          "credentialCategory": "certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Salesforce"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Salesforce Certified Application Architect",
+          "credentialCategory": "certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Salesforce"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Salesforce Certified Platform App Builder",
+          "credentialCategory": "certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Salesforce"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Salesforce Certified Data Architect",
+          "credentialCategory": "certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Salesforce"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Salesforce Certified Sharing and Visibility Architect",
+          "credentialCategory": "certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Salesforce"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Salesforce Certified Platform Developer",
+          "credentialCategory": "certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Salesforce"
+          }
+        }
+      ],
+      "hasOccupation": [
+        {
+          "@type": "Occupation",
+          "name": "Salesforce System Architect"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Managing Director"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://twinstack.net/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Saiful Islam",
+          "item": "https://twinstack.net/saiful-islam"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style id="ts-icons">.fa-svg{display:inline-block;width:1.25em;height:1em;vertical-align:-.125em;fill:currentColor;overflow:visible;flex-shrink:0}</style>
+<style id="ts-foot">@media (max-width:767px){.ts-foot-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:2rem 1.5rem!important}.ts-foot-grid>div:first-child{grid-column:1/-1}.ts-foot-grid>div{margin-top:0!important}}@media (min-width:768px){.ts-foot-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}.ts-foot-grid>div:first-child{grid-column:1/-1}}@media (min-width:1024px){.ts-foot-grid{grid-template-columns:1.6fr repeat(4,minmax(0,1fr))!important}.ts-foot-grid>div:first-child{grid-column:auto}.ts-foot-grid>div:first-child>.relative{margin-left:-1.25rem}.ts-foot-grid>div:first-child .rounded-r-3xl{right:-.5rem}}</style>
+<style id="ts-dd">
+.ts-dd{position:relative;display:inline-flex;align-items:center}
+.ts-dd>a{display:inline-flex!important;align-items:center;gap:.3rem}
+.ts-dd>a .ts-dd-car{width:.65rem;height:.65rem;transition:transform .2s;flex:0 0 auto}
+.ts-dd:hover>a .ts-dd-car,.ts-dd:focus-within>a .ts-dd-car{transform:rotate(180deg)}
+.ts-dd:after{content:"";position:absolute;top:100%;left:-12px;right:-12px;height:14px}
+.ts-dd .ts-dd-menu{position:absolute;top:100%;left:50%;transform:translate(-50%,10px);min-width:17rem;padding:.45rem;background:#fff;border:1px solid #e2e8f0;border-radius:.9rem;box-shadow:0 22px 50px -22px rgba(15,23,42,.4);opacity:0;visibility:hidden;transition:opacity .15s,transform .15s,visibility .15s;z-index:80;text-align:left}
+.ts-dd:hover .ts-dd-menu,.ts-dd:focus-within .ts-dd-menu{opacity:1;visibility:visible;transform:translate(-50%,6px)}
+.ts-dd .ts-dd-menu a{display:block!important;padding:.65rem .8rem!important;border-radius:.6rem;color:#0f172a!important;font-weight:600!important;font-size:.95rem!important;line-height:1.3;text-decoration:none!important;background:transparent;white-space:normal;transform:none!important;border:0!important}
+.ts-dd .ts-dd-menu a small{display:block;font-weight:400;color:#64748b;font-size:.8rem;margin-top:.15rem}
+.ts-dd .ts-dd-menu a:hover,.ts-dd .ts-dd-menu a:focus{background:#f0f9ff!important;color:#0284c7!important}
+.ts-dd .ts-dd-menu a[aria-current="page"]{color:#0284c7!important}
+</style>
+<style id="xp-css">.xp-h{font-size:1.15rem;margin:2rem 0 .9rem}.xp{list-style:none;margin:0 0 1.75rem;padding:0 0 0 1.1rem;border-left:2px solid #cbd5e1}.xp li{position:relative;margin:0 0 1.1rem}.xp li:before{content:"";position:absolute;left:calc(-1.1rem - 6px);top:.45rem;width:10px;height:10px;border-radius:50%;background:#0284c7;box-shadow:0 0 0 3px #fff}.xp b{display:block}.xp span{display:block;font-size:.92rem;color:#64748b;margin-top:.15rem}</style></head>
+<body><!--email_off-->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="fa-linkedin-in" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></symbol><symbol id="fa-youtube" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></symbol></svg>
+
+<nav class="nav">
+  <a href="/" class="brand" aria-label="TwinStack Solutions Home">
+    <img src="data:image/webp;base64,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" alt="TwinStack logo" width="44" height="44">
+    <span><span class="b1">Twin</span><span class="b2">Stack</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="/pricing">Pricing</a>
+    <div class="ts-dd"><a href="/services" aria-haspopup="true">Products &amp; Services<svg class="ts-dd-car" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="ts-dd-menu"><a href="/products">Products<small>Free native AppExchange apps</small></a><a href="/services">Services<small>Consulting, nonprofits, Tableau and more</small></a><a href="/#pdo-journey">Expertise<small>Our path from strategy to AppExchange</small></a></div></div>
+    <a href="/case-studies">Case Studies</a>
+    <a href="/blog">Blog</a>
+    <a href="/cost-estimator" class="ts-btn-outline">Cost Estimator</a>
+    <a href="/contact" class="nav-cta">Contact Us</a>
+  </div>
+  <button class="menu-btn" id="sm-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sm-menu">&#9776;</button>
+</nav>
+<div class="sm-menu" id="sm-menu" hidden>
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+  <a href="/products">Products</a>
+            <a href="/services">Services</a>
+            <a href="/#pdo-journey">Expertise</a>
+  <a href="/case-studies">Case Studies</a>
+  <a href="/blog">Blog</a>
+  <a href="/cost-estimator" class="sm-out">Cost Estimator</a>
+  <a href="/contact" class="sm-cta">Contact Us</a>
+</div>
+<script>
+(function(){var b=document.getElementById('sm-btn'),m=document.getElementById('sm-menu');
+function set(o){m.hidden=!o;b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'Close menu':'Open menu');b.innerHTML=o?'&#10005;':'&#9776;';}
+b.addEventListener('click',function(e){e.stopPropagation();set(m.hidden);});
+m.addEventListener('click',function(e){if(e.target.tagName==='A')set(false);});
+document.addEventListener('click',function(e){if(!m.hidden&&!m.contains(e.target))set(false);});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false);});
+window.addEventListener('resize',function(){if(window.innerWidth>1151)set(false);});})();
+</script>
+
+<header class="hero">
+  <div class="hero-bg-gradient" style="position:absolute;inset:0"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="avatar-ring reveal in">
+        <img src="data:image/webp;base64,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" alt="Portrait of Saiful Islam, Salesforce System Architect" width="240" height="240" fetchpriority="high">
+      </div>
+      <div>
+        <span class="eyebrow"><svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/></svg> Certified Salesforce System Architect</span>
+        <h1>Saiful Islam</h1>
+        <p class="role">Salesforce System Architect &bull; TwinStack Solutions</p>
+        <p class="loc"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg> Dhaka, Bangladesh</p>
+        <p class="lede">A certified Salesforce System Architect with 12+ years of experience designing, building and launching enterprise Salesforce solutions and 5-star AppExchange products. Holder of 9 Salesforce certifications, including both the System Architect and Application Architect domain credentials.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://calendar.app.google/HP3LiuNFisCt6xLo6" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7Zm12 7v10H5V9h14Z"/></svg> Book a Free Call</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/saiful-neo" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.34 18.34V9.96H5.56v8.38h2.78ZM6.95 8.8a1.61 1.61 0 1 0 0-3.22 1.61 1.61 0 0 0 0 3.22Zm11.39 9.54v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.4 1.32V9.96H10.1c.04.79 0 8.38 0 8.38h2.78v-4.68c0-.25.02-.5.09-.68.2-.5.66-1.02 1.43-1.02 1.01 0 1.41.77 1.41 1.9v4.48h2.53Z"/></svg> LinkedIn</a>
+          <a class="btn btn-ghost" href="https://www.salesforce.com/trailblazer/sineo" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 3 6 6 .9-4.5 4.3 1 6.8L12 17.8 6.5 20l1-6.8L3 8.9 9 8l3-6Z"/></svg> Trailblazer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<section class="stats">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat"><div class="num" data-count="12">12+</div><div class="lbl">Years Experience</div></div>
+      <div class="stat"><div class="num" data-count="9">9</div><div class="lbl">Salesforce Certifications</div></div>
+      <div class="stat"><div class="num" data-count="34">34</div><div class="lbl">Trailhead Badges</div></div>
+
+    </div>
+  </div>
+</section>
+
+<section class="block about" id="about">
+  <div class="wrap">
+    <div class="about-grid reveal">
+      <div>
+        <h2>About Saiful</h2>
+        <p>Saiful Islam is a Salesforce System Architect and the technical lead at TwinStack Solutions, a Salesforce consultancy and AppExchange PDO based in Dhaka, Bangladesh. Over more than a decade in the Salesforce ecosystem, he has guided projects from feasibility and architecture through development, security review and AppExchange listing.</p>
+        <p>His focus is the full ISV lifecycle: validating ideas against Salesforce governor limits, designing data models that scale from ten to ten thousand users, and shipping native applications built on Lightning Web Components and Apex. He leads a team of 35 people serving clients across North America, Europe and Australia.</p>
+        <p>He founded Twinforce Solutions in August 2022 and has been Managing Director of Twinforce Solutions Limited, the parent company of TwinStack, since January 2024.</p>
+        <h3 class="xp-h">Experience</h3><ol class="xp"><li><b>Managing Director</b><span>Twinforce Solutions Limited &middot; Jan 2024 to present &middot; Dhaka, Bangladesh</span></li><li><b>Founder, Proprietor and Salesforce Architect</b><span>Twinforce Solutions (sole proprietorship, now Twinforce Solutions Limited) &middot; Aug 2022 to Dec 2023 &middot; Dhaka, Bangladesh</span></li></ol><div class="quote">&ldquo;We don&rsquo;t just write code; we navigate the entire ISV lifecycle. Let&rsquo;s get your product listed and generating revenue.&rdquo;</div>
+      </div>
+      <aside class="facts">
+        <h3>At a Glance</h3>
+        <div class="fact"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-5 0-9 2.5-9 5v3h18v-3c0-2.5-4-5-9-5Z"/></svg><div><div class="k">Role</div><div class="v">Salesforce System Architect</div></div></div>
+        <div class="fact"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M10 2v2H6a2 2 0 0 0-2 2v3h16V6a2 2 0 0 0-2-2h-4V2h-4ZM4 11v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7H4Z"/></svg><div><div class="k">Company</div><div class="v"><a href="/">TwinStack Solutions</a></div></div></div>
+        <div class="fact"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M10 2v2H6a2 2 0 0 0-2 2v3h16V6a2 2 0 0 0-2-2h-4V2h-4ZM4 11v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7H4Z"/></svg><div><div class="k">Managing Director</div><div class="v"><a href="https://twinforce.net" target="_blank" rel="noopener">Twinforce Solutions Limited</a>, since Jan 2024</div></div></div>
+        <div class="fact"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><div><div class="k">Location</div><div class="v">Dhaka, Bangladesh</div></div></div>
+        <div class="fact"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 7 8-5H4l8 5Z"/></svg><div><div class="k">Email</div><div class="v"><a href="mailto:saiful@twinstack.net">saiful@twinstack.net</a></div></div></div>
+        <div class="fact"><svg viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 3 6 6 .9-4.5 4.3 1 6.8L12 17.8 6.5 20l1-6.8L3 8.9 9 8l3-6Z"/></svg><div><div class="k">Trailhead Rank</div><div class="v">Mountaineer</div></div></div>
+        <div class="fact"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M21 7 9 19l-5.5-5.5 1.4-1.4L9 16.2 19.6 5.6 21 7Z"/></svg><div><div class="k">Partner status</div><div class="v"><a href="https://appexchange.salesforce.com/appxConsultingListingDetail?listingId=a0NHu00000ozjVfMAI" target="_blank" rel="noopener">TwinStack is a Salesforce Select Consulting Partner</a></div></div></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="block certs" id="certifications">
+  <div class="wrap">
+    <p class="kicker reveal">Credentials</p>
+    <h2 class="h-title reveal">9 Salesforce Certifications</h2>
+    <p class="sub reveal">A complete architect credential stack spanning system design, integration, identity, data, security and development.</p>
+    <div class="cert-grid reveal">        <article class="cert-card">
+          <div class="cert-medal"><img src="https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/System-Architect.png" alt="Salesforce Certified System Architect badge" width="52" height="52" loading="lazy" style="width:52px;height:52px;object-fit:contain;border-radius:6px;"></div>
+          <div class="cert-body">
+            <h3>Salesforce Certified System Architect<span class="cert-tag">Domain Architect</span></h3>
+            <p>Off-platform systems, integration, and securing access between systems; governance and testing for deployment.</p>
+            <span class="cert-date">Issued Apr 2026</span>
+          </div>
+        </article>
+        <article class="cert-card">
+          <div class="cert-medal"><img src="https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/Integration Architect.png" alt="Salesforce Certified Platform Integration Architect badge" width="52" height="52" loading="lazy" style="width:52px;height:52px;object-fit:contain;border-radius:6px;"></div>
+          <div class="cert-body">
+            <h3>Salesforce Certified Platform Integration Architect</h3>
+            <p>Designs sound, scalable technical solutions that meet end-to-end integration requirements.</p>
+            <span class="cert-date">Issued Apr 2026</span>
+          </div>
+        </article>
+        <article class="cert-card">
+          <div class="cert-medal"><img src="https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/ID and Access Mgmt Architect.png" alt="Salesforce Certified Identity & Access Management Architect badge" width="52" height="52" loading="lazy" style="width:52px;height:52px;object-fit:contain;border-radius:6px;"></div>
+          <div class="cert-body">
+            <h3>Salesforce Certified Identity & Access Management Architect</h3>
+            <p>Designs high-performing solutions that meet Single Sign-On (SSO) and identity requirements.</p>
+            <span class="cert-date">Issued Apr 2026</span>
+          </div>
+        </article>
+        <article class="cert-card">
+          <div class="cert-medal"><img src="https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/Dev Lifecycle and Deploy Architect.png" alt="Salesforce Certified Development Lifecycle & Deployment Architect badge" width="52" height="52" loading="lazy" style="width:52px;height:52px;object-fit:contain;border-radius:6px;"></div>
+          <div class="cert-body">
+            <h3>Salesforce Certified Development Lifecycle & Deployment Architect</h3>
+            <p>Implements release management and deployment solutions across the Salesforce platform.</p>
+            <span class="cert-date">Issued Apr 2026</span>
+          </div>
+        </article>
+        <article class="cert-card">
+          <div class="cert-medal"><img src="https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/Application-Architect.png" alt="Salesforce Certified Application Architect badge" width="52" height="52" loading="lazy" style="width:52px;height:52px;object-fit:contain;border-radius:6px;"></div>
+          <div class="cert-body">
+            <h3>Salesforce Certified Application Architect<span class="cert-tag">Domain Architect</span></h3>
+            <p>Deep understanding of native features; expert in role hierarchy, data modelling and sharing mechanisms.</p>
+            <span class="cert-date">Issued Dec 2019</span>
+          </div>
+        </article>
+        <article class="cert-card">
+          <div class="cert-medal"><img src="https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/Platform-App-Builder.png" alt="Salesforce Certified Platform App Builder badge" width="52" height="52" loading="lazy" style="width:52px;height:52px;object-fit:contain;border-radius:6px;"></div>
+          <div class="cert-body">
+            <h3>Salesforce Certified Platform App Builder</h3>
+            <p>Designs, builds and implements custom apps using the declarative capabilities of the platform.</p>
+            <span class="cert-date">Issued Dec 2019</span>
+          </div>
+        </article>
+        <article class="cert-card">
+          <div class="cert-medal"><img src="https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/Data Architect.png" alt="Salesforce Certified Data Architect badge" width="52" height="52" loading="lazy" style="width:52px;height:52px;object-fit:contain;border-radius:6px;"></div>
+          <div class="cert-body">
+            <h3>Salesforce Certified Data Architect</h3>
+            <p>Designs sound, scalable, high-performing solutions tailored for enterprise data management.</p>
+            <span class="cert-date">Issued Nov 2019</span>
+          </div>
+        </article>
+        <article class="cert-card">
+          <div class="cert-medal"><img src="https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/Sharing and Visibility Architect.png" alt="Salesforce Certified Sharing & Visibility Architect badge" width="52" height="52" loading="lazy" style="width:52px;height:52px;object-fit:contain;border-radius:6px;"></div>
+          <div class="cert-body">
+            <h3>Salesforce Certified Sharing & Visibility Architect</h3>
+            <p>Designs technical solutions that meet sharing and visibility security requirements.</p>
+            <span class="cert-date">Issued Nov 2019</span>
+          </div>
+        </article>
+        <article class="cert-card">
+          <div class="cert-medal"><img src="https://developer.salesforce.com/resources2/certification-site/images/Certifications-logo/Platform-Developer-I.png" alt="Salesforce Certified Platform Developer badge" width="52" height="52" loading="lazy" style="width:52px;height:52px;object-fit:contain;border-radius:6px;"></div>
+          <div class="cert-body">
+            <h3>Salesforce Certified Platform Developer</h3>
+            <p>Develops and deploys custom business logic and interfaces with Apex, LWC and Visualforce.</p>
+            <span class="cert-date">Issued May 2019</span>
+          </div>
+        </article>
+    </div>
+  </div>
+</section>
+
+<section class="block expertise" id="expertise">
+  <div class="wrap">
+    <p class="kicker reveal">Capabilities</p>
+    <h2 class="h-title reveal">Expertise &amp; Tech Stack</h2>
+    <p class="sub reveal">Deep, hands-on capability across the Salesforce platform and the integration tooling around it.</p>
+    <div class="exp-cols reveal">
+      <div>
+        <h3><svg viewBox="0 0 24 24"><path fill="currentColor" d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm8 1.5V8h4.5L14 3.5Z"/></svg> Clouds &amp; Platforms</h3>
+        <ul class="pill-list"><li>Sales Cloud</li><li>Service Cloud</li><li>Marketing Cloud</li><li>Financial Services Cloud</li><li>Nonprofit Cloud</li><li>Experience Cloud</li><li>MuleSoft</li><li>Boomi</li><li>Tableau</li></ul>
+      </div>
+      <div>
+        <h3><svg viewBox="0 0 24 24"><path fill="currentColor" d="m8 18-6-6 6-6 1.4 1.4L4.8 12l4.6 4.6L8 18Zm8 0-1.4-1.4 4.6-4.6-4.6-4.6L16 6l6 6-6 6Z"/></svg> Technical Skills</h3>
+        <ul class="skill-list"><li><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>Lightning Web Components (LWC)</li><li><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>Apex</li><li><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>REST / SOAP Integration</li><li><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>Data Migration & ETL</li><li><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>Security Review</li><li><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>Managed Packages & LMA</li><li><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>Flow Automation</li><li><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>Solution Architecture</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block speaking" id="speaking">
+  <div class="wrap">
+    <div class="speak-grid reveal">
+      <div>
+        <p class="kicker">Speaking &amp; Community</p>
+        <h2>Delivering End-to-End Salesforce Solutions: Using AI for Seamless Implementation</h2>
+        <p>A conference session on how AI can streamline Salesforce project delivery from planning to go-live, optimising the Statement of Work, automating implementation tasks and ensuring a smooth transition to production for both nonprofit and enterprise projects.</p>
+        <p>Attendees gain actionable strategies to enhance efficiency, reduce risk and achieve faster, more successful Salesforce implementations.</p>
+        <span class="speak-meta"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-3.1A7 7 0 0 0 19 11h-2Z"/></svg> Presented at True North Dreamin&rsquo;</span>
+      </div>
+      <div class="speak-img">
+        <img src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_800/v1780667175/Untitled_design_1_zcs0b5.png" alt="Saiful Islam speaking session: Using AI for Seamless Salesforce Implementation" width="800" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block clients" id="clients">
+  <div class="wrap">
+    <p class="kicker reveal">Track Record</p>
+    <h2 class="h-title reveal">Selected Client Work</h2>
+    <p class="sub reveal">A sample of implementations delivered across travel, agribusiness, financial services, nonprofit, education and more.</p>
+    <div class="client-grid reveal"><div class="client-card"><h4>Bear Robotics</h4><p>Enhanced sales processes by configuring product line items, pricing workflows and business automation to improve operational efficiency.</p></div>
+<div class="client-card"><h4>AgVantage Commodities</h4><p>Built a commodity trading marketplace with Experience Cloud portals, bid/offer management, trading workflow automation and Marketing Cloud communications.</p></div>
+<div class="client-card"><h4>Travel Raro</h4><p>Designed booking workflows, customer self-service portals and agent dashboards to streamline reservations, payments, trip administration and promotions.</p></div>
+<div class="client-card"><h4>Flash Funding Mortgage</h4><p>Developed Salesforce solutions for mortgage operations including loan application forms, workflow automation and email notification processes.</p></div>
+<div class="client-card"><h4>Victory Disability</h4><p>Implemented lead assignment processes, workflow enhancements and external lead management with real-time synchronisation.</p></div>
+<div class="client-card"><h4>Rouxbe Online Culinary</h4><p>Created automation solutions and designed reports and dashboards to streamline processes and support data-driven decisions.</p></div>
+<div class="client-card"><h4>Harmony Consulting</h4><p>Built a Salesforce app implementing Lead-to-Deal processes, Web-to-Lead, business automation and third-party integrations.</p></div>
+<div class="client-card"><h4>Fibrenet</h4><p>Integrated inFlow Inventory with Salesforce, implemented multi-currency automation and managed large-scale product data migration.</p></div>
+<div class="client-card"><h4>The Config Team</h4><p>Developed reports and dashboards and implemented automation for Account and Opportunity management to improve visibility.</p></div>
+<div class="client-card"><h4>HYGH AG</h4><p>Developed dynamic UIs using Lightning Web Components for Opportunity and Quote Line Item management.</p></div>
+<div class="client-card"><h4>Montreal Life Financial Group</h4><p>Implemented Salesforce solutions facilitating smoother financial operations and improved client interactions.</p></div>
+<div class="client-card"><h4>abiturma.de</h4><p>Created tailored Salesforce solutions supporting student and tutoring management in the online education sector.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block contact" id="contact">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <h2>Let&rsquo;s Build Something Great</h2>
+      <p>Have a Salesforce product idea or implementation in mind? Reach out and let&rsquo;s talk about how to make it real.</p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:saiful@twinstack.net"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 7 8-5H4l8 5Z"/></svg> Email Saiful</a>
+        <a class="btn btn-ghost" href="https://wa.me/8801556777043" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.6-4.1-.1-.2-1.1-1.4-1.1-2.7 0-1.3.7-1.9.9-2.2.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.5.1.3.7 1.1 1.4 1.8 1 .9 1.8 1.1 2 1.2.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.5-.1l1.8.9c.2.1.4.2.4.3.1.1.1.5-.1 1Z"/></svg> WhatsApp</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/saiful-neo" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.34 18.34V9.96H5.56v8.38h2.78ZM6.95 8.8a1.61 1.61 0 1 0 0-3.22 1.61 1.61 0 0 0 0 3.22Zm11.39 9.54v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.4 1.32V9.96H10.1c.04.79 0 8.38 0 8.38h2.78v-4.68c0-.25.02-.5.09-.68.2-.5.66-1.02 1.43-1.02 1.01 0 1.41.77 1.41 1.9v4.48h2.53Z"/></svg> LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-slate-900 text-slate-300 py-12 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="ts-foot-grid grid grid-cols-1 md:grid-cols-4 gap-12">
+      
+      <div class="col-span-1 md:col-span-2">
+        <div class="relative mb-6 inline-block">
+          <div class="absolute -top-6 -left-12 w-64 h-64 bg-brand-500/10 rounded-full blur-3xl"></div>
+          <div class="absolute inset-y-0 left-[-3000px] right-[-3rem] bg-white rounded-r-3xl z-0"></div>
+          <div class="relative z-10 pl-2">
+            <a href="/" class="flex items-center gap-2 mb-4 text-slate-900 font-bold text-2xl" aria-label="TwinStack Solutions Home">
+              <img src="data:image/webp;base64,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" loading="lazy" alt="TwinStack Logo" width="48" height="48" class="h-12 w-12 rounded-lg object-contain">
+              <span><span class="text-[#343453]">Twin</span><span class="bg-gradient-to-r from-brand-500 to-indigo-500 text-transparent bg-clip-text">Stack</span></span>
+            </a>
+            <p class="text-sm text-slate-700 max-w-xs font-medium">Empowering charities and businesses with Salesforce excellence since 2022.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ts-fcol">
+            <h4 class="text-white font-semibold mb-4">Company</h4>
+            <ul class="space-y-1 text-sm">
+              <li><a href="/about" class="hover:text-brand-400 transition py-2 block">About Us</a></li>
+              <li><a href="/pricing" class="hover:text-brand-400 transition py-2 block">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="ts-fcol">
+            <h4 class="text-white font-semibold mb-4">Resources</h4>
+            <ul class="space-y-1 text-sm">
+              <li><a href="/blog" class="hover:text-brand-400 transition py-2 block">Blog</a></li>
+              <li><a href="/case-studies" class="hover:text-brand-400 transition py-2 block">Case Studies</a></li>
+              <li><a href="/contact" class="hover:text-brand-400 transition py-2 block">Contact</a></li>
+            </ul>
+          </div>
+          <div class="mt-4 md:mt-0">
+            <h4 class="text-white font-semibold mb-4">Trust &amp; Legal</h4>
+            <ul class="space-y-1 text-sm">
+              <li><a href="/privacy-policy" class="hover:text-brand-400 transition py-2 block">Privacy Policy</a></li>
+              <li><a href="/trust-center" class="hover:text-brand-400 transition py-2 block">Trust Center</a></li>
+            </ul>
+          </div>
+
+      <div class="mt-4 md:mt-0">
+            <h4 class="text-white font-semibold mb-4">Connect</h4>
+            <div class="flex gap-3">
+              <a href="https://www.linkedin.com/company/twinstack-solutions/" aria-label="Follow TwinStack Solutions on LinkedIn" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-600 transition text-white">
+                <svg class="fa-svg text-lg" aria-hidden="true" focusable="false"><use href="#fa-linkedin-in"/></svg>
+              </a>
+            
+              <a href="https://www.youtube.com/@TwinStackSolutions-sf" target="_blank" rel="noopener" aria-label="Subscribe to our YouTube channel" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-600 transition text-white">
+                <svg class="fa-svg text-lg" aria-hidden="true" focusable="false"><use href="#fa-youtube"/></svg>
+              </a>
+            </div>
+          </div>
+
+    </div>
+
+    <div class="border-t border-slate-800 mt-12 pt-8 text-center text-sm text-slate-500">
+      <p>&copy; 2026 TwinStack Solutions. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var l=document.createElement('link');
+  l.rel='stylesheet';
+  l.href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap';
+  l.media='print'; l.onload=function(){this.media='all'};
+  document.head.appendChild(l);
+})();
+
+// Navbar scroll, exact same logic as index.html
+(function(){
+  var navbar = document.querySelector('.nav');
+  if(!navbar) return;
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 50){
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  }, {passive:true});
+})();
+
+document.addEventListener('DOMContentLoaded',function(){
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+
+  var done=false;
+  var sc=document.querySelector('.stats');
+  var so=new IntersectionObserver(function(es){
+    if(es[0].isIntersecting && !done){
+      done=true;
+      document.querySelectorAll('.num[data-count]').forEach(function(el){
+        var target=+el.getAttribute('data-count'), cur=0, suffix=el.textContent.indexOf('+')>-1?'+':'';
+        var step=Math.max(1,Math.round(target/60));
+        var t=setInterval(function(){
+          cur+=step; if(cur>=target){cur=target;clearInterval(t);}
+          el.textContent=(target>1000?cur.toLocaleString():cur)+suffix;
+        },20);
+      });
+    }
+  },{threshold:.4});
+  if(sc) so.observe(sc);
+});
+</script>
+<!--/email_off--></body>
+</html>
