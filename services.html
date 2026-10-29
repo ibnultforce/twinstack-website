@@ -84,7 +84,7 @@
         .ts-feature-btns{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center}
         a.ts-outline-sm{display:inline-flex;align-items:center;padding:calc(.75rem - 2px) 1.5rem;border-radius:9999px;border:2px solid #0284c7;color:#0284c7;font-weight:600;text-decoration:none;transition:background-color .15s,color .15s}
         a.ts-outline-sm:hover{background:#0284c7;color:#fff}
-        .ts-feature-flag{position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,.92);color:#0284c7;font-size:.75rem;font-weight:700;padding:.25rem .75rem;border-radius:9999px;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+        .ts-feature-flag{position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,.92);color:#0284c7;font-size:.75rem;font-weight:700;padding:.25rem .75rem;border-radius:9999px;box-shadow:0 1px 2px rgba(0,0,0,.06)}@media (min-width:1024px){.ts-feature-rev{grid-template-columns:1fr 1.15fr}.ts-feature-rev .ts-feature-media{order:2}}
         @media (min-width:1024px){.ts-feature{grid-template-columns:1.15fr 1fr}.ts-feature-media{padding:2.5rem}.ts-feature-body{padding:2.75rem}}
     </style>
     <style id="ts-nav-cta-styles">
@@ -209,6 +209,7 @@ a.ts-get-app svg{width:1rem;height:1rem;display:inline-block}
 .ts-dd .ts-dd-menu a:hover,.ts-dd .ts-dd-menu a:focus{background:#f0f9ff!important;color:#0284c7!important}
 .ts-dd .ts-dd-menu a[aria-current="page"]{color:#0284c7!important}
 </style>
+<style id="ts-wm">.ts-wm{display:inline-flex!important;flex-direction:column;align-items:flex-start;line-height:1}.ts-wm-top{line-height:1;white-space:nowrap}.ts-wm-sub{display:block;font-size:.5em;font-weight:700;letter-spacing:.01em;color:#343453;-webkit-text-fill-color:#343453;background:none;margin-top:.08em;margin-left:.46em;line-height:1}</style>
 </head>
 <body class="font-sans antialiased text-slate-800"><!--email_off-->
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="i-arrow-right" viewBox="0 0 512 512"><path d="M280 96l160 160-160 160-45-45 83-83H64v-64h254l-83-83z"/></symbol><symbol id="i-times" viewBox="0 0 512 512"><path d="M312 256l142 142-56 56-142-142-142 142-56-56 142-142L58 114l56-56 142 142L398 58l56 56z"/></symbol><symbol id="i-bars" viewBox="0 0 512 512"><path d="M48 96h416v56H48zm0 132h416v56H48zm0 132h416v56H48z"/></symbol><symbol id="i-youtube" viewBox="0 0 512 512"><path d="M488 176c-6-34-26-54-60-58C376 112 256 112 256 112s-120 0-172 6c-34 4-54 24-60 58-6 40-6 80-6 80s0 40 6 80c6 34 26 54 60 58 52 6 172 6 172 6s120 0 172-6c34-4 54-24 60-58 6-40 6-80 6-80s0-40-6-80zM208 336V176l144 80z"/></symbol><symbol id="i-linkedin-in" viewBox="0 0 512 512"><path d="M56 168v312h94V168zm47-136a54 54 0 100 108 54 54 0 000-108zm139 136v312h94V318c0-48 24-72 60-72s54 24 54 72v162h94V300c0-90-48-138-118-138-54 0-78 30-92 51v-45z"/></symbol></svg>
@@ -216,9 +217,7 @@ a.ts-get-app svg{width:1rem;height:1rem;display:inline-block}
     <nav id="navbar" class="fixed z-50 top-6 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl rounded-2xl bg-white border border-slate-100 shadow-2xl flex justify-between items-center px-6 lg:px-8 h-20 transition-all duration-300">
         <a href="/" class="flex-shrink-0 flex items-center gap-2 interactive-element" aria-label="TwinStack Home">
             <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_100,f_auto,q_auto/v1769165197/Black_White_Minimalist_Professional_Initial_Logo_1_eoam8g.png" alt="TwinStack Logo" width="56" height="56" class="h-14 w-14 rounded-full object-cover">
-            <span class="font-bold text-2xl tracking-tight">
-                <span class="text-[#343453]">Twin</span><span class="color-shift-text">Stack</span>
-            </span>
+            <span class="font-bold text-2xl tracking-tight ts-wm"><span class="ts-wm-top"><span class="text-[#343453]">Twin</span><span class="color-shift-text">Stack</span></span><span class="ts-wm-sub">Solutions</span></span>
         </a>
 
         <div class="hidden md:flex space-x-8 items-center ts-nav-links">
@@ -304,12 +303,12 @@ a.ts-get-app svg{width:1rem;height:1rem;display:inline-block}
 
                 <article class="ts-feature" aria-labelledby="tableau-feature-title">
                     <div class="ts-feature-media">
-                        <span class="ts-feature-flag">Featured Service</span>
-                        <img src="https://public.tableau.com/static/images/Sa/SalesforceSalesclouddashboards/KPIDashboard/1.png" alt="Salesforce Sales Cloud KPI dashboard built in Tableau by TwinStack" width="1200" height="927" loading="lazy">
+                        <span class="ts-feature-flag">Sales Cloud</span>
+                        <img src="https://public.tableau.com/static/images/Sa/SalesforceSalesclouddashboards/KPIDashboard/1.png" alt="Salesforce Sales Cloud dashboard built in Tableau by TwinStack" width="1200" height="927" loading="lazy">
                     </div>
                     <div class="ts-feature-body">
                         <span class="ts-feature-wordmark" style="display:block">Tableau</span>
-                        <h3 id="tableau-feature-title">Tableau Dashboards for Salesforce</h3>
+                        <h3 id="tableau-feature-title">Sales Cloud Dashboards</h3>
                         <p>Interactive Tableau dashboards on your Salesforce data, from Sales Cloud KPIs and pipeline to the metrics your team reviews every week.</p>
                         <ul class="ts-feature-list">
                             <li>KPI and pipeline dashboards built around how your team sells</li>
@@ -317,7 +316,27 @@ a.ts-get-app svg{width:1rem;height:1rem;display:inline-block}
                             <li>Filters and drill-down from summary figures to the records behind them</li>
                         </ul>
                         <div class="ts-feature-btns">
-                            <a href="/services/tableau" class="ts-get-app">View the Live Dashboard <svg class="svgi text-xs" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+                            <a href="/services/tableau#dashboard" class="ts-get-app">View the Live Dashboard <svg class="svgi text-xs" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+                            <a href="/contact" class="ts-outline-sm">Talk to Us</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="ts-feature ts-feature-rev" aria-labelledby="np-dash-feature-title">
+                    <div class="ts-feature-media">
+                        <span class="ts-feature-flag">Nonprofit Cloud</span>
+                        <img src="https://public.tableau.com/static/images/No/NonprofitCloudDashboards/Overviewdashboard/1.png" alt="Salesforce Nonprofit Cloud overview dashboard built in Tableau by TwinStack" width="1400" height="927" loading="lazy">
+                    </div>
+                    <div class="ts-feature-body">
+                        <span class="ts-feature-wordmark" style="display:block">Tableau</span>
+                        <h3 id="np-dash-feature-title">Nonprofit Cloud Dashboards</h3>
+                        <p>Interactive Tableau dashboards on your Salesforce Nonprofit Cloud data, so leadership, boards and funders can see the numbers behind your mission.</p>
+                        <ul class="ts-feature-list">
+                            <li>Fundraising, donor and programme reporting on Nonprofit Cloud data</li>
+                            <li>Clear views for leadership meetings, board packs and funder reports</li>
+                            <li>Filters and drill-down from summary figures to the records behind them</li>
+                        </ul>
+                        <div class="ts-feature-btns">
+                            <a href="/services/tableau#nonprofit-dashboard" class="ts-get-app">View the Live Dashboard <svg class="svgi text-xs" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
                             <a href="/contact" class="ts-outline-sm">Talk to Us</a>
                         </div>
                     </div>
@@ -415,7 +434,7 @@ a.ts-get-app svg{width:1rem;height:1rem;display:inline-block}
               <div class="relative z-10 pl-2">
                 <a href="/" class="flex items-center gap-2 mb-4 text-slate-900 font-bold text-2xl" aria-label="TwinStack Solutions Home">
                   <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_100,f_auto,q_auto/v1769165197/Black_White_Minimalist_Professional_Initial_Logo_1_eoam8g.png" loading="lazy" alt="TwinStack Logo" width="48" height="48" class="h-12 w-12 rounded-full object-cover">
-                  <span><span class="text-[#343453]">Twin</span><span class="bg-gradient-to-r from-brand-500 to-indigo-500 text-transparent bg-clip-text">Stack</span></span>
+                  <span class="ts-wm"><span class="ts-wm-top"><span class="text-[#343453]">Twin</span><span class="bg-gradient-to-r from-brand-500 to-indigo-500 text-transparent bg-clip-text">Stack</span></span><span class="ts-wm-sub">Solutions</span></span>
                 </a>
                 <p class="text-sm text-slate-700 max-w-xs font-medium">Empowering charities and businesses with Salesforce excellence since 2022.</p>
               </div>
