@@ -1,0 +1,672 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<script id="ts-ga-consent">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});try{if(localStorage.getItem('ts_consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}gtag('js',new Date());gtag('config','G-TRGBC4HYEY');</script>
+<script src="/js/ts-analytics.js" defer></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Salesforce Form Builder: Native Web Forms | TwinStack</title>
+    <meta name="description" content="Build public web forms and surveys on Salesforce Sites with a free, native drag-and-drop builder. Each submission creates or updates a record in your org.">
+    <link rel="canonical" href="https://twinstack.net/products/smart-forms-surveys">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:title" content="Free Salesforce Form Builder: Native Web Forms | TwinStack">
+    <meta property="og:description" content="Build public web forms and surveys on Salesforce Sites with a free, native drag-and-drop builder. Each submission creates or updates a record in your org.">
+    <meta property="og:url" content="https://twinstack.net/products/smart-forms-surveys">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="TwinStack Solutions">
+    <meta property="og:image" content="https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_white,f_jpg,q_auto/v1793101300/Smart_Forms_Surveys_Tr_cln7sv.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Salesforce Form Builder: Native Web Forms | TwinStack">
+    <meta name="twitter:description" content="Build public web forms and surveys on Salesforce Sites with a free, native drag-and-drop builder. Each submission creates or updates a record in your org.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_white,f_jpg,q_auto/v1793101300/Smart_Forms_Surveys_Tr_cln7sv.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/du42kbmmn/image/upload/f_png,c_fit,w_32,h_32/v1793101300/Smart_Forms_Surveys_Tr_cln7sv.png"><link rel="icon" type="image/png" sizes="192x192" href="https://res.cloudinary.com/du42kbmmn/image/upload/f_png,c_fit,w_192,h_192/v1793101300/Smart_Forms_Surveys_Tr_cln7sv.png"><link rel="apple-touch-icon" href="https://res.cloudinary.com/du42kbmmn/image/upload/f_png,c_pad,b_white,w_180,h_180/v1793101300/Smart_Forms_Surveys_Tr_cln7sv.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://res.cloudinary.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --ink:#12151D; --ink2:#464C5C; --ink3:#7C8395;
+ --page:#FFFFFF; --panel:#FFFFFF; --line:#E4E7EF; --line2:#CFD4E0; --wash:#F3F5F9;
+ --acc:#0A7BD1; --acc2:#14A6D9; --accd:#075A9C; --accs:#E6F2FC;
+ --disp:'Plus Jakarta Sans','Inter',system-ui,sans-serif;
+ --sans:'Inter','Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+ --mono:'JetBrains Mono',ui-monospace,'SFMono-Regular',monospace;
+ --e:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:112px}
+body{font-family:var(--sans);background:var(--page);color:var(--ink);line-height:1.66;letter-spacing:-.005em;
+ -webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 30px}
+h1,h2,h3{font-family:var(--disp);font-weight:700;letter-spacing:-.032em;line-height:1.1}
+h4{font-family:var(--disp);font-weight:600;letter-spacing:-.018em}
+h2{font-size:clamp(1.85rem,3.2vw,2.6rem);letter-spacing:-.034em}
+.idx{font-family:var(--mono);font-size:.73rem;letter-spacing:.17em;text-transform:uppercase;color:var(--ink3);
+ display:flex;align-items:center;gap:13px;margin-bottom:20px}
+.idx b{color:var(--acc);font-weight:500}
+.idx::after{content:"";flex:0 0 32px;height:1px;background:var(--line2)}
+.lead{color:var(--ink2);font-size:1.06rem;margin-top:18px;max-width:64ch}
+.sec-head{margin-bottom:58px;max-width:62ch}
+section{padding:100px 0;position:relative}
+
+/* ---------- NAV ---------- */
+.nav{position:fixed;top:18px;left:50%;transform:translateX(-50%);z-index:400;width:calc(100% - 36px);max-width:1180px;
+ background:rgba(255,255,255,.82);backdrop-filter:blur(20px) saturate(170%);-webkit-backdrop-filter:blur(20px) saturate(170%);
+ border:1px solid var(--line);border-radius:20px;box-shadow:0 16px 40px -26px rgba(18,21,29,.42);
+ transition:top .5s var(--e),width .5s var(--e),max-width .5s var(--e),border-radius .5s var(--e),
+  box-shadow .42s var(--e),background .42s var(--e),border-color .42s var(--e);will-change:top,width,border-radius}
+.nav::before{content:"";position:absolute;top:0;left:22px;right:22px;height:2px;border-radius:2px;
+ background:linear-gradient(90deg,#3B78F2,#E1483B,#F0A700,#12A05C);opacity:.9;
+ transition:left .5s var(--e),right .5s var(--e)}
+.nav.docked{top:0;width:100%;max-width:100%;border-radius:0;border-color:transparent;
+ border-bottom:1px solid var(--line);background:rgba(255,255,255,.95);box-shadow:0 6px 22px -20px rgba(18,21,29,.5)}
+.nav.docked::before{left:0;right:0}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 20px;max-width:1180px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
+.brand-mark{height:46px;width:46px;display:grid;place-items:center;flex-shrink:0}
+.brand-mark img{width:100%;height:100%;object-fit:contain;transition:transform .45s var(--e)}
+.brand:hover .brand-mark img{transform:scale(1.08) rotate(-5deg)}
+.brand b{font-family:var(--disp);font-size:1.02rem;font-weight:600;display:block;letter-spacing:-.015em;line-height:1.25}
+.brand small{font-family:var(--mono);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink3)}
+.nav-mid{display:flex;align-items:center;gap:3px;flex:1}
+.pill{text-decoration:none;font-size:.87rem;font-weight:500;color:var(--ink2);padding:9px 15px;border-radius:11px;
+ transition:background .22s,color .22s,transform .22s var(--e);white-space:nowrap}
+.pill:hover{background:var(--accs);color:var(--accd);transform:translateY(-1px)}
+.pill.home{color:var(--ink);font-weight:600;border:1px solid var(--line2);background:var(--panel)}
+.pill.home:hover{border-color:var(--acc);background:var(--panel)}
+.nav-cta{background:var(--ink);color:#fff;text-decoration:none;padding:11px 20px;border-radius:11px;font-size:.87rem;
+ font-weight:600;white-space:nowrap;flex-shrink:0;transition:background .24s,transform .24s var(--e),box-shadow .24s}
+.nav-cta:hover{background:var(--acc);transform:translateY(-2px);box-shadow:0 12px 22px -12px rgba(59,120,242,.85)}
+
+/* ---------- HERO ---------- */
+.hero{padding:158px 0 92px;overflow:hidden;background:linear-gradient(180deg,#F4F8FF 0%,#FFFFFF 100%)}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(760px 460px at 12% 12%,rgba(59,120,242,.16),transparent 62%),radial-gradient(620px 420px at 88% 8%,rgba(225,72,59,.12),transparent 62%),radial-gradient(600px 400px at 78% 88%,rgba(18,160,92,.13),transparent 62%),radial-gradient(520px 360px at 32% 92%,rgba(240,167,0,.14),transparent 62%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:56px;align-items:center;position:relative;z-index:2}
+.hero-logo{height:84px;width:auto;max-width:200px;object-fit:contain;margin-bottom:26px}
+.badge{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:.73rem;letter-spacing:.03em;
+ color:var(--ink2);background:var(--panel);border:1px solid var(--line);padding:7px 15px;border-radius:30px;margin-bottom:22px}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--acc2);animation:pl 2.2s ease-in-out infinite;flex-shrink:0}
+@keyframes pl{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.8);opacity:.4}}
+.hero h1{font-size:clamp(2.35rem,4.7vw,3.6rem);line-height:1.02;max-width:16ch;letter-spacing:-.038em}
+.hero h1 .hl{color:var(--acc)}
+.hero .sub{margin-top:22px;font-size:1.13rem;color:var(--ink2);max-width:50ch}
+.cta-row{display:flex;gap:13px;margin-top:34px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;font-size:.97rem;
+ padding:15px 28px;border-radius:12px;transition:transform .26s var(--e),background .24s,border-color .24s,box-shadow .26s}
+.btn-p{background:var(--acc);color:#fff;box-shadow:0 12px 26px -12px rgba(59,120,242,.8)}
+.btn-p:hover{background:var(--accd);transform:translateY(-3px);box-shadow:0 20px 34px -12px rgba(59,120,242,.9)}
+.btn-s{border:1px solid var(--line2);color:var(--ink);background:var(--panel)}
+.btn-s:hover{border-color:var(--ink);transform:translateY(-3px)}
+.stats{display:flex;margin-top:38px;padding-top:24px;border-top:1px solid var(--line);flex-wrap:wrap}
+.st{padding-right:32px;margin-right:32px;border-right:1px solid var(--line)}
+.st:last-child{border:0;margin:0;padding:0}
+.st b{display:block;font-family:var(--disp);font-size:1.55rem;font-weight:600;line-height:1.15;color:var(--acc)}
+.st span{font-size:.79rem;color:var(--ink3)}
+
+/* ---------- MEDIA FRAMES (no distortion anywhere) ---------- */
+.fig{border:1px solid var(--line);border-radius:14px;background:var(--wash);overflow:hidden;
+ box-shadow:0 26px 50px -32px rgba(18,21,29,.42);transition:transform .4s var(--e),box-shadow .4s var(--e)}
+.fig:hover{transform:translateY(-6px);box-shadow:0 36px 62px -30px rgba(18,21,29,.46)}
+.fig-bar{display:flex;align-items:center;gap:8px;padding:11px 15px;border-bottom:1px solid var(--line);
+ font-family:var(--mono);font-size:.7rem;color:var(--ink3);background:var(--panel)}
+.fig-bar i{width:7px;height:7px;border-radius:50%;display:block;flex-shrink:0}
+.fig-body{padding:14px;display:grid;place-items:center;background:var(--wash)}
+.fig-body img{width:100%;height:auto;max-height:440px;object-fit:contain;border-radius:6px}
+.fig-sm .fig-body{padding:10px}
+.fig-sm .fig-body img{max-height:200px}
+.stage{position:relative;display:flex;flex-direction:column;gap:16px}
+.chipf{position:absolute;background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:8px 14px;
+ font-family:var(--mono);font-size:.71rem;z-index:6;display:flex;align-items:center;gap:8px;
+ box-shadow:0 14px 28px -14px rgba(18,21,29,.4)}
+.c1{top:-14px;left:-14px;color:var(--acc2)}
+.c2{bottom:-14px;right:-14px;color:var(--accd)}
+.arrowdown{display:grid;place-items:center;font-family:var(--mono);font-size:.72rem;color:var(--ink3);gap:6px}
+.arrowdown i{width:1px;height:26px;background:linear-gradient(180deg,var(--acc),var(--acc2));display:block}
+.logo-panel{border:1px solid var(--line);border-radius:20px;background:var(--panel);aspect-ratio:4/3;
+ display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:0 30px 60px -36px rgba(18,21,29,.42)}
+.logo-panel img{width:44%;max-width:230px;height:auto;object-fit:contain;position:relative;z-index:2;animation:fl 7s ease-in-out infinite}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.ring{position:absolute;border:1px solid var(--line);border-radius:50%;aspect-ratio:1}
+.ring.a{width:34%}.ring.b{width:54%}.ring.c{width:76%}.ring.d{width:98%}
+
+/* ---------- STRIP (animated colour wave) ---------- */
+.strip{position:relative;overflow:hidden;isolation:isolate}
+.strip::before{content:"";position:absolute;inset:0;z-index:-1;
+ background:linear-gradient(90deg,#3B78F2 0%,#E1483B 22%,#F2B705 44%,#12A05C 68%,#E1483B 84%,#3B78F2 100%);
+ background-size:220% 100%;animation:hue 14s linear infinite}
+@keyframes hue{from{background-position:0% 0}to{background-position:220% 0}}
+.strip-in{display:flex;width:max-content;animation:sl 42s linear infinite}
+.strip-in:hover{animation-play-state:paused}
+.si{display:flex;align-items:center;gap:12px;padding:18px 38px;font-family:var(--mono);font-size:.76rem;
+ color:#FFFFFF;white-space:nowrap;letter-spacing:.1em;text-transform:uppercase;font-weight:500}
+.si i{width:5px;height:5px;border-radius:50%;display:block;flex-shrink:0;background:rgba(255,255,255,.92)}
+@keyframes sl{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- GRIDS ---------- */
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:28px 26px;position:relative;
+ overflow:hidden;transition:transform .3s var(--e),box-shadow .3s var(--e),border-color .3s}
+.card:hover{transform:translateY(-6px);border-color:var(--line2);box-shadow:0 24px 42px -30px rgba(18,21,29,.4)}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--acc);
+ transform:scaleX(0);transform-origin:left;transition:transform .45s var(--e)}
+.card:hover::before{transform:scaleX(1)}
+.card h3,.card h4{font-size:1.04rem;margin-bottom:9px}
+.card p{color:var(--ink2);font-size:.93rem}
+.cnum{font-family:var(--mono);font-size:.75rem;color:var(--ink3);margin-bottom:15px;display:inline-block;
+ transition:color .3s,transform .3s var(--e);letter-spacing:.1em}
+.card:hover .cnum{color:var(--acc);transform:translateX(3px)}
+.xm{width:32px;height:32px;border-radius:9px;border:1px solid var(--line);display:grid;place-items:center;
+ color:#D9534A;margin-bottom:16px;font-size:.9rem;transition:transform .35s var(--e)}
+.card:hover .xm{transform:rotate(90deg)}
+.pull{margin:44px 0 0;padding:26px 30px;border-left:2px solid var(--acc);background:var(--panel);
+ border-radius:0 14px 14px 0;color:var(--ink2);font-size:1.04rem;max-width:80ch;border-top:1px solid var(--line);
+ border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+@media(max-width:1000px){.g4{grid-template-columns:1fr 1fr}}
+@media(max-width:860px){.g3{grid-template-columns:1fr}.g2{grid-template-columns:1fr}}
+@media(max-width:560px){.g4{grid-template-columns:1fr}}
+
+/* ---------- FLOW ---------- */
+.flow{display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
+.node{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:34px 30px;text-align:center;
+ transition:transform .36s var(--e),border-color .36s,box-shadow .36s}
+.node:hover{transform:translateY(-7px);border-color:var(--acc);box-shadow:0 26px 46px -32px rgba(18,21,29,.45)}
+.node-ic{width:54px;height:54px;border-radius:15px;display:grid;place-items:center;margin:0 auto 16px;
+ font-size:1.35rem;background:var(--accs);color:var(--accd)}
+.node h3{font-size:1.1rem;margin-bottom:8px}.node p{color:var(--ink2);font-size:.93rem}
+.node code{font-family:var(--mono);font-size:.79rem;color:var(--accd);background:var(--accs);padding:2px 6px;border-radius:4px}
+.lnk{padding:0 26px;min-width:200px;text-align:center}
+.lnk-l{height:2px;border-radius:2px;background:linear-gradient(90deg,var(--acc),var(--acc2));position:relative;overflow:hidden}
+.lnk-l::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.85),transparent);
+ background-size:50% 100%;background-repeat:no-repeat;animation:sw 2.4s ease-in-out infinite}
+@keyframes sw{0%{background-position:-60% 0}100%{background-position:160% 0}}
+.lnk-t{font-family:var(--mono);font-size:.69rem;color:var(--ink2);border:1px solid var(--line);border-radius:20px;
+ padding:5px 13px;display:inline-block;margin:13px 4px 0;background:var(--panel)}
+.flow-note{margin-top:30px;text-align:center;font-family:var(--mono);font-size:.79rem;color:var(--ink2);
+ border:1px dashed var(--line2);border-radius:12px;padding:15px 22px;display:block;background:var(--panel)}
+@media(max-width:900px){.flow{grid-template-columns:1fr}.lnk{padding:24px 0;min-width:0}
+ .lnk-l{width:2px;height:46px;margin:0 auto;background:linear-gradient(180deg,var(--acc),var(--acc2))}}
+
+/* ---------- RAIL STEPS (pipeline variant) ---------- */
+.rail{position:relative;padding-left:0}
+.rail-track{display:grid;grid-template-columns:repeat(6,1fr);gap:0;position:relative;margin-bottom:34px}
+.rail-track::before{content:"";position:absolute;left:8%;right:8%;top:19px;height:2px;
+ background:linear-gradient(90deg,var(--acc),var(--acc2))}
+.rt{text-align:center;position:relative;padding:0 8px}
+.rt-dot{width:38px;height:38px;border-radius:50%;background:var(--panel);border:2px solid var(--acc);
+ display:grid;place-items:center;margin:0 auto 14px;font-family:var(--mono);font-size:.8rem;color:var(--acc);
+ position:relative;z-index:2;transition:transform .3s var(--e),background .3s,color .3s}
+.rt:hover .rt-dot{transform:scale(1.16);background:var(--acc);color:#fff}
+.rt h4{font-size:.92rem;line-height:1.3}
+.rail-detail{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);
+ border-left:1px solid var(--line);background:var(--panel);border-radius:14px;overflow:hidden}
+.rd{padding:26px 26px 30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+ transition:background .28s var(--e)}
+.rd:hover{background:var(--wash)}
+.rd-n{font-family:var(--mono);font-size:.73rem;color:var(--acc);letter-spacing:.12em;margin-bottom:12px;display:block}
+.rd h4{font-size:1rem;margin-bottom:8px}
+.rd p{color:var(--ink2);font-size:.92rem}
+@media(max-width:960px){.rail-track{display:none}.rail-detail{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.rail-detail{grid-template-columns:1fr}}
+
+/* ---------- FEATURE LEDGER (pipeline variant) ---------- */
+.ledger{border-top:1px solid var(--line2)}
+.lg{display:grid;grid-template-columns:56px 1.05fr 1.55fr;gap:26px;padding:24px 0;border-bottom:1px solid var(--line);
+ align-items:baseline;transition:background .26s,padding-left .3s var(--e)}
+.lg:hover{background:var(--panel);padding-left:14px}
+.lg-n{font-family:var(--mono);font-size:.78rem;color:var(--ink3);transition:color .26s}
+.lg:hover .lg-n{color:var(--acc)}
+.lg h4{font-size:1.06rem}
+.lg p{color:var(--ink2);font-size:.95rem}
+@media(max-width:820px){.lg{grid-template-columns:40px 1fr;gap:16px}.lg p{grid-column:2}}
+
+/* ---------- SPINE STEPS (explorer variant) ---------- */
+.spine{position:relative;padding-left:38px}
+.spine::before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:2px;
+ background:linear-gradient(180deg,var(--acc),var(--acc2))}
+.sp{position:relative;padding:0 0 30px 26px}
+.sp::before{content:"";position:absolute;left:-32px;top:6px;width:14px;height:14px;border-radius:50%;
+ background:var(--page);border:2px solid var(--acc);transition:transform .3s var(--e),background .3s}
+.sp:hover::before{transform:scale(1.4);background:var(--acc)}
+.sp-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 26px;
+ transition:transform .3s var(--e),box-shadow .3s var(--e),border-color .3s}
+.sp:hover .sp-card{transform:translateX(6px);border-color:var(--acc);box-shadow:0 20px 38px -30px rgba(18,21,29,.45)}
+.sp-n{font-family:var(--mono);font-size:.72rem;color:var(--acc);letter-spacing:.13em;display:block;margin-bottom:9px}
+.sp-card h4{font-size:1.05rem;margin-bottom:7px}
+.sp-card p{color:var(--ink2);font-size:.94rem}
+@media(max-width:620px){.spine{padding-left:26px}.sp{padding-left:16px}.sp::before{left:-22px}}
+
+/* ---------- BIG FEATURE CARDS (explorer variant) ---------- */
+.bigs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.big{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:32px 30px;position:relative;
+ overflow:hidden;transition:transform .32s var(--e),box-shadow .32s var(--e),border-color .32s}
+.big:hover{transform:translateY(-6px);border-color:var(--acc);box-shadow:0 26px 46px -32px rgba(18,21,29,.42)}
+.big-n{position:absolute;top:14px;right:22px;font-family:var(--disp);font-size:3.1rem;font-weight:600;
+ color:var(--accs);line-height:1;transition:color .32s,transform .32s var(--e)}
+.big:hover .big-n{transform:scale(1.08)}
+.big h4{font-size:1.1rem;margin-bottom:10px;position:relative;max-width:26ch}
+.big p{color:var(--ink2);font-size:.94rem;position:relative;max-width:42ch}
+@media(max-width:760px){.bigs{grid-template-columns:1fr}}
+
+/* ---------- HERO MOCKS ---------- */
+.pipe{border:1px solid var(--line);border-radius:18px;background:var(--panel);padding:26px;
+ box-shadow:0 30px 58px -34px rgba(18,21,29,.42);display:flex;flex-direction:column;gap:12px}
+.pipe-h{display:flex;align-items:center;justify-content:space-between;font-family:var(--mono);font-size:.7rem;
+ color:var(--ink3);padding-bottom:14px;border-bottom:1px solid var(--line);letter-spacing:.08em;text-transform:uppercase}
+.pipe-tag{background:var(--accs);color:var(--accd);padding:3px 10px;border-radius:12px}
+.pl{display:grid;grid-template-columns:1fr 22px 1fr;align-items:center;gap:10px;padding:12px 14px;
+ border:1px solid var(--line);border-radius:9px;font-family:var(--mono);font-size:.74rem;background:var(--wash);
+ transition:border-color .26s,transform .26s var(--e)}
+.pl:hover{border-color:var(--acc);transform:translateX(4px)}
+.pl .ar{color:var(--acc);text-align:center}
+.pl b{color:var(--accd);font-weight:500}
+.pl-foot{display:flex;justify-content:space-between;align-items:center;padding-top:14px;border-top:1px solid var(--line);
+ font-family:var(--mono);font-size:.72rem;color:var(--ink3)}
+.pl-ok{color:var(--acc2)}
+.expl{border:1px solid var(--line);border-radius:18px;background:var(--panel);overflow:hidden;
+ box-shadow:0 30px 58px -34px rgba(18,21,29,.42)}
+.expl-h{padding:18px 22px;border-bottom:1px solid var(--line);background:var(--accs)}
+.expl-h b{font-family:var(--disp);font-size:1rem;display:block}
+.expl-h span{font-family:var(--mono);font-size:.71rem;color:var(--ink2)}
+.expl-b{padding:20px 22px;display:flex;flex-direction:column;gap:10px}
+.ex{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 15px;border-radius:9px;
+ border:1px solid var(--line);background:var(--wash);font-size:.83rem;transition:transform .26s var(--e),border-color .26s}
+.ex:hover{transform:translateX(5px);border-color:var(--acc)}
+.ex-l{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.76rem;color:var(--ink2)}
+.ex-l i{width:6px;height:6px;border-radius:50%;background:var(--acc);display:block;flex-shrink:0}
+.ex-why{font-family:var(--mono);font-size:.68rem;color:var(--accd);background:var(--accs);padding:3px 9px;
+ border-radius:11px;white-space:nowrap}
+.ex-foot{padding:14px 22px;border-top:1px solid var(--line);font-family:var(--mono);font-size:.71rem;
+ color:var(--ink3);display:flex;justify-content:space-between}
+
+/* ---------- SHOWCASE ---------- */
+.sc{display:grid;grid-template-columns:.92fr 1.08fr;gap:60px;align-items:center;padding:56px 0;border-top:1px solid var(--line)}
+.sc:last-child{border-bottom:1px solid var(--line)}
+.sc:nth-child(even) .sc-m{order:2}.sc:nth-child(even) .sc-c{order:1}
+.sc-tag{font-family:var(--mono);font-size:.71rem;letter-spacing:.17em;text-transform:uppercase;color:var(--acc);
+ display:block;margin-bottom:14px}
+.sc-c h3{font-size:1.55rem;margin-bottom:14px}
+.sc-c p{color:var(--ink2);margin-bottom:20px}
+.tick{list-style:none;border-top:1px solid var(--line)}
+.tick li{padding:12px 0;border-bottom:1px solid var(--line);font-size:.94rem;color:var(--ink2);
+ display:flex;gap:13px;transition:padding-left .28s var(--e)}
+.tick li:hover{padding-left:8px}
+.tick li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--acc);margin-top:10px;flex-shrink:0}
+.mock{border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:28px;
+ display:flex;flex-direction:column;gap:12px;box-shadow:0 26px 50px -34px rgba(18,21,29,.42);
+ transition:transform .4s var(--e)}
+.mock:hover{transform:translateY(-6px)}
+.mr{display:flex;align-items:center;gap:13px;padding:13px 16px;border:1px solid var(--line);border-radius:9px;
+ font-family:var(--mono);font-size:.74rem;color:var(--ink2);background:var(--wash);flex-wrap:wrap}
+.mr b{color:var(--accd);font-weight:500}.mr .ar{color:var(--ink3)}
+.mr.ok{border-left:2px solid var(--acc2)}
+.mbar{height:4px;border-radius:3px;background:linear-gradient(90deg,var(--acc),var(--acc2))}
+@media(max-width:900px){.sc,.sc:nth-child(even){grid-template-columns:1fr;gap:32px}
+ .sc:nth-child(even) .sc-m,.sc:nth-child(even) .sc-c{order:0}}
+
+/* ---------- SECURITY ---------- */
+.sec-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.sq{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px 26px;display:flex;gap:16px;
+ transition:transform .3s var(--e),border-color .3s,box-shadow .3s}
+.sq:hover{transform:translateY(-5px);border-color:var(--acc);box-shadow:0 22px 40px -30px rgba(18,21,29,.4)}
+.sq-ic{width:34px;height:34px;border-radius:9px;background:var(--accs);color:var(--accd);display:grid;place-items:center;
+ flex-shrink:0;font-size:.9rem}
+.sq h4{font-size:1rem;margin-bottom:7px}.sq p{color:var(--ink2);font-size:.92rem}
+@media(max-width:820px){.sec-grid{grid-template-columns:1fr}}
+
+/* ---------- BENEFITS BAND ---------- */
+.band{background:var(--ink);color:#fff}
+.band .idx{color:rgba(255,255,255,.5)}.band .idx b{color:var(--acc2)}
+.band .idx::after{background:rgba(255,255,255,.2)}
+.band .lead{color:rgba(255,255,255,.66)}
+.bg3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.11);
+ border-radius:16px;overflow:hidden}
+.bn{background:#1A1E29;padding:30px 28px;transition:background .3s,transform .3s var(--e)}
+.bn:hover{background:#232836;transform:translateY(-4px)}
+.bn-k{font-family:var(--mono);font-size:.71rem;letter-spacing:.17em;text-transform:uppercase;color:var(--acc2);
+ display:inline-block;margin-bottom:14px;transition:transform .3s var(--e)}
+.bn:hover .bn-k{transform:translateX(4px)}
+.bn h4{font-size:1.03rem;margin-bottom:9px;color:#fff}
+.bn p{color:rgba(255,255,255,.63);font-size:.92rem}
+@media(max-width:900px){.bg3{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.bg3{grid-template-columns:1fr}}
+
+/* ---------- TABLE ---------- */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tbl{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:16px;
+ overflow:hidden;font-size:.93rem;background:var(--panel)}
+.tbl th,.tbl td{padding:16px 20px;text-align:left;border-bottom:1px solid var(--line)}
+.tbl thead th{background:var(--wash);font-family:var(--disp);font-weight:600;font-size:.9rem;border-bottom:1px solid var(--line2)}
+.tbl thead th:last-child{background:var(--accs);color:var(--accd)}
+.tbl td{color:var(--ink2)}
+.tbl td:first-child{color:var(--ink);font-weight:600}
+.tbl td:last-child{background:var(--accs);color:var(--ink);font-weight:500}
+.tbl tbody tr:last-child td{border-bottom:0}
+.tbl tbody tr{transition:background .2s}
+.tbl-note{margin-top:16px;font-family:var(--mono);font-size:.74rem;color:var(--ink3)}
+@media(max-width:820px){.tbl{min-width:700px}}
+
+/* ---------- FAQ ---------- */
+.faq-list{max-width:900px}
+details{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden;
+ transition:border-color .26s,box-shadow .26s}
+details[open]{border-color:var(--acc);box-shadow:0 16px 34px -30px rgba(59,120,242,.8)}
+summary{cursor:pointer;padding:19px 24px;font-family:var(--disp);font-weight:600;font-size:1rem;list-style:none;
+ display:flex;justify-content:space-between;gap:18px;align-items:center;transition:background .2s}
+summary::-webkit-details-marker{display:none}
+summary:hover{background:var(--wash)}
+summary::after{content:"+";font-family:var(--mono);font-size:1.25rem;color:var(--acc);flex-shrink:0;
+ transition:transform .3s var(--e)}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 24px 22px;color:var(--ink2);font-size:.95rem;max-width:76ch}
+details code{font-family:var(--mono);font-size:.86rem;color:var(--accd);background:var(--accs);padding:2px 6px;border-radius:4px}
+
+/* ---------- CTA ---------- */
+.ctab{border-radius:24px;padding:70px 46px;text-align:center;position:relative;overflow:hidden;
+ background:linear-gradient(115deg,#3B78F2 0%,#2C64D8 30%,#12A05C 68%,#0E8A4F 100%);color:#fff}
+.ctab::before{content:"";position:absolute;top:-90px;right:-60px;width:280px;height:280px;border-radius:50%;
+ background:rgba(255,255,255,.1)}
+.ctab::after{content:"";position:absolute;bottom:-110px;left:-50px;width:250px;height:250px;border-radius:50%;
+ background:rgba(255,255,255,.08)}
+.ctab-logo{height:76px;width:auto;max-width:180px;object-fit:contain;margin:0 auto 24px;position:relative;
+ filter:drop-shadow(0 12px 24px rgba(0,0,0,.24))}
+.ctab h2{max-width:22ch;margin:0 auto 16px;position:relative;color:#fff}
+.ctab p{color:rgba(255,255,255,.88);max-width:52ch;margin:0 auto 32px;font-size:1.05rem;position:relative}
+.ctab .btn-p{background:#fff;color:var(--accd);box-shadow:0 14px 28px -12px rgba(0,0,0,.3);position:relative}
+.ctab .btn-p:hover{background:#F2F5FF;transform:translateY(-3px)}
+.ctaf{margin-top:20px;font-family:var(--mono);font-size:.74rem;color:rgba(255,255,255,.78);position:relative}
+
+/* ---------- OTHER PRODUCTS ---------- */
+.op-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.op{border:1px solid var(--line);border-radius:20px;background:var(--panel);text-decoration:none;display:flex;
+ flex-direction:column;overflow:hidden;transition:transform .32s var(--e),border-color .32s,box-shadow .32s}
+.op:hover{transform:translateY(-7px);box-shadow:0 28px 50px -32px rgba(18,21,29,.42)}
+.op-top{padding:30px 30px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.op-n{font-family:var(--mono);font-size:.74rem;color:var(--ink3)}
+.op-logo{width:78px;height:78px;border-radius:18px;border:1px solid var(--line);display:grid;place-items:center;
+ padding:11px;background:var(--panel);transition:transform .4s var(--e)}
+.op:hover .op-logo{transform:scale(1.07) rotate(-5deg)}
+.op-logo img{width:100%;height:100%;object-fit:contain}
+.op-b{padding:20px 30px 30px}
+.op h3{font-size:1.36rem;margin-bottom:6px}
+.op .tg{font-style:italic;color:var(--ink2);font-size:.97rem;margin-bottom:16px}
+.chips{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.chip{font-family:var(--mono);font-size:.7rem;color:var(--ink3);border:1px solid var(--line);padding:3px 10px;border-radius:14px}
+.op ul{list-style:none;margin-bottom:20px}
+.op ul li{font-size:.91rem;color:var(--ink2);padding:9px 0;border-bottom:1px solid var(--line);display:flex;gap:11px}
+.op ul li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--acc);margin-top:9px;flex-shrink:0}
+.op .go{font-family:var(--mono);font-size:.83rem;color:var(--acc);display:inline-flex;gap:6px;transition:gap .24s var(--e)}
+.op:hover .go{gap:12px}
+@media(max-width:800px){.op-grid{grid-template-columns:1fr}}
+
+/* ---------- BLOG ---------- */
+.post{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--panel);text-decoration:none;
+ transition:transform .3s var(--e),box-shadow .3s var(--e)}
+.post:hover{transform:translateY(-6px);box-shadow:0 26px 44px -32px rgba(18,21,29,.4)}
+.post .pf{background:var(--wash);border-bottom:1px solid var(--line);padding:14px;display:grid;place-items:center}
+.post .pf img{width:100%;height:auto;max-height:180px;object-fit:contain;border-radius:5px}
+.post-ph{border-bottom:1px solid var(--line);padding:44px 20px;display:grid;place-items:center;
+ background:linear-gradient(135deg,var(--accs),var(--wash))}
+.post-ph span{font-family:var(--mono);font-size:.7rem;color:var(--ink3);letter-spacing:.19em;text-transform:uppercase}
+.post-b{padding:20px 21px 24px}
+.post-t{font-family:var(--mono);font-size:.69rem;color:var(--acc);letter-spacing:.15em;text-transform:uppercase;
+ display:block;margin-bottom:10px}
+.post h4{font-size:1.02rem;line-height:1.33;margin-bottom:8px}
+.post p{font-size:.88rem;color:var(--ink2)}
+
+/* ---------- FOOTER ---------- */
+footer{padding:32px 0;border-top:1px solid var(--line);background:var(--panel)}
+.ft{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.ft-l{display:flex;align-items:center;gap:12px}
+.ft-l img{height:34px;width:34px;object-fit:contain}
+.ft-l span{font-size:.85rem;color:var(--ink2)}
+.ft-links{display:flex;gap:24px;flex-wrap:wrap}
+.ft-links a{text-decoration:none;font-size:.85rem;color:var(--ink2);transition:color .2s}
+.ft-links a:hover{color:var(--acc)}
+.ft-c{font-size:.79rem;color:var(--ink3)}
+
+.js .rv{opacity:0;transform:translateY(24px)}
+.js .rv.in{opacity:1;transform:none;transition:opacity .8s var(--e),transform .8s var(--e)}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;animation-iteration-count:1!important;
+ transition-duration:.001ms!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
+@media(max-width:1020px){.hero{padding:128px 0 74px}.nav{top:10px;width:calc(100% - 20px)}.nav-mid{display:none}
+ .hero-grid{grid-template-columns:1fr;gap:44px}.chipf{display:none}}
+.nav-mid .pill{white-space:nowrap}@media (min-width:1021px) and (max-width:1240px){.nav-in{gap:10px}.nav-mid{gap:0}.nav-mid .pill{padding-left:8px;padding-right:8px;font-size:.78rem}.brand small{display:none}}
+.np-card{grid-column:1/-1}.np-list{margin-top:14px}@media (min-width:760px){.np-list{display:grid;grid-template-columns:1fr 1fr;column-gap:32px}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Smart Forms & Surveys",
+      "alternateName": "Smart Forms & Surveys (native)",
+      "description": "Smart Forms & Surveys is a free, native Salesforce app for building public web forms and surveys on Salesforce Sites. Each submission creates or updates a record in your org, with no external callouts or third-party servers.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Salesforce",
+      "url": "https://twinstack.net/products/smart-forms-surveys",
+      "installUrl": "https://appexchange.salesforce.com/appxListingDetail?listingId=852a8a41-e28c-4dac-a90a-9c8a16a1054d",
+      "image": "https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_320/v1793101300/Smart_Forms_Surveys_Tr_cln7sv.png",
+      "softwareVersion": "0.4.0",
+      "datePublished": "2026-10-26",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://twinstack.net/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is there a free form builder for Salesforce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Smart Forms & Surveys is a free, native app on the Salesforce AppExchange. It never requires payment, and it lets admins build public web forms and surveys with a drag-and-drop builder, with no code."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do people need a Salesforce login to fill in a form?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Forms are published on a Salesforce Site, so anonymous visitors can open the public link and submit without logging in. Guest access runs through a dedicated least-privilege permission set."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Salesforce objects can a form write to?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Any standard or custom object. A submission can create a new record or update an existing one, so the same tool works for Leads, Contacts, Cases, custom application objects and more."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does any form data leave Salesforce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Smart Forms & Surveys runs entirely on the Salesforce platform. There are no external callouts, no OAuth tokens and no third-party servers, so submissions go straight from your Salesforce Site into your org."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How are guest submissions kept secure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Guest access runs through a dedicated least-privilege permission set. Submissions respect object and field-level security, and the app runs in user mode with sharing enforced, so a guest can only write what you have allowed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a developer to set it up?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Forms are designed in a drag-and-drop builder, and the Form Configuration tab checks that your public site is ready and shows step-by-step instructions for anything that is missing. A Salesforce admin can do the whole setup."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What can I use Smart Forms & Surveys for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lead capture, event registration, surveys, feedback, intake and application forms, and any other form where the answers belong in Salesforce."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use Smart Forms & Surveys or Google Form Auto Sync?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If your team already builds forms in Google Forms and wants the responses in Salesforce, use Google Form Auto Sync. If you want the form itself to live on Salesforce, built and hosted in your own org with no Google account involved, use Smart Forms & Surveys. Both are free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does Smart Forms & Surveys cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nothing. It is listed as free on AppExchange and never requires payment."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://twinstack.net/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Products",
+          "item": "https://twinstack.net/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Smart Forms & Surveys",
+          "item": "https://twinstack.net/products/smart-forms-surveys"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style id="ts-dd">
+.ts-dd{position:relative;display:inline-flex;align-items:center}
+.ts-dd>a{display:inline-flex!important;align-items:center;gap:.3rem}
+.ts-dd>a .ts-dd-car{width:.65rem;height:.65rem;transition:transform .2s;flex:0 0 auto}
+.ts-dd:hover>a .ts-dd-car,.ts-dd:focus-within>a .ts-dd-car{transform:rotate(180deg)}
+.ts-dd:after{content:"";position:absolute;top:100%;left:-12px;right:-12px;height:14px}
+.ts-dd .ts-dd-menu{position:absolute;top:100%;left:50%;transform:translate(-50%,10px);min-width:17rem;padding:.45rem;background:#fff;border:1px solid #e2e8f0;border-radius:.9rem;box-shadow:0 22px 50px -22px rgba(15,23,42,.4);opacity:0;visibility:hidden;transition:opacity .15s,transform .15s,visibility .15s;z-index:80;text-align:left}
+.ts-dd:hover .ts-dd-menu,.ts-dd:focus-within .ts-dd-menu{opacity:1;visibility:visible;transform:translate(-50%,6px)}
+.ts-dd .ts-dd-menu a{display:block!important;padding:.65rem .8rem!important;border-radius:.6rem;color:#0f172a!important;font-weight:600!important;font-size:.95rem!important;line-height:1.3;text-decoration:none!important;background:transparent;white-space:normal;transform:none!important;border:0!important}
+.ts-dd .ts-dd-menu a small{display:block;font-weight:400;color:#64748b;font-size:.8rem;margin-top:.15rem}
+.ts-dd .ts-dd-menu a:hover,.ts-dd .ts-dd-menu a:focus{background:#f0f9ff!important;color:#0284c7!important}
+.ts-dd .ts-dd-menu a[aria-current="page"]{color:#0284c7!important}
+</style>
+
+<style id="sfs-extra">.op-grid{grid-template-columns:repeat(3,1fr)}@media(max-width:1000px){.op-grid{grid-template-columns:1fr;max-width:560px;margin:0 auto}}.fig-wide .fig-body img{max-height:520px}.pick{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px}.pick .card h4{margin-bottom:8px}.pick .card a{color:var(--accd);font-weight:600}@media(max-width:760px){.pick{grid-template-columns:1fr}}.nav::before{background:linear-gradient(90deg,#075A9C,#0A7BD1,#14A6D9,#5CC8F0)}.strip::before{background:linear-gradient(90deg,#075A9C 0%,#0A7BD1 25%,#14A6D9 50%,#4F6BED 75%,#075A9C 100%);background-size:220% 100%}.ctab{background:linear-gradient(115deg,#064C85 0%,#0A7BD1 45%,#14A6D9 100%)}.hero::before{background:radial-gradient(760px 460px at 12% 12%,rgba(10,123,209,.16),transparent 62%),radial-gradient(620px 420px at 88% 8%,rgba(20,166,217,.14),transparent 62%),radial-gradient(600px 400px at 78% 88%,rgba(79,107,237,.12),transparent 62%),radial-gradient(520px 360px at 32% 92%,rgba(92,200,240,.14),transparent 62%)}.btn-p,.nav-cta:hover{box-shadow:0 12px 26px -12px rgba(10,123,209,.8)}.c1{left:auto;right:28px;top:-16px}.h4s{font-weight:600;letter-spacing:-.018em;line-height:1.3}.card .h4s{font-size:1.04rem;margin-bottom:9px}.sq .h4s{font-size:1rem;margin-bottom:7px}.bn .h4s{font-size:1.03rem;margin-bottom:9px;color:#fff}.post .h4s{font-size:1.02rem;line-height:1.33;margin-bottom:8px}.tbl tbody th{color:var(--ink);font-weight:600;font-family:inherit;font-size:inherit;letter-spacing:0}.tbl tbody tr:last-child th{border-bottom:0}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.ft-c{color:var(--ink2)}@media(max-width:1180px){.st{padding-right:20px;margin-right:20px}.st b{font-size:1.32rem}}</style>
+</head>
+<body><!--email_off-->
+<header class="nav" id="nav"><div class="nav-in">
+<a class="brand" href="#top"><span class="brand-mark"><img src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_140/v1793101300/Smart_Forms_Surveys_Tr_cln7sv.png" alt="Smart Forms &amp; Surveys logo" width="140" height="140" fetchpriority="high" decoding="async"></span>
+<span><b>Smart Forms</b><small>by TwinStack</small></span></a>
+<nav class="nav-mid"><a class="pill home" href="/">Twinstack</a><a class="pill" href="/pricing">Pricing</a><div class="ts-dd"><a class="pill" href="/services" aria-haspopup="true">Products &amp; Services<svg class="ts-dd-car" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="ts-dd-menu"><a href="/products" aria-current="page">Products<small>Free native AppExchange apps</small></a><a href="/services">Services<small>Consulting, nonprofits, Tableau and more</small></a><a href="/#pdo-journey">Expertise<small>Our path from strategy to AppExchange</small></a></div></div><a class="pill" href="/case-studies">Case Studies</a><a class="pill" href="/blog">Blog</a><a class="pill" href="/cost-estimator">Cost Estimator</a><a class="pill" href="#faq">FAQ</a></nav>
+<a class="nav-cta" href="https://appexchange.salesforce.com/appxListingDetail?listingId=852a8a41-e28c-4dac-a90a-9c8a16a1054d" target="_blank" rel="noopener">Install free</a></div></header>
+<section class="hero" id="top"><div class="wrap hero-grid"><div>
+<img width="320" height="320" class="hero-logo" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_320/v1793101300/Smart_Forms_Surveys_Tr_cln7sv.png" alt="Smart Forms &amp; Surveys logo" fetchpriority="high" decoding="async">
+<span class="badge"><span class="dot"></span>New on AppExchange · Security reviewed · Free</span>
+<h1>Build Salesforce web forms and surveys. <span class="hl">100% native</span>, free to use.</h1>
+<p class="sub">Smart Forms &amp; Surveys lets Salesforce admins build public web forms and surveys in a drag-and-drop builder, publish them on a Salesforce Site, and turn every submission into a new or updated record in your org. No code, no external callouts and no third-party servers.</p>
+<div class="cta-row"><a class="btn btn-p" href="https://appexchange.salesforce.com/appxListingDetail?listingId=852a8a41-e28c-4dac-a90a-9c8a16a1054d" target="_blank" rel="noopener">Get it on AppExchange</a>
+<a class="btn btn-s" href="#how">How it works</a></div>
+<div class="stats"><div class="st"><b>$0</b><span>Never requires payment</span></div><div class="st"><b>Any object</b><span>Standard or custom</span></div><div class="st"><b>Zero</b><span>External callouts</span></div></div></div>
+<div class="stage">
+<span class="chipf c1"><span class="dot"></span>Form published</span>
+<span class="chipf c2">Record created in your org</span>
+<div class="fig fig-wide"><div class="fig-bar"><i style="background:var(--acc)"></i><i style="background:var(--acc2)"></i>&nbsp;Salesforce · Form Builder</div>
+<div class="fig-body"><img width="1600" height="900" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_1100/v1793099487/Form_Builder_Tab_caqi5g.png" alt="The Smart Forms &amp; Surveys drag-and-drop Form Builder in Salesforce" fetchpriority="high" decoding="async"></div></div></div></div></section>
+
+<div class="strip"><div class="strip-in"><span class="si"><i></i>No code</span><span class="si"><i></i>100% native</span><span class="si"><i></i>No external callouts</span><span class="si"><i></i>No OAuth tokens</span><span class="si"><i></i>Public forms on Salesforce Sites</span><span class="si"><i></i>Any standard or custom object</span><span class="si"><i></i>Least-privilege guest access</span><span class="si"><i></i>Free</span><span class="si"><i></i>No code</span><span class="si"><i></i>100% native</span><span class="si"><i></i>No external callouts</span><span class="si"><i></i>No OAuth tokens</span><span class="si"><i></i>Public forms on Salesforce Sites</span><span class="si"><i></i>Any standard or custom object</span><span class="si"><i></i>Least-privilege guest access</span><span class="si"><i></i>Free</span></div></div>
+<section style="background:#FDF1EF"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>01</b> The problem</div>
+<h2>Collecting data from outside Salesforce should not need another tool.</h2><p class="lead">Registrations, applications, feedback and enquiries all start with someone outside your org filling in a form. Getting those answers into the right Salesforce record is where most teams end up compromising.</p></div>
+<div class="g3"><div class="card rv"><div class="xm">&#10005;</div><h3 class="h4s">Web-to-Lead and Web-to-Case</h3><p>Free and built in, but limited to Leads or Cases, with basic generated HTML and no builder for surveys or multi-step forms.</p></div><div class="card rv"><div class="xm">&#10005;</div><h3 class="h4s">Third-party form builders</h3><p>Polished builders, but usually paid, and every submission passes through the vendor's servers before it reaches Salesforce.</p></div><div class="card rv"><div class="xm">&#10005;</div><h3 class="h4s">Custom-coded forms</h3><p>A developer builds a Visualforce or Lightning page for each form, and every new question becomes another change request.</p></div></div><p class="pull rv">The result is forms that are hard to change, data that travels further than it needs to, and answers that still have to be copied into the record where they belong.</p></div></section>
+
+<section id="what" style="background:#EDF3FD"><div class="wrap">
+<div class="sec-head rv"><div class="idx"><b>02</b> What it is</div><h2>A form builder that lives inside your Salesforce org.</h2><p class="lead">You design the form in Salesforce, publish it on a Salesforce Site, and share the public link. When someone submits, the record is created or updated in your org. The form, the submission and the data never leave the platform.</p></div>
+<div class="flow rv"><div class="node"><div class="node-ic">&#9998;</div><h3>Design and publish</h3><p>Build the form in the drag-and-drop Form Builder, choose the object it writes to, and publish it to a Salesforce Site.</p></div>
+<div class="lnk"><div class="lnk-l"></div><span class="lnk-t">Public link</span><span class="lnk-t">Native submission</span></div>
+<div class="node"><div class="node-ic">&#9737;</div><h3>Record in your org</h3><p>Each submission creates or updates a record on any standard or custom object, under the security rules you set.</p></div></div>
+<span class="flow-note rv">Everything runs natively on the Salesforce platform: no external callouts, no OAuth tokens and no third-party servers.</span>
+</div></section>
+
+<section id="how" style="background:#FFFFFF"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>03</b> How it works</div>
+<h2>From install to your first live form.</h2><p class="lead">Set up the public site once, then build and publish as many forms as you need from the same builder.</p></div><div class="g3"><div class="card rv"><div class="cnum">01</div><h3>Install the package</h3><p>Install Smart Forms &amp; Surveys from AppExchange. It adds the Forms, Form Submissions, Form Builder and Form Configuration tabs to your org.</p></div><div class="card rv"><div class="cnum">02</div><h3>Check your public site</h3><p>Open the Form Configuration tab. Its site checker confirms your public form site is set up and active, and the built-in instructions walk you through anything missing.</p></div><div class="card rv"><div class="cnum">03</div><h3>Grant guest access</h3><p>Guest visitors submit through a dedicated least-privilege permission set, so you decide exactly which objects and fields a public form can write to.</p></div><div class="card rv"><div class="cnum">04</div><h3>Design the form</h3><p>Drag questions into the Form Builder and choose the standard or custom object each submission should create or update. No code required.</p></div><div class="card rv"><div class="cnum">05</div><h3>Publish and share</h3><p>Publish the form to your Salesforce Site and share its public link on your website, in an email or in a QR code.</p></div><div class="card rv"><div class="cnum">06</div><h3>Submissions become records</h3><p>Anonymous visitors fill in the form, and the record is created or updated in your org, ready for your Flows, reports and list views.</p></div></div></div></section>
+
+<section id="features" style="background:#FEF8E7"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>04</b> Features</div>
+<h2>What is in the package.</h2><p class="lead">Everything below ships in the free managed package.</p></div><div class="g4"><div class="card rv"><h3 class="h4s">Drag-and-drop builder</h3><p>Design forms and surveys visually, with no code and no HTML to maintain.</p></div><div class="card rv"><h3 class="h4s">100% native</h3><p>Runs entirely on the Salesforce platform, with no external callouts and no third-party services.</p></div><div class="card rv"><h3 class="h4s">Public forms on Sites</h3><p>Publish to a Salesforce Site so anonymous visitors can submit without a login.</p></div><div class="card rv"><h3 class="h4s">Any standard or custom object</h3><p>Each form creates or updates records on the object you choose, not just Leads or Cases.</p></div><div class="card rv"><h3 class="h4s">Least-privilege guest access</h3><p>Guest access runs through a dedicated permission set that grants only what each form needs.</p></div><div class="card rv"><h3 class="h4s">Security enforced</h3><p>Respects object and field-level security on guest submissions, and runs in user mode with sharing enforced.</p></div><div class="card rv"><h3 class="h4s">Built-in setup checker</h3><p>The Form Configuration tab verifies your public site and shows step-by-step instructions.</p></div><div class="card rv"><h3 class="h4s">Free</h3><p>Listed as free on AppExchange. It never requires payment, and there is no paid tier.</p></div></div></div></section>
+
+<section style="background:#FFFFFF"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>05</b> Inside the app</div>
+<h2>Built for the admin who owns the forms.</h2></div><div class="sc rv"><div class="sc-m"><div class="fig"><div class="fig-body"><img width="1600" height="900" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_1100/v1793099487/Form_Builder_Tab_caqi5g.png" alt="The Smart Forms &amp; Surveys Form Builder tab" loading="lazy" decoding="async"></div></div></div><div class="sc-c"><span class="sc-tag">Form Builder</span><h3>Design forms without writing code</h3><p>Build the form visually inside Salesforce, so changing a question is an admin task, not a development ticket.</p><ul class="tick"><li>Drag-and-drop questions and layout</li><li>Choose the object each form writes to</li><li>Create new records or update existing ones</li></ul></div></div><div class="sc rv"><div class="sc-m"><div class="fig"><div class="fig-body"><img width="1600" height="900" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_1100/v1793099487/Configuration_Tab_qpq5w4.png" alt="The Form Configuration tab with the public site checker" loading="lazy" decoding="async"></div></div></div><div class="sc-c"><span class="sc-tag">Form Configuration</span><h3>Know your public site is ready</h3><p>Before a form goes live, the Form Configuration tab checks that your public form site exists and is active, and tells you exactly what to fix if it is not.</p><ul class="tick"><li>Site availability checker with one-click verify</li><li>Recheck after you make changes</li><li>Clear messages instead of silent failures</li></ul></div></div><div class="sc rv"><div class="sc-m"><div class="fig"><div class="fig-body"><img width="1600" height="900" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_1100/v1793099487/Instructions_oidqed.png" alt="Step-by-step setup instructions inside Smart Forms &amp; Surveys" loading="lazy" decoding="async"></div></div></div><div class="sc-c"><span class="sc-tag">Instructions</span><h3>Setup steps, built into the app</h3><p>The instructions sit next to the checker, so a first-time setup does not mean searching through documentation.</p><ul class="tick"><li>Step-by-step guidance in Salesforce</li><li>Written for admins, not developers</li><li>Available whenever you set up a new org</li></ul></div></div></div></section>
+
+<section id="security" style="background:#EAF6F0"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>06</b> Security</div>
+<h2>Your data never leaves Salesforce.</h2><p class="lead">Most form tools collect the answers on their own servers and then send them to your CRM. Smart Forms &amp; Surveys does not. The form is hosted on your Salesforce Site and the submission is written straight to your org.</p></div><div class="sec-grid"><div class="sq rv"><span class="sq-ic">&#10003;</span><div><h3 class="h4s">Fully native</h3><p>Forms are built, hosted and submitted inside Salesforce. There is no external data transfer.</p></div></div><div class="sq rv"><span class="sq-ic">&#10003;</span><div><h3 class="h4s">No external callouts</h3><p>No OAuth tokens and no third-party servers, so there is no extra vendor holding access to your data.</p></div></div><div class="sq rv"><span class="sq-ic">&#10003;</span><div><h3 class="h4s">Least-privilege guest access</h3><p>Anonymous visitors submit through a dedicated permission set that grants only what each form needs.</p></div></div><div class="sq rv"><span class="sq-ic">&#10003;</span><div><h3 class="h4s">Object and field-level security</h3><p>Guest submissions respect your object and field permissions, and the app runs in user mode with sharing enforced.</p></div></div></div><p class="lead rv" style="margin:40px auto 0;text-align:center;max-width:72ch">Public forms are open to anyone with the link, so give the guest permission set access only to the objects and fields your forms need.</p></div></section>
+
+<section class="band" style="background:var(--ink)"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>07</b> Benefits</div>
+<h2>What changes when forms live in Salesforce.</h2><p class="lead">The value is not just a new form. It is the manual work and the extra tools that disappear.</p></div><div class="bg3"><div class="bn rv"><span class="bn-k">Speed</span><h3 class="h4s">Answers arrive as records</h3><p>Registrations, applications and enquiries land in Salesforce the moment they are submitted, ready for follow-up.</p></div><div class="bn rv"><span class="bn-k">Effort</span><h3 class="h4s">No copy and paste</h3><p>No exports, imports or re-typing from another tool, and none of the errors that come with them.</p></div><div class="bn rv"><span class="bn-k">Cost</span><h3 class="h4s">Nothing to pay</h3><p>Free to install and use, with no per-submission or per-form charges.</p></div><div class="bn rv"><span class="bn-k">Security</span><h3 class="h4s">One less vendor</h3><p>With no third-party form service in the path, your data stays under Salesforce security.</p></div><div class="bn rv"><span class="bn-k">Fit</span><h3 class="h4s">Works with your process</h3><p>Submissions write to the objects you already use, so existing Flows, reports and list views just work.</p></div><div class="bn rv"><span class="bn-k">Control</span><h3 class="h4s">Admins own the forms</h3><p>Changing a question or adding a form is done in the builder, without a developer.</p></div></div></div></section>
+
+<section style="background:#FFFFFF"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>08</b> Comparison</div>
+<h2>Native forms versus the usual options.</h2></div><div class="tw rv"><table class="tbl"><thead><tr><th><span class="sr">Feature</span></th><th>Web-to-Lead / Web-to-Case</th><th>Third-party form builders</th><th>Smart Forms &amp; Surveys</th></tr></thead><tbody><tr><th scope="row">Cost</th><td>Included with Salesforce</td><td>Usually a paid plan</td><td>Free</td></tr><tr><th scope="row">Form builder</th><td>No, generates basic HTML</td><td>Yes</td><td>Yes, drag-and-drop</td></tr><tr><th scope="row">Objects it can write to</th><td>Leads or Cases</td><td>Depends on the connector</td><td>Any standard or custom object</td></tr><tr><th scope="row">Update existing records</th><td>No</td><td>Varies</td><td>Yes</td></tr><tr><th scope="row">Where the form is hosted</th><td>Your own website</td><td>The vendor's servers</td><td>Your Salesforce Site</td></tr><tr><th scope="row">Third-party server in the path</th><td>No</td><td>Yes</td><td>No</td></tr><tr><th scope="row">Surveys</th><td>No</td><td>Yes</td><td>Yes</td></tr></tbody></table>
+<p class="tbl-note">Based on publicly documented features as of October 2026.</p></div><div class="pick"><div class="card rv"><h3 class="h4s">Already using Google Forms?</h3><p>Keep your forms where they are and send every response into Salesforce with <a href="/products/google-form-auto-sync">Google Form Auto Sync</a>, our other free native app.</p></div><div class="card rv"><h3 class="h4s">Want the form inside Salesforce?</h3><p>Build, host and manage the form in your own org with Smart Forms &amp; Surveys, with no Google account or outside service involved.</p></div></div></div></section>
+
+<section style="background:#EDF3FD"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>09</b> Who it is for</div>
+<h2>Any team that collects information from people outside Salesforce.</h2></div><div class="g3"><div class="card rv np-card"><h3 class="h4s">Nonprofits</h3><p>Public forms that write to the objects your programmes already use.</p><ul class="tick np-list"><li>Volunteer sign-ups</li><li>Programme and grant applications</li><li>Client and beneficiary intake</li><li>Event registrations</li><li>Donor and supporter feedback surveys</li><li>Contact and enquiry forms</li></ul></div><div class="card rv"><h3 class="h4s">Sales and marketing</h3><p>Capture leads from your website and landing pages straight into Salesforce, ready for assignment and follow-up.</p></div><div class="card rv"><h3 class="h4s">Events</h3><p>Run registration forms that create records as people sign up, so organisers always see an up-to-date list.</p></div><div class="card rv"><h3 class="h4s">Customer feedback</h3><p>Send surveys after a purchase, a support case or an event, and report on the answers in Salesforce.</p></div><div class="card rv"><h3 class="h4s">HR and recruiting</h3><p>Collect job and internship applications as records your team can review and track.</p></div><div class="card rv"><h3 class="h4s">Operations</h3><p>Turn intake and request forms into structured records instead of emails and spreadsheets.</p></div></div></div></section>
+
+<section id="faq" style="background:#FEF8E7"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>10</b> FAQ</div>
+<h2>The questions admins ask first.</h2></div><div class="faq-list"><details class="rv"><summary>Is there a free form builder for Salesforce?</summary><p>Yes. Smart Forms &amp; Surveys is a free, native app on the Salesforce AppExchange. It never requires payment, and it lets admins build public web forms and surveys with a drag-and-drop builder, with no code.</p></details><details class="rv"><summary>Do people need a Salesforce login to fill in a form?</summary><p>No. Forms are published on a Salesforce Site, so anonymous visitors can open the public link and submit without logging in. Guest access runs through a dedicated least-privilege permission set.</p></details><details class="rv"><summary>Which Salesforce objects can a form write to?</summary><p>Any standard or custom object. A submission can create a new record or update an existing one, so the same tool works for Leads, Contacts, Cases, custom application objects and more.</p></details><details class="rv"><summary>Does any form data leave Salesforce?</summary><p>No. Smart Forms &amp; Surveys runs entirely on the Salesforce platform. There are no external callouts, no OAuth tokens and no third-party servers, so submissions go straight from your Salesforce Site into your org.</p></details><details class="rv"><summary>How are guest submissions kept secure?</summary><p>Guest access runs through a dedicated least-privilege permission set. Submissions respect object and field-level security, and the app runs in user mode with sharing enforced, so a guest can only write what you have allowed.</p></details><details class="rv"><summary>Do I need a developer to set it up?</summary><p>No. Forms are designed in a drag-and-drop builder, and the Form Configuration tab checks that your public site is ready and shows step-by-step instructions for anything that is missing. A Salesforce admin can do the whole setup.</p></details><details class="rv"><summary>What can I use Smart Forms &amp; Surveys for?</summary><p>Lead capture, event registration, surveys, feedback, intake and application forms, and any other form where the answers belong in Salesforce.</p></details><details class="rv"><summary>Should I use Smart Forms &amp; Surveys or Google Form Auto Sync?</summary><p>If your team already builds forms in Google Forms and wants the responses in Salesforce, use Google Form Auto Sync. If you want the form itself to live on Salesforce, built and hosted in your own org with no Google account involved, use Smart Forms &amp; Surveys. Both are free.</p></details><details class="rv"><summary>How much does Smart Forms &amp; Surveys cost?</summary><p>Nothing. It is listed as free on AppExchange and never requires payment.</p></details></div></div></section>
+
+<section id="get"><div class="wrap"><div class="ctab rv">
+<img width="240" height="240" class="ctab-logo" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_240/v1793101300/Smart_Forms_Surveys_Tr_cln7sv.png" alt="Smart Forms &amp; Surveys logo" loading="lazy" decoding="async">
+<h2>Native Salesforce forms, without another vendor.</h2><p>Install Smart Forms &amp; Surveys from the Salesforce AppExchange and publish your first public form today.</p>
+<a class="btn btn-p" href="https://appexchange.salesforce.com/appxListingDetail?listingId=852a8a41-e28c-4dac-a90a-9c8a16a1054d" target="_blank" rel="noopener">Get it on AppExchange</a>
+<p class="ctaf">Free managed package &middot; Never requires payment &middot; Published by TwinStack Solutions</p></div></div></section>
+
+<section style="background:#FFFFFF"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>11</b> From TwinStack</div>
+<h2>Our other AppExchange products.</h2>
+<p class="lead">Native apps built around the same idea: less manual work between your data and your Salesforce org.</p></div>
+<div class="op-grid"><a class="op rv" href="https://twinstack.net/products/google-form-auto-sync"><div class="op-top"><span class="op-n">01</span><span class="op-logo"><img src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_160/v1788339177/Google_sync_zxk6ny.png" alt="Google Form Auto Sync logo" width="160" height="160" loading="lazy" decoding="async"></span></div><div class="op-b"><h3>Google Form Auto Sync</h3><p class="tg">Responses, straight into Salesforce.</p><div class="chips"><span class="chip">5.0 &#9733;</span><span class="chip">Free</span><span class="chip">Live</span></div><ul><li>Real-time sync on form submission</li><li>100% native, no middleware</li><li>No Google Sheets in the path</li><li>No third-party server in the path</li></ul><span class="go">View product &rarr;</span></div></a><a class="op rv" href="https://twinstack.net/products/smart-lookup-data-loader"><div class="op-top"><span class="op-n">02</span><span class="op-logo"><img src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_160/v1788420787/Untitled_design_20_daquoh.png" alt="Smart Lookup Data Loader logo" width="160" height="160" loading="lazy" decoding="async"></span></div><div class="op-b"><h3>Smart Lookup Data Loader</h3><p class="tg">Import smarter. Map faster.</p><div class="chips"><span class="chip">5.0 &#9733;</span><span class="chip">Free</span><span class="chip">Live</span></div><ul><li>CSV import with upserts and dynamic lookups</li><li>Auto-mapping of CSV headers to fields</li><li>Multi-field matching prevents duplicates</li><li>Row-level error reporting</li></ul><span class="go">View product &rarr;</span></div></a><a class="op rv" href="https://twinstack.net/products/who-sees-what"><div class="op-top"><span class="op-n">03</span><span class="op-logo"><img src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_160/v1788419416/Who_Sees_What_vy8udv.png" alt="Who Sees What logo" width="160" height="160" loading="lazy" decoding="async"></span></div><div class="op-b"><h3>Who Sees What</h3><p class="tg">Why can this user see that?</p><div class="chips"><span class="chip">Free</span><span class="chip">Live</span></div><ul><li>Start from a user, not a permission set</li><li>See every object, field and record</li><li>Shows the exact rule that granted access</li><li>Read-only and fully native</li></ul><span class="go">View product &rarr;</span></div></a></div></div></section>
+
+<section id="blog" style="background:#FBFBFD"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>12</b> Related reading</div>
+<h2>More on forms and Salesforce.</h2><p class="lead">Guides from our team on getting form data into Salesforce the right way.</p></div>
+<div class="g3"><a class="post rv" href="/blog/google-forms-vs-web-to-lead"><div class="pf"><img width="700" height="467" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_700/v1789121157/05.1_xwn3b6.png" alt="Google Forms vs Web-to-Lead: which should you use?" loading="lazy" decoding="async"></div><div class="post-b"><span class="post-t">Comparison</span><h3 class="h4s">Google Forms vs Web-to-Lead: which should you use?</h3><p>Cost, objects, limits and spam, compared honestly.</p></div></a><a class="post rv" href="/blog/google-forms-salesforce-methods-compared"><div class="pf"><img width="700" height="467" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_700/v1789121159/09.1_eutyxe.png" alt="Every way to get form data into Salesforce, compared" loading="lazy" decoding="async"></div><div class="post-b"><span class="post-t">Guide</span><h3 class="h4s">Every way to get form data into Salesforce, compared</h3><p>Zapier, connectors, Web-to-Lead, custom code and native apps.</p></div></a><a class="post rv" href="/blog/google-forms-to-salesforce-nonprofits-npsp"><div class="pf"><img width="700" height="467" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_700/v1789121157/04.2_fp5bzf.png" alt="Capturing volunteer and programme data in Salesforce" loading="lazy" decoding="async"></div><div class="post-b"><span class="post-t">Nonprofits</span><h3 class="h4s">Capturing volunteer and programme data in Salesforce</h3><p>Intake, sign-ups and programme forms for NPSP and Nonprofit Cloud.</p></div></a></div><div class="ts-more-posts" style="display:flex;justify-content:center;margin-top:2.25rem"><a class="btn btn-s" href="/blog">Read all articles &rarr;</a></div></div></section>
+
+<footer><div class="wrap ft"><div class="ft-l">
+<img width="96" height="96" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_96/v1793101300/Smart_Forms_Surveys_Tr_cln7sv.png" alt="Smart Forms &amp; Surveys logo" loading="lazy" decoding="async">
+<span>Smart Forms &amp; Surveys by TwinStack Solutions</span></div>
+<div class="ft-links"><a href="https://twinstack.net">Twinstack</a><a href="/about">About</a><a href="/blog">Blogs</a><a href="https://twinstack.net/case-studies">Case Studies</a><a href="/pricing">Pricing</a><a href="/contact">Contact</a><a href="/privacy-policy">Privacy Policy</a>
+<a href="/trust-center">Trust Center</a>
+</div><span class="ft-c">&copy; 2026 TwinStack Solutions</span></div></footer>
+
+<script>document.documentElement.className+=' js';
+(function(){var n=document.getElementById('nav'),t=0;
+function u(){n.classList.toggle('docked',(window.scrollY||document.documentElement.scrollTop)>26);t=0}
+window.addEventListener('scroll',function(){if(!t){requestAnimationFrame(u);t=1}},{passive:true});u();
+if('IntersectionObserver' in window){var o=new IntersectionObserver(function(e){e.forEach(function(x){
+if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.06});
+var a=document.querySelectorAll('.rv');for(var i=0;i<a.length;i++){a[i].style.transitionDelay=(i%3)*70+'ms';o.observe(a[i])}}
+else{var b=document.querySelectorAll('.rv');for(var j=0;j<b.length;j++)b[j].classList.add('in')}})();</script>
+<!--/email_off-->
+</body></html>
