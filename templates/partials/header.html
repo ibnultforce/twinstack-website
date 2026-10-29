@@ -1,96 +1,40 @@
-<header data-theme="{{ nav.appearance.header.theme }}" data-tone="{{ nav.appearance.header.tone }}" data-layout="{{ nav.appearance.header.layout }}"{{# unless nav.appearance.header.sticky }} data-sticky="false"{{/ unless }}
-        data-style="{{ nav.appearance.header.style }}"{{# if nav.appearance.header.transparent }} data-transparent="true"{{/ if }}{{# if nav.appearance.header.shrink }} data-shrink="true"{{/ if }} data-scrolled="false"
-        class="site-header group/header sticky top-0 z-50 transition-[background-color,border-color] duration-300
-               data-[sticky=false]:relative
-               data-[transparent=true]:fixed data-[transparent=true]:inset-x-0 data-[transparent=true]:data-[sticky=false]:absolute
-               data-[style=bar]:border-b data-[style=bar]:border-zinc-200/70 data-[style=bar]:bg-white/80 data-[style=bar]:backdrop-blur-xl data-[style=bar]:backdrop-saturate-150
-               data-[style=bar]:data-[theme=brand]:border-white/10 data-[style=bar]:data-[theme=brand]:bg-brand
-               data-[style=bar]:data-[theme=dark]:border-white/10 data-[style=bar]:data-[theme=dark]:bg-zinc-950/85
-               data-[style=bar]:data-[transparent=true]:data-[scrolled=false]:border-transparent data-[style=bar]:data-[transparent=true]:data-[scrolled=false]:bg-transparent
-               data-[style=bar]:data-[transparent=true]:data-[scrolled=false]:backdrop-blur-none
-               data-[style=floating]:px-3 data-[style=floating]:pt-3 sm:data-[style=floating]:px-5">
-  <div class="mx-auto flex h-16 w-full max-w-7xl items-center gap-6 px-5 sm:px-8 transition-[height,background-color,border-color,box-shadow] duration-300
-              group-data-[shrink=true]/header:group-data-[scrolled=true]/header:h-12
-              group-data-[style=floating]/header:rounded-2xl group-data-[style=floating]/header:border group-data-[style=floating]/header:border-zinc-200/80
-              group-data-[style=floating]/header:bg-white/85 group-data-[style=floating]/header:shadow-lg group-data-[style=floating]/header:shadow-zinc-950/5
-              group-data-[style=floating]/header:backdrop-blur-xl
-              group-data-[style=floating]/header:group-data-[theme=brand]/header:border-white/10 group-data-[style=floating]/header:group-data-[theme=brand]/header:bg-brand
-              group-data-[style=floating]/header:group-data-[theme=dark]/header:border-white/10 group-data-[style=floating]/header:group-data-[theme=dark]/header:bg-zinc-950/85
-              group-data-[style=floating]/header:group-data-[transparent=true]/header:group-data-[scrolled=false]/header:border-transparent
-              group-data-[style=floating]/header:group-data-[transparent=true]/header:group-data-[scrolled=false]/header:bg-transparent
-              group-data-[style=floating]/header:group-data-[transparent=true]/header:group-data-[scrolled=false]/header:shadow-none
-              group-data-[style=floating]/header:group-data-[transparent=true]/header:group-data-[scrolled=false]/header:backdrop-blur-none">
-    <a href="/" class="inline-flex shrink-0 items-center gap-2.5 text-[1.05rem] font-semibold tracking-tight text-zinc-950 no-underline group-data-[tone=dark]/header:text-white">
-      {{# if nav.appearance.header.logo }}<img src="{{ nav.appearance.header.logo }}" alt="{{ site.brand.logoText }}" class="block h-8 w-auto max-w-52 object-contain">{{ else }}
-      <img src="{{ site.brand.logoMark }}" alt="" width="28" height="28" class="size-7 rounded-lg">
-      {{ site.brand.logoText }}{{/ if }}
-    </a>
-
-    <button type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"
-            class="ml-auto inline-flex size-10 flex-col items-center justify-center gap-1 rounded-full border border-zinc-200 bg-white/70 transition hover:bg-zinc-100
-                   group-data-[tone=dark]/header:border-white/20 group-data-[tone=dark]/header:bg-white/5 group-data-[tone=dark]/header:hover:bg-white/10 lg:hidden">
-      <span class="block h-0.5 w-4 rounded-full bg-zinc-900 group-data-[tone=dark]/header:bg-white"></span>
-      <span class="block h-0.5 w-4 rounded-full bg-zinc-900 group-data-[tone=dark]/header:bg-white"></span>
-      <span class="block h-0.5 w-4 rounded-full bg-zinc-900 group-data-[tone=dark]/header:bg-white"></span>
-    </button>
-
-    <nav id="primary-nav" data-open="false" aria-label="Primary"
-         class="ml-auto lg:group-data-[layout=center]/header:flex-1 lg:group-data-[layout=left]/header:flex-1
-                max-lg:absolute max-lg:inset-x-0 max-lg:top-full max-lg:max-h-[calc(100dvh-4rem)]
-                max-lg:group-data-[style=floating]/header:inset-x-3 max-lg:group-data-[style=floating]/header:mt-2
-                max-lg:group-data-[style=floating]/header:rounded-2xl max-lg:group-data-[style=floating]/header:border sm:max-lg:group-data-[style=floating]/header:inset-x-5
-                max-lg:overflow-y-auto max-lg:border-b max-lg:border-zinc-200 max-lg:bg-white max-lg:px-5
-                max-lg:pb-8 max-lg:pt-2 max-lg:shadow-xl max-lg:shadow-zinc-950/5 max-lg:data-[open=false]:hidden
-                max-lg:group-data-[theme=brand]/header:border-white/10 max-lg:group-data-[theme=brand]/header:bg-brand
-                max-lg:group-data-[theme=dark]/header:border-white/10 max-lg:group-data-[theme=dark]/header:bg-zinc-950">
-      <ul class="flex items-center gap-1 max-lg:flex-col max-lg:items-stretch max-lg:gap-0">
-        {{# each nav.header.items }}
-        <li class="group relative lg:group-data-[layout=center]/header:first:ml-auto">
-          {{# if url }}<a href="{{ url }}"{{{ ariaCurrent }}}{{ else }}<button type="button" aria-haspopup="true"{{/ if }}
-             class="inline-flex items-center gap-1.5 rounded-full px-3.5 py-2 text-sm font-medium
-                    text-zinc-600 no-underline transition-colors hover:bg-zinc-100 hover:text-zinc-950
-                    aria-[current=page]:bg-zinc-100 aria-[current=page]:text-zinc-950
-                    group-data-[tone=dark]/header:text-white/75 group-data-[tone=dark]/header:hover:bg-white/10
-                    group-data-[tone=dark]/header:hover:text-white group-data-[tone=dark]/header:aria-[current=page]:bg-white/10
-                    group-data-[tone=dark]/header:aria-[current=page]:text-white
-                    max-lg:flex max-lg:w-full max-lg:rounded-none max-lg:border-b max-lg:border-zinc-100 max-lg:px-0 max-lg:py-3.5
-                    max-lg:text-base max-lg:hover:bg-transparent max-lg:aria-[current=page]:bg-transparent
-                    max-lg:group-data-[tone=dark]/header:border-white/10">
-            {{ label }}
-            {{# if hasChildren }}<svg viewBox="0 0 10 6" aria-hidden="true" class="size-2.5 opacity-50 transition-transform group-hover:rotate-180 max-lg:hidden"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>{{/ if }}
-          {{# if url }}</a>{{ else }}</button>{{/ if }}
-          {{# if hasChildren }}
-          <ul class="lg:invisible lg:absolute lg:left-0 lg:top-full lg:z-50 lg:min-w-72 lg:translate-y-1 lg:rounded-2xl
-                     lg:border lg:border-zinc-200/80 lg:bg-white lg:p-2 lg:opacity-0 lg:shadow-2xl lg:shadow-zinc-950/10
-                     lg:ring-1 lg:ring-zinc-950/5 lg:transition lg:duration-200
-                     lg:group-hover:visible lg:group-hover:translate-y-0 lg:group-hover:opacity-100
-                     lg:group-focus-within:visible lg:group-focus-within:translate-y-0 lg:group-focus-within:opacity-100
-                     max-lg:pb-2 max-lg:pl-4">
-            {{# each children }}
-            <li>
-              <a href="{{ url }}" class="block rounded-xl px-3.5 py-2.5 text-sm font-medium text-zinc-900 no-underline transition-colors hover:bg-zinc-50 max-lg:px-0 max-lg:py-2
-                                         max-lg:group-data-[tone=dark]/header:text-white/75 max-lg:group-data-[tone=dark]/header:hover:bg-transparent
-                                         max-lg:group-data-[tone=dark]/header:hover:text-white">
-                {{ label }}
-                {{# if description }}<span class="mt-0.5 block text-[0.8rem] font-normal text-zinc-500 max-lg:hidden">{{ description }}</span>{{/ if }}
-              </a>
-            </li>
-            {{/ each }}
-          </ul>
-          {{/ if }}
-        </li>
-        {{/ each }}
-        {{# if nav.header.cta }}
-        <li class="max-lg:mt-6 lg:ml-3 lg:group-data-[layout=center]/header:ml-auto lg:group-data-[layout=left]/header:ml-auto">
-          <a href="{{ nav.header.cta.url }}"
-             class="inline-flex items-center justify-center gap-2 rounded-full bg-zinc-950 px-5 py-2.5 text-sm font-semibold text-white no-underline shadow-sm shadow-zinc-950/20 transition hover:-translate-y-px hover:bg-zinc-800 hover:shadow-md
-                    group-data-[tone=dark]/header:bg-white group-data-[tone=dark]/header:text-zinc-950 group-data-[tone=dark]/header:hover:bg-zinc-100
-                    max-lg:w-full max-lg:py-3">{{ nav.header.cta.label }}</a>
-        </li>
-        {{ else }}
-        <li role="presentation" class="hidden lg:group-data-[layout=center]/header:block lg:ml-auto"></li>
-        {{/ if }}
-      </ul>
+<!-- Copied from choosing-a-nonprofit-salesforce-consultant.html by scripts/edit-page.js --with-header: fixed HTML, so the menu settings don't change it. Convert again, or restore the standard header, to change it. -->
+<div class="imported-chrome imp-scroll-smooth imp-font-sans imp-antialiased imp-text-slate-800" data-designed="copied" data-chrome-id="8285304bf3" data-chrome-from="choosing-a-nonprofit-salesforce-consultant.html" data-chrome-key="31a72ce7cc3fe9d8">
+<link rel="stylesheet" href="/assets/css/imported/chrome-8285304bf3.css">
+<nav id="navbar" class="imp-fixed imp-z-50 imp-top-6 imp-left-1/2 imp--translate-x-1/2 imp-w-[95%] imp-max-w-7xl imp-rounded-2xl imp-bg-white imp-border imp-border-slate-100 imp-shadow-2xl imp-flex imp-justify-between imp-items-center imp-px-6 imp-lg:px-8 imp-h-20 imp-transition-all imp-duration-300">
+        <a href="/" class="imp-flex-shrink-0 imp-flex imp-items-center imp-gap-2">
+            <img width="100" height="100" src="https://res.cloudinary.com/du42kbmmn/image/upload/w_100,f_auto,q_auto/v1769165197/Black_White_Minimalist_Professional_Initial_Logo_1_eoam8g.png" alt="TwinStack Logo" class="imp-h-14 imp-w-auto">
+            <span class="imp-font-bold imp-text-2xl imp-tracking-tight imp-block imp-ts-wm"><span class="imp-ts-wm-top"><span class="imp-text-[#343453]">Twin</span><span class="imp-color-shift-text">Stack</span></span><span class="imp-ts-wm-sub">Solutions</span></span>
+        </a>
+        <div class="imp-hidden imp-md:flex imp-space-x-8 imp-items-center imp-ts-nav-links">
+            <a href="/pricing.html" class="imp-text-slate-600 imp-hover:text-brand-600 imp-font-medium imp-transition">Pricing</a>
+            <div class="imp-ts-dd"><a href="/services.html" class="imp-text-slate-600 imp-hover:text-brand-600 imp-font-medium imp-transition" aria-haspopup="true">Products &amp; Services<svg class="imp-ts-dd-car" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg></a><div class="imp-ts-dd-menu"><a href="/products.html">Products<small>Free native AppExchange apps</small></a><a href="/services.html">Services<small>Consulting, nonprofits, Tableau and more</small></a><a href="/#pdo-journey">Expertise<small>Our path from strategy to AppExchange</small></a></div></div>
+            <a href="/case-studies.html" class="imp-text-slate-600 imp-hover:text-brand-600 imp-font-medium imp-transition">Case Studies</a>
+            <a href="/blog.html" class="imp-text-brand-600 imp-font-bold imp-transition">Blog</a>
+            <a href="/cost-estimator.html" class="imp-ts-btn-outline">Cost Estimator</a>
+            <a href="/contact.html" class="imp-px-5 imp-py-2.5 imp-rounded-full imp-bg-brand-600 imp-text-white imp-font-semibold imp-hover:bg-brand-900 imp-transition imp-shadow-lg">Contact Us</a>
+        </div>
+        <div class="imp-md:hidden imp-flex imp-items-center">
+            <button id="mobile-menu-btn" class="imp-text-slate-600 imp-p-2"><svg class="imp-svgi imp-text-2xl" aria-hidden="true"><use href="#i-bars" /></svg></button>
+        </div>
     </nav>
-  </div>
-</header>
+<div id="mobile-menu" class="imp-fixed imp-inset-y-0 imp-right-0 imp-w-64 imp-bg-white/95 imp-backdrop-blur-xl imp-shadow-2xl imp-z-[60] imp-flex imp-flex-col imp-p-6 imp-transition-transform imp-duration-300 imp-translate-x-full imp-md:hidden">
+        <div class="imp-flex imp-justify-end imp-mb-8"><button id="close-menu-btn" class="imp-text-slate-500"><svg class="imp-svgi imp-text-2xl" aria-hidden="true"><use href="#i-times" /></svg></button></div>
+        <div class="imp-flex imp-flex-col imp-space-y-6">
+            <a href="/" class="imp-text-lg imp-font-medium imp-text-slate-800 imp-hover:text-brand-600">Home</a>
+            <a href="/about.html" class="imp-text-lg imp-font-medium imp-text-slate-800 imp-hover:text-brand-600">About</a>
+            <a href="/pricing.html" class="imp-text-lg imp-font-medium imp-text-slate-800 imp-hover:text-brand-600">Pricing</a>
+            <a href="/products.html" class="imp-text-lg imp-font-medium imp-text-slate-800 imp-hover:text-brand-600">Products</a>
+            <a href="/services.html" class="imp-text-lg imp-font-medium imp-text-slate-800 imp-hover:text-brand-600">Services</a>
+            <a href="/#pdo-journey" class="imp-text-lg imp-font-medium imp-text-slate-800 imp-hover:text-brand-600">Expertise</a>
+            <a href="/case-studies.html" class="imp-text-lg imp-font-medium imp-text-slate-800 imp-hover:text-brand-600">Case Studies</a>
+            <a href="/blog.html" class="imp-text-lg imp-font-medium imp-text-brand-600 imp-font-bold">Blog</a>
+            <a href="/cost-estimator.html" class="imp-ts-btn-outline-block">Cost Estimator</a>
+            <a href="/contact.html" class="imp-px-5 imp-py-3 imp-rounded-lg imp-bg-brand-600 imp-text-white imp-text-center imp-font-semibold">Contact Us</a>
+        </div>
+    </div>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="i-bars" viewBox="0 0 512 512"><path d="M48 96h416v56H48zm0 132h416v56H48zm0 132h416v56H48z"/></symbol><symbol id="i-times" viewBox="0 0 512 512"><path d="M312 256l142 142-56 56-142-142-142 142-56-56 142-142L58 114l56-56 142 142L398 58l56 56z"/></symbol><symbol id="i-linkedin-in" viewBox="0 0 512 512"><path d="M56 168v312h94V168zm47-136a54 54 0 100 108 54 54 0 000-108zm139 136v312h94V318c0-48 24-72 60-72s54 24 54 72v162h94V300c0-90-48-138-118-138-54 0-78 30-92 51v-45z"/></symbol><symbol id="i-youtube" viewBox="0 0 512 512"><path d="M488 176c-6-34-26-54-60-58C376 112 256 112 256 112s-120 0-172 6c-34 4-54 24-60 58-6 40-6 80-6 80s0 40 6 80c6 34 26 54 60 58 52 6 172 6 172 6s120 0 172-6c34-4 54-24 60-58 6-40 6-80 6-80s0-40-6-80zM208 336V176l144 80z"/></symbol></svg>
+</div>
+<div data-chrome-spacer aria-hidden="true"></div>
+<a hidden data-chrome-page href="/blog/choosing-a-nonprofit-salesforce-consultant.html"></a>
+<script>(function(){var me=document.currentScript,home=me.previousElementSibling,w=home.previousElementSibling,spacer=null;if(w&&w.hasAttribute('data-chrome-spacer')){spacer=w;w=w.previousElementSibling;}var source=function(){return document.querySelector('.imported-page[data-chrome-source="8285304bf3"]');};function size(){if(!spacer||window.scrollY>40)return;var b=0;Array.prototype.forEach.call(w.querySelectorAll('*'),function(e){var p=getComputedStyle(e).position;if(p!=='fixed'&&!(p==='absolute'&&(e.offsetParent===document.body||e.offsetParent===null)))return;var r=e.getBoundingClientRect();if(!r.height||r.left>=innerWidth||r.right<=0||r.top>120)return;if(r.bottom>b)b=r.bottom;});spacer.style.height=Math.ceil(b)+'px';}size();addEventListener('load',size);addEventListener('resize',size);document.addEventListener('DOMContentLoaded',function(){if(source())return;Array.prototype.forEach.call(w.querySelectorAll('a[href^="#"]'),function(a){var id=a.getAttribute('href').slice(1);if(id&&!document.querySelector('[id="'+id.replace(/["\\]/g,'\\$&')+'"]'))a.setAttribute('href',home.getAttribute('href')+'#'+id);});});})();</script>
