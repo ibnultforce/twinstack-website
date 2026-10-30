@@ -146,3 +146,13 @@ Written automatically: one line per change Claude made to this site that was kep
   - Added five FAQ items after "Which Salesforce objects can a form write to?" covering setup time, conditional questions, per-form required fields, visitor preview and submissions.
   - Added a FAQPage JSON-LD script reflecting the updated FAQ.
   - In the Who Sees What card, set the new tagline and replaced the four bullets with the new list.
+- 2026-10-30 · page:edit · content/pages/products-who-sees-what.md · In the "Video demo" section (id demo) only, switch the video to https://www.youtube.com/watch?v=XyccxBfXn28 (video id XyccxBfXn28). Replace every use of the ol…
+  - Replaced the video id in the "Video demo" section (id demo) from EdWwq7jD3Sg to XyccxBfXn28 on the player's data-id.
+  - Updated the player thumbnail to https://i.ytimg.com/vi/XyccxBfXn28/maxresdefault.jpg and the hqdefault fallback in onerror to the new id.
+  - Changed the "Watch on YouTube" link to https://youtu.be/XyccxBfXn28 and set data-title to the neutral "Who Sees What video demo".
+  - Rewrote the intro lead from "A four-minute tour:" to "A short tour:"; the chapter list timings and labels were left as they were.
+- 2026-10-30 · page:edit · content/pages/products-who-sees-what.md · In the Video demo section only, replace the chapter list (ol.imp-vd-list) with exactly these 13 chapters, keeping the same markup per item (<li><button type="b…
+  - Replaced the 14-item chapter list in the Video demo section's `ol.imp-vd-list` with 13 new chapters.
+  - Set new jump timestamps and labels, e.g. 0:17 "Meet Who Sees What" and 1:38 "Granted by: the exact rule".
+  - Kept the existing `<li><button data-t="…"><time><span>` markup so click-to-jump still works; quotes in labels escaped as `&quot;` and the separator as `&middot;`.
+  - Removed old chapters including "Org overview at a glance", "Share a link to the exact view" and "Get it free on AppExchange".
