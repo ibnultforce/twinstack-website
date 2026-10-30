@@ -1,5 +1,5 @@
 {
-  "name": "My Website",
+  "name": "Twinstack",
   "shortName": "My Website",
   "url": "https://example.com",
   "tagline": "",
@@ -13,7 +13,7 @@
     "logoText": "My Website",
     "logo": "",
     "logoDark": "",
-    "logoMark": "/assets/img/logo-mark.svg",
+    "logoMark": "/assets/img/brand/black-white-minimalist-professional-initial-logo.png",
     "favicon": "",
     "defaultOgImage": "/assets/img/og-default.svg"
   },
