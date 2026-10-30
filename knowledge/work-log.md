@@ -1,13 +1,148 @@
 # Work log
 
 Written automatically: one line per change Claude made to this site that was kept, oldest first. Claude reads this before every request so new work stays consistent with earlier work. Older lines move to knowledge/archive/. Standing decisions belong in knowledge/notes.md, not here.
-- 2026-10-29 · page:convert · content/pages/blog-choosing-a-nonprofit-salesforce-consultant.md · converted choosing-a-nonprofit-salesforce-consultant.html into the page, keeping its styles
-  - Replaced the page body with the HTML from choosing-a-nonprofit-salesforce-consultant.html, copied as-is with its styling.
-  - Removed the navigation and footer from the imported HTML.
-  - Saved the imported HTML's 209 CSS rules as assets/css/imported/blog-choosing-a-nonprofit-salesforce-consultant.css and linked it via the stylesheet field.
-  - Set metaTitle, metaDescription, focusKeyword, hideCta, script settings, and body/HTML classes, keeping only page-identifying fields.
-- 2026-10-29 · page:convert · content/pages/trust-center.md · converted trust-center.html into the page, keeping its styles
-  - Replaced the page body with the trust-center.html markup copied as-is; removed the old body and content fields.
-  - Added frontmatter fields metaTitle, metaDescription, focusKeyword, stylesheet, hideCta, ownChrome and the scripts list pointing to the imported JS files.
-  - Set scriptHtmlClass to scroll-smooth and scriptBodyClass to font-sans antialiased text-slate-800.
-  - Saved the page's 294 CSS rules, scoped to this page, in assets/css/imported/trust-center.css and linked it via the stylesheet field.
+- 2026-10-30 · page:convert · content/pages/pricing.md · converted pricing.html into the page, keeping its styles
+  - Replaced the page body with the full HTML from pricing.html, keeping the original markup and styling intact.
+  - Saved its 389 CSS rules, scoped to this page, as assets/css/imported/pricing.css and pointed the new `stylesheet` field at it.
+  - Rewrote `title`, `description`, `metaTitle`, `metaDescription` and `focusKeyword`, and set `hideCta` and `ownChrome` to true.
+  - Added four entries under `scripts` plus `scriptHtmlClass` and `scriptBodyClass` for the imported inline and analytics scripts.
+- 2026-10-30 · page:convert · content/pages/privacy-policy.md · converted privacy-policy.html into the page, keeping its styles
+  - Replaced the page body with the full HTML from privacy-policy.html, kept its own styling (24,710 characters).
+  - Saved the page's 294 CSS rules, scoped to this page, as assets/css/imported/privacy-policy.css and linked it via the stylesheet field.
+  - Kept slug, url and order, and set new title, description, metaTitle, metaDescription, focusKeyword, hideCta and ownChrome fields.
+  - Added the imported page's three script entries and set scriptHtmlClass to scroll-smooth and scriptBodyClass to font-sans antialiased text-slate-800.
+- 2026-10-30 · page:convert · content/pages/products.md · converted products.html into the page, keeping its styles
+  - Replaced the products page body with the HTML from products.html, copied as-is.
+  - Moved the imported page CSS (308 rules) to assets/css/imported/products.css, referenced via the new `stylesheet` frontmatter field.
+  - Set new frontmatter: shortened `title`, added `metaTitle`, `metaDescription`, `focusKeyword`, and removed the placeholder `description`.
+  - Added `hideCta` and `ownChrome` flags, HTML/body classes (`scroll-smooth`, `font-sans antialiased text-slate-800`), and three `scripts` entries for the page's inline and analytics JS.
+- 2026-10-30 · page:convert · content/pages/products-smart-forms-surveys.md · converted smart-forms-surveys.html into the page, keeping its styles
+  - Replaced the page body with the HTML of smart-forms-surveys.html copied as-is, keeping its scroll-in effect and own styling.
+  - Saved the imported page's 330 CSS rules to /assets/css/imported/products-smart-forms-surveys.css and loaded it via the `stylesheet` field.
+  - Added frontmatter fields `metaTitle`, `metaDescription`, `focusKeyword`, `fonts`, `scripts`, `hideCta` and `ownChrome`; three script entries were listed.
+  - Shortened `title` to "Free Salesforce Form Builder: Native Web Forms" and rewrote `description` to cover the native builder and record creation.
+- 2026-10-30 · page:convert · content/pages/products-who-sees-what.md · converted who-sees-what.html into the page, keeping its styles
+  - Replaced the page body with the full who-sees-what HTML copied as-is, keeping its scroll-in effect.
+  - Moved its 324 CSS rules into assets/css/imported/products-who-sees-what.css scoped to this page, linked via the new `stylesheet` field.
+  - Added frontmatter for `fonts` (Plus Jakarta Sans, Inter, JetBrains Mono), four `scripts` entries, `hideCta: true` and `ownChrome: true`.
+  - Rewrote `title` to "Who Sees What: Effective Access", expanded `description`, and added `metaTitle`, `metaDescription` and `focusKeyword`.
+- 2026-10-30 · page:convert · content/pages/services.md · converted services.html into the page, keeping its styles
+  - Replaced the page body with the HTML copied as-is from services.html, dropping the old body and content fields.
+  - Saved the imported CSS (314 rules, scoped to this page) as assets/css/imported/services.css and linked it via the `stylesheet` field.
+  - Added the three imported scripts under `scripts`, plus `hideCta`, `ownChrome`, `scriptHtmlClass` and `scriptBodyClass`.
+  - Rewrote `title` to "Salesforce Consulting Services" and set `metaTitle`, `metaDescription`, `focusKeyword` and a new `description`.
+- 2026-10-30 · page:convert · content/pages/services-appexchange-app-development.md · converted appexchange-app-development.html into the page, keeping its styles
+  - Page body replaced with the full HTML of appexchange-app-development.html, copied as-is.
+  - Page CSS (346 rules) saved to assets/css/imported/services-appexchange-app-development.css and linked via the new `stylesheet` field.
+  - Frontmatter rewritten: `title`, `description`, `metaTitle`, `metaDescription` and `focusKeyword` set; `hideCta` and `ownChrome` enabled.
+  - Four imported scripts added under `scripts` (two in head, two in body); `scriptHtmlClass` and `scriptBodyClass` set.
+- 2026-10-30 · page:convert · content/pages/services-hire-salesforce-developer.md · converted hire-salesforce-developer.html into the page, keeping its styles
+  - Replaced the page body with the HTML from hire-salesforce-developer.html, copied as-is with its own markup and styling.
+  - Saved the imported CSS (346 rules) scoped to this page as assets/css/imported/services-hire-salesforce-developer.css and set it in the `stylesheet` field.
+  - Rewrote the title and description, and added `metaTitle`, `metaDescription` and `focusKeyword` fields.
+  - Added `hideCta`, `ownChrome`, the four imported `scripts` entries and the `scriptHtmlClass`/`scriptBodyClass` fields; kept only `slug`, `url` and `order` as identifying fields.
+- 2026-10-30 · page:convert · content/pages/services-salesforce-data-migration.md · converted salesforce-data-migration.html into the page, keeping its styles
+  - Replaced the page body with the HTML markup from salesforce-data-migration.html, keeping its original styling.
+  - Moved the page's CSS (346 rules) into /assets/css/imported/services-salesforce-data-migration.css and set it as the page `stylesheet`.
+  - Rewrote frontmatter: new `title`, `description`, `metaTitle`, `metaDescription` and `focusKeyword`; kept `slug`, `url` and `order`.
+  - Added `hideCta`, `ownChrome`, `scriptHtmlClass`, `scriptBodyClass` and a `scripts` list of four imported JS files.
+- 2026-10-30 · page:convert · content/pages/services-salesforce-implementation.md · converted salesforce-implementation.html into the page, keeping its styles
+  - Replaced the page body with the full HTML from salesforce-implementation.html, copied as-is with its own styling.
+  - Added a `stylesheet` field pointing to assets/css/imported/services-salesforce-implementation.css, holding its 346 CSS rules scoped to this page.
+  - Rewrote frontmatter: kept title, slug, url and order; added description, metaTitle, metaDescription, focusKeyword, hideCta and ownChrome.
+  - Added a `scripts` list of four imported JS files (inline-1, ts-analytics, inline-2, inline-3) plus scriptHtmlClass and scriptBodyClass.
+- 2026-10-30 · page:convert · content/pages/services-salesforce-integrations.md · converted salesforce-integrations.html into the page, keeping its styles
+  - Replaced the page body with the HTML of salesforce-integrations.html, kept as-is with its own classes and styling.
+  - Saved the page's 346 CSS rules as assets/css/imported/services-salesforce-integrations.css, scoped to this page and referenced by the new stylesheet field.
+  - Added frontmatter fields metaTitle, metaDescription, focusKeyword, hideCta, ownChrome, scriptHtmlClass and scriptBodyClass, plus four scripts entries.
+  - Rewrote title and description; removed the old body and content fields, keeping only slug, url and order.
+- 2026-10-30 · page:convert · content/pages/services-salesforce-managed-services.md · converted salesforce-managed-services.html into the page, keeping its styles
+  - Replaced the page body with the full HTML of salesforce-managed-services.html, kept as-is with its original inline styling.
+  - Added a page-scoped `stylesheet` field pointing to the imported CSS file holding the 346 rules from the source page.
+  - Set new frontmatter fields: `ownChrome: true`, `hideCta: true`, `scriptHtmlClass`, `scriptBodyClass`, and a `scripts` list of four imported JS files.
+  - Rewrote `title`, `description`, `metaTitle`, `metaDescription` and added `focusKeyword`; kept `slug`, `url` and `order` unchanged.
+- 2026-10-30 · page:convert · content/pages/services-salesforce-nonprofit.md · converted salesforce-nonprofit.html into the page, keeping its styles
+  - Replaced the page body with the full HTML of salesforce-nonprofit.html, keeping its original styling.
+  - Added stylesheet pointing to /assets/css/imported/services-salesforce-nonprofit.css and a fonts entry loading Source Serif 4 from Google Fonts.
+  - Added five scripts entries (inline-1, ts-analytics, inline-2 to inline-4) with head/defer flags, plus scriptHtmlClass and scriptBodyClass.
+  - Rewrote frontmatter: new title "Salesforce Nonprofit Consulting", new description, and added metaTitle, metaDescription, focusKeyword, hideCta and ownChrome.
+- 2026-10-30 · page:convert · content/pages/services-tableau.md · converted tableau.html into the page, keeping its styles
+  - Replaced the page body with the full HTML from tableau.html, kept as-is with its original markup (22210 characters).
+  - Moved the page's CSS (314 rules) into assets/css/imported/services-tableau.css, scoped to this page, and linked it via the `stylesheet` field.
+  - Kept only the identifying fields (slug, url, order) and set new title, description, metaTitle, metaDescription and focusKeyword.
+  - Added `hideCta`, `ownChrome`, `scriptHtmlClass`/`scriptBodyClass` and six `scripts` entries pointing to the imported JS files.
+- 2026-10-30 · page:convert · content/pages/trust-center-jp.md · converted trust-center-jp.html into the page, keeping its styles
+  - Replaced the page body with the full trust-center-jp.html markup, removing the old body and content fields.
+  - Saved the page's CSS (294 rules, scoped to this page) as assets/css/imported/trust-center-jp.css and pointed the stylesheet field at it.
+  - Changed title to トラストセンター and added description, metaTitle, metaDescription and focusKeyword.
+  - Set hideCta and ownChrome to true, added three script entries, and set scriptHtmlClass/scriptBodyClass.
+- 2026-10-30 · page:convert · content/pages/blog.md · converted blog.html into the page, keeping its styles
+  - Replaced the page body with the full HTML from blog.html, including its inline styling.
+  - Added frontmatter fields for the imported CSS file, hideCta, ownChrome, body and HTML classes, and four script entries.
+  - Updated title to "Insights & Updates" and rewrote the description, adding metaTitle, metaDescription and focusKeyword.
+  - Kept slug, url, layout and order in the frontmatter; all other previous fields were removed.
+- 2026-10-30 · page:convert · content/pages/blog-how-to-run-a-salesforce-access-review.md · converted how-to-run-a-salesforce-access-review.html into the page, keeping its styles
+  - Replaced the page body with the how-to-run-a-salesforce-access-review.html markup, keeping its own styling.
+  - Removed the navigation and footer from that HTML.
+  - Saved its 179 CSS rules as assets/css/imported/blog-how-to-run-a-salesforce-access-review.css and set the new stylesheet field to it.
+  - Added hideCta, scripts and script class/removal fields; rewrote title, description, metaTitle, metaDescription and focusKeyword.
+- 2026-10-30 · page:convert · content/pages/blog-salesforce-effective-access-use-cases.md · converted salesforce-effective-access-use-cases.html into the page, keeping its styles
+  - Replaced page body with HTML content from salesforce-effective-access-use-cases.html, preserving original styling.
+  - Added stylesheet reference to imported CSS file with 179 scoped rules for this page.
+  - Added three imported scripts with specific loading configurations and HTML/body class settings.
+  - Updated title, description, and added meta fields (metaTitle, metaDescription, focusKeyword) and removed navigation/footer selectors.
+- 2026-10-30 · page:convert · content/pages/case-studies-raro-travel-booking-platform.md · converted raro-travel-booking-platform.html into the page, keeping its styles
+  - Replaced the page body with the full HTML of raro-travel-booking-platform.html, keeping its original inline styling.
+  - Saved the page's 286 CSS rules, scoped to this page, in /assets/css/imported/case-studies-raro-travel-booking-platform.css and linked it via the `stylesheet` field.
+  - Rewrote the frontmatter title, description, metaTitle, metaDescription and focusKeyword; kept slug, url and order.
+  - Added `hideCta`, `ownChrome`, `scriptHtmlClass`, `scriptBodyClass` and three imported `scripts` entries (inline-1.js, ts-analytics.js, inline-2.js).
+- 2026-10-30 · page:convert · content/pages/case-studies-riverside-community-trust.md · converted riverside-community-trust.html into the page, keeping its styles
+  - Replaced the page body with the HTML of riverside-community-trust.html copied as-is with its own styling.
+  - Added a stylesheet field pointing to assets/css/imported/case-studies-riverside-community-trust.css, holding the page's 286 scoped CSS rules.
+  - Set hideCta and ownChrome to true, and registered three imported scripts (inline-1.js, ts-analytics.js, inline-2.js) plus html/body classes.
+  - Rewrote SEO frontmatter: description, metaTitle, metaDescription and focusKeyword "NPSP data entry automation"; slug, url and order kept.
+- 2026-10-30 · page:convert · content/pages/cost-estimator.md · converted cost-estimator.html into the page, keeping its styles
+  - Replaced the page body with the HTML copied as-is from cost-estimator.html (85,425 characters), including its original styling.
+  - Added `stylesheet: /assets/css/imported/cost-estimator.css` to load the imported CSS (562 rules) scoped to this page.
+  - Rewrote `title`, `description`, `metaTitle`, `metaDescription` and `focusKeyword` for the estimator page.
+  - Added `hideCta`, `ownChrome`, `scriptHtmlClass`, `scriptBodyClass`, and a `scripts` list of four imported JS files with their head/module/defer settings.
+- 2026-10-30 · page:convert · content/pages/products-smart-lookup-data-loader.md · converted smart-lookup-data-loader.html into the page, keeping its styles
+  - Replaced the page body with the HTML from smart-lookup-data-loader.html, kept as-is with its own markup, scroll-in effect and styling.
+  - Moved the page's 324 CSS rules into a page-scoped stylesheet at /assets/css/imported/products-smart-lookup-data-loader.css, set in the stylesheet field.
+  - Added a fonts field loading one Google Fonts stylesheet (Plus Jakarta Sans, Inter, JetBrains Mono) and four scripts entries for the page's inline and analytics JS.
+  - Rewrote description, metaTitle, metaDescription and focusKeyword, and added hideCta and ownChrome set to true.
+- 2026-10-30 · page:convert · content/pages/saiful-islam.md · converted saiful-islam.html into the page, keeping its styles
+  - Replaced the page body with the HTML copied from saiful-islam.html, keeping its original styling.
+  - Rewrote title and description and added metaTitle, metaDescription and focusKeyword fields.
+  - Added stylesheet pointing to /assets/css/imported/saiful-islam.css, plus hideCta, ownChrome and scriptHtmlClass: smooth fields.
+  - Added a scripts list loading inline-1.js, ts-analytics.js, inline-2.js and inline-3.js from /assets/js/imported/saiful-islam/.
+- 2026-10-30 · page:convert · content/pages/services-agentforce-ai.md · converted agentforce-ai.html into the page, keeping its styles
+  - Replaced the page body with the full HTML of agentforce-ai.html, carried over as-is.
+  - Saved the page's CSS as assets/css/imported/services-agentforce-ai.css, scoped to this page, and set it in the `stylesheet` field.
+  - Added `metaTitle`, `metaDescription`, `focusKeyword`, `hideCta` and `ownChrome`, and rewrote `title` and `description`.
+  - Added a `scripts` list of four imported JS files and set `scriptHtmlClass` and `scriptBodyClass`.
+- 2026-10-30 · page:convert · content/pages/products-google-form-auto-sync.md · converted google-form-auto-sync.html into the page, keeping its styles
+  - Replaced the page body with the HTML from google-form-auto-sync.html, keeping its inline styling and its scroll-in effect.
+  - Added a stylesheet field pointing to /assets/css/imported/products-google-form-auto-sync.css, which holds the page's 327 CSS rules scoped to it.
+  - Added a fonts entry loading one Google Fonts stylesheet (Plus Jakarta Sans, Inter, JetBrains Mono) for the page.
+  - Set metaTitle, metaDescription, focusKeyword, hideCta and ownChrome, added four scripts entries, and replaced the old description and content fields.
+- 2026-10-30 · assistant:add-file-to-site · assets/img/uploads/sf-01-hero-form-to-record.png · Add the hero illustration to the site's images.
+- 2026-10-30 · assistant:add-file-to-site · assets/img/uploads/sf-02-setup-and-flow.png · Add the setup and flow illustration.
+- 2026-10-30 · assistant:add-file-to-site · assets/img/uploads/sf-03-builder-and-rules.png · Add the builder and rules illustration.
+- 2026-10-30 · assistant:add-file-to-site · assets/img/uploads/sf-04-submissions-trace.png · Add the submissions illustration.
+- 2026-10-30 · assistant:add-file-to-site · assets/img/uploads/sf-05-data-stays-in-salesforce.png · Add the data-stays-in-Salesforce illustration.
+- 2026-10-30 · page:edit · content/pages/products-smart-forms-surveys.md · Surgical update of hero, sections 03, 06, 08 and search text only; keep structure, classes, styles, links. Responsive on all screens. British spelling, no emoj…
+  - Frontmatter description and metaDescription both rewritten to the "free, native, no-code builder" wording.
+  - Hero paragraph reworded to "ticking fields in a no-code builder"; old screenshot, overlay chips and figure bar replaced by captioned sf-01 hero figure.
+  - Strip gains "No login for visitors" and "Conditional questions" chips in both sets; section 08 answer now reads "Yes, no-code".
+  - Section 03 split into six-card setup and five-step per-form parts with captioned sf-02 figure; section 06 gains captioned sf-05 figure and one line.
+- 2026-10-30 · page:edit · content/pages/products-smart-forms-surveys.md · Edit only sections 04 and 05; keep classes, styles, links; leave all else as is. Responsive. British spelling, no emojis/em dashes, invent nothing, no "drag-an…
+  - Section 04 card grid grew from 8 to 12 cards, adding No-code builder, Conditional questions, Visitor view preview, Submission log and Guided setup.
+  - Section 05 kept its H2; the three old screenshot blocks were replaced with two, each with a linked 1500x1000 image and a visible figcaption.
+  - First 05 block rewritten as Form Builder: H3 "Build a form by ticking fields." plus bullets on objects, per-form field rules and conditional questions.
+  - Second 05 block now covers Submissions: H3 "One link to share. Every response traced to its record." plus bullets on versions, filtering and failures.
+- 2026-10-30 · page:edit · content/pages/products-smart-forms-surveys.md · Edit only sections 10 (FAQ) and 11 (Who Sees What card); keep classes, styles, links; leave all else as is. British spelling, no em dashes, invent nothing, no…
+  - Rewrote the FAQ answers for "Is there a free form builder for Salesforce?" and "Do I need a developer to set it up?" to drop drag-and-drop wording.
+  - Added five FAQ items after "Which Salesforce objects can a form write to?" covering setup time, conditional questions, per-form required fields, visitor preview and submissions.
+  - Added a FAQPage JSON-LD script reflecting the updated FAQ.
+  - In the Who Sees What card, set the new tagline and replaced the four bullets with the new list.
