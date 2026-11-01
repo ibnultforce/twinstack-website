@@ -1,6 +1,6 @@
 {
   "name": "Twinstack",
-  "shortName": "My Website",
+  "shortName": "Twinstack",
   "url": "https://example.com",
   "tagline": "",
   "footerTagline": "",
@@ -10,7 +10,7 @@
   "foundedYear": "",
   "themeColor": "#FFFFFF",
   "brand": {
-    "logoText": "My Website",
+    "logoText": "Twinstack Solutions Limited",
     "logo": "",
     "logoDark": "",
     "logoMark": "/assets/img/brand/black-white-minimalist-professional-initial-logo.png",
@@ -109,5 +109,9 @@
     "migrations": [
       "0001-contact-phone-address-hours"
     ]
+  },
+  "analytics": {
+    "endpoint": "https://api.twinstack.net/api/collect",
+    "key": "dkk2NfGdt9XY8mWFv-p31_DV"
   }
 }
