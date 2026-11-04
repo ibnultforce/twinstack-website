@@ -44,6 +44,9 @@ const served = new Set();
       // A folder's index.html is served at the folder's address and at its own: imported pages
       // often link to /index.html, which GitHub Pages serves.
       if (item.name === 'index.html') served.add(`${prefix}/`);
+      // GitHub Pages serves about.html at /about too, so a link to /about (an imported page's or a
+      // copied header's, say) reaches it.
+      else if (item.name.endsWith('.html')) served.add(`${prefix}/${item.name.slice(0, -5)}`);
       served.add(`${prefix}/${item.name}`);
     }
   }

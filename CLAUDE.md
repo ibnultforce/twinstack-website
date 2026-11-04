@@ -587,8 +587,22 @@ to a cheaper `deepseek-*` model its proxy routes), and every use of it falls bac
   decide. The web app detects support by the literal `TWINSTACK_TASK_SIZE` in `edit-page.js`.
 - `TWINSTACK_EFFORT` (`low`/`medium`/`high`, default `high`) is the effort `edit-page.js` asks for
   when it writes a page (`askClaude`) or the header and footer (`applyChrome`). The web app passes
-  `medium` for a site's first homepage and first header and footer (on Claude Opus), which at
-  `high` spent most of their minutes thinking. Conversions' reviews keep `high`.
+  `medium` for a site's first homepage and first header and footer. Conversions' reviews keep
+  `high`.
+- `TWINSTACK_DESIGN_REVIEW` (0–3, or `--design-review[=<n>]`; the web app passes 1 for a site's
+  first homepage) makes `edit-page.js` look at the page it wrote (`reviewDesign`):
+  `lib/design-review.js` builds the site with the page in place (`build.js --proposal --out` into
+  `.git/twinstack-design-review/`), serves it on a loopback port and screenshots it in headless
+  Chrome, one screen at a time at 1280 and 390 px wide; the screenshots go to
+  `TWINSTACK_REVIEW_MODEL` (else `CLAUDE_MODEL`, at medium effort) in the same conversation, which
+  answers with `<<<<<<< FIND` / `=======` / `>>>>>>> REPLACE` fixes (or `NO CHANGES`); it's told how many
+  phone screens long the page is (past about 8, it tightens it) and to take out sample people, opening
+  hours, prices or contact details the request didn't give. The fixes are applied by
+  `applyFixes` (a FIND that isn't in the page exactly once is skipped). The fixed page must pass
+  the same checks as the first reply, or the last good version stays; each round is listed in the
+  proposal's `checks`. Edits of shared data
+  (multi-file) and conversions aren't reviewed. Without Chrome or Node 22+ it's skipped with a
+  warning, never a failure.
 - `edit-page.js` (`chromeModel`): every `--chrome` request, whatever the site's design and
   `TWINSTACK_TASK_SIZE` (a site with no design yet and a complex direction included);
   `CLAUDE_MODEL` only takes over when its result errors, is declined or fails the checks.
