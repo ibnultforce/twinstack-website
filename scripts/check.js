@@ -13,7 +13,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { ROOT, basePath, paths, loadSite, unclosedRawText } from './lib/content.js';
+import { ROOT, basePath, paths, loadSite, sameAddress, unclosedRawText } from './lib/content.js';
 import { auditPages } from './lib/seo.js';
 
 if (!fs.existsSync(paths.dist)) {
@@ -21,7 +21,7 @@ if (!fs.existsSync(paths.dist)) {
   process.exit(1);
 }
 
-const { all, site } = loadSite();
+const { all, site, data } = loadSite();
 const errors = [];
 const warnings = [];
 
@@ -85,6 +85,18 @@ for (const entry of all) {
 
   const imagesWithoutAlt = [...html.matchAll(/<img (?![^>]*\balt=)[^>]*>/g)];
   if (imagesWithoutAlt.length) warnings.push(`${entry.url}: ${imagesWithoutAlt.length} image(s) without alt`);
+}
+
+/* Scripts that would break their pages, or are set to run on a page that's gone (content/data/scripts.json) */
+const published = new Set([...all.map((entry) => sameAddress(entry.url)), sameAddress('/404.html')]);
+for (const item of Array.isArray(data.scripts?.items) ? data.scripts.items : []) {
+  if (item?.on !== true) continue;
+  // On its own: in a built page, a later </script> would seem to close it, swallowing what's between.
+  const unclosed = unclosedRawText(item.code);
+  if (unclosed) errors.push(`content/data/scripts.json: "${item.name}" has ${unclosed} that's never closed, which hides part of every page it's on`);
+  for (const page of Array.isArray(item.pages) ? item.pages : []) {
+    if (!published.has(sameAddress(page))) warnings.push(`content/data/scripts.json: "${item.name}" is set to run on ${page}, which isn't a published page`);
+  }
 }
 
 /* SEO and content hygiene */

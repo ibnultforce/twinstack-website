@@ -170,6 +170,10 @@ const noRenderCheck = Boolean(flag('no-render-check'));
 // copied as they are, on every page (buildChrome). Without these the site keeps its own.
 const withHeaderFlag = Boolean(flag('with-header'));
 const withFooterFlag = Boolean(flag('with-footer'));
+// The owner's choice for this page alone: --own-chrome keeps its header and footer on it, without the
+// site's, and --site-chrome always gives it the site's. Without either, ownChrome decides.
+const ownChromeFlag = Boolean(flag('own-chrome'));
+const siteChromeFlag = Boolean(flag('site-chrome'));
 
 const site = readJson(path.join(ROOT, 'site.config.json'));
 // The Twinstack web app passes the account's chosen model; run by hand, the site's own setting.
@@ -859,7 +863,8 @@ function siteImage(src, base = null) {
   const value = src.startsWith('//') ? `https:${src}` : src;
   if (/^https?:\/\//i.test(value)) return value;
   const relative = path.posix.normalize(value.split(/[?#]/)[0].replace(/^\/+/, '').replace(/^\.\//, ''));
-  if (!relative.startsWith('../') && relative.split('/')[0] !== '.git' && fs.existsSync(path.join(ROOT, relative))) return `/${relative}`;
+  // A file in static/ is published at the site's root, so that's the same address.
+  if (!relative.startsWith('../') && relative.split('/')[0] !== '.git' && (fs.existsSync(path.join(ROOT, relative)) || fs.existsSync(path.join(ROOT, 'static', relative)))) return `/${relative}`;
   return absoluteUrl(value, base);
 }
 
@@ -896,7 +901,7 @@ function absoluteInlineStyles(markup, base) {
 }
 
 /** Whether a root-relative path is a file in this repo. */
-const inRepo = (ref) => ref.startsWith('/') && !ref.startsWith('//') && fs.existsSync(path.join(ROOT, ref.split(/[?#]/)[0].slice(1)));
+const inRepo = (ref) => ref.startsWith('/') && !ref.startsWith('//') && [ROOT, path.join(ROOT, 'static')].some((dir) => fs.existsSync(path.join(dir, ref.split(/[?#]/)[0].slice(1))));
 
 /**
  * Downloads a stylesheet the page links from another server (a CDN's icon
@@ -1046,7 +1051,7 @@ async function buildStyledPage(source, cssFiles, relFile, jsFiles = [], chromeWa
   const { file, html } = readHtmlSource(source);
   let page = cleanHtml(html, { keepStyles: true, prefix: IMPORT_PREFIX });
   // A page whose own header or footer isn't the one the site copied keeps its own (see ownChrome).
-  const own = chromeWanted.header || chromeWanted.footer ? null : ownChrome(page);
+  const own = chromeWanted.header || chromeWanted.footer || siteChromeFlag ? null : ownChromeFlag ? 'choice' : ownChrome(page);
   if (own) page = cleanHtml(html, { keepStyles: true, prefix: IMPORT_PREFIX, keepChrome: true });
   if (!page.text && !/<(img|svg)\b/i.test(page.html)) throw new Error(`${file} has no content left once its header and footer are removed`);
   // Where the page was published: its relative images, scripts and stylesheets are still there.
@@ -1135,7 +1140,8 @@ async function buildStyledPage(source, cssFiles, relFile, jsFiles = [], chromeWa
   if (!scoped.rules) warnings.push("no CSS rules apply to this page's content, so it will show with browser default styles");
   if (scoped.css.length > MAX_IMPORTED_CSS) throw new Error(`the page's CSS is over ${MAX_IMPORTED_CSS / 1024} KB even after unused rules are removed`);
   if (page.removed.length) warnings.push(`removed from the HTML: ${page.removed.join(', ')}`);
-  if (own) warnings.push(`kept the page as it was, without the site's header and footer: its ${own} doesn't match the ones the site copied from ${ownChromeSource() ?? 'another page'}`);
+  if (own === 'choice') warnings.push("kept the page's own header and footer, as asked, without the site's");
+  else if (own) warnings.push(`kept the page as it was, without the site's header and footer: its ${own} doesn't match the ones the site copied from ${ownChromeSource() ?? 'another page'}`);
 
   // The page's own header and footer, copied as the site's (--with-header / --with-footer).
   const chrome = chromeWanted.header || chromeWanted.footer
@@ -3044,8 +3050,9 @@ if (flag('chrome')) {
   const usable =
     (mode === 'edit' ? Boolean(instruction) : mode === 'generate' ? fromHtml === undefined : typeof fromHtml === 'string') &&
     ((!markdownFlag && !flag('keep-styles') && !cssArgs.length) || mode === 'convert') &&
-    !(markdownFlag && (cssArgs.length || jsArgs.length || withHeaderFlag || withFooterFlag)) &&
-    (mode === 'convert' || (!jsArgs.length && !withHeaderFlag && !withFooterFlag));
+    !(markdownFlag && (cssArgs.length || jsArgs.length || withHeaderFlag || withFooterFlag || ownChromeFlag || siteChromeFlag)) &&
+    !(ownChromeFlag && (siteChromeFlag || withHeaderFlag || withFooterFlag)) &&
+    (mode === 'convert' || (!jsArgs.length && !withHeaderFlag && !withFooterFlag && !ownChromeFlag && !siteChromeFlag));
   if (!usable) {
     console.error(`
   Usage:
@@ -3054,6 +3061,7 @@ if (flag('chrome')) {
     node scripts/edit-page.js <page> --from-html=<file.html> [--css=<file.css>...] ["<direction>"]
                                                               copy an existing HTML page in, as it is, with its own CSS
       add --with-header and/or --with-footer to make the page's own header and footer the site's, copied as they are
+      add --own-chrome to keep them on this page only, or --site-chrome to give it the site's
     node scripts/edit-page.js <page> --from-html=<file.html> --markdown ["<direction>"]
                                                               rewrite it as markdown in the site's design instead
     node scripts/edit-page.js --chrome ["<direction>"]        design the header and footer (shown on every page)
