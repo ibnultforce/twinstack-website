@@ -2,9 +2,10 @@
 title: Gift Entry in Nonprofit Cloud
 slug: blog-nonprofit-cloud-gift-entry
 url: /blog/nonprofit-cloud-gift-entry.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_auto,q_auto/v1792143938/05-thumb-nonprofit-cloud-gift-entry_gsccdj.jpg"
 order: 50
 description: "How Gift Entry works in Nonprofit Cloud: gift entries, batches of up to 50,000, dry runs, donor matching and linking payments to existing Gift Commitments."
-metaTitle: "Nonprofit Cloud Gift Entry: Batches & Matching | My Website"
+metaTitle: "Nonprofit Cloud Gift Entry: Batches & Matching | TwinStack"
 metaDescription: "Nonprofit Cloud gift entry explained: stage gifts in batches of up to 50,000, run a dry run, match donors and link payments to existing Gift Commitments."
 focusKeyword: Nonprofit Cloud gift entry
 stylesheet: /assets/css/imported/blog-nonprofit-cloud-gift-entry.css

@@ -2,9 +2,10 @@
 title: "Onboarding and Offboarding: Verify Access Actually Changed"
 slug: blog-salesforce-onboarding-offboarding-access-verification
 url: /blog/salesforce-onboarding-offboarding-access-verification.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789469001/wsw_7.1_c4olkx.png"
 order: 50
 description: Assigning or removing permission sets is configuration, not confirmation. What to verify on both sides so a departing employee doesn't quietly keep access.
-metaTitle: "Salesforce Offboarding Access: What to Verify | My Website"
+metaTitle: "Salesforce Offboarding Access: What to Verify | TwinStack"
 metaDescription: Assigning or removing access is configuration, not confirmation. Check what a leaver's Salesforce offboarding access still allows, and verify new hires.
 focusKeyword: Salesforce offboarding access
 stylesheet: /assets/css/imported/blog-salesforce-onboarding-offboarding-access-verification.css

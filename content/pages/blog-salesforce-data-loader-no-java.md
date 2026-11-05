@@ -1,6 +1,7 @@
 ---
 slug: blog-salesforce-data-loader-no-java
 url: /blog/salesforce-data-loader-no-java.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789991887/SLDL_9.1_xeemyo.png"
 order: 50
 title: Importing Data Into Salesforce Without Java
 description: The standard Salesforce Data Loader is desktop software with a Java dependency. Here are the browser-based import options and what each one gives up in return.

@@ -2,9 +2,10 @@
 title: Salesforce Nonprofit Consulting
 slug: services-salesforce-nonprofit
 url: /services/salesforce-nonprofit.html
+ogImage: "https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?auto=format&fit=crop&crop=faces%2Cedges&q=70&w=1200&h=630"
 order: 50
 description: TwinStack implements Salesforce Nonprofit Cloud and NPSP, moves NPSP orgs to Nonprofit Cloud, and supports charities with fundraising, programmes and data.
-metaTitle: Salesforce Nonprofit Cloud & NPSP Consulting | My Website
+metaTitle: Salesforce Nonprofit Cloud & NPSP Consulting | TwinStack
 metaDescription: "Salesforce nonprofit consulting: Nonprofit Cloud and NPSP implementation, NPSP to Nonprofit Cloud migration, fundraising, programmes and support."
 focusKeyword: Salesforce nonprofit consulting
 stylesheet: /assets/css/imported/services-salesforce-nonprofit.css

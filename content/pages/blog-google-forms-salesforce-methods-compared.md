@@ -2,9 +2,10 @@
 title: "Google Forms to Salesforce: Every Method Compared"
 slug: blog-google-forms-salesforce-methods-compared
 url: /blog/google-forms-salesforce-methods-compared.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789121157/09.2_x7trzy.png"
 order: 50
 description: "Google Forms Salesforce integration comparison: Zapier, Make, Pabbly, Sheets connectors, Web-to-Lead, custom code and a free native app, honestly assessed."
-metaTitle: "Google Forms to Salesforce: 7 Methods Compared | My Website"
+metaTitle: "Google Forms to Salesforce: 7 Methods Compared | TwinStack"
 metaDescription: "Google Forms to Salesforce: seven methods compared, from manual export and Web-to-Lead to Zapier, Sheets, paid forms, custom code and native apps."
 focusKeyword: Google Forms to Salesforce
 stylesheet: /assets/css/imported/blog-google-forms-salesforce-methods-compared.css

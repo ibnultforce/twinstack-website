@@ -1,10 +1,11 @@
 ---
 slug: blog-what-is-who-sees-what
 url: /blog/what-is-who-sees-what.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789469068/wsw1.1_gvwui4.png"
 order: 50
 title: What Is Who Sees What?
 description: A free, native, read-only Salesforce app. Pick any user and see every app, object, field and record they can reach, plus the exact rule that granted each one.
-metaTitle: "Who Sees What: Free Salesforce Access App | My Website"
+metaTitle: "Who Sees What: Free Salesforce Access App | TwinStack"
 metaDescription: "Who Sees What is a free, native, read-only Salesforce app: pick any user, see every app, object, field and record they can reach, and the rule behind it."
 focusKeyword: Who Sees What
 stylesheet: /assets/css/imported/blog-what-is-who-sees-what.css

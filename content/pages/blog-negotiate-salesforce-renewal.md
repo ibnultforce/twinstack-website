@@ -2,9 +2,10 @@
 title: "How to Negotiate a Salesforce Renewal: 9 Tactics"
 slug: blog-negotiate-salesforce-renewal
 url: /blog/negotiate-salesforce-renewal.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_jpg,q_auto/v1791362377/8.1_r3c2tb.png"
 order: 50
 description: Salesforce discounts scale with deal size, from about 13% to 35%. Nine renewal tactics, the legacy vs new edition check and how to use fiscal quarter timing.
-metaTitle: "Salesforce Renewal Negotiation: 9 Tactics | My Website"
+metaTitle: "Salesforce Renewal Negotiation: 9 Tactics | TwinStack"
 metaDescription: "Salesforce renewal negotiation: nine tactics, discounts from about 13% to 35%, the legacy vs new edition check and fiscal quarter timing."
 focusKeyword: Salesforce renewal negotiation
 stylesheet: /assets/css/imported/blog-negotiate-salesforce-renewal.css

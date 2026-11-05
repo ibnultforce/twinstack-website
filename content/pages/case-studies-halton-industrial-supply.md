@@ -1,11 +1,12 @@
 ---
 title: "Halton Industrial Supply: Lead Response Under 4 Hours"
 description: "B2B lead capture case study: automating a Google Form into Sales Cloud cut median first response from 62 hours to under 4 and removed 95% of duplicate Leads."
-metaTitle: Salesforce Lead Response Time Case Study | My Website
+metaTitle: Salesforce Lead Response Time Case Study | TwinStack
 metaDescription: "Illustrative B2B case study: Google Form lead capture automated into Sales Cloud cut Salesforce lead response time from 62 hours to under 4."
 focusKeyword: Salesforce lead response time
 slug: case-studies-halton-industrial-supply
 url: /case-studies/halton-industrial-supply.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1788344340/e2598775-e19b-4458-bdba-0b3a112b3ac7_xxmh98.png"
 order: 50
 stylesheet: /assets/css/imported/case-studies-halton-industrial-supply.css
 hideCta: true

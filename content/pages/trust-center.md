@@ -4,7 +4,7 @@ slug: trust-center
 url: /trust-center.html
 order: 50
 description: "How TwinStack's native Salesforce apps protect your data: security review, in-org processing, no TwinStack servers in the path and how to report an issue."
-metaTitle: "Trust Center: Salesforce App Data Security | My Website"
+metaTitle: "Trust Center: Salesforce App Data Security | TwinStack"
 metaDescription: Learn how TwinStack's native Salesforce apps handle your data, including Salesforce app security review, in-org processing and how to report issues.
 focusKeyword: Salesforce app security
 stylesheet: /assets/css/imported/trust-center.css

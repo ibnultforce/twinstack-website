@@ -1,10 +1,11 @@
 ---
 slug: blog-why-salesforce-access-questions-take-so-long
 url: /blog/why-salesforce-access-questions-take-so-long.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789469064/wsw_2.1_ehmq7p.png"
 order: 50
 title: Why a Salesforce Access Question Takes an Afternoon
 description: Salesforce access spans six systems and no Setup screen shows all six for one user. Why the reconstruction takes thirty minutes, and what actually fixes it.
-metaTitle: Why Salesforce Access Questions Take So Long | My Website
+metaTitle: Why Salesforce Access Questions Take So Long | TwinStack
 metaDescription: A Salesforce access question means checking six systems that never talk. See why the answer takes an afternoon, and what a user-first view changes.
 focusKeyword: Salesforce access questions
 stylesheet: /assets/css/imported/blog-why-salesforce-access-questions-take-so-long.css

@@ -2,9 +2,10 @@
 title: How Much Does Salesforce Cost in 2026?
 slug: blog-how-much-does-salesforce-cost-2026
 url: /blog/how-much-does-salesforce-cost-2026.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_jpg,q_auto/v1791362366/1.1_ughm0e.png"
 order: 50
 description: Salesforce list prices run $25 to $550 per user a month, but licences are only part of year one. See three real budgets with services and 3-year totals.
-metaTitle: "Salesforce Cost in 2026: Three Real Budgets | My Website"
+metaTitle: "Salesforce Cost in 2026: Three Real Budgets | TwinStack"
 metaDescription: "Salesforce cost in 2026 means three bills, not one: licences, build and support. Three worked budgets show year-one and three-year totals."
 focusKeyword: Salesforce cost 2026
 stylesheet: /assets/css/imported/blog-how-much-does-salesforce-cost-2026.css

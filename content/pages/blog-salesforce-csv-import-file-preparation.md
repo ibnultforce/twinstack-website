@@ -2,9 +2,10 @@
 title: How to Prepare a CSV for Salesforce Import
 slug: blog-salesforce-csv-import-file-preparation
 url: /blog/salesforce-csv-import-file-preparation.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789991889/SLDL_7.1_w1rubx.png"
 order: 50
 description: Most Salesforce import failures are file problems. A practical checklist for encoding, dates, picklists, lookups and field lengths before you load any data.
-metaTitle: "Prepare a CSV for Salesforce Import: 10 Checks | My Website"
+metaTitle: "Prepare a CSV for Salesforce Import: 10 Checks | TwinStack"
 metaDescription: "A practical pre-load checklist for a Salesforce CSV import: encoding, headers, dates, numbers, picklists, lookups, field lengths and a 50-row sample test."
 focusKeyword: Salesforce CSV import
 stylesheet: /assets/css/imported/blog-salesforce-csv-import-file-preparation.css

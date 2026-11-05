@@ -2,9 +2,10 @@
 title: What Is Smart Lookup Data Loader?
 slug: blog-what-is-smart-lookup-data-loader
 url: /blog/what-is-smart-lookup-data-loader.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789991896/SLDL_1.1_uws78x.png"
 order: 50
 description: Smart Lookup Data Loader is a free, native Salesforce app that imports CSV data and resolves lookup relationships by name or code instead of record ID.
-metaTitle: "Smart Lookup Data Loader: Salesforce CSV Import | My Website"
+metaTitle: "Smart Lookup Data Loader: Salesforce CSV Import | TwinStack"
 metaDescription: Smart Lookup Data Loader is a free, native Salesforce app that imports CSV files and resolves lookups by name, email or code instead of record IDs.
 focusKeyword: Smart Lookup Data Loader
 stylesheet: /assets/css/imported/blog-what-is-smart-lookup-data-loader.css

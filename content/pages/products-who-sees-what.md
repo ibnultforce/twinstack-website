@@ -2,9 +2,11 @@
 title: "Who Sees What: Effective Access"
 slug: products-who-sees-what
 url: /products/who-sees-what.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_white,f_jpg,q_auto/v1788419416/Who_Sees_What_vy8udv.png"
+favicon: "https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_64/v1788419416/Who_Sees_What_vy8udv.png"
 order: 50
 description: Pick any Salesforce user and see every object, field and record they can access, plus the exact profile, permission set or sharing rule behind it. Free.
-metaTitle: "Salesforce Access App: See Who Sees What | My Website"
+metaTitle: "Salesforce Access App: See Who Sees What | TwinStack"
 metaDescription: "A free, read-only Salesforce access app: pick any user and see every app, object, field and record they can reach, plus the rule that granted it."
 focusKeyword: Salesforce access app
 stylesheet: /assets/css/imported/products-who-sees-what.css

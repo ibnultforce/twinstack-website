@@ -1,11 +1,12 @@
 ---
 title: "Riverside Community Trust: 78 Hours of Data Entry Removed"
 description: "Nonprofit Salesforce case study: how automating Google Form volunteer signups into NPSP removed 78 hours of annual data entry and cut duplicate Contacts by 88%."
-metaTitle: "NPSP Data Entry Automation: 78 Hours Saved | My Website"
+metaTitle: "NPSP Data Entry Automation: 78 Hours Saved | TwinStack"
 metaDescription: "Nonprofit Salesforce case study: NPSP data entry automation removed 78 hours of manual work a year and cut duplicate Contacts by 88%."
 focusKeyword: NPSP data entry automation
 slug: case-studies-riverside-community-trust
 url: /case-studies/riverside-community-trust.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789121158/06.1_lil9fb.png"
 order: 50
 stylesheet: /assets/css/imported/case-studies-riverside-community-trust.css
 hideCta: true

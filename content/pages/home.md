@@ -4,7 +4,7 @@ slug: home
 url: /
 order: 50
 description: Certified Salesforce consulting partner in Dhaka, Bangladesh. Implementation, data migration, integrations and AppExchange apps for charities and businesses.
-metaTitle: Salesforce Consultant & AppExchange Partner | My Website
+metaTitle: Salesforce Consultant & AppExchange Partner | TwinStack
 metaDescription: Certified Salesforce consultant in Dhaka, Bangladesh. Implementation, data migration, integrations and AppExchange apps for charities and businesses.
 focusKeyword: Salesforce consultant
 stylesheet: /assets/css/imported/home.css

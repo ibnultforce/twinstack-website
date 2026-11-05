@@ -1,9 +1,11 @@
 ---
 slug: products-google-form-auto-sync
 url: /products/google-form-auto-sync.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_white,f_jpg,q_auto/v1788339177/Google_sync_zxk6ny.png"
+favicon: "https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_64/v1788339177/Google_sync_zxk6ny.png"
 order: 50
 description: Sync Google Forms to Salesforce with no Zapier, middleware or Google Sheets. A free native package turns each submission into a Salesforce record in real time.
-metaTitle: "Google Form Auto Sync: Free, Native App | My Website"
+metaTitle: "Google Form Auto Sync: Free, Native App | TwinStack"
 metaDescription: "Google Form Auto Sync sends every Google Form response into Salesforce in real time: free, native, with no Zapier, Sheets or middleware in the path."
 focusKeyword: Google Form Auto Sync
 title: Google Forms to Salesforce Sync: Free and Native

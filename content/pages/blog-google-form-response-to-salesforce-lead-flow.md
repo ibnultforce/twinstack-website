@@ -1,10 +1,11 @@
 ---
 slug: blog-google-form-response-to-salesforce-lead-flow
 url: /blog/google-form-response-to-salesforce-lead-flow.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789121157/07.2_afewi4.png"
 order: 50
 title: "Google Form to Salesforce Lead with Flow"
 description: "Google Form to Salesforce Lead Flow walkthrough: route captured Form_Response__c records into Leads, Cases or Campaign Members with a record-triggered Flow."
-metaTitle: Google Form to Salesforce Lead Flow | My Website
+metaTitle: Google Form to Salesforce Lead Flow | TwinStack
 metaDescription: "Google Form to Salesforce Lead routing in a record-triggered Flow: filter by form, check for duplicates, and link each Lead back to its submission."
 focusKeyword: Google Form to Salesforce
 stylesheet: /assets/css/imported/blog-google-form-response-to-salesforce-lead-flow.css

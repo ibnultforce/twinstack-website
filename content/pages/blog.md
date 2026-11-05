@@ -5,7 +5,7 @@ layout: page
 order: 50
 title: Insights & Updates
 description: Salesforce guides from TwinStack: real implementation costs, pricing and renewals, data imports, permissions and access reviews, and Google Forms sync.
-metaTitle: "Salesforce Guides: Costs, Data & Access | My Website"
+metaTitle: "Salesforce Guides: Costs, Data & Access | TwinStack"
 metaDescription: Salesforce guides from TwinStack on costs, nonprofit data, imports, access and Google Forms, plus our AppExchange apps. Browse by topic to find yours.
 focusKeyword: Salesforce guides
 stylesheet: /assets/css/imported/blog.css

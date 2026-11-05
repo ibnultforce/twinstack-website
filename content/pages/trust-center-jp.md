@@ -4,7 +4,7 @@ url: /trust-center-jp.html
 order: 50
 title: トラストセンター
 description: TwinStackのネイティブSalesforceアプリにおけるデータ保護への取り組み：セキュリティレビュー、組織内での処理、当社サーバーを経由しない設計、脆弱性の報告方法。
-metaTitle: Salesforceアプリ セキュリティ | トラストセンター | My Website
+metaTitle: Salesforceアプリ セキュリティ | トラストセンター | TwinStack
 metaDescription: Salesforceアプリ セキュリティへの取り組みをまとめたトラストセンターです。各アプリのSalesforceセキュリティレビュー、組織内での処理、当社サーバーを経由しない設計、アプリごとのデータの取り扱いと責任共有モデル、脆弱性の報告方法を説明します。
 focusKeyword: Salesforceアプリ セキュリティ
 stylesheet: /assets/css/imported/trust-center-jp.css

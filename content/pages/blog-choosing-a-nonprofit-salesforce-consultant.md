@@ -2,9 +2,10 @@
 title: How to Choose a Nonprofit Salesforce Consultant
 slug: blog-choosing-a-nonprofit-salesforce-consultant
 url: /blog/choosing-a-nonprofit-salesforce-consultant.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_auto,q_auto/v1792143943/10-thumb-choosing-a-nonprofit-salesforce-consultant_enclna.jpg"
 order: 50
 description: "Ten questions to ask any nonprofit Salesforce consultant before you sign: experience, hours and rates, data migration, Power of Us help and support costs."
-metaTitle: How to Choose a Nonprofit Salesforce Consultant | My Website
+metaTitle: How to Choose a Nonprofit Salesforce Consultant | TwinStack
 metaDescription: Ten questions to ask a nonprofit Salesforce consultant before you sign, covering hours and rates, data migration, Power of Us and support costs.
 focusKeyword: nonprofit Salesforce consultant
 stylesheet: /assets/css/imported/blog-choosing-a-nonprofit-salesforce-consultant.css

@@ -1,11 +1,12 @@
 ---
 title: What Is Google Form Auto Sync?
 description: "Google Form Auto Sync explained: what the free native Salesforce app does, who it suits, how it works, what it costs, and when to pick something else."
-metaTitle: "Google Form Auto Sync: Free Salesforce App | My Website"
+metaTitle: "Google Form Auto Sync: Free Salesforce App | TwinStack"
 metaDescription: Google Form Auto Sync is a free, native Salesforce package that turns every form submission into a record. See who it suits, how it works, what it costs.
 focusKeyword: Google Form Auto Sync
 slug: blog-what-is-google-form-auto-sync
 url: /blog/what-is-google-form-auto-sync.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1788951468/how_to_gfas_fvphil.png"
 order: 50
 stylesheet: /assets/css/imported/blog-what-is-google-form-auto-sync.css
 hideCta: true

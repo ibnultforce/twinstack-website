@@ -4,7 +4,7 @@ slug: pricing
 url: /pricing.html
 order: 50
 description: TwinStack charges US$30 (A$47) an hour for Salesforce work. Pay as you go, or agree a monthly hours plan with a set baseline, billed on hours delivered.
-metaTitle: "Salesforce Consulting Pricing: US$30 an Hour | My Website"
+metaTitle: "Salesforce Consulting Pricing: US$30 an Hour | TwinStack"
 metaDescription: "Salesforce consulting pricing is one rate: US$30 an hour, or A$47 in Australia. Pay as you go, or agree a monthly hours plan billed on hours delivered."
 focusKeyword: Salesforce consulting pricing
 stylesheet: /assets/css/imported/pricing.css

@@ -2,6 +2,7 @@
 title: How Accurate Is a Salesforce Cost Estimator?
 slug: blog-how-accurate-is-a-salesforce-cost-estimator
 url: /blog/how-accurate-is-a-salesforce-cost-estimator.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_jpg,q_auto/v1791362377/10.1_rqfz9z.png"
 order: 50
 description: "What a Salesforce cost estimator can and cannot tell you: how ours is built from 19 contracts, how we test it, what it omits, and five questions to ask."
 metaTitle: "Salesforce Cost Estimator Accuracy: How Ours Works"

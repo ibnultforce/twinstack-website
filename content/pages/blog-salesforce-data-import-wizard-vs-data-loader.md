@@ -2,9 +2,10 @@
 title: Import Wizard vs Data Loader
 slug: blog-salesforce-data-import-wizard-vs-data-loader
 url: /blog/salesforce-data-import-wizard-vs-data-loader.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789991893/SLDL_5.1_et8hue.png"
 order: 50
 description: Data Import Wizard, Data Loader and Smart Lookup Data Loader solve different import problems. A practical comparison of limits, lookups and error handling.
-metaTitle: Import Wizard vs Data Loader vs Smart Lookup | My Website
+metaTitle: Import Wizard vs Data Loader vs Smart Lookup | TwinStack
 metaDescription: "Import Wizard vs Data Loader vs Smart Lookup compared: record limits, supported objects, lookups, deletes and error reporting, and how to choose."
 focusKeyword: Import Wizard vs Data Loader
 stylesheet: /assets/css/imported/blog-salesforce-data-import-wizard-vs-data-loader.css

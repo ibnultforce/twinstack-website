@@ -1,11 +1,12 @@
 ---
 title: Salesforce Grantmaking in Nonprofit Cloud
 description: "How Nonprofit Cloud for Grantmaking runs a grant cycle: funding opportunities, applications, reviews, awards, disbursements and grantee progress reporting."
-metaTitle: Salesforce Grantmaking in Nonprofit Cloud | My Website
+metaTitle: Salesforce Grantmaking in Nonprofit Cloud | TwinStack
 metaDescription: See how Salesforce grantmaking in Nonprofit Cloud runs a grant cycle, from budgets and applications to awards, disbursements and grantee reporting.
 focusKeyword: Salesforce grantmaking
 slug: blog-salesforce-grantmaking-nonprofit-cloud
 url: /blog/salesforce-grantmaking-nonprofit-cloud.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_auto,q_auto/v1792143940/07-thumb-salesforce-grantmaking-nonprofit-cloud_noxdcg.jpg"
 order: 50
 stylesheet: /assets/css/imported/blog-salesforce-grantmaking-nonprofit-cloud.css
 hideCta: true

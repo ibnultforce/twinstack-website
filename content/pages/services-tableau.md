@@ -4,7 +4,7 @@ url: /services/tableau.html
 order: 50
 title: Tableau Dashboards for Salesforce
 description: Interactive Tableau dashboards built on Salesforce data by TwinStack. Explore our live Sales Cloud and Nonprofit Cloud dashboards on Tableau Public.
-metaTitle: "Salesforce Tableau Dashboards: Live Examples | My Website"
+metaTitle: "Salesforce Tableau Dashboards: Live Examples | TwinStack"
 metaDescription: "Salesforce Tableau dashboards built by TwinStack: explore live Sales Cloud and Nonprofit Cloud examples you can filter and click through on Tableau Public."
 focusKeyword: Salesforce Tableau dashboards
 stylesheet: /assets/css/imported/services-tableau.css

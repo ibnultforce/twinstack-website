@@ -2,9 +2,10 @@
 title: Google Sheets to Salesforce Sync Problems
 slug: blog-google-sheets-salesforce-sync-problems
 url: /blog/google-sheets-salesforce-sync-problems.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789121158/06.2_lmhvu8.png"
 order: 50
 description: "Google Sheets Salesforce sync problems explained: five ways the spreadsheet middle layer fails quietly, when it is still worth using, and how to remove the hop."
-metaTitle: Google Sheets Salesforce Sync Problems | My Website
+metaTitle: Google Sheets Salesforce Sync Problems | TwinStack
 metaDescription: "Google Sheets Salesforce sync problems: five ways the spreadsheet middle layer fails quietly, when a Sheet is still worth using, and how to remove the hop."
 focusKeyword: Google Sheets Salesforce sync
 stylesheet: /assets/css/imported/blog-google-sheets-salesforce-sync-problems.css

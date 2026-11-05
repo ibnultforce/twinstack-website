@@ -2,9 +2,10 @@
 title: Google Forms to Salesforce for Nonprofits
 slug: blog-google-forms-to-salesforce-nonprofits-npsp
 url: /blog/google-forms-to-salesforce-nonprofits-npsp.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789121157/04.2_fp5bzf.png"
 order: 50
 description: "Google Forms Salesforce nonprofit setup: a free, native way to capture volunteer, intake and programme data into NPSP or Nonprofit Cloud with no middleware."
-metaTitle: Google Forms to Salesforce for Nonprofits | My Website
+metaTitle: Google Forms to Salesforce for Nonprofits | TwinStack
 metaDescription: "Google Forms Salesforce nonprofits: free, native capture with no middleware, then route volunteer, intake and programme data into NPSP or Nonprofit Cloud."
 focusKeyword: Google Forms Salesforce nonprofits
 stylesheet: /assets/css/imported/blog-google-forms-to-salesforce-nonprofits-npsp.css

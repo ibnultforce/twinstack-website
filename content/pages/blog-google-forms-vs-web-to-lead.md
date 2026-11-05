@@ -2,9 +2,10 @@
 title: Google Forms vs Web-to-Lead
 slug: blog-google-forms-vs-web-to-lead
 url: /blog/google-forms-vs-web-to-lead.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789121157/05.2_b6oiog.png"
 order: 50
 description: "Google Forms vs Web-to-Lead compared honestly: cost, objects, file uploads, limits and spam, plus how to combine both for capturing data into Salesforce."
-metaTitle: "Google Forms vs Web-to-Lead: Which to Use? | My Website"
+metaTitle: "Google Forms vs Web-to-Lead: Which to Use? | TwinStack"
 metaDescription: "Google Forms vs Web-to-Lead compared: cost, objects, file uploads, daily limits and spam, and how to combine both to capture data in Salesforce."
 focusKeyword: Google Forms vs Web-to-Lead
 stylesheet: /assets/css/imported/blog-google-forms-vs-web-to-lead.css

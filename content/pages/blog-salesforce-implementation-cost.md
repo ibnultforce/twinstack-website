@@ -1,11 +1,12 @@
 ---
 title: Salesforce Implementation Cost
 description: Salesforce implementation cost is hours times a rate. See build bands from 150 to 1,800 hours, one project at four rates, and what makes quotes balloon.
-metaTitle: "Salesforce Implementation Cost: Hours & Rates | My Website"
+metaTitle: "Salesforce Implementation Cost: Hours & Rates | TwinStack"
 metaDescription: Salesforce implementation cost is hours times rate, plus 15% contingency. See build bands from 150 to 1,800 hours and one 25-user project at four rates.
 focusKeyword: Salesforce implementation cost
 slug: blog-salesforce-implementation-cost
 url: /blog/salesforce-implementation-cost.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_jpg,q_auto/v1791362373/6.1_m2eqfr.png"
 order: 50
 stylesheet: /assets/css/imported/blog-salesforce-implementation-cost.css
 hideCta: true

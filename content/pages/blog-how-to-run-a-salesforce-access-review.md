@@ -2,9 +2,10 @@
 title: How to Run a Salesforce Access Review
 slug: blog-how-to-run-a-salesforce-access-review
 url: /blog/how-to-run-a-salesforce-access-review.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789469034/wsw_6_ezoqgy.png"
 order: 50
 description: A seven-step process for a Salesforce access review that covers the whole user base, not a sample, and the one step that decides whether that's possible.
-metaTitle: "Salesforce Access Review: 7 Steps, Every User | My Website"
+metaTitle: "Salesforce Access Review: 7 Steps, Every User | TwinStack"
 metaDescription: "Run a Salesforce access review across every user, not a sample: scope it, define correct access first, then resolve each user's effective access."
 focusKeyword: Salesforce access review
 stylesheet: /assets/css/imported/blog-how-to-run-a-salesforce-access-review.css

@@ -2,9 +2,10 @@
 title: Google Forms Salesforce Integration Security Checklist
 slug: blog-google-forms-salesforce-integration-security
 url: /blog/google-forms-salesforce-integration-security.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789121158/08_e1jv4h.png"
 order: 50
 description: Google Forms Salesforce integration security: six questions on data path, credentials, permissions, field-level security and authentication to ask any vendor.
-metaTitle: "Google Forms Salesforce Security: 6 Questions | My Website"
+metaTitle: "Google Forms Salesforce Security: 6 Questions | TwinStack"
 metaDescription: "Google Forms Salesforce security: six questions on data path, credentials, permissions, field-level security and authentication to ask before you connect."
 focusKeyword: Google Forms Salesforce security
 stylesheet: /assets/css/imported/blog-google-forms-salesforce-integration-security.css

@@ -1,10 +1,11 @@
 ---
 slug: blog-salesforce-hidden-costs-quote
 url: /blog/salesforce-hidden-costs-quote.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_jpg,q_auto/v1791362371/7.1_qsnha1.png"
 order: 50
 title: "Hidden Costs in a Salesforce Quote: A 12-Point Check"
 description: Sandboxes, Premier Success, MuleSoft floors, usage billing and renewal uplifts can add 30% or more. A 12-point checklist for reading a Salesforce quote.
-metaTitle: "Salesforce Quote Hidden Costs: 12-Point Check | My Website"
+metaTitle: "Salesforce Quote Hidden Costs: 12-Point Check | TwinStack"
 metaDescription: "Salesforce quote hidden costs: sandboxes at 5% to 30% of licences, Premier Success near 30%, MuleSoft's $50,000 floor, renewal uplifts. See the 12 checks."
 focusKeyword: Salesforce quote hidden costs
 stylesheet: /assets/css/imported/blog-salesforce-hidden-costs-quote.css

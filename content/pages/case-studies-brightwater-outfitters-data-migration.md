@@ -1,10 +1,11 @@
 ---
 slug: case-studies-brightwater-outfitters-data-migration
 url: /case-studies/brightwater-outfitters-data-migration.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789991884/SLDL_CS_1.1_ebip9m.png"
 order: 50
 title: Brightwater Outfitters Data Migration
 description: A retail group migrated 94,000 customer records into Salesforce without a single VLOOKUP pass, using external codes to resolve lookups at import time.
-metaTitle: Retail Data Migration Without VLOOKUP | My Website
+metaTitle: Retail Data Migration Without VLOOKUP | TwinStack
 metaDescription: "An illustrative retail data migration case study: 94,000 customer records into Salesforce in 9 days, lookups resolved by legacy code instead of VLOOKUP."
 focusKeyword: retail data migration
 stylesheet: /assets/css/imported/case-studies-brightwater-outfitters-data-migration.css

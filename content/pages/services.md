@@ -1,11 +1,12 @@
 ---
 slug: services
 url: /services.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1788419416/Who_Sees_What_vy8udv.png"
 layout: page
 order: 50
 title: Salesforce Consulting Services
 description: "Salesforce consulting from TwinStack: implementation, Nonprofit Cloud and NPSP, data migration, Tableau dashboards, custom development and AppExchange builds."
-metaTitle: Salesforce Consulting Services | My Website
+metaTitle: Salesforce Consulting Services | TwinStack
 metaDescription: "Salesforce consulting services: implementation, Nonprofit Cloud and NPSP, data migration, Tableau dashboards, custom development and AppExchange apps."
 focusKeyword: Salesforce consulting services
 stylesheet: /assets/css/imported/services.css

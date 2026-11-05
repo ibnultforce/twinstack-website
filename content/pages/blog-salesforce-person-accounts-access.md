@@ -2,9 +2,10 @@
 title: Person Accounts and Access
 slug: blog-salesforce-person-accounts-access
 url: /blog/salesforce-person-accounts-access.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789469001/wsw_9.1_pfrgyh.png"
 order: 50
 description: A Person Account is one Salesforce record governed by two object models at once. Why effective access is harder to diagnose, and what a tool needs to get right.
-metaTitle: Salesforce Person Account Access & Permissions | My Website
+metaTitle: Salesforce Person Account Access & Permissions | TwinStack
 metaDescription: Salesforce Person Account access is harder to diagnose because one record sits on two object models. See what to check and what a tool must get right.
 focusKeyword: Salesforce Person Account access
 stylesheet: /assets/css/imported/blog-salesforce-person-accounts-access.css

@@ -4,7 +4,7 @@ slug: services-salesforce-integrations
 url: /services/salesforce-integrations.html
 order: 50
 description: Connect Salesforce to payment, finance, marketing, forms and telephony systems with MuleSoft, REST APIs or Zapier, built with error handling and logging.
-metaTitle: Salesforce Integration Services & APIs | My Website
+metaTitle: Salesforce Integration Services & APIs | TwinStack
 metaDescription: Salesforce integration services that connect payments, finance, marketing, forms and telephony via MuleSoft, REST APIs, Zapier or native apps.
 focusKeyword: Salesforce integration services
 stylesheet: /assets/css/imported/services-salesforce-integrations.css

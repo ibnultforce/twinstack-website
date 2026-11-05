@@ -1,11 +1,12 @@
 ---
 slug: case-studies
 url: /case-studies.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789121158/06.1_lil9fb.png"
 layout: page
 order: 50
 title: Salesforce Case Studies
 description: Salesforce case studies from TwinStack: nonprofit donor migration, offboarding audits, retail data migration, permission set cleanup and travel booking.
-metaTitle: "Salesforce Case Studies: Projects & Results | My Website"
+metaTitle: "Salesforce Case Studies: Projects & Results | TwinStack"
 metaDescription: "Salesforce case studies from TwinStack: nonprofit, retail, travel and agribusiness projects with the numbers, the options rejected and what we'd change."
 focusKeyword: Salesforce case studies
 stylesheet: /assets/css/imported/case-studies.css

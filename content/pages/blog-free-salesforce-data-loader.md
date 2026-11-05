@@ -1,6 +1,7 @@
 ---
 slug: blog-free-salesforce-data-loader
 url: /blog/free-salesforce-data-loader.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789991888/SLDL_8.1_ibacev.png"
 order: 50
 title: What Free Actually Means for Salesforce Data Loaders
 description: Free Salesforce data loaders range from genuinely free to trial-limited. How to check for row caps, user limits and paid tiers before you commit to one.

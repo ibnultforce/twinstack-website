@@ -2,9 +2,10 @@
 title: Who Sees What vs Setup Screens vs a Spreadsheet Audit
 slug: blog-salesforce-access-tools-compared
 url: /blog/salesforce-access-tools-compared.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789468994/wsw_10.1_ukgboh.png"
 order: 50
 description: Three honest ways to answer a Salesforce access question compared: native Setup screens, a manual spreadsheet audit, and a purpose-built person-first tool.
-metaTitle: "Salesforce Access Tools Compared: 3 Methods | My Website"
+metaTitle: "Salesforce Access Tools Compared: 3 Methods | TwinStack"
 metaDescription: "Compare Salesforce access tools: Setup screens, a spreadsheet audit and a person-first tool, with the strengths and limits of each."
 focusKeyword: Salesforce access tools
 stylesheet: /assets/css/imported/blog-salesforce-access-tools-compared.css

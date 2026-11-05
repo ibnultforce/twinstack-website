@@ -1,11 +1,12 @@
 ---
 title: Offshore vs Onshore Salesforce Implementation Cost
 description: The same 25-user Salesforce project costs $53,500, $74,100, $144,100 or $288,100 in year-one services, depending on who delivers. See when each model fits.
-metaTitle: Offshore vs Onshore Salesforce Cost | My Website
+metaTitle: Offshore vs Onshore Salesforce Cost | TwinStack
 metaDescription: "Offshore vs onshore Salesforce implementation: the same 25-user project costs $53,511 to $288,138 in year-one services. See what each delivery model buys."
 focusKeyword: offshore vs onshore Salesforce
 slug: blog-offshore-vs-onshore-salesforce-implementation
 url: /blog/offshore-vs-onshore-salesforce-implementation.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_jpg,q_auto/v1791362378/9.1_pt5hiz.png"
 order: 50
 stylesheet: /assets/css/imported/blog-offshore-vs-onshore-salesforce-implementation.css
 hideCta: true

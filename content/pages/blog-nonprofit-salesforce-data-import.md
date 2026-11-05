@@ -1,10 +1,11 @@
 ---
 slug: blog-nonprofit-salesforce-data-import
 url: /blog/nonprofit-salesforce-data-import.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789991885/SLDL_10.1_tj8ana.png"
 order: 50
 title: Nonprofit Data Imports Into NPSP
 description: Importing donors and constituents into NPSP or Nonprofit Cloud brings relationship problems standard loaders were not built for. A practical approach.
-metaTitle: "NPSP Data Import: Donors & Households | My Website"
+metaTitle: "NPSP Data Import: Donors & Households | TwinStack"
 metaDescription: "NPSP data import is harder than a standard load: households, affiliations and gifts must resolve in order. See a workable sequence and practical cautions."
 focusKeyword: NPSP data import
 stylesheet: /assets/css/imported/blog-nonprofit-salesforce-data-import.css

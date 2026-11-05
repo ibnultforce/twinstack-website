@@ -2,6 +2,7 @@
 title: Salesforce Nonprofit Pricing
 slug: blog-salesforce-nonprofit-pricing-power-of-us
 url: /blog/salesforce-nonprofit-pricing-power-of-us.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_jpg,q_auto/v1791362365/4.1_o11kep.png"
 order: 50
 description: The first 10 Salesforce licences are free for eligible nonprofits. See Nonprofit Cloud prices, three real budgets, and where build and portal costs land.
 metaTitle: "Salesforce Nonprofit Pricing: Power of Us"

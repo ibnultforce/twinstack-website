@@ -1,6 +1,7 @@
 ---
 slug: blog-npsp-to-nonprofit-cloud-migration-cost-timeline
 url: /blog/npsp-to-nonprofit-cloud-migration-cost-timeline.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_auto,q_auto/v1792143936/03-thumb-npsp-to-nonprofit-cloud-migration-cost-timeline_daiwgm.jpg"
 order: 50
 title: NPSP to Nonprofit Cloud Migration Cost
 description: An NPSP to Nonprofit Cloud migration is a rebuild plus a data move. Hours, timelines and costs for three nonprofit sizes, and what makes a quote grow.

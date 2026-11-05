@@ -1,11 +1,12 @@
 ---
 title: Object, Field and Record Access Explained
 description: Salesforce checks access at three independent levels and all three must pass for a value to appear. Confusing them causes most fixes that fix nothing.
-metaTitle: Salesforce Access Layers Explained | My Website
+metaTitle: Salesforce Access Layers Explained | TwinStack
 metaDescription: "Salesforce access layers are independent: object, field and record access must all pass. See where admins misdiagnose and how to check all three together."
 focusKeyword: Salesforce access layers
 slug: blog-salesforce-object-field-record-access
 url: /blog/salesforce-object-field-record-access.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789469057/wsw_5.1_xhmrm5.png"
 order: 50
 stylesheet: /assets/css/imported/blog-salesforce-object-field-record-access.css
 hideCta: true

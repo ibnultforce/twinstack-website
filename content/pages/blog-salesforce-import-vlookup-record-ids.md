@@ -1,10 +1,11 @@
 ---
 slug: blog-salesforce-import-vlookup-record-ids
 url: /blog/salesforce-import-vlookup-record-ids.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789991903/2.1_l8ygvg.png"
 order: 50
 title: Why Bulk Imports Start With a VLOOKUP
 description: Salesforce lookup fields expect record IDs, so most bulk imports begin with a VLOOKUP. Here is why that step exists and how to remove it from your process.
-metaTitle: Salesforce VLOOKUP Import Explained | My Website
+metaTitle: Salesforce VLOOKUP Import Explained | TwinStack
 metaDescription: Most Salesforce VLOOKUP import work is spent turning names into record IDs. See why that step exists, what goes wrong, and how to remove it.
 focusKeyword: Salesforce VLOOKUP import
 stylesheet: /assets/css/imported/blog-salesforce-import-vlookup-record-ids.css

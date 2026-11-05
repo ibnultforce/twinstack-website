@@ -1,10 +1,11 @@
 ---
 slug: blog-salesforce-duplicate-records-match-fields
 url: /blog/salesforce-duplicate-records-match-fields.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789991901/SLDL_3.1_sp8gxs.png"
 order: 50
 title: Why Single-Field Matching Creates Salesforce Duplicates
 description: Most duplicate records created during a Salesforce import come from matching on one field. Here is how to choose a match key that holds up on real data.
-metaTitle: "Salesforce Duplicate Records: Better Match Keys | My Website"
+metaTitle: "Salesforce Duplicate Records: Better Match Keys | TwinStack"
 metaDescription: Most Salesforce duplicate records come from matching on a single field. Learn how to pick a match key that holds up on real import data.
 focusKeyword: Salesforce duplicate records
 stylesheet: /assets/css/imported/blog-salesforce-duplicate-records-match-fields.css

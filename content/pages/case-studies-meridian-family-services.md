@@ -1,10 +1,11 @@
 ---
 slug: case-studies-meridian-family-services
 url: /case-studies/meridian-family-services.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789534737/c6efce03-88fc-41dd-89a2-0d1948d89e00_flhynu.png"
 order: 50
 title: "Meridian Family Services: Closing an Offboarding Gap"
 description: A funder compliance question forced a check nobody had run systematically. Four of eleven departed employees at this nonprofit still had some Salesforce access.
-metaTitle: "Salesforce Offboarding Access Audit: Case Study | My Website"
+metaTitle: "Salesforce Offboarding Access Audit: Case Study | TwinStack"
 metaDescription: "Illustrative nonprofit case study: a funder compliance question prompted a Salesforce offboarding access audit; four of eleven leavers still had access."
 focusKeyword: Salesforce offboarding access audit
 stylesheet: /assets/css/imported/case-studies-meridian-family-services.css

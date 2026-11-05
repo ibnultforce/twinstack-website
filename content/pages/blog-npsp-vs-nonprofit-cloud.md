@@ -1,11 +1,12 @@
 ---
 title: NPSP vs Nonprofit Cloud
 description: NPSP is a managed package on Sales Cloud; Nonprofit Cloud is built into the platform. How data, fundraising, programmes and licences differ in 2026, and why.
-metaTitle: "NPSP vs Nonprofit Cloud: What Changes in 2026 | My Website"
+metaTitle: "NPSP vs Nonprofit Cloud: What Changes in 2026 | TwinStack"
 metaDescription: "NPSP vs Nonprofit Cloud compared: how data models, gifts, programmes and grantmaking differ in 2026, and why moving means a rebuild in a new org."
 focusKeyword: NPSP vs Nonprofit Cloud
 slug: blog-npsp-vs-nonprofit-cloud
 url: /blog/npsp-vs-nonprofit-cloud.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_auto,q_auto/v1792143935/01-thumb-npsp-vs-nonprofit-cloud_vzlafv.jpg"
 order: 50
 stylesheet: /assets/css/imported/blog-npsp-vs-nonprofit-cloud.css
 hideCta: true

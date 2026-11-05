@@ -2,9 +2,10 @@
 title: NPSP to Nonprofit Cloud Data Mapping
 slug: blog-npsp-to-nonprofit-cloud-data-mapping
 url: /blog/npsp-to-nonprofit-cloud-data-mapping.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_auto,q_auto/v1792143936/04-thumb-npsp-to-nonprofit-cloud-data-mapping_hd6rzk.jpg"
 order: 50
 description: "How NPSP objects map to Nonprofit Cloud: households to Party Relationship Groups, Opportunities to Gift Transactions, and the load order that holds up."
-metaTitle: NPSP to Nonprofit Cloud Data Mapping Guide | My Website
+metaTitle: NPSP to Nonprofit Cloud Data Mapping Guide | TwinStack
 metaDescription: "NPSP to Nonprofit Cloud data mapping: how households, pledges and funds translate object by object, with a load order and ID crosswalk for the migration."
 focusKeyword: Nonprofit Cloud data mapping
 stylesheet: /assets/css/imported/blog-npsp-to-nonprofit-cloud-data-mapping.css

@@ -1,10 +1,11 @@
 ---
 slug: blog-salesforce-permission-set-cleanup
 url: /blog/salesforce-permission-set-cleanup.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789469013/wsw_8.1_e5qneo.png"
 order: 50
 title: "Permission Set Sprawl: Clean Up Without Breaking Access"
 description: A permission set that looks redundant can't be safely deleted by name. A five-step process for cleanup without breaking access for users still assigned.
-metaTitle: "Salesforce Permission Set Cleanup: 5 Steps | My Website"
+metaTitle: "Salesforce Permission Set Cleanup: 5 Steps | TwinStack"
 metaDescription: Salesforce permission set cleanup starts with who is assigned, not the name. Check what each user would lose, consolidate overlaps, then retire in stages.
 focusKeyword: Salesforce permission set cleanup
 stylesheet: /assets/css/imported/blog-salesforce-permission-set-cleanup.css

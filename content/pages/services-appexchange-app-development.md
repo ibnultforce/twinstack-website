@@ -4,7 +4,7 @@ url: /services/appexchange-app-development.html
 order: 50
 title: AppExchange App Development & Security Review
 description: "TwinStack builds AppExchange apps for software companies: architecture, Apex and LWC development, Security Review preparation, packaging and the listing."
-metaTitle: AppExchange App Development & Security Review | My Website
+metaTitle: AppExchange App Development & Security Review | TwinStack
 metaDescription: "AppExchange app development for software companies: architecture, Apex and LWC, Security Review, packaging and the listing. Four apps of ours are live."
 focusKeyword: AppExchange app development
 stylesheet: /assets/css/imported/services-appexchange-app-development.css

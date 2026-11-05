@@ -2,6 +2,7 @@
 title: "Salesforce Pricing for Small Business"
 slug: blog-salesforce-pricing-for-small-business
 url: /blog/salesforce-pricing-for-small-business.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_jpg,q_auto/v1791362367/3.1_nmccvi.png"
 order: 50
 description: Starter Suite is $25 and Pro Suite $100 per user a month. See real year-one budgets for 5 and 10 users, and when a small team should step up to Salesforce Core.
 metaTitle: "Salesforce Pricing for Small Business: 5-10 Users"

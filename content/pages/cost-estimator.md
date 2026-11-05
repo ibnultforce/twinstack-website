@@ -4,7 +4,7 @@ url: /cost-estimator.html
 order: 50
 title: Salesforce Cost Estimator
 description: Free Salesforce cost estimator. Answer plain-English questions to get a recommended setup, the services to go live, and a Year-1 and 3-year Salesforce budget.
-metaTitle: "Salesforce Cost Estimator: Setup & Budget | My Website"
+metaTitle: "Salesforce Cost Estimator: Setup & Budget | TwinStack"
 metaDescription: "Free Salesforce cost estimator: answer plain-English questions to get a recommended setup, the services to go live and a first-year and 3-year budget."
 focusKeyword: Salesforce cost estimator
 stylesheet: /assets/css/imported/cost-estimator.css

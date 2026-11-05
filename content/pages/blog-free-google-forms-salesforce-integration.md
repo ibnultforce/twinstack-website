@@ -1,10 +1,11 @@
 ---
 slug: blog-free-google-forms-salesforce-integration
 url: /blog/free-google-forms-salesforce-integration.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789040160/Untitled_design_32_upo1ha.png"
 order: 50
 title: Free Google Forms to Salesforce Integration Explained
 description: "Free Google Forms to Salesforce integration: how to spot free trials, task caps and one-sided plans, what genuinely free means, and real year one costs."
-metaTitle: "Google Forms to Salesforce: What Free Means | My Website"
+metaTitle: "Google Forms to Salesforce: What Free Means | TwinStack"
 metaDescription: Free Google Forms to Salesforce integration can be a trial, a task cap, or free on one side only. Five questions to ask before you build a process on it.
 focusKeyword: Google Forms to Salesforce
 stylesheet: /assets/css/imported/blog-free-google-forms-salesforce-integration.css

@@ -2,9 +2,10 @@
 title: Sync Google Forms to Salesforce
 slug: blog-how-to-sync-google-forms-to-salesforce
 url: /blog/how-to-sync-google-forms-to-salesforce.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1788954771/Untitled_design_26_esibcd.png"
 order: 50
 description: How to sync Google Forms to Salesforce for free. Compare the four real options, then follow a five step native setup with no Zapier and no middleware.
-metaTitle: How to Sync Google Forms to Salesforce | My Website
+metaTitle: How to Sync Google Forms to Salesforce | TwinStack
 metaDescription: "Sync Google Forms to Salesforce free with a native AppExchange app: compare four options, then follow a five-step setup with no Zapier or middleware."
 focusKeyword: Google Forms to Salesforce
 stylesheet: /assets/css/imported/blog-how-to-sync-google-forms-to-salesforce.css

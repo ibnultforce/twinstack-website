@@ -1,9 +1,10 @@
 ---
 slug: about
 url: /about.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1780484829/company_pics_km15wr.png"
 order: 50
 description: TwinStack Solutions is a certified Salesforce consulting partner founded in 2022 in Dhaka, Bangladesh, building Salesforce for charities and businesses.
-metaTitle: "About TwinStack: Salesforce Consulting Partner | My Website"
+metaTitle: "About TwinStack: Salesforce Consulting Partner | TwinStack"
 metaDescription: TwinStack Solutions is a certified Salesforce consulting partner founded in 2022 in Dhaka, building Salesforce for charities and businesses worldwide.
 focusKeyword: Salesforce consulting partner
 title: About TwinStack Solutions

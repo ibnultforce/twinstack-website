@@ -2,9 +2,10 @@
 title: AgVantage Commodities Marketplace
 slug: case-studies-agvantage-commodities-marketplace
 url: /case-studies/agvantage-commodities-marketplace.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789139644/4_pe92xi.png"
 order: 50
 description: "AgVantage Commodities case study: a Salesforce marketplace for agribusiness trading with bulk bid upload, automated matching and central document control."
-metaTitle: "Salesforce Marketplace Case Study: AgVantage | My Website"
+metaTitle: "Salesforce Marketplace Case Study: AgVantage | TwinStack"
 metaDescription: "Salesforce marketplace case study: AgVantage Commodities connects buyers, sellers and brokers with bulk CSV bid upload and automated matching."
 focusKeyword: Salesforce marketplace case study
 stylesheet: /assets/css/imported/case-studies-agvantage-commodities-marketplace.css

@@ -2,6 +2,7 @@
 title: Salesforce Core vs Advanced vs Max
 slug: blog-salesforce-core-vs-advanced-vs-max
 url: /blog/salesforce-core-vs-advanced-vs-max.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_jpg,q_auto/v1791362374/2.1_uhqdsa.png"
 order: 50
 description: Core is $195, Advanced $395, Max $550 per user a month. See what each tier adds, a 50-user cost comparison, and a simple rule for picking the right one.
 metaTitle: "Salesforce Edition Comparison: Core vs Advanced vs Max"

@@ -1,6 +1,7 @@
 ---
 slug: blog-experience-cloud-pricing-login-vs-member
 url: /blog/experience-cloud-pricing-login-vs-member.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_jpg,q_auto/v1791362373/5.1_zm63u2.png"
 order: 50
 title: "Experience Cloud Pricing: Login vs Member Licences"
 description: Login-based Experience Cloud licences win until a user logs in 2.5 times a month. Rates, break-even maths and real portal budgets for 500 to 2,000 users.

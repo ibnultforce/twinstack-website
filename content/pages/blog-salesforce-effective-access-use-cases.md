@@ -2,9 +2,10 @@
 title: 7 Moments You Need a Salesforce User's Access
 slug: blog-salesforce-effective-access-use-cases
 url: /blog/salesforce-effective-access-use-cases.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789468994/wsw_11_xhuhpu.png"
 order: 50
 description: A missing-access report, a scheduled review, onboarding, offboarding, cleanup, a handover. Seven contexts that all reduce to the same underlying question.
-metaTitle: "Salesforce Effective Access: 7 Use Cases | My Website"
+metaTitle: "Salesforce Effective Access: 7 Use Cases | TwinStack"
 metaDescription: "Seven moments that need a user's Salesforce effective access: missing access, excess access, reviews, onboarding, offboarding, cleanup and handover."
 focusKeyword: Salesforce effective access
 stylesheet: /assets/css/imported/blog-salesforce-effective-access-use-cases.css

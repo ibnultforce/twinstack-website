@@ -1,10 +1,11 @@
 ---
 slug: blog-should-you-migrate-npsp-to-nonprofit-cloud
 url: /blog/should-you-migrate-npsp-to-nonprofit-cloud.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_auto,q_auto/v1792143936/02-thumb-should-you-migrate-npsp-to-nonprofit-cloud_hel980.jpg"
 order: 50
 title: "NPSP to Nonprofit Cloud: Should You Move?"
 description: NPSP has no end-of-life date, so moving to Nonprofit Cloud is a choice. Eight signals that it is time to move, five that say wait, and how to decide well.
-metaTitle: Should You Migrate NPSP to Nonprofit Cloud? | My Website
+metaTitle: Should You Migrate NPSP to Nonprofit Cloud? | TwinStack
 metaDescription: NPSP to Nonprofit Cloud is a choice, not a deadline. Eight signals it is time to move, five that say wait, and a scoring exercise to decide.
 focusKeyword: NPSP to Nonprofit Cloud
 stylesheet: /assets/css/imported/blog-should-you-migrate-npsp-to-nonprofit-cloud.css

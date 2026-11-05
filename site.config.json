@@ -1,40 +1,38 @@
 {
-  "name": "Twinstack",
-  "shortName": "Twinstack",
-  "url": "https://example.com",
-  "tagline": "",
+  "name": "TwinStack Solutions",
+  "shortName": "TwinStack",
+  "url": "https://twinstack.net",
+  "tagline": "Salesforce Consulting Partner",
   "footerTagline": "",
-  "description": "",
+  "description": "Certified Salesforce consulting partner and AppExchange product development outsourcer (PDO) based in Dhaka, Bangladesh, serving charities and businesses worldwide.",
   "language": "en",
   "locale": "en_US",
-  "foundedYear": "",
-  "themeColor": "#FFFFFF",
+  "foundedYear": "2022",
+  "themeColor": "#0f172a",
   "brand": {
-    "logoText": "Twinstack Solutions Limited",
+    "logoText": "TwinStack Solutions",
     "logo": "",
     "logoDark": "",
     "logoMark": "/assets/img/brand/black-white-minimalist-professional-initial-logo.png",
-    "favicon": "",
-    "defaultOgImage": "/assets/img/og-default.svg"
+    "favicon": "https://res.cloudinary.com/du42kbmmn/image/upload/w_32,h_32,c_fill,r_max,f_auto,q_auto/v1769165197/Black_White_Minimalist_Professional_Initial_Logo_1_eoam8g.png",
+    "defaultOgImage": "/assets/og-home.png"
   },
   "contact": {
-    "email": "",
-    "phone": "",
-    "address": "",
+    "email": "info@twinstack.net",
+    "phone": "+8801556777043",
+    "address": "Mirpur Cantonment Road, Dhaka 1216, Bangladesh",
     "hours": "",
-    "whatsapp": "",
-    "whatsappUrl": "",
-    "bookingUrl": "",
+    "whatsapp": "+880 1556-777043",
+    "whatsappUrl": "https://wa.me/8801556777043",
+    "bookingUrl": "https://calendar.app.google/HP3LiuNFisCt6xLo6",
     "bookingLabel": "Book a call",
     "responseTime": ""
   },
   "social": {
-    "linkedin": "",
-    "x": "",
-    "facebook": "",
-    "instagram": "",
-    "youtube": "",
-    "github": ""
+    "linkedin": "https://www.linkedin.com/company/twinstack-solutions/",
+    "youtube": "https://www.youtube.com/@TwinStackSolutions-sf",
+    "appexchange": "https://appexchange.salesforce.com/appxConsultingListingDetail?listingId=a0NHu00000ozjVfMAI",
+    "elioplus": "https://elioplus.com/profiles/channel-partners/228930/twinstack-solutions"
   },
   "collections": {
     "pages": {
@@ -90,12 +88,12 @@
   },
   "deploy": {
     "provider": "github-pages",
-    "cname": "",
+    "cname": "twinstack.net",
     "branch": "main",
     "outputDir": "dist"
   },
   "seo": {
-    "titleTemplate": "{title} | {site}",
+    "titleTemplate": "{title} | TwinStack",
     "homeTitle": "{name} | {tagline}",
     "twitterHandle": "",
     "googleVerification": "",

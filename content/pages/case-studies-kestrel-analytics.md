@@ -1,11 +1,12 @@
 ---
 title: "Kestrel Analytics: 63 Permission Sets Cut to 22"
 description: Two earlier permission set cleanup attempts had stalled. This time the difference was the cost of checking each user's real dependency before removing anything.
-metaTitle: "Permission Set Cleanup Case Study: 63 to 22 | My Website"
+metaTitle: "Permission Set Cleanup Case Study: 63 to 22 | TwinStack"
 metaDescription: "An illustrative permission set cleanup case study: 63 inherited sets cut to 22 with no access incidents, by checking each user's real dependency first."
 focusKeyword: permission set cleanup
 slug: case-studies-kestrel-analytics
 url: /case-studies/kestrel-analytics.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789469013/wsw_8.1_e5qneo.png"
 order: 50
 stylesheet: /assets/css/imported/case-studies-kestrel-analytics.css
 hideCta: true

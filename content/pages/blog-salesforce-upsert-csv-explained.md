@@ -2,9 +2,10 @@
 title: Salesforce Upsert Explained
 slug: blog-salesforce-upsert-csv-explained
 url: /blog/salesforce-upsert-csv-explained.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789991892/SLDL_6.1_gxqusa.png"
 order: 50
 description: Upsert updates existing Salesforce records and creates new ones in a single import. How the match key works, how to choose one, and where upserts go wrong.
-metaTitle: "Salesforce Upsert: Match Keys & Duplicates | My Website"
+metaTitle: "Salesforce Upsert: Match Keys & Duplicates | TwinStack"
 metaDescription: Salesforce upsert inserts or updates each row in one file. See how the match key decides, which keys fail, and a five-step routine before the full run.
 focusKeyword: Salesforce upsert
 stylesheet: /assets/css/imported/blog-salesforce-upsert-csv-explained.css

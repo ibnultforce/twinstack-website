@@ -2,9 +2,10 @@
 title: Which Rule Granted Salesforce Access?
 slug: blog-which-rule-granted-salesforce-access
 url: /blog/which-rule-granted-salesforce-access.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789469069/wsw_3.1_zggqjh.png"
 order: 50
 description: "Profile, permission set, role or sharing rule: how to trace which one granted a Salesforce user's access, layer by layer, and turn a guess into real evidence."
-metaTitle: Which Rule Granted Salesforce Access? Trace It | My Website
+metaTitle: Which Rule Granted Salesforce Access? Trace It | TwinStack
 metaDescription: "Trace Salesforce access layer by layer: profile, permission sets, field security, role hierarchy and sharing rules, and see which one actually grants it."
 focusKeyword: trace Salesforce access
 stylesheet: /assets/css/imported/blog-which-rule-granted-salesforce-access.css

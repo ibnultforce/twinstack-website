@@ -2,9 +2,10 @@
 title: Donor Data Clean-Up Before a Salesforce Migration
 slug: blog-nonprofit-donor-data-cleanup-salesforce
 url: /blog/nonprofit-donor-data-cleanup-salesforce.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_auto,q_auto/v1792143942/09-thumb-nonprofit-donor-data-cleanup-salesforce_fzmdxm.jpg"
 order: 50
 description: "A practical donor data clean-up for nonprofits before moving to Salesforce: duplicates, households, addresses, gift history and the order to do it in."
-metaTitle: Nonprofit Donor Data Clean-Up for Salesforce | My Website
+metaTitle: Nonprofit Donor Data Clean-Up for Salesforce | TwinStack
 metaDescription: "A donor data clean-up before a Salesforce migration: stable IDs, duplicate checks, households, addresses, gift totals and the order to do each step in."
 focusKeyword: donor data clean-up Salesforce
 stylesheet: /assets/css/imported/blog-nonprofit-donor-data-cleanup-salesforce.css

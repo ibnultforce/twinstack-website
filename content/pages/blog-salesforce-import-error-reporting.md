@@ -1,11 +1,12 @@
 ---
 title: How to Read a Failed Salesforce Import
 description: A failed Salesforce import is a diagnosis problem before it is a data problem. How to read row-level errors and fix only the rows that actually failed.
-metaTitle: "Salesforce Import Errors: How to Read Them | My Website"
+metaTitle: "Salesforce Import Errors: How to Read Them | TwinStack"
 metaDescription: "Salesforce import errors are a diagnosis problem before a data problem: sort failures by type, fix the most common, and re-run only the failed rows."
 focusKeyword: Salesforce import errors
 slug: blog-salesforce-import-error-reporting
 url: /blog/salesforce-import-error-reporting.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789991893/SLDL_4.1_ryv9by.png"
 order: 50
 stylesheet: /assets/css/imported/blog-salesforce-import-error-reporting.css
 hideCta: true

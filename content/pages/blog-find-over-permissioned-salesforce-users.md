@@ -2,9 +2,10 @@
 title: Finding Over-Permissioned Salesforce Users
 slug: blog-find-over-permissioned-salesforce-users
 url: /blog/find-over-permissioned-salesforce-users.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789469067/wsw_4.1_aum0uo.png"
 order: 50
 description: Permission drift accumulates silently in every mature Salesforce org. A five-step review for finding it yourself, before a compliance audit does it for you.
-metaTitle: Finding Over-Permissioned Salesforce Users | My Website
+metaTitle: Finding Over-Permissioned Salesforce Users | TwinStack
 metaDescription: "A practical review for finding over-permissioned Salesforce users before an audit does: who to check first, and how to compare access with role."
 focusKeyword: over-permissioned Salesforce users
 stylesheet: /assets/css/imported/blog-find-over-permissioned-salesforce-users.css

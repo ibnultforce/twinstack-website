@@ -2,9 +2,10 @@
 title: "Riverbend Community Trust: 27 Years of Donors Into NPSP"
 slug: case-studies-riverbend-community-trust-npsp-migration
 url: /case-studies/riverbend-community-trust-npsp-migration.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789991886/SLDL_cs_2.1_o69p0q.png"
 order: 50
 description: A community trust migrated 27 years of donor history into NPSP with household relationships resolved at import, and reconciled gift totals to the penny.
-metaTitle: "NPSP Donor Migration Case Study: 27 Years | My Website"
+metaTitle: "NPSP Donor Migration Case Study: 27 Years | TwinStack"
 metaDescription: "Illustrative NPSP donor migration case study: 27 years of donor history, 31,000 constituents and 186,000 gifts, gift totals reconciled to the penny."
 focusKeyword: NPSP donor migration
 stylesheet: /assets/css/imported/case-studies-riverbend-community-trust-npsp-migration.css

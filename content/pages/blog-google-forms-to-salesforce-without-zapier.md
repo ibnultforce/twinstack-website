@@ -1,11 +1,12 @@
 ---
 title: "Google Forms to Salesforce Without Zapier: 4 Options"
 description: "Google Forms to Salesforce without Zapier: compare Web-to-Lead, a Sheets connector, a custom script and a free native app, then migrate off middleware safely."
-metaTitle: Google Forms to Salesforce Without Zapier | My Website
+metaTitle: Google Forms to Salesforce Without Zapier | TwinStack
 metaDescription: "Google Forms without Zapier: four ways to get responses into Salesforce, from Web-to-Lead and a Sheets connector to a custom script or native app."
 focusKeyword: Google Forms without Zapier
 slug: blog-google-forms-to-salesforce-without-zapier
 url: /blog/google-forms-to-salesforce-without-zapier.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789040160/Untitled_design_30_ezlo3c.png"
 order: 50
 stylesheet: /assets/css/imported/blog-google-forms-to-salesforce-without-zapier.css
 hideCta: true

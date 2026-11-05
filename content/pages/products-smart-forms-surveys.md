@@ -2,9 +2,11 @@
 title: "Free Salesforce Form Builder: Native Web Forms"
 slug: products-smart-forms-surveys
 url: /products/smart-forms-surveys.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_white,f_jpg,q_auto/v1793101300/Smart_Forms_Surveys_Tr_cln7sv.png"
+favicon: "https://res.cloudinary.com/du42kbmmn/image/upload/f_png,c_fit,w_32,h_32/v1793101300/Smart_Forms_Surveys_Tr_cln7sv.png"
 order: 50
 description: Build public web forms and surveys on Salesforce Sites with a free, native, no-code builder. Each submission creates or updates a record in your org.
-metaTitle: "Free Salesforce Form Builder: Smart Forms | My Website"
+metaTitle: "Free Salesforce Form Builder: Smart Forms | TwinStack"
 metaDescription: Build public web forms and surveys on Salesforce Sites with a free, native, no-code builder. Each submission creates or updates a record in your org.
 focusKeyword: Salesforce form builder
 stylesheet: /assets/css/imported/products-smart-forms-surveys.css

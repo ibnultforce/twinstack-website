@@ -2,9 +2,10 @@
 title: 9 Google Form Salesforce Workflows to Automate
 slug: blog-google-form-workflows-salesforce-admin
 url: /blog/google-form-workflows-salesforce-admin.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789121158/10.2_ovemej.png"
 order: 50
 description: Google Form Salesforce workflows worth automating: lead capture, events, applications, intake, volunteers, feedback and field data, and what to build for each.
-metaTitle: 9 Google Form Salesforce Workflows to Automate | My Website
+metaTitle: 9 Google Form Salesforce Workflows to Automate | TwinStack
 metaDescription: Nine Google Form Salesforce workflows worth automating, from lead capture and event signup to support intake and field data, with what to build for each.
 focusKeyword: Google Form Salesforce workflows
 stylesheet: /assets/css/imported/blog-google-form-workflows-salesforce-admin.css

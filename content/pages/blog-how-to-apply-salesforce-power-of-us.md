@@ -2,9 +2,10 @@
 title: How to Apply for Salesforce Power of Us
 slug: blog-how-to-apply-salesforce-power-of-us
 url: /blog/how-to-apply-salesforce-power-of-us.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_auto,q_auto/v1792143941/08-thumb-how-to-apply-salesforce-power-of-us_kihzsg.jpg"
 order: 50
 description: How to apply for Salesforce Power of Us: who qualifies, the documents you need, the portal steps, how long approval takes, and what you get afterwards.
-metaTitle: "Power of Us Application: 7 Steps to Apply | My Website"
+metaTitle: "Power of Us Application: 7 Steps to Apply | TwinStack"
 metaDescription: "Power of Us application: who qualifies, the tax ID and nonprofit documents to upload, the portal steps, up to three days for review, and 10 free licences."
 focusKeyword: Power of Us application
 stylesheet: /assets/css/imported/blog-how-to-apply-salesforce-power-of-us.css

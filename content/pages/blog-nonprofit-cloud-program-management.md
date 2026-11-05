@@ -2,9 +2,10 @@
 title: Program Management in Nonprofit Cloud
 slug: blog-nonprofit-cloud-program-management
 url: /blog/nonprofit-cloud-program-management.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_auto,q_auto/v1792143939/06-thumb-nonprofit-cloud-program-management_kmc1f4.jpg"
 order: 50
 description: Program Management in Nonprofit Cloud explained: Programs, Benefits, Enrollments, Sessions and Disbursements, and how it compares with the PMM in NPSP.
-metaTitle: Nonprofit Cloud Program Management Guide | My Website
+metaTitle: Nonprofit Cloud Program Management Guide | TwinStack
 metaDescription: "Nonprofit Cloud program management explained: how Programs, Benefits, Enrollments and Disbursements fit together, versus NPSP's PMM."
 focusKeyword: Nonprofit Cloud program management
 stylesheet: /assets/css/imported/blog-nonprofit-cloud-program-management.css

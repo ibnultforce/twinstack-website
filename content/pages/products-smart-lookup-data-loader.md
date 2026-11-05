@@ -1,11 +1,13 @@
 ---
 title: "Smart Lookup Data Loader: Free Salesforce CSV Import App"
 description: "Free native Salesforce data loader for CSV imports: upserts, lookups resolved by name or code, automatic field mapping and clear row-level error reporting."
-metaTitle: "Smart Lookup Data Loader: Free CSV Import App | My Website"
+metaTitle: "Smart Lookup Data Loader: Free CSV Import App | TwinStack"
 metaDescription: Smart Lookup Data Loader is a free, native Salesforce app for CSV imports with upserts, dynamic lookups by name or code, auto-mapping and row-level errors.
 focusKeyword: Smart Lookup Data Loader
 slug: products-smart-lookup-data-loader
 url: /products/smart-lookup-data-loader.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_white,f_jpg,q_auto/v1788420787/Untitled_design_20_daquoh.png"
+favicon: "https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_64/v1788420787/Untitled_design_20_daquoh.png"
 order: 50
 stylesheet: /assets/css/imported/products-smart-lookup-data-loader.css
 fonts:

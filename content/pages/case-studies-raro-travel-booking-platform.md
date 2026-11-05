@@ -1,11 +1,12 @@
 ---
 title: RARO Travel Booking Platform
 description: "RARO case study: a Salesforce-connected travel booking platform with multi-wallet payments, installment automation and Stripe integration across three markets."
-metaTitle: "Travel Booking Platform Case Study: RARO | My Website"
+metaTitle: "Travel Booking Platform Case Study: RARO | TwinStack"
 metaDescription: "RARO case study: how a travel booking platform handles multi-wallet payments, installments and Stripe recurring charges for customers and booking agents."
 focusKeyword: travel booking platform
 slug: case-studies-raro-travel-booking-platform
 url: /case-studies/raro-travel-booking-platform.html
+ogImage: "https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_auto,f_jpg,q_auto/v1789139633/3_pkhq7f.png"
 order: 50
 stylesheet: /assets/css/imported/case-studies-raro-travel-booking-platform.css
 hideCta: true
