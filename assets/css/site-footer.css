@@ -1,0 +1,42 @@
+/* TwinStack site footer: one shared design for every page.
+   Self-contained (no Tailwind classes), so every page renders the same footer
+   whatever page stylesheet it loads. */
+footer.tsf,footer.tsf *,footer.tsf *::before,footer.tsf *::after{box-sizing:border-box}
+footer.tsf{position:relative;overflow:hidden;background:#0f172a;color:#cbd5e1;padding:3rem 0;line-height:1.5;-webkit-text-fill-color:currentColor;text-align:left}
+footer.tsf .tsf-wrap{position:relative;z-index:10;max-width:80rem;margin:0 auto;padding:0 1rem}
+footer.tsf .tsf-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem 1.5rem}
+footer.tsf .tsf-brandcol{grid-column:1/-1}
+footer.tsf .tsf-brand{position:relative;display:inline-block;margin:0 0 1.5rem}
+footer.tsf .tsf-glow{position:absolute;top:-1.5rem;left:-3rem;width:16rem;height:16rem;border-radius:9999px;background:rgba(14,165,233,.1);filter:blur(64px);pointer-events:none}
+footer.tsf .tsf-card{position:absolute;top:0;bottom:0;left:-3000px;right:-3rem;z-index:0;background:#fff;border-top-right-radius:1.5rem;border-bottom-right-radius:1.5rem}
+footer.tsf .tsf-inner{position:relative;z-index:10;padding-left:.5rem}
+footer.tsf .tsf-home{display:flex;align-items:center;gap:.5rem;margin:0 0 1rem;color:#0f172a;-webkit-text-fill-color:#0f172a;font-size:1.5rem;line-height:2rem;font-weight:700;text-decoration:none}
+footer.tsf .tsf-home img{display:block;width:3rem;height:3rem;border-radius:.5rem;object-fit:contain;max-width:none}
+footer.tsf .tsf-wm{display:inline-flex;flex-direction:column;align-items:flex-start;line-height:1}
+footer.tsf .tsf-wm-top{line-height:1;white-space:nowrap}
+footer.tsf .tsf-twin{color:#343453;-webkit-text-fill-color:#343453}
+footer.tsf .tsf-stack{background:linear-gradient(to right,#0ea5e9,#6366f1);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+footer.tsf .tsf-wm-sub{display:block;margin:.08em 0 0 .46em;font-size:.5em;font-weight:700;letter-spacing:.01em;line-height:1;color:#343453;-webkit-text-fill-color:#343453}
+footer.tsf .tsf-tag{max-width:20rem;margin:0;font-size:.875rem;line-height:1.25rem;font-weight:500;color:#334155;-webkit-text-fill-color:#334155}
+footer.tsf .tsf-h{margin:0 0 1rem;padding:0;font-size:1rem;line-height:1.5rem;font-weight:600;color:#fff;-webkit-text-fill-color:#fff;letter-spacing:normal;text-transform:none}
+footer.tsf .tsf-list{list-style:none;margin:0;padding:0;font-size:.875rem;line-height:1.25rem}
+footer.tsf .tsf-list li{margin:0;padding:0}
+footer.tsf .tsf-list li+li{margin-top:.25rem}
+footer.tsf .tsf-list li::before,footer.tsf .tsf-list li::marker{content:none}
+footer.tsf .tsf-link{display:block;padding:.5rem 0;color:#cbd5e1;-webkit-text-fill-color:currentColor;text-decoration:none;transition:color .15s}
+footer.tsf .tsf-link:hover{color:#38bdf8}
+footer.tsf .tsf-social{display:flex;gap:.75rem}
+footer.tsf .tsf-soc{display:flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;border-radius:9999px;background:#1e293b;color:#fff;-webkit-text-fill-color:#fff;text-decoration:none;transition:background-color .15s}
+footer.tsf .tsf-soc:hover{background:#0284c7}
+footer.tsf .tsf-soc svg{display:inline-block;width:1.25em;height:1em;font-size:1.125rem;fill:currentColor;overflow:visible;flex-shrink:0}
+footer.tsf .tsf-bottom{margin-top:3rem;padding-top:2rem;border-top:1px solid #1e293b;text-align:center;font-size:.875rem;line-height:1.25rem;color:#64748b;-webkit-text-fill-color:#64748b}
+footer.tsf .tsf-bottom p{margin:0}
+@media (min-width:640px){footer.tsf .tsf-wrap{padding:0 1.5rem}}
+@media (min-width:768px){footer.tsf .tsf-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:3rem}}
+@media (min-width:1024px){
+  footer.tsf .tsf-wrap{padding:0 2rem}
+  footer.tsf .tsf-grid{grid-template-columns:1.6fr repeat(4,minmax(0,1fr))}
+  footer.tsf .tsf-brandcol{grid-column:auto}
+  footer.tsf .tsf-brand{margin-left:-1.25rem}
+  footer.tsf .tsf-card{right:-.5rem}
+}

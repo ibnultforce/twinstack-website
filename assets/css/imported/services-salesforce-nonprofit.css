@@ -234,8 +234,8 @@
 .imported-page .imp-bg-white { --tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1)) }
 .imported-page .imp-bg-white\/95 { background-color:hsla(0,0%,100%,.95) }
 .imported-page .imp-bg-gradient-to-r { background-image:linear-gradient(to right,var(--tw-gradient-stops)) }
-.imported-page .imp-from-brand-500 { --tw-gradient-from:#0ea5e9 var(--tw-gradient-from-position);--tw-gradient-to:rgba(14,165,233,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to) }
-.imported-page .imp-to-indigo-500 { --tw-gradient-to:#6366f1 var(--tw-gradient-to-position) }
+.imported-page .imp-from-brand-500 { --tw-gradient-from:#0ea5e9;--tw-gradient-to:rgba(14,165,233,0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to) }
+.imported-page .imp-to-indigo-500 { --tw-gradient-to:#6366f1 }
 .imported-page .imp-bg-clip-text { -webkit-background-clip:text;background-clip:text }
 .imported-page .imp-object-cover { -o-object-fit:cover;object-fit:cover }
 .imported-page .imp-p-2 { padding:.5rem }

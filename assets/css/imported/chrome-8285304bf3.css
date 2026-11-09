@@ -192,8 +192,8 @@ body:has(.imported-page) [data-chrome-spacer] { display: none; }
 .imported-chrome .imp-bg-white { --tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1)) }
 .imported-chrome .imp-bg-white\/95 { background-color:hsla(0,0%,100%,.95) }
 .imported-chrome .imp-bg-gradient-to-r { background-image:linear-gradient(to right,var(--tw-gradient-stops)) }
-.imported-chrome .imp-from-brand-500 { --tw-gradient-from:#0ea5e9 var(--tw-gradient-from-position);--tw-gradient-to:rgba(14,165,233,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to) }
-.imported-chrome .imp-to-indigo-500 { --tw-gradient-to:#6366f1 var(--tw-gradient-to-position) }
+.imported-chrome .imp-from-brand-500 { --tw-gradient-from:#0ea5e9;--tw-gradient-to:rgba(14,165,233,0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to) }
+.imported-chrome .imp-to-indigo-500 { --tw-gradient-to:#6366f1 }
 .imported-chrome .imp-bg-clip-text { -webkit-background-clip:text;background-clip:text }
 .imported-chrome .imp-object-cover { -o-object-fit:cover;object-fit:cover }
 .imported-chrome .imp-p-2 { padding:.5rem }

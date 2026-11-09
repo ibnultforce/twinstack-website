@@ -267,57 +267,54 @@ scriptHtmlClass: smooth
     </div>
   </div>
 </section>
-<footer class="imp-bg-slate-900 imp-text-slate-300 imp-py-12 imp-relative imp-overflow-hidden">
-  <div class="imp-max-w-7xl imp-mx-auto imp-px-4 imp-sm:px-6 imp-lg:px-8 imp-relative imp-z-10">
-    <div class="imp-ts-foot-grid imp-grid imp-grid-cols-1 imp-md:grid-cols-4 imp-gap-12">
-      <div class="imp-col-span-1 imp-md:col-span-2">
-        <div class="imp-relative imp-mb-6 imp-inline-block">
-          <div class="imp-absolute imp--top-6 imp--left-12 imp-w-64 imp-h-64 imp-bg-brand-500/10 imp-rounded-full imp-blur-3xl"></div>
-          <div class="imp-absolute imp-inset-y-0 imp-left-[-3000px] imp-right-[-3rem] imp-bg-white imp-rounded-r-3xl imp-z-0"></div>
-          <div class="imp-relative imp-z-10 imp-pl-2">
-            <a href="/" class="imp-flex imp-items-center imp-gap-2 imp-mb-4 imp-text-slate-900 imp-font-bold imp-text-2xl" aria-label="TwinStack Solutions Home">
-              <img src="data:image/webp;base64,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" loading="lazy" alt="TwinStack Logo" width="48" height="48" class="imp-h-12 imp-w-12 imp-rounded-lg imp-object-contain">
-              <span class="imp-ts-wm"><span class="imp-ts-wm-top"><span class="imp-text-[#343453]">Twin</span><span class="imp-bg-gradient-to-r imp-from-brand-500 imp-to-indigo-500 imp-text-transparent imp-bg-clip-text">Stack</span></span><span class="imp-ts-wm-sub">Solutions</span></span>
+<link rel="stylesheet" href="/assets/css/site-footer.css">
+<footer class="tsf">
+  <div class="tsf-wrap">
+    <div class="tsf-grid">
+      <div class="tsf-brandcol">
+        <div class="tsf-brand">
+          <div class="tsf-glow" aria-hidden="true"></div>
+          <div class="tsf-card" aria-hidden="true"></div>
+          <div class="tsf-inner">
+            <a href="/" class="tsf-home" aria-label="TwinStack Solutions Home">
+              <img src="data:image/webp;base64,UklGRkgFAABXRUJQVlA4IDwFAADwHgCdASpwAHAAPqVGnUmmJCMhMlQNUMAUiWUA00WktwDb1sJlrnGrtS/3LhFOZ43vjUQcpSe3abw/T90+2JZc4xjkvLVHsGP9vM4///UWJT0b8Lp/UlIEt9OHY5F8q4ZKeuOzWa8MIhd/CWzJ2C1Mlt/DazRl+MOIQotxwQ5OaUf13oVMyGb3tj+0Z0iaTtJ2EMLGNNdgqRNV4ynwa+EHzImBqkhQilTx9ikHvm7c+Ox/VFBoZ8jMkN4fK6JXQiAkWzEuNSq0Zu1nXkBwNFeNGGGa+Axhd+A+tvCqrBSSmfwhu7J5cnG2PavHXBmzQPFs7rc1S1Dem9gbPr8pTt4AAP76kAXSI7ANyV635f/Ih+/N8/ywyoMWRp27HcSo6tRxO5H5T6va9MPDweANs85P4+/MvTPlhIZ0zpWLHvpymJUgx+ogaEGSpj/sIuXJJM1i+jb3Xd4BUTu3XfWPVV8E7ufT8wOu4w7AWDB3vV55UEy2bpwAEyklab+9EfjjElvTsp86xm2xnPQVK90773e/ecQmO2B6n80Jut33wg/35BYPzFXdEPatwbdYfZvVdb6d2t8YFcW56pv5gEFLPl4cexPZC/aB8az5Mt5oliukIuksyv5evZ4ik2qU2AVbE7Ql8nkINCQ6bYC9P79/pC9quPxiAna0xENQ/ygZtKhc2Tq6P2qbttNZ35BnqrTEClObI5qx+SEiVJpN1cTYXCdtUd+N+vzPTNSHZxc3j7AxnquJyRBhtYfe9zH8rVY1iYiz9zDrmQ+L5ZCV1cBpDM0IYRZWshv8dJQEKR38qq/IPBtdaq3YEGvq4DWAYcrOn+YwA74nul/SeLUjl9TN5dtgmnH4fnQqBVKm5WHwkdZLEy8agCDBg4O0urJZ+S070rWioneOIpdODXtT2qRnT3UPTw2PbNPSy+rWozGNZxXewfyAvKL+JFJrfBGvLGSiETbnkvqfZ/mkZz0WO8gfuONa6q856booKfzOCp+JvFciRnrAYCMCyrlAdtkPB5ca3b4AW3K+L0+XOKVAWofjCtoPcZqxeAg2BxOuW6s2hulYtFX2awbOHlv8U4qJU1k6PleFHkx7Vki/8gWCfKR1l0GWIoX1i50XaVpjdlJcwa+y/JUAk/g5s3qCodIh7abaWT/ya5jmQKf6NQRhXVtKBfau/4YasmhdnxIaa4SiZ6/ZBIpCq6sHASuTxyK1vMPDh0FvZbd/1fopgYVfNfpErTCVRZl7Q3dcT/oqXu/SjGh6/Tu13QOCCrFsdqWY1etDfNb7bSd3KfHCSksCmV2NslDf0BDFCm5Izak3O6NJV1txIpg0LL4LHGztnW2+loLmiLFU8HBPhNfuijiWOVeMO066aMZRdLXxYjlNvfgUu7GfvPTC9L/fmIHHSUvqmlH2gnZeMW30fy7b+nSPdJL4OzrxKOMYNDxtQOahc8GpC3rYkZ3j1EG1OM+XFVBk1nDHmhknZyFDPuk5PQWMrthUyWO02Qlf7x1JDuon0T08Kf8DtH54NigTK20cCVUveAR/+2ez0WmYE5l7708buMe/1zNUOseXqRWPD/lP9GeiO+xsdISJ/YGOpreiesuSKnB5ak6jLrmrNIwhcX937yB8jhhRNUWqlHStyBFPuzW01PYXqdLhdheoDdY8dXlLHSAwf3CUIal1sqv9uDXr+g5BUe+I2xxFxrfqaVF6cAHbYwDQUF2bNSIOiqS3Glbnzs9S5L9RCg0E6ynn64cosCkmLGcWDtQn2vnjV2/HOoD9WhGY66z4XqoxQM4lanAAAA==" loading="lazy" alt="TwinStack Logo" width="48" height="48">
+              <span class="tsf-wm"><span class="tsf-wm-top"><span class="tsf-twin">Twin</span><span class="tsf-stack">Stack</span></span><span class="tsf-wm-sub">Solutions</span></span>
             </a>
-            <p class="imp-text-sm imp-text-slate-700 imp-max-w-xs imp-font-medium">Empowering charities and businesses with Salesforce excellence since 2022.</p>
+            <p class="tsf-tag">Empowering charities and businesses with Salesforce excellence since 2022.</p>
           </div>
         </div>
       </div>
-      <div class="imp-ts-fcol">
-            <h4 class="imp-text-white imp-font-semibold imp-mb-4">Company</h4>
-            <ul class="imp-space-y-1 imp-text-sm">
-              <li><a href="/about.html" class="imp-hover:text-brand-400 imp-transition imp-py-2 imp-block">About Us</a></li>
-              <li><a href="/pricing.html" class="imp-hover:text-brand-400 imp-transition imp-py-2 imp-block">Pricing</a></li>
-            </ul>
-          </div>
-          <div class="imp-ts-fcol">
-            <h4 class="imp-text-white imp-font-semibold imp-mb-4">Resources</h4>
-            <ul class="imp-space-y-1 imp-text-sm">
-              <li><a href="/blog.html" class="imp-hover:text-brand-400 imp-transition imp-py-2 imp-block">Blog</a></li>
-              <li><a href="/case-studies.html" class="imp-hover:text-brand-400 imp-transition imp-py-2 imp-block">Case Studies</a></li>
-              <li><a href="/contact.html" class="imp-hover:text-brand-400 imp-transition imp-py-2 imp-block">Contact</a></li>
-            </ul>
-          </div>
-          <div class="imp-mt-4 imp-md:mt-0">
-            <h4 class="imp-text-white imp-font-semibold imp-mb-4">Trust &amp; Legal</h4>
-            <ul class="imp-space-y-1 imp-text-sm">
-              <li><a href="/privacy-policy.html" class="imp-hover:text-brand-400 imp-transition imp-py-2 imp-block">Privacy Policy</a></li>
-              <li><a href="/trust-center.html" class="imp-hover:text-brand-400 imp-transition imp-py-2 imp-block">Trust Center</a></li>
-            </ul>
-          </div>
-      <div class="imp-mt-4 imp-md:mt-0">
-            <h4 class="imp-text-white imp-font-semibold imp-mb-4">Connect</h4>
-            <div class="imp-flex imp-gap-3">
-              <a href="https://www.linkedin.com/company/twinstack-solutions/" aria-label="Follow TwinStack Solutions on LinkedIn" class="imp-w-10 imp-h-10 imp-rounded-full imp-bg-slate-800 imp-flex imp-items-center imp-justify-center imp-hover:bg-brand-600 imp-transition imp-text-white">
-                <svg class="imp-fa-svg imp-text-lg" aria-hidden="true" focusable="false"><use href="#fa-linkedin-in" /></svg>
-              </a>
-              <a href="https://www.youtube.com/@TwinStackSolutions-sf" target="_blank" rel="noopener" aria-label="Subscribe to our YouTube channel" class="imp-w-10 imp-h-10 imp-rounded-full imp-bg-slate-800 imp-flex imp-items-center imp-justify-center imp-hover:bg-brand-600 imp-transition imp-text-white">
-                <svg class="imp-fa-svg imp-text-lg" aria-hidden="true" focusable="false"><use href="#fa-youtube" /></svg>
-              </a>
-            </div>
-          </div>
+      <div>
+        <h4 class="tsf-h">Company</h4>
+        <ul class="tsf-list">
+          <li><a href="/about.html" class="tsf-link">About Us</a></li>
+          <li><a href="/pricing.html" class="tsf-link">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="tsf-h">Resources</h4>
+        <ul class="tsf-list">
+          <li><a href="/blog.html" class="tsf-link">Blog</a></li>
+          <li><a href="/case-studies.html" class="tsf-link">Case Studies</a></li>
+          <li><a href="/contact.html" class="tsf-link">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="tsf-h">Trust &amp; Legal</h4>
+        <ul class="tsf-list">
+          <li><a href="/privacy-policy.html" class="tsf-link">Privacy Policy</a></li>
+          <li><a href="/trust-center.html" class="tsf-link">Trust Center</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="tsf-h">Connect</h4>
+        <div class="tsf-social">
+          <a href="https://www.linkedin.com/company/twinstack-solutions/" target="_blank" rel="noopener" aria-label="Follow TwinStack Solutions on LinkedIn" class="tsf-soc"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+          <a href="https://www.youtube.com/@TwinStackSolutions-sf" target="_blank" rel="noopener" aria-label="Subscribe to our YouTube channel" class="tsf-soc"><svg viewBox="0 0 576 512" aria-hidden="true" focusable="false"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a>
+        </div>
+      </div>
     </div>
-    <div class="imp-border-t imp-border-slate-800 imp-mt-12 imp-pt-8 imp-text-center imp-text-sm imp-text-slate-500">
+    <div class="tsf-bottom">
       <p>&copy; 2026 TwinStack Solutions. All rights reserved.</p>
     </div>
   </div>
