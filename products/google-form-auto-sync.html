@@ -1,0 +1,711 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<script id="ts-ga-consent">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});try{if(localStorage.getItem('ts_consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}gtag('js',new Date());gtag('config','G-TRGBC4HYEY');</script>
+<script src="/js/ts-analytics.js" defer></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Forms to Salesforce Sync: Free and Native | TwinStack</title>
+    <meta name="description" content="Sync Google Forms to Salesforce with no Zapier, middleware or Google Sheets. A free native package turns each submission into a Salesforce record in real time.">
+    <link rel="canonical" href="https://twinstack.net/products/google-form-auto-sync">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:title" content="Google Forms to Salesforce Sync: Free and Native | TwinStack">
+    <meta property="og:description" content="Sync Google Forms to Salesforce with no Zapier, middleware or Google Sheets. A free native package turns each submission into a Salesforce record in real time.">
+    <meta property="og:url" content="https://twinstack.net/products/google-form-auto-sync">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="TwinStack Solutions">
+    <meta property="og:image" content="https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_white,f_jpg,q_auto/v1788339177/Google_sync_zxk6ny.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Google Forms to Salesforce Sync: Free and Native | TwinStack">
+    <meta name="twitter:description" content="Sync Google Forms to Salesforce with no Zapier, middleware or Google Sheets. A free native package turns each submission into a Salesforce record in real time.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_white,f_jpg,q_auto/v1788339177/Google_sync_zxk6ny.png">
+<link rel="icon" href="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_64/v1788339177/Google_sync_zxk6ny.png"><link rel="apple-touch-icon" href="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_180/v1788339177/Google_sync_zxk6ny.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://res.cloudinary.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --ink:#12151D; --ink2:#464C5C; --ink3:#7C8395;
+ --page:#FFFFFF; --panel:#FFFFFF; --line:#E4E7EF; --line2:#CFD4E0; --wash:#F3F5F9;
+ --acc:#3B78F2; --acc2:#12A05C; --accd:#1F4FBF; --accs:#EAF0FE;
+ --disp:'Plus Jakarta Sans','Inter',system-ui,sans-serif;
+ --sans:'Inter','Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+ --mono:'JetBrains Mono',ui-monospace,'SFMono-Regular',monospace;
+ --e:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:112px}
+body{font-family:var(--sans);background:var(--page);color:var(--ink);line-height:1.66;letter-spacing:-.005em;
+ -webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 30px}
+h1,h2,h3{font-family:var(--disp);font-weight:700;letter-spacing:-.032em;line-height:1.1}
+h4{font-family:var(--disp);font-weight:600;letter-spacing:-.018em}
+h2{font-size:clamp(1.85rem,3.2vw,2.6rem);letter-spacing:-.034em}
+.idx{font-family:var(--mono);font-size:.73rem;letter-spacing:.17em;text-transform:uppercase;color:var(--ink3);
+ display:flex;align-items:center;gap:13px;margin-bottom:20px}
+.idx b{color:var(--acc);font-weight:500}
+.idx::after{content:"";flex:0 0 32px;height:1px;background:var(--line2)}
+.lead{color:var(--ink2);font-size:1.06rem;margin-top:18px;max-width:64ch}
+.sec-head{margin-bottom:58px;max-width:62ch}
+section{padding:100px 0;position:relative}
+
+/* ---------- NAV ---------- */
+.nav{position:fixed;top:18px;left:50%;transform:translateX(-50%);z-index:400;width:calc(100% - 36px);max-width:1180px;
+ background:rgba(255,255,255,.82);backdrop-filter:blur(20px) saturate(170%);-webkit-backdrop-filter:blur(20px) saturate(170%);
+ border:1px solid var(--line);border-radius:20px;box-shadow:0 16px 40px -26px rgba(18,21,29,.42);
+ transition:top .5s var(--e),width .5s var(--e),max-width .5s var(--e),border-radius .5s var(--e),
+  box-shadow .42s var(--e),background .42s var(--e),border-color .42s var(--e);will-change:top,width,border-radius}
+.nav::before{content:"";position:absolute;top:0;left:22px;right:22px;height:2px;border-radius:2px;
+ background:linear-gradient(90deg,#3B78F2,#E1483B,#F0A700,#12A05C);opacity:.9;
+ transition:left .5s var(--e),right .5s var(--e)}
+.nav.docked{top:0;width:100%;max-width:100%;border-radius:0;border-color:transparent;
+ border-bottom:1px solid var(--line);background:rgba(255,255,255,.95);box-shadow:0 6px 22px -20px rgba(18,21,29,.5)}
+.nav.docked::before{left:0;right:0}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 20px;max-width:1180px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
+.brand-mark{height:46px;width:46px;display:grid;place-items:center;flex-shrink:0}
+.brand-mark img{width:100%;height:100%;object-fit:contain;transition:transform .45s var(--e)}
+.brand:hover .brand-mark img{transform:scale(1.08) rotate(-5deg)}
+.brand b{font-family:var(--disp);font-size:1.02rem;font-weight:600;display:block;letter-spacing:-.015em;line-height:1.25}
+.brand small{font-family:var(--mono);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink3)}
+.nav-mid{display:flex;align-items:center;gap:3px;flex:1}
+.pill{text-decoration:none;font-size:.87rem;font-weight:500;color:var(--ink2);padding:9px 15px;border-radius:11px;
+ transition:background .22s,color .22s,transform .22s var(--e);white-space:nowrap}
+.pill:hover{background:var(--accs);color:var(--accd);transform:translateY(-1px)}
+.pill.home{color:var(--ink);font-weight:600;border:1px solid var(--line2);background:var(--panel)}
+.pill.home:hover{border-color:var(--acc);background:var(--panel)}
+.nav-cta{background:var(--ink);color:#fff;text-decoration:none;padding:11px 20px;border-radius:11px;font-size:.87rem;
+ font-weight:600;white-space:nowrap;flex-shrink:0;transition:background .24s,transform .24s var(--e),box-shadow .24s}
+.nav-cta:hover{background:var(--acc);transform:translateY(-2px);box-shadow:0 12px 22px -12px rgba(59,120,242,.85)}
+
+/* ---------- HERO ---------- */
+.hero{padding:158px 0 92px;overflow:hidden;background:linear-gradient(180deg,#F4F8FF 0%,#FFFFFF 100%)}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(760px 460px at 12% 12%,rgba(59,120,242,.16),transparent 62%),radial-gradient(620px 420px at 88% 8%,rgba(225,72,59,.12),transparent 62%),radial-gradient(600px 400px at 78% 88%,rgba(18,160,92,.13),transparent 62%),radial-gradient(520px 360px at 32% 92%,rgba(240,167,0,.14),transparent 62%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:56px;align-items:center;position:relative;z-index:2}
+.hero-logo{height:84px;width:auto;max-width:200px;object-fit:contain;margin-bottom:26px}
+.badge{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:.73rem;letter-spacing:.03em;
+ color:var(--ink2);background:var(--panel);border:1px solid var(--line);padding:7px 15px;border-radius:30px;margin-bottom:22px}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--acc2);animation:pl 2.2s ease-in-out infinite;flex-shrink:0}
+@keyframes pl{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.8);opacity:.4}}
+.hero h1{font-size:clamp(2.35rem,4.7vw,3.6rem);line-height:1.02;max-width:16ch;letter-spacing:-.038em}
+.hero h1 .hl{color:var(--acc)}
+.hero .sub{margin-top:22px;font-size:1.13rem;color:var(--ink2);max-width:50ch}
+.cta-row{display:flex;gap:13px;margin-top:34px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;font-size:.97rem;
+ padding:15px 28px;border-radius:12px;transition:transform .26s var(--e),background .24s,border-color .24s,box-shadow .26s}
+.btn-p{background:var(--acc);color:#fff;box-shadow:0 12px 26px -12px rgba(59,120,242,.8)}
+.btn-p:hover{background:var(--accd);transform:translateY(-3px);box-shadow:0 20px 34px -12px rgba(59,120,242,.9)}
+.btn-s{border:1px solid var(--line2);color:var(--ink);background:var(--panel)}
+.btn-s:hover{border-color:var(--ink);transform:translateY(-3px)}
+.stats{display:flex;margin-top:38px;padding-top:24px;border-top:1px solid var(--line);flex-wrap:wrap}
+.st{padding-right:32px;margin-right:32px;border-right:1px solid var(--line)}
+.st:last-child{border:0;margin:0;padding:0}
+.st b{display:block;font-family:var(--disp);font-size:1.55rem;font-weight:600;line-height:1.15;color:var(--acc)}
+.st span{font-size:.79rem;color:var(--ink3)}
+
+/* ---------- MEDIA FRAMES (no distortion anywhere) ---------- */
+.fig{border:1px solid var(--line);border-radius:14px;background:var(--wash);overflow:hidden;
+ box-shadow:0 26px 50px -32px rgba(18,21,29,.42);transition:transform .4s var(--e),box-shadow .4s var(--e)}
+.fig:hover{transform:translateY(-6px);box-shadow:0 36px 62px -30px rgba(18,21,29,.46)}
+.fig-bar{display:flex;align-items:center;gap:8px;padding:11px 15px;border-bottom:1px solid var(--line);
+ font-family:var(--mono);font-size:.7rem;color:var(--ink3);background:var(--panel)}
+.fig-bar i{width:7px;height:7px;border-radius:50%;display:block;flex-shrink:0}
+.fig-body{padding:14px;display:grid;place-items:center;background:var(--wash)}
+.fig-body img{width:100%;height:auto;max-height:440px;object-fit:contain;border-radius:6px}
+.fig-sm .fig-body{padding:10px}
+.fig-sm .fig-body img{max-height:200px}
+.stage{position:relative;display:flex;flex-direction:column;gap:16px}
+.chipf{position:absolute;background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:8px 14px;
+ font-family:var(--mono);font-size:.71rem;z-index:6;display:flex;align-items:center;gap:8px;
+ box-shadow:0 14px 28px -14px rgba(18,21,29,.4)}
+.c1{top:-14px;left:-14px;color:var(--acc2)}
+.c2{bottom:-14px;right:-14px;color:var(--accd)}
+.arrowdown{display:grid;place-items:center;font-family:var(--mono);font-size:.72rem;color:var(--ink3);gap:6px}
+.arrowdown i{width:1px;height:26px;background:linear-gradient(180deg,var(--acc),var(--acc2));display:block}
+.logo-panel{border:1px solid var(--line);border-radius:20px;background:var(--panel);aspect-ratio:4/3;
+ display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:0 30px 60px -36px rgba(18,21,29,.42)}
+.logo-panel img{width:44%;max-width:230px;height:auto;object-fit:contain;position:relative;z-index:2;animation:fl 7s ease-in-out infinite}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.ring{position:absolute;border:1px solid var(--line);border-radius:50%;aspect-ratio:1}
+.ring.a{width:34%}.ring.b{width:54%}.ring.c{width:76%}.ring.d{width:98%}
+
+/* ---------- STRIP (animated colour wave) ---------- */
+.strip{position:relative;overflow:hidden;isolation:isolate}
+.strip::before{content:"";position:absolute;inset:0;z-index:-1;
+ background:linear-gradient(90deg,#3B78F2 0%,#E1483B 22%,#F2B705 44%,#12A05C 68%,#E1483B 84%,#3B78F2 100%);
+ background-size:220% 100%;animation:hue 14s linear infinite}
+@keyframes hue{from{background-position:0% 0}to{background-position:220% 0}}
+.strip-in{display:flex;width:max-content;animation:sl 42s linear infinite}
+.strip-in:hover{animation-play-state:paused}
+.si{display:flex;align-items:center;gap:12px;padding:18px 38px;font-family:var(--mono);font-size:.76rem;
+ color:#FFFFFF;white-space:nowrap;letter-spacing:.1em;text-transform:uppercase;font-weight:500}
+.si i{width:5px;height:5px;border-radius:50%;display:block;flex-shrink:0;background:rgba(255,255,255,.92)}
+@keyframes sl{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- GRIDS ---------- */
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:28px 26px;position:relative;
+ overflow:hidden;transition:transform .3s var(--e),box-shadow .3s var(--e),border-color .3s}
+.card:hover{transform:translateY(-6px);border-color:var(--line2);box-shadow:0 24px 42px -30px rgba(18,21,29,.4)}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--acc);
+ transform:scaleX(0);transform-origin:left;transition:transform .45s var(--e)}
+.card:hover::before{transform:scaleX(1)}
+.card h3,.card h4{font-size:1.04rem;margin-bottom:9px}
+.card p{color:var(--ink2);font-size:.93rem}
+.cnum{font-family:var(--mono);font-size:.75rem;color:var(--ink3);margin-bottom:15px;display:inline-block;
+ transition:color .3s,transform .3s var(--e);letter-spacing:.1em}
+.card:hover .cnum{color:var(--acc);transform:translateX(3px)}
+.xm{width:32px;height:32px;border-radius:9px;border:1px solid var(--line);display:grid;place-items:center;
+ color:#D9534A;margin-bottom:16px;font-size:.9rem;transition:transform .35s var(--e)}
+.card:hover .xm{transform:rotate(90deg)}
+.pull{margin:44px 0 0;padding:26px 30px;border-left:2px solid var(--acc);background:var(--panel);
+ border-radius:0 14px 14px 0;color:var(--ink2);font-size:1.04rem;max-width:80ch;border-top:1px solid var(--line);
+ border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+@media(max-width:1000px){.g4{grid-template-columns:1fr 1fr}}
+@media(max-width:860px){.g3{grid-template-columns:1fr}.g2{grid-template-columns:1fr}}
+@media(max-width:560px){.g4{grid-template-columns:1fr}}
+
+/* ---------- FLOW ---------- */
+.flow{display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
+.node{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:34px 30px;text-align:center;
+ transition:transform .36s var(--e),border-color .36s,box-shadow .36s}
+.node:hover{transform:translateY(-7px);border-color:var(--acc);box-shadow:0 26px 46px -32px rgba(18,21,29,.45)}
+.node-ic{width:54px;height:54px;border-radius:15px;display:grid;place-items:center;margin:0 auto 16px;
+ font-size:1.35rem;background:var(--accs);color:var(--accd)}
+.node h3{font-size:1.1rem;margin-bottom:8px}.node p{color:var(--ink2);font-size:.93rem}
+.node code{font-family:var(--mono);font-size:.79rem;color:var(--accd);background:var(--accs);padding:2px 6px;border-radius:4px}
+.lnk{padding:0 26px;min-width:200px;text-align:center}
+.lnk-l{height:2px;border-radius:2px;background:linear-gradient(90deg,var(--acc),var(--acc2));position:relative;overflow:hidden}
+.lnk-l::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.85),transparent);
+ background-size:50% 100%;background-repeat:no-repeat;animation:sw 2.4s ease-in-out infinite}
+@keyframes sw{0%{background-position:-60% 0}100%{background-position:160% 0}}
+.lnk-t{font-family:var(--mono);font-size:.69rem;color:var(--ink2);border:1px solid var(--line);border-radius:20px;
+ padding:5px 13px;display:inline-block;margin:13px 4px 0;background:var(--panel)}
+.flow-note{margin-top:30px;text-align:center;font-family:var(--mono);font-size:.79rem;color:var(--ink2);
+ border:1px dashed var(--line2);border-radius:12px;padding:15px 22px;display:block;background:var(--panel)}
+@media(max-width:900px){.flow{grid-template-columns:1fr}.lnk{padding:24px 0;min-width:0}
+ .lnk-l{width:2px;height:46px;margin:0 auto;background:linear-gradient(180deg,var(--acc),var(--acc2))}}
+
+/* ---------- RAIL STEPS (pipeline variant) ---------- */
+.rail{position:relative;padding-left:0}
+.rail-track{display:grid;grid-template-columns:repeat(6,1fr);gap:0;position:relative;margin-bottom:34px}
+.rail-track::before{content:"";position:absolute;left:8%;right:8%;top:19px;height:2px;
+ background:linear-gradient(90deg,var(--acc),var(--acc2))}
+.rt{text-align:center;position:relative;padding:0 8px}
+.rt-dot{width:38px;height:38px;border-radius:50%;background:var(--panel);border:2px solid var(--acc);
+ display:grid;place-items:center;margin:0 auto 14px;font-family:var(--mono);font-size:.8rem;color:var(--acc);
+ position:relative;z-index:2;transition:transform .3s var(--e),background .3s,color .3s}
+.rt:hover .rt-dot{transform:scale(1.16);background:var(--acc);color:#fff}
+.rt h4{font-size:.92rem;line-height:1.3}
+.rail-detail{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);
+ border-left:1px solid var(--line);background:var(--panel);border-radius:14px;overflow:hidden}
+.rd{padding:26px 26px 30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+ transition:background .28s var(--e)}
+.rd:hover{background:var(--wash)}
+.rd-n{font-family:var(--mono);font-size:.73rem;color:var(--acc);letter-spacing:.12em;margin-bottom:12px;display:block}
+.rd h4{font-size:1rem;margin-bottom:8px}
+.rd p{color:var(--ink2);font-size:.92rem}
+@media(max-width:960px){.rail-track{display:none}.rail-detail{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.rail-detail{grid-template-columns:1fr}}
+
+/* ---------- FEATURE LEDGER (pipeline variant) ---------- */
+.ledger{border-top:1px solid var(--line2)}
+.lg{display:grid;grid-template-columns:56px 1.05fr 1.55fr;gap:26px;padding:24px 0;border-bottom:1px solid var(--line);
+ align-items:baseline;transition:background .26s,padding-left .3s var(--e)}
+.lg:hover{background:var(--panel);padding-left:14px}
+.lg-n{font-family:var(--mono);font-size:.78rem;color:var(--ink3);transition:color .26s}
+.lg:hover .lg-n{color:var(--acc)}
+.lg h4{font-size:1.06rem}
+.lg p{color:var(--ink2);font-size:.95rem}
+@media(max-width:820px){.lg{grid-template-columns:40px 1fr;gap:16px}.lg p{grid-column:2}}
+
+/* ---------- SPINE STEPS (explorer variant) ---------- */
+.spine{position:relative;padding-left:38px}
+.spine::before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:2px;
+ background:linear-gradient(180deg,var(--acc),var(--acc2))}
+.sp{position:relative;padding:0 0 30px 26px}
+.sp::before{content:"";position:absolute;left:-32px;top:6px;width:14px;height:14px;border-radius:50%;
+ background:var(--page);border:2px solid var(--acc);transition:transform .3s var(--e),background .3s}
+.sp:hover::before{transform:scale(1.4);background:var(--acc)}
+.sp-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 26px;
+ transition:transform .3s var(--e),box-shadow .3s var(--e),border-color .3s}
+.sp:hover .sp-card{transform:translateX(6px);border-color:var(--acc);box-shadow:0 20px 38px -30px rgba(18,21,29,.45)}
+.sp-n{font-family:var(--mono);font-size:.72rem;color:var(--acc);letter-spacing:.13em;display:block;margin-bottom:9px}
+.sp-card h4{font-size:1.05rem;margin-bottom:7px}
+.sp-card p{color:var(--ink2);font-size:.94rem}
+@media(max-width:620px){.spine{padding-left:26px}.sp{padding-left:16px}.sp::before{left:-22px}}
+
+/* ---------- BIG FEATURE CARDS (explorer variant) ---------- */
+.bigs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.big{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:32px 30px;position:relative;
+ overflow:hidden;transition:transform .32s var(--e),box-shadow .32s var(--e),border-color .32s}
+.big:hover{transform:translateY(-6px);border-color:var(--acc);box-shadow:0 26px 46px -32px rgba(18,21,29,.42)}
+.big-n{position:absolute;top:14px;right:22px;font-family:var(--disp);font-size:3.1rem;font-weight:600;
+ color:var(--accs);line-height:1;transition:color .32s,transform .32s var(--e)}
+.big:hover .big-n{transform:scale(1.08)}
+.big h4{font-size:1.1rem;margin-bottom:10px;position:relative;max-width:26ch}
+.big p{color:var(--ink2);font-size:.94rem;position:relative;max-width:42ch}
+@media(max-width:760px){.bigs{grid-template-columns:1fr}}
+
+/* ---------- HERO MOCKS ---------- */
+.pipe{border:1px solid var(--line);border-radius:18px;background:var(--panel);padding:26px;
+ box-shadow:0 30px 58px -34px rgba(18,21,29,.42);display:flex;flex-direction:column;gap:12px}
+.pipe-h{display:flex;align-items:center;justify-content:space-between;font-family:var(--mono);font-size:.7rem;
+ color:var(--ink3);padding-bottom:14px;border-bottom:1px solid var(--line);letter-spacing:.08em;text-transform:uppercase}
+.pipe-tag{background:var(--accs);color:var(--accd);padding:3px 10px;border-radius:12px}
+.pl{display:grid;grid-template-columns:1fr 22px 1fr;align-items:center;gap:10px;padding:12px 14px;
+ border:1px solid var(--line);border-radius:9px;font-family:var(--mono);font-size:.74rem;background:var(--wash);
+ transition:border-color .26s,transform .26s var(--e)}
+.pl:hover{border-color:var(--acc);transform:translateX(4px)}
+.pl .ar{color:var(--acc);text-align:center}
+.pl b{color:var(--accd);font-weight:500}
+.pl-foot{display:flex;justify-content:space-between;align-items:center;padding-top:14px;border-top:1px solid var(--line);
+ font-family:var(--mono);font-size:.72rem;color:var(--ink3)}
+.pl-ok{color:var(--acc2)}
+.expl{border:1px solid var(--line);border-radius:18px;background:var(--panel);overflow:hidden;
+ box-shadow:0 30px 58px -34px rgba(18,21,29,.42)}
+.expl-h{padding:18px 22px;border-bottom:1px solid var(--line);background:var(--accs)}
+.expl-h b{font-family:var(--disp);font-size:1rem;display:block}
+.expl-h span{font-family:var(--mono);font-size:.71rem;color:var(--ink2)}
+.expl-b{padding:20px 22px;display:flex;flex-direction:column;gap:10px}
+.ex{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 15px;border-radius:9px;
+ border:1px solid var(--line);background:var(--wash);font-size:.83rem;transition:transform .26s var(--e),border-color .26s}
+.ex:hover{transform:translateX(5px);border-color:var(--acc)}
+.ex-l{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.76rem;color:var(--ink2)}
+.ex-l i{width:6px;height:6px;border-radius:50%;background:var(--acc);display:block;flex-shrink:0}
+.ex-why{font-family:var(--mono);font-size:.68rem;color:var(--accd);background:var(--accs);padding:3px 9px;
+ border-radius:11px;white-space:nowrap}
+.ex-foot{padding:14px 22px;border-top:1px solid var(--line);font-family:var(--mono);font-size:.71rem;
+ color:var(--ink3);display:flex;justify-content:space-between}
+
+/* ---------- SHOWCASE ---------- */
+.sc{display:grid;grid-template-columns:.92fr 1.08fr;gap:60px;align-items:center;padding:56px 0;border-top:1px solid var(--line)}
+.sc:last-child{border-bottom:1px solid var(--line)}
+.sc:nth-child(even) .sc-m{order:2}.sc:nth-child(even) .sc-c{order:1}
+.sc-tag{font-family:var(--mono);font-size:.71rem;letter-spacing:.17em;text-transform:uppercase;color:var(--acc);
+ display:block;margin-bottom:14px}
+.sc-c h3{font-size:1.55rem;margin-bottom:14px}
+.sc-c p{color:var(--ink2);margin-bottom:20px}
+.tick{list-style:none;border-top:1px solid var(--line)}
+.tick li{padding:12px 0;border-bottom:1px solid var(--line);font-size:.94rem;color:var(--ink2);
+ display:flex;gap:13px;transition:padding-left .28s var(--e)}
+.tick li:hover{padding-left:8px}
+.tick li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--acc);margin-top:10px;flex-shrink:0}
+.mock{border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:28px;
+ display:flex;flex-direction:column;gap:12px;box-shadow:0 26px 50px -34px rgba(18,21,29,.42);
+ transition:transform .4s var(--e)}
+.mock:hover{transform:translateY(-6px)}
+.mr{display:flex;align-items:center;gap:13px;padding:13px 16px;border:1px solid var(--line);border-radius:9px;
+ font-family:var(--mono);font-size:.74rem;color:var(--ink2);background:var(--wash);flex-wrap:wrap}
+.mr b{color:var(--accd);font-weight:500}.mr .ar{color:var(--ink3)}
+.mr.ok{border-left:2px solid var(--acc2)}
+.mbar{height:4px;border-radius:3px;background:linear-gradient(90deg,var(--acc),var(--acc2))}
+@media(max-width:900px){.sc,.sc:nth-child(even){grid-template-columns:1fr;gap:32px}
+ .sc:nth-child(even) .sc-m,.sc:nth-child(even) .sc-c{order:0}}
+
+/* ---------- SECURITY ---------- */
+.sec-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.sq{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px 26px;display:flex;gap:16px;
+ transition:transform .3s var(--e),border-color .3s,box-shadow .3s}
+.sq:hover{transform:translateY(-5px);border-color:var(--acc);box-shadow:0 22px 40px -30px rgba(18,21,29,.4)}
+.sq-ic{width:34px;height:34px;border-radius:9px;background:var(--accs);color:var(--accd);display:grid;place-items:center;
+ flex-shrink:0;font-size:.9rem}
+.sq h4{font-size:1rem;margin-bottom:7px}.sq p{color:var(--ink2);font-size:.92rem}
+@media(max-width:820px){.sec-grid{grid-template-columns:1fr}}
+
+/* ---------- BENEFITS BAND ---------- */
+.band{background:var(--ink);color:#fff}
+.band .idx{color:rgba(255,255,255,.5)}.band .idx b{color:var(--acc2)}
+.band .idx::after{background:rgba(255,255,255,.2)}
+.band .lead{color:rgba(255,255,255,.66)}
+.bg3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.11);
+ border-radius:16px;overflow:hidden}
+.bn{background:#1A1E29;padding:30px 28px;transition:background .3s,transform .3s var(--e)}
+.bn:hover{background:#232836;transform:translateY(-4px)}
+.bn-k{font-family:var(--mono);font-size:.71rem;letter-spacing:.17em;text-transform:uppercase;color:var(--acc2);
+ display:inline-block;margin-bottom:14px;transition:transform .3s var(--e)}
+.bn:hover .bn-k{transform:translateX(4px)}
+.bn h4{font-size:1.03rem;margin-bottom:9px;color:#fff}
+.bn p{color:rgba(255,255,255,.63);font-size:.92rem}
+@media(max-width:900px){.bg3{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.bg3{grid-template-columns:1fr}}
+
+/* ---------- TABLE ---------- */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tbl{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:16px;
+ overflow:hidden;font-size:.93rem;background:var(--panel)}
+.tbl th,.tbl td{padding:16px 20px;text-align:left;border-bottom:1px solid var(--line)}
+.tbl thead th{background:var(--wash);font-family:var(--disp);font-weight:600;font-size:.9rem;border-bottom:1px solid var(--line2)}
+.tbl thead th:last-child{background:var(--accs);color:var(--accd)}
+.tbl td{color:var(--ink2)}
+.tbl td:first-child{color:var(--ink);font-weight:600}
+.tbl td:last-child{background:var(--accs);color:var(--ink);font-weight:500}
+.tbl tbody tr:last-child td{border-bottom:0}
+.tbl tbody tr{transition:background .2s}
+.tbl-note{margin-top:16px;font-family:var(--mono);font-size:.74rem;color:var(--ink3)}
+@media(max-width:820px){.tbl{min-width:700px}}
+
+/* ---------- FAQ ---------- */
+.faq-list{max-width:900px}
+details{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden;
+ transition:border-color .26s,box-shadow .26s}
+details[open]{border-color:var(--acc);box-shadow:0 16px 34px -30px rgba(59,120,242,.8)}
+summary{cursor:pointer;padding:19px 24px;font-family:var(--disp);font-weight:600;font-size:1rem;list-style:none;
+ display:flex;justify-content:space-between;gap:18px;align-items:center;transition:background .2s}
+summary::-webkit-details-marker{display:none}
+summary:hover{background:var(--wash)}
+summary::after{content:"+";font-family:var(--mono);font-size:1.25rem;color:var(--acc);flex-shrink:0;
+ transition:transform .3s var(--e)}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 24px 22px;color:var(--ink2);font-size:.95rem;max-width:76ch}
+details code{font-family:var(--mono);font-size:.86rem;color:var(--accd);background:var(--accs);padding:2px 6px;border-radius:4px}
+
+/* ---------- CTA ---------- */
+.ctab{border-radius:24px;padding:70px 46px;text-align:center;position:relative;overflow:hidden;
+ background:linear-gradient(115deg,#3B78F2 0%,#2C64D8 30%,#12A05C 68%,#0E8A4F 100%);color:#fff}
+.ctab::before{content:"";position:absolute;top:-90px;right:-60px;width:280px;height:280px;border-radius:50%;
+ background:rgba(255,255,255,.1)}
+.ctab::after{content:"";position:absolute;bottom:-110px;left:-50px;width:250px;height:250px;border-radius:50%;
+ background:rgba(255,255,255,.08)}
+.ctab-logo{height:76px;width:auto;max-width:180px;object-fit:contain;margin:0 auto 24px;position:relative;
+ filter:drop-shadow(0 12px 24px rgba(0,0,0,.24))}
+.ctab h2{max-width:22ch;margin:0 auto 16px;position:relative;color:#fff}
+.ctab p{color:rgba(255,255,255,.88);max-width:52ch;margin:0 auto 32px;font-size:1.05rem;position:relative}
+.ctab .btn-p{background:#fff;color:var(--accd);box-shadow:0 14px 28px -12px rgba(0,0,0,.3);position:relative}
+.ctab .btn-p:hover{background:#F2F5FF;transform:translateY(-3px)}
+.ctaf{margin-top:20px;font-family:var(--mono);font-size:.74rem;color:rgba(255,255,255,.78);position:relative}
+
+/* ---------- OTHER PRODUCTS ---------- */
+.op-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.op{border:1px solid var(--line);border-radius:20px;background:var(--panel);text-decoration:none;display:flex;
+ flex-direction:column;overflow:hidden;transition:transform .32s var(--e),border-color .32s,box-shadow .32s}
+.op:hover{transform:translateY(-7px);box-shadow:0 28px 50px -32px rgba(18,21,29,.42)}
+.op-top{padding:30px 30px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.op-n{font-family:var(--mono);font-size:.74rem;color:var(--ink3)}
+.op-logo{width:78px;height:78px;border-radius:18px;border:1px solid var(--line);display:grid;place-items:center;
+ padding:11px;background:var(--panel);transition:transform .4s var(--e)}
+.op:hover .op-logo{transform:scale(1.07) rotate(-5deg)}
+.op-logo img{width:100%;height:100%;object-fit:contain}
+.op-b{padding:20px 30px 30px}
+.op h3{font-size:1.36rem;margin-bottom:6px}
+.op .tg{font-style:italic;color:var(--ink2);font-size:.97rem;margin-bottom:16px}
+.chips{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.chip{font-family:var(--mono);font-size:.7rem;color:var(--ink3);border:1px solid var(--line);padding:3px 10px;border-radius:14px}
+.op ul{list-style:none;margin-bottom:20px}
+.op ul li{font-size:.91rem;color:var(--ink2);padding:9px 0;border-bottom:1px solid var(--line);display:flex;gap:11px}
+.op ul li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--acc);margin-top:9px;flex-shrink:0}
+.op .go{font-family:var(--mono);font-size:.83rem;color:var(--acc);display:inline-flex;gap:6px;transition:gap .24s var(--e)}
+.op:hover .go{gap:12px}
+@media(max-width:800px){.op-grid{grid-template-columns:1fr}}
+
+/* ---------- BLOG ---------- */
+.post{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--panel);text-decoration:none;
+ transition:transform .3s var(--e),box-shadow .3s var(--e)}
+.post:hover{transform:translateY(-6px);box-shadow:0 26px 44px -32px rgba(18,21,29,.4)}
+.post .pf{background:var(--wash);border-bottom:1px solid var(--line);padding:14px;display:grid;place-items:center}
+.post .pf img{width:100%;height:auto;max-height:180px;object-fit:contain;border-radius:5px}
+.post-ph{border-bottom:1px solid var(--line);padding:44px 20px;display:grid;place-items:center;
+ background:linear-gradient(135deg,var(--accs),var(--wash))}
+.post-ph span{font-family:var(--mono);font-size:.7rem;color:var(--ink3);letter-spacing:.19em;text-transform:uppercase}
+.post-b{padding:20px 21px 24px}
+.post-t{font-family:var(--mono);font-size:.69rem;color:var(--acc);letter-spacing:.15em;text-transform:uppercase;
+ display:block;margin-bottom:10px}
+.post h4{font-size:1.02rem;line-height:1.33;margin-bottom:8px}
+.post p{font-size:.88rem;color:var(--ink2)}
+
+/* ---------- FOOTER ---------- */
+footer{padding:32px 0;border-top:1px solid var(--line);background:var(--panel)}
+.ft{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.ft-l{display:flex;align-items:center;gap:12px}
+.ft-l img{height:34px;width:34px;object-fit:contain}
+.ft-l span{font-size:.85rem;color:var(--ink2)}
+.ft-links{display:flex;gap:24px;flex-wrap:wrap}
+.ft-links a{text-decoration:none;font-size:.85rem;color:var(--ink2);transition:color .2s}
+.ft-links a:hover{color:var(--acc)}
+.ft-c{font-size:.79rem;color:var(--ink3)}
+
+.js .rv{opacity:0;transform:translateY(24px)}
+.js .rv.in{opacity:1;transform:none;transition:opacity .8s var(--e),transform .8s var(--e)}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;animation-iteration-count:1!important;
+ transition-duration:.001ms!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
+@media(max-width:1020px){.hero{padding:128px 0 74px}.nav{top:10px;width:calc(100% - 20px)}.nav-mid{display:none}
+ .hero-grid{grid-template-columns:1fr;gap:44px}.chipf{display:none}}
+.nav-mid .pill{white-space:nowrap}@media (min-width:1021px) and (max-width:1240px){.nav-in{gap:10px}.nav-mid{gap:0}.nav-mid .pill{padding-left:8px;padding-right:8px;font-size:.78rem}.brand small{display:none}}
+.np-card{grid-column:1/-1}.np-list{margin-top:14px}@media (min-width:760px){.np-list{display:grid;grid-template-columns:1fr 1fr;column-gap:32px}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Google Form Auto Sync",
+      "description": "Google Form Auto Sync is a free, native Salesforce app that sends every Google Form response into Salesforce in real time, with no Zapier, no Google Sheets and no middleware.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Salesforce",
+      "url": "https://twinstack.net/products/google-form-auto-sync",
+      "installUrl": "https://appexchange.salesforce.com/appxListingDetail?listingId=b493b297-f6c4-41ad-b1b3-6ca48a2585bb",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://twinstack.net/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is there a free Google Forms to Salesforce integration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Google Form Auto Sync is a free, native Salesforce app on AppExchange. It sends every Google Form response into Salesforce in real time, with no licence fee, no per-response charges and no middleware."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the purpose of Google Form Auto Sync?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To eliminate the manual work of getting Google Form responses into Salesforce. It gives teams already using Google Forms a way to capture every submission in their CRM automatically, in real time, without exports, imports, or a paid integration platform."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Google Form Auto Sync work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A small Google Apps Script, included in the package and set up through a guided wizard, runs inside your Google Form. When someone submits, the script securely sends the response to a Salesforce REST endpoint, which creates a record the moment it arrives, typically within seconds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Google Form responses create Leads or Contacts in Salesforce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Each response is first saved as a Form Response record, so nothing is lost. You then use a record-triggered Flow or assignment rules to create or update Leads, Contacts, Cases or Campaign Members."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Google Form Auto Sync work with Nonprofit Cloud and NPSP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It works in any Salesforce org, including Nonprofit Cloud and NPSP. Use Flow to route responses to Contacts, Program Enrollments (Nonprofit Cloud), Program Engagements (NPSP with the Program Management Module), Cases or Campaign Members."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does Google Form Auto Sync cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nothing. It is a free managed package with no licence fee, no per-response charge, and no tiered pricing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Google Form Auto Sync secure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Responses travel between two parties only: Google, where the form lives, and your Salesforce org. No TwinStack servers or other middleware sit in between. Authentication uses the OAuth 2.0 Client Credentials Flow against a Salesforce External Client App, requests run under a single dedicated Run-As user, and every record insert enforces field-level security through Salesforce's insert-as-user model."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if Salesforce is unavailable when someone submits a Google Form?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If Salesforce is unavailable when someone submits, the response is still saved in Google Forms, but it isn't sent again automatically. Check the dashboard's last-sync time to spot any gaps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a developer to set up Google Form Auto Sync?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The in-app 5-step wizard is built for Salesforce admins and includes copy-ready code and credential steps. Setup takes about 15 minutes for your first form and about 5 minutes for each one after that. If you route responses with a Flow, allow extra time to build it."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://twinstack.net/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Products",
+          "item": "https://twinstack.net/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Google Forms to Salesforce Sync: Free and Native",
+          "item": "https://twinstack.net/products/google-form-auto-sync"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Google Forms to Salesforce, Automatically | Google Form Auto Sync (Free AppExchange App)",
+      "description": "Google Form Auto Sync is a free, 100% native Salesforce app that sends every Google Form submission straight into Salesforce, within seconds, as a searchable Form Response record.",
+      "thumbnailUrl": [
+        "https://i.ytimg.com/vi/FzqoBI6A0mk/maxresdefault.jpg",
+        "https://i.ytimg.com/vi/FzqoBI6A0mk/hqdefault.jpg"
+      ],
+      "uploadDate": "2026-10-11",
+      "embedUrl": "https://www.youtube.com/embed/FzqoBI6A0mk",
+      "contentUrl": "https://www.youtube.com/watch?v=FzqoBI6A0mk",
+      "publisher": {
+        "@id": "https://twinstack.net/#organization"
+      }
+    }
+  ]
+}
+</script>
+<style id="ts-dd">
+.ts-dd{position:relative;display:inline-flex;align-items:center}
+.ts-dd>a{display:inline-flex!important;align-items:center;gap:.3rem}
+.ts-dd>a .ts-dd-car{width:.65rem;height:.65rem;transition:transform .2s;flex:0 0 auto}
+.ts-dd:hover>a .ts-dd-car,.ts-dd:focus-within>a .ts-dd-car{transform:rotate(180deg)}
+.ts-dd:after{content:"";position:absolute;top:100%;left:-12px;right:-12px;height:14px}
+.ts-dd .ts-dd-menu{position:absolute;top:100%;left:50%;transform:translate(-50%,10px);min-width:17rem;padding:.45rem;background:#fff;border:1px solid #e2e8f0;border-radius:.9rem;box-shadow:0 22px 50px -22px rgba(15,23,42,.4);opacity:0;visibility:hidden;transition:opacity .15s,transform .15s,visibility .15s;z-index:80;text-align:left}
+.ts-dd:hover .ts-dd-menu,.ts-dd:focus-within .ts-dd-menu{opacity:1;visibility:visible;transform:translate(-50%,6px)}
+.ts-dd .ts-dd-menu a{display:block!important;padding:.65rem .8rem!important;border-radius:.6rem;color:#0f172a!important;font-weight:600!important;font-size:.95rem!important;line-height:1.3;text-decoration:none!important;background:transparent;white-space:normal;transform:none!important;border:0!important}
+.ts-dd .ts-dd-menu a small{display:block;font-weight:400;color:#64748b;font-size:.8rem;margin-top:.15rem}
+.ts-dd .ts-dd-menu a:hover,.ts-dd .ts-dd-menu a:focus{background:#f0f9ff!important;color:#0284c7!important}
+.ts-dd .ts-dd-menu a[aria-current="page"]{color:#0284c7!important}
+</style>
+<style id="ts-video">
+.vd-sec{background:var(--page,#F5F8FC)}
+.vd-player{position:relative;aspect-ratio:16/9;max-width:960px;border-radius:20px;overflow:hidden;background:var(--ink,#12151D);box-shadow:0 34px 70px -40px rgba(18,21,29,.55)}
+.vd-player img,.vd-player iframe{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover}
+.vd-player button{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;background:transparent;cursor:pointer}
+.vd-play{position:absolute;left:50%;top:50%;width:80px;height:80px;margin:-40px 0 0 -40px;border-radius:50%;background:rgba(255,255,255,.96);display:grid;place-items:center;box-shadow:0 14px 34px -12px rgba(0,0,0,.55);transition:transform .15s}
+.vd-player button:hover .vd-play,.vd-player button:focus-visible .vd-play{transform:scale(1.07)}
+.vd-play svg{width:28px;height:28px;margin-left:5px;fill:var(--acc,#5B3FD9)}
+.vd-player button:focus-visible{outline:3px solid var(--acc,#5B3FD9);outline-offset:-3px}
+.vd-note{font-size:.85rem;color:var(--ink3,#7C8395);margin-top:12px}
+.vd-note a{color:var(--accd,#3F27AC);font-weight:600}
+.vd-list{list-style:none;margin:34px 0 0;padding:0;max-width:960px;display:grid;column-gap:36px;border-top:1px solid var(--line,#E4E7EF)}
+@media(min-width:760px){.vd-list{grid-template-columns:1fr 1fr}}
+.vd-list li{border-bottom:1px solid var(--line,#E4E7EF)}
+.vd-list button,.vd-list span.pt{display:flex;gap:14px;width:100%;text-align:left;background:none;border:0;padding:13px 0;font:inherit;font-size:.95rem;color:var(--ink2,#464C5C);line-height:1.45}
+.vd-list button{cursor:pointer}.vd-list button:hover{color:var(--accd,#3F27AC)}
+.vd-list time{flex:0 0 44px;font-weight:700;color:var(--ink,#12151D);font-variant-numeric:tabular-nums}
+.vd-list span.pt:before{content:"";flex:0 0 6px;height:6px;border-radius:50%;background:var(--acc,#5B3FD9);margin-top:.55em}
+</style>
+<style id="op3">.op-grid{grid-template-columns:repeat(3,1fr)}@media(max-width:1000px){.op-grid{grid-template-columns:1fr;max-width:560px;margin:0 auto}}</style>
+</head><body><!--email_off-->
+<header class="nav" id="nav"><div class="nav-in">
+<a class="brand" href="#top"><span class="brand-mark"><img src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_140/v1788339177/Google_sync_zxk6ny.png" alt="Google Form Auto Sync logo" width="140" height="140" fetchpriority="high" decoding="async"></span>
+<span><b>Form Auto Sync</b><small>by TwinStack</small></span></a>
+<nav class="nav-mid"><a class="pill home" href="/">Twinstack</a><a class="pill" href="/pricing">Pricing</a><div class="ts-dd"><a class="pill" href="/services" aria-haspopup="true">Products &amp; Services<svg class="ts-dd-car" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="ts-dd-menu"><a href="/products" aria-current="page">Products<small>Free native AppExchange apps</small></a><a href="/services">Services<small>Consulting, nonprofits, Tableau and more</small></a><a href="/#pdo-journey">Expertise<small>Our path from strategy to AppExchange</small></a></div></div><a class="pill" href="/case-studies">Case Studies</a><a class="pill" href="/blog#google-form-auto-sync">Blog</a><a class="pill" href="/cost-estimator">Cost Estimator</a><a class="pill" href="#faq">FAQ</a></nav>
+<a class="nav-cta" href="https://appexchange.salesforce.com/appxListingDetail?listingId=b493b297-f6c4-41ad-b1b3-6ca48a2585bb" target="_blank" rel="noopener">Install free</a></div></header>
+<section class="hero" id="top"><div class="wrap hero-grid"><div>
+<img width="320" height="320" class="hero-logo" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_320/v1788339177/Google_sync_zxk6ny.png" alt="Google Form Auto Sync logo" fetchpriority="high" decoding="async">
+<span class="badge"><span class="dot"></span>Live on AppExchange · Security reviewed · Free forever</span>
+<h1>Sync Google Forms to Salesforce. <span class="hl">100% native</span>, free forever.</h1>
+<p class="sub">Google Form Auto Sync is a free, native Salesforce app that sends every Google Form response into Salesforce in real time, with no Zapier, no Google Sheets and no middleware. Each submission becomes a Salesforce record the moment it is submitted.</p>
+<div class="cta-row"><a class="btn btn-p" href="https://appexchange.salesforce.com/appxListingDetail?listingId=b493b297-f6c4-41ad-b1b3-6ca48a2585bb" target="_blank" rel="noopener">Get it on AppExchange</a>
+<a class="btn btn-s" href="#how">How it works</a></div>
+<div class="stats"><div class="st"><b>$0</b><span>No licence or usage fees</span></div><div class="st"><b>~15 min</b><span>First form, then about 5 min each</span></div><div class="st"><b>Zero</b><span>Middleware servers in the path</span></div></div></div>
+<div class="stage">
+<span class="chipf c1"><span class="dot"></span>Response submitted</span>
+<span class="chipf c2">Form_Response__c created</span>
+<div class="fig"><div class="fig-bar"><i style="background:#E1483B"></i><i style="background:#F0A700"></i><i style="background:#12A05C"></i>&nbsp;Google Form</div>
+<div class="fig-body"><img width="900" height="600" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_900/v1788344339/b4b9e0f0-c10d-43df-b7bc-c21255d64081_if1wd5.png" alt="A Google Form being submitted" fetchpriority="high" decoding="async"></div></div>
+<div class="arrowdown"><i></i>native · no middleware<i></i></div>
+<div class="fig"><div class="fig-bar"><i style="background:var(--acc)"></i>&nbsp;Salesforce · Form_Response__c</div>
+<div class="fig-body"><img width="900" height="600" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_900/v1788344339/58e1d750-daa7-42c0-90c6-5b160154fa37_l0tq7z.png" alt="The response as a Salesforce record" loading="eager" decoding="async"></div></div></div></div></section>
+
+<div class="strip"><div class="strip-in"><span class="si"><i></i>No Zapier required</span><span class="si"><i></i>No middleware</span><span class="si"><i></i>No Google Sheets in the path</span><span class="si"><i></i>100% native Apex and LWC</span><span class="si"><i></i>OAuth 2.0 Client Credentials</span><span class="si"><i></i>Real-time sync</span><span class="si"><i></i>Free forever</span><span class="si"><i></i>No Zapier required</span><span class="si"><i></i>No middleware</span><span class="si"><i></i>No Google Sheets in the path</span><span class="si"><i></i>100% native Apex and LWC</span><span class="si"><i></i>OAuth 2.0 Client Credentials</span><span class="si"><i></i>Real-time sync</span><span class="si"><i></i>Free forever</span></div></div>
+
+<section class="vd-sec" id="demo"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>&#9654;</b> Video demo</div><h2>Watch it work, from form to record.</h2><p class="lead">A short walkthrough: a Google Form submission arriving in Salesforce, routing with Flow, the five setup steps and the security model.</p></div><div class="vd-player" data-id="FzqoBI6A0mk" data-title="Google Forms to Salesforce, Automatically | Google Form Auto Sync (Free AppExchange App)"><img src="https://i.ytimg.com/vi/FzqoBI6A0mk/maxresdefault.jpg" width="1280" height="720" alt="Video demo of Google Form Auto Sync" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/FzqoBI6A0mk/hqdefault.jpg'"><button type="button" aria-label="Play the Google Form Auto Sync video demo"><span class="vd-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span></button></div><p class="vd-note"><a href="https://youtu.be/FzqoBI6A0mk" target="_blank" rel="noopener">Watch on YouTube</a></p><ol class="vd-list" aria-label="Video chapters"><li><button type="button" data-t="0"><time>0:00</time><span>Why form responses get stuck outside Salesforce</span></button></li><li><button type="button" data-t="29"><time>0:29</time><span>Meet Google Form Auto Sync</span></button></li><li><button type="button" data-t="45"><time>0:45</time><span>Turn responses into Leads, Contacts and Cases</span></button></li><li><button type="button" data-t="59"><time>0:59</time><span>Setup in 5 guided steps</span></button></li><li><button type="button" data-t="84"><time>1:24</time><span>About 15 minutes to set up, with built-in security</span></button></li><li><button type="button" data-t="98"><time>1:38</time><span>The business value, and where to get it</span></button></li></ol></div></section>
+
+<section style="background:#FDF1EF"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>01</b> The problem</div>
+<h2>Google Forms are easy to build. Getting the data out is not.</h2><p class="lead">Sales, HR, operations, marketing and support all reach for Google Forms because they take minutes to make. Then the response lands in a spreadsheet, disconnected from the CRM where the business actually runs.</p></div>
+<div class="g3"><div class="card rv"><div class="xm">&#10005;</div><h3>Manual export and import</h3><p>Someone downloads a CSV, cleans it, and uploads it to Salesforce. Slow, error-prone, and very easy to forget on a busy week.</p></div><div class="card rv"><div class="xm">&#10005;</div><h3>Paid integration middleware</h3><p>Platforms that charge per task or per run, and add another vendor, another login, and another point of failure to your stack.</p></div><div class="card rv"><div class="xm">&#10005;</div><h3>Custom-built integrations</h3><p>Internal development effort that takes time to build, and considerably more time to maintain once whoever wrote it moves on.</p></div></div><p class="pull rv">Every hour a response sits outside Salesforce is an hour a rep is not following up, a hiring manager is not reviewing an application, or an organiser cannot see a new registration.</p></div></section>
+
+<section id="what" style="background:#EDF3FD"><div class="wrap">
+<div class="sec-head rv"><div class="idx"><b>02</b> What it is</div><h2>The simplest possible bridge between Google Forms and Salesforce.</h2><p class="lead">A lightweight Google Apps Script that lives inside your form, paired with a REST endpoint inside your Salesforce org. A submission goes in one side, a structured record comes out the other.</p></div>
+<div class="flow rv"><div class="node"><div class="node-ic">&#9671;</div><h3>Your Google Form</h3><p>Apps Script fires the instant someone hits submit. Included in the package, pasted in once per form.</p></div>
+<div class="lnk"><div class="lnk-l"></div><span class="lnk-t">OAuth 2.0</span><span class="lnk-t">Direct REST call</span></div>
+<div class="node"><div class="node-ic">&#9737;</div><h3>Your Salesforce org</h3><p>Creates a <code>Form_Response__c</code> record with the form name, ID, timestamp and full response.</p></div></div>
+<span class="flow-note rv">Responses travel between two parties only: Google, where the form lives, and your Salesforce org. No TwinStack servers or other middleware sit in between.</span>
+<p class="lead rv" style="margin:50px auto 0;text-align:center;max-width:72ch">It solves the capture problem, deliberately, rather than trying to replace your data model. Every submission is visible, searchable and reportable in Salesforce, ready to route with Flow, list views and reports you already know.</p></div></section>
+
+<section id="how" style="background:#FFFFFF"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>03</b> How it works</div>
+<h2>Six steps to set up. Zero steps after that.</h2><p class="lead">Install the package, then follow the 5-step setup wizard for each form. The guided wizard walks an admin through it end to end, with copy-ready code and credentials at each stage.</p></div><div class="g3"><div class="card rv"><div class="cnum">01</div><h3>Install the package</h3><p>The managed package installs from AppExchange in a few clicks and sets up the object, permission sets, and a guided setup tab.</p><div class="fig fig-sm" style="margin-top:18px;box-shadow:none"><div class="fig-body"><img width="560" height="373" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_560/v1788344340/e2598775-e19b-4458-bdba-0b3a112b3ac7_xxmh98.png" alt="Install the package" loading="lazy" decoding="async"></div></div></div><div class="card rv"><div class="cnum">02</div><h3>Connect once, per form</h3><p>Paste the included Apps Script into your form's script editor. The 5-step wizard walks you through it and generates what the script needs.</p><div class="fig fig-sm" style="margin-top:18px;box-shadow:none"><div class="fig-body"><img width="560" height="373" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_560/v1788344340/41a49081-99a0-45cc-b18d-02fa6c0261fc_vhw12v.png" alt="Connect once, per form" loading="lazy" decoding="async"></div></div></div><div class="card rv"><div class="cnum">03</div><h3>Authenticate securely</h3><p>OAuth 2.0 Client Credentials Flow against a Salesforce External Client App. No passwords stored, access scoped to one Run-As user.</p><div class="fig fig-sm" style="margin-top:18px;box-shadow:none"><div class="fig-body"><img width="560" height="373" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_560/v1788344340/58eef8bb-e17b-41a9-9ee8-2a06580e2cd6_qmxqok.png" alt="Authenticate securely" loading="lazy" decoding="async"></div></div></div><div class="card rv"><div class="cnum">04</div><h3>Submit and sync</h3><p>Someone submits the form, the script fires automatically, packages the response, and sends it to a purpose-built Salesforce REST endpoint.</p><div class="fig fig-sm" style="margin-top:18px;box-shadow:none"><div class="fig-body"><img width="560" height="373" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_560/v1788344340/4ed7a567-acdb-4079-ac5b-ef9247138922_d0hfys.png" alt="Submit and sync" loading="lazy" decoding="async"></div></div></div><div class="card rv"><div class="cnum">05</div><h3>Record created instantly</h3><p>Salesforce enforces field-level security through an insert-as-user operation and creates the record, typically within seconds of submission.</p><div class="fig fig-sm" style="margin-top:18px;box-shadow:none"><div class="fig-body"><img width="560" height="373" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_560/v1788344340/2432cf46-75cd-4bea-aa79-d5d84a15ff83_xkuxqt.png" alt="Record created instantly" loading="lazy" decoding="async"></div></div></div><div class="card rv"><div class="cnum">06</div><h3>View and act</h3><p>It appears on the built-in dashboard and on the record itself, where the viewer parses the submission into readable question-and-answer pairs.</p><div class="fig fig-sm" style="margin-top:18px;box-shadow:none"><div class="fig-body"><img width="560" height="373" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_560/v1788344340/900b895a-59f0-4f54-a4b4-7beddaa1ef85_bl6tsy.png" alt="View and act" loading="lazy" decoding="async"></div></div></div></div></div></section>
+
+<section id="features" style="background:#FEF8E7"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>04</b> Features</div>
+<h2>What is in the package.</h2><p class="lead">Everything below ships with the free managed package. There is no paid tier holding anything back.</p></div><div class="g4"><div class="card rv"><h4>Real-time sync</h4><p>Responses appear within moments of submission. No batch delays, no waiting on a nightly job.</p></div><div class="card rv"><h4>100% native</h4><p>Built entirely with Apex and Lightning Web Components. No external platform and no middleware server in the path.</p></div><div class="card rv"><h4>Secure by design</h4><p>OAuth 2.0 Client Credentials, a dedicated Run-As user, and field-level security enforced on every insert.</p></div><div class="card rv"><h4>Guided setup wizard</h4><p>Five in-app steps with copy-ready code and credentials. About 15 minutes for your first form and about 5 minutes for each one after that.</p></div><div class="card rv"><h4>Built-in dashboard</h4><p>Total responses, how many forms are connected, and the time of the last sync, all at a glance.</p></div><div class="card rv"><h4>Readable response viewer</h4><p>Each submission is parsed into a clean list of questions and answers instead of raw JSON.</p></div><div class="card rv"><h4>Admin-controlled access</h4><p>A custom permission and matching permission sets separate who configures forms from who only views responses.</p></div><div class="card rv"><h4>Completely free</h4><p>No licence cost, no per-response fee and no tiered plan waiting to be upsold. We put no limits on the number of forms or responses. Google's standard Apps Script quotas still apply.</p></div></div></div></section>
+
+<section style="background:#FFFFFF"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>05</b> Inside the app</div>
+<h2>Built for the admin who has to live with it.</h2></div><div class="sc rv"><div class="sc-m"><div class="fig"><div class="fig-body"><img width="900" height="600" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_900/v1788344341/11c240fa-a017-4db5-9567-0f2622e8954c_pov95z.png" alt="Every connected form, one screen" loading="lazy" decoding="async"></div></div></div><div class="sc-c"><span class="sc-tag">Dashboard</span><h3>Every connected form, one screen</h3><p>Rather than checking a separate integration console, sync activity lives inside Salesforce with everything else your team already looks at.</p><ul class="tick"><li>Total responses captured across all forms</li><li>How many forms are currently connected</li><li>Timestamp of the most recent sync</li></ul></div></div><div class="sc rv"><div class="sc-m"><div class="fig"><div class="fig-body"><img width="900" height="600" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_900/v1788344341/2c6156df-7d70-407a-8b6b-6b3e024ff5f6_xl1a3p.png" alt="Questions and answers, not raw JSON" loading="lazy" decoding="async"></div></div></div><div class="sc-c"><span class="sc-tag">Response viewer</span><h3>Questions and answers, not raw JSON</h3><p>The viewer parses each captured submission automatically, so anyone opening the record can read it without knowing anything about the payload underneath.</p><ul class="tick"><li>Clean question-and-answer layout on the record</li><li>Form name, form ID and submission date captured</li><li>Searchable and reportable like any Salesforce record</li></ul></div></div><div class="sc rv"><div class="sc-m"><div class="fig"><div class="fig-body"><img width="900" height="600" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_900/v1788344342/0c5d1198-8cf1-40ae-bb0a-6ab1774d1be5_m5vzrj.png" alt="Written for admins, not developers" loading="lazy" decoding="async"></div></div></div><div class="sc-c"><span class="sc-tag">Setup wizard</span><h3>Written for admins, not developers</h3><p>The five-step wizard hands you the script and the credentials in the order you need them, so a first-time setup does not require reading integration documentation.</p><ul class="tick"><li>Copy-ready Apps Script included</li><li>Credential generation handled in-app</li><li>About 5 minutes for each form after the first</li></ul></div></div></div></section>
+
+<section id="security" style="background:#EAF6F0"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>06</b> Security</div>
+<h2>No third-party server between your form and your org.</h2><p class="lead">Every middleware tool in this category routes your form responses through a server it controls. This one does not. Responses travel between two parties only: Google, where the form lives, and your Salesforce org. No TwinStack servers or other middleware sit in between.</p></div><div class="sec-grid"><div class="sq rv"><span class="sq-ic">&#10003;</span><div><h4>Direct connection</h4><p>The Apps Script in your form calls a REST endpoint in your org. Google to Salesforce, with nothing in between.</p></div></div><div class="sq rv"><span class="sq-ic">&#10003;</span><div><h4>OAuth 2.0 Client Credentials</h4><p>Authentication runs against a Salesforce External Client App. No password is ever stored in the script.</p></div></div><div class="sq rv"><span class="sq-ic">&#10003;</span><div><h4>Scoped Run-As user</h4><p>Requests execute as one dedicated user with a dedicated permission set, not as a broad admin.</p></div></div><div class="sq rv"><span class="sq-ic">&#10003;</span><div><h4>Field-level security enforced</h4><p>Every record is created with an insert-as-user operation, so your FLS rules apply to the write.</p></div></div></div><p class="lead rv" style="margin:40px auto 0;text-align:center;max-width:72ch">If Salesforce is unavailable when someone submits, the response is still saved in Google Forms, but it isn't sent again automatically. Check the dashboard's last-sync time to spot any gaps.</p><p class="lead rv" style="margin:18px auto 0;text-align:center;max-width:72ch">The connection's Consumer Key and Secret are stored in the form's script properties. Anyone with edit access to the form can see them, so keep edit access limited to people you trust.</p></div></section>
+
+<section class="band" style="background:var(--ink)"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>07</b> Benefits</div>
+<h2>What actually changes in week one.</h2><p class="lead">The value is not the sync itself. It is the work your team stops doing and the delay that disappears.</p></div><div class="bg3"><div class="bn rv"><span class="bn-k">Speed</span><h4>Faster follow-up</h4><p>Sales, recruiting and support see new submissions the moment they arrive, rather than hours or days later.</p></div><div class="bn rv"><span class="bn-k">Effort</span><h4>No manual entry</h4><p>The copy-paste and CSV-import work disappears, along with the transcription errors that come with it.</p></div><div class="bn rv"><span class="bn-k">Cost</span><h4>Lower spend</h4><p>Free to install and run, with none of the per-task or per-response pricing integration platforms typically charge.</p></div><div class="bn rv"><span class="bn-k">Security</span><h4>Smaller attack surface</h4><p>With no middleware between Google and Salesforce, there is one less vendor holding access to your data.</p></div><div class="bn rv"><span class="bn-k">Fit</span><h4>Works with your process</h4><p>Responses land as standard records, so your existing flows, reports and list views work on them immediately.</p></div><div class="bn rv"><span class="bn-k">Scale</span><h4>Grows with you</h4><p>Connect as many forms as you need. The dashboard tracks all of them from a single place. Google&#39;s standard Apps Script quotas still apply.</p></div></div></div></section>
+
+<section style="background:#FFFFFF"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>08</b> Comparison</div>
+<h2>Native versus middleware, side by side.</h2></div><div class="tw rv"><table class="tbl"><thead><tr><th><span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap">Feature</span></th><th>Zapier / Pabbly</th><th>Sheets-based tools</th><th>Google Form Auto Sync</th></tr></thead><tbody><tr><td>Cost</td><td>Paid, per task</td><td>Paid, row limits</td><td>Free forever</td></tr><tr><td>Middleware needed</td><td>Yes</td><td>Yes</td><td>None</td></tr><tr><td>Google Sheets in the path</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td>Runs inside Salesforce</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td>Third-party server in the path</td><td>Yes</td><td>Yes</td><td>No</td></tr><tr><td>Submission limits</td><td>Task caps</td><td>Row caps</td><td>None from us (Apps Script quotas apply)</td></tr><tr><td>Real time</td><td>Yes</td><td>Scheduled</td><td>Yes</td></tr></tbody></table>
+<p class="tbl-note">Based on publicly documented pricing and features as of October 2026.</p></div></div></section>
+
+<section style="background:#EDF3FD"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>09</b> Who it is for</div>
+<h2>Any team already collecting through Google Forms.</h2></div><div class="g3"><div class="card rv np-card"><h4>Nonprofits</h4><p>Built by a team that works with nonprofits every day.</p><ul class="tick np-list"><li>Programme applications &rarr; Contacts and programme records</li><li>Grant and scholarship applications &rarr; applicant records for review</li><li>Volunteer sign-ups &rarr; volunteer Contacts</li><li>Event registrations &rarr; Campaign Members</li><li>Client and beneficiary intake &rarr; Cases</li><li>Feedback surveys &rarr; searchable responses for reporting</li></ul></div><div class="card rv"><h4>Sales and marketing</h4><p>Capture inbound leads from landing-page forms the instant they are submitted, so reps follow up while interest is highest.</p></div><div class="card rv"><h4>HR and recruiting</h4><p>Route job applications straight into Salesforce for visibility and tracking, without exporting from Google Sheets.</p></div><div class="card rv"><h4>Events</h4><p>Sync registrations in real time so organisers always have an accurate, current headcount.</p></div><div class="card rv"><h4>Support and success</h4><p>Turn intake or feedback forms into trackable Salesforce records automatically, the moment they come in.</p></div><div class="card rv"><h4>Operations</h4><p>Capture internal requests such as IT tickets, purchase requests or approvals as structured, reportable records.</p></div><div class="card rv"><h4>Everyone else</h4><p>Any team already using Google Forms that wants that data in Salesforce without adding a paid integration tool.</p></div></div></div></section>
+
+<section id="faq" style="background:#FEF8E7"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>10</b> FAQ</div>
+<h2>The questions admins ask first.</h2></div><div class="faq-list"><details class="rv"><summary>Is there a free Google Forms to Salesforce integration?</summary><p>Yes. Google Form Auto Sync is a free, native Salesforce app on AppExchange. It sends every Google Form response into Salesforce in real time, with no licence fee, no per-response charges and no middleware.</p></details><details class="rv"><summary>What is the purpose of Google Form Auto Sync?</summary><p>To eliminate the manual work of getting Google Form responses into Salesforce. It gives teams already using Google Forms a way to capture every submission in their CRM automatically, in real time, without exports, imports, or a paid integration platform.</p></details><details class="rv"><summary>How does Google Form Auto Sync work?</summary><p>A small Google Apps Script, included in the package and set up through a guided wizard, runs inside your Google Form. When someone submits, the script securely sends the response to a Salesforce REST endpoint, which creates a record the moment it arrives, typically within seconds.</p></details><details class="rv"><summary>Can Google Form responses create Leads or Contacts in Salesforce?</summary><p>Each response is first saved as a Form Response record, so nothing is lost. You then use a record-triggered Flow or assignment rules to create or update Leads, Contacts, Cases or Campaign Members.</p></details><details class="rv"><summary>Does Google Form Auto Sync work with Nonprofit Cloud and NPSP?</summary><p>Yes. It works in any Salesforce org, including Nonprofit Cloud and NPSP. Use Flow to route responses to Contacts, Program Enrollments (Nonprofit Cloud), Program Engagements (NPSP with the Program Management Module), Cases or Campaign Members.</p></details><details class="rv"><summary>How much does Google Form Auto Sync cost?</summary><p>Nothing. It is a free managed package with no licence fee, no per-response charge, and no tiered pricing.</p></details><details class="rv"><summary>Is Google Form Auto Sync secure?</summary><p>Responses travel between two parties only: Google, where the form lives, and your Salesforce org. No TwinStack servers or other middleware sit in between. Authentication uses the OAuth 2.0 Client Credentials Flow against a Salesforce External Client App, requests run under a single dedicated Run-As user, and every record insert enforces field-level security through Salesforce's insert-as-user model.</p></details><details class="rv"><summary>What happens if Salesforce is unavailable when someone submits a Google Form?</summary><p>If Salesforce is unavailable when someone submits, the response is still saved in Google Forms, but it isn't sent again automatically. Check the dashboard's last-sync time to spot any gaps.</p></details><details class="rv"><summary>Do I need a developer to set up Google Form Auto Sync?</summary><p>No. The in-app 5-step wizard is built for Salesforce admins and includes copy-ready code and credential steps. Setup takes about 15 minutes for your first form and about 5 minutes for each one after that. If you route responses with a Flow, allow extra time to build it.</p></details></div></div></section>
+
+<section id="get"><div class="wrap"><div class="ctab rv">
+<img width="240" height="240" class="ctab-logo" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_240/v1788339177/Google_sync_zxk6ny.png" alt="Google Form Auto Sync logo" loading="lazy" decoding="async">
+<h2>Google Forms to Salesforce, without the middleman.</h2><p>Install Google Form Auto Sync from the Salesforce AppExchange and have your first form connected today.</p>
+<a class="btn btn-p" href="https://appexchange.salesforce.com/appxListingDetail?listingId=b493b297-f6c4-41ad-b1b3-6ca48a2585bb" target="_blank" rel="noopener">Get it on AppExchange</a>
+<p class="ctaf">Free managed package &middot; No credit card &middot; Published by TwinStack Solutions</p></div></div></section>
+
+<section style="background:#FFFFFF"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>11</b> From TwinStack</div>
+<h2>Our other AppExchange products.</h2>
+<p class="lead">Native apps built around the same idea: less manual work between your data and your Salesforce org.</p></div>
+<div class="op-grid"><a class="op rv" href="https://twinstack.net/products/smart-forms-surveys"><div class="op-top"><span class="op-n">01</span><span class="op-logo"><img src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_160/v1793101300/Smart_Forms_Surveys_Tr_cln7sv.png" alt="Smart Forms &amp; Surveys logo" width="160" height="160" loading="lazy" decoding="async"></span></div><div class="op-b"><h3>Smart Forms &amp; Surveys</h3><p class="tg">Native forms. Real records.</p><div class="chips"><span class="chip">Free</span><span class="chip">New</span></div><ul><li>Drag-and-drop form and survey builder</li><li>Public forms on Salesforce Sites</li><li>Creates or updates any object</li><li>No external callouts</li></ul><span class="go">View product &rarr;</span></div></a><a class="op rv" href="https://twinstack.net/products/smart-lookup-data-loader"><div class="op-top"><span class="op-n">02</span><span class="op-logo"><img src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_160/v1788420787/Untitled_design_20_daquoh.png" alt="Smart Lookup Data Loader logo" width="160" height="160" loading="lazy" decoding="async"></span></div><div class="op-b"><h3>Smart Lookup Data Loader</h3><p class="tg">Import smarter. Map faster.</p><div class="chips"><span class="chip">5.0 &#9733;</span><span class="chip">Free</span><span class="chip">Live</span></div><ul><li>CSV import with upserts and dynamic lookups</li><li>Auto-mapping of CSV headers to fields</li><li>Multi-field matching prevents duplicates</li><li>Row-level error reporting</li></ul><span class="go">View product &rarr;</span></div></a><a class="op rv" href="https://twinstack.net/products/who-sees-what"><div class="op-top"><span class="op-n">03</span><span class="op-logo"><img src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_160/v1788419416/Who_Sees_What_vy8udv.png" alt="Who Sees What logo" width="160" height="160" loading="lazy" decoding="async"></span></div><div class="op-b"><h3>Who Sees What</h3><p class="tg">Why can this user see that?</p><div class="chips"><span class="chip">Free</span><span class="chip">Live</span></div><ul><li>Start from a user, not a permission set</li><li>See every object, field and record</li><li>Shows the exact rule that granted access</li><li>Read-only and fully native</li></ul><span class="go">View product &rarr;</span></div></a></div></div></section>
+
+<section id="blog" style="background:#FBFBFD"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>12</b> Blog</div>
+<h2>Notes from the team.</h2><p class="lead">New posts most weeks: setup guides, integration patterns, and what we learn from the Salesforce community.</p></div>
+<div class="g3"><a class="post rv" href="/blog/free-google-forms-salesforce-integration"><div class="pf"><img width="700" height="467" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_700/v1788344341/c91e37d6-025a-44f1-92fc-f9cadd21bd04_f6hs29.png" alt="Why manual form imports quietly cost your team hours every week" loading="lazy" decoding="async"></div><div class="post-b"><span class="post-t">Guide</span><h4>Why manual form imports quietly cost your team hours every week</h4><p>Where the time actually goes, and what is worth automating first.</p></div></a><a class="post rv" href="/blog/google-form-response-to-salesforce-lead-flow"><div class="pf"><img width="700" height="467" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_700/v1788344341/b14bda15-20ce-4a2b-a389-904cb4c14d62_jos4ij.png" alt="Why we capture to a dedicated object instead of writing to Leads" loading="lazy" decoding="async"></div><div class="post-b"><span class="post-t">Architecture</span><h4>Why we capture to a dedicated object instead of writing to Leads</h4><p>The design tradeoff behind Form_Response__c, and how to route from there.</p></div></a><a class="post rv" href="/blog/google-forms-salesforce-integration-security"><div class="pf"><img width="700" height="467" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_700/v1788344342/526404e4-998b-494e-9457-22b1e7a5ebd2_e6f7wt.png" alt="OAuth 2.0 Client Credentials for Salesforce integrations, explained" loading="lazy" decoding="async"></div><div class="post-b"><span class="post-t">Security</span><h4>OAuth 2.0 Client Credentials for Salesforce integrations, explained</h4><p>What a Run-As user does, and why it beats storing a password in a script.</p></div></a></div><div class="ts-more-posts" style="display:flex;justify-content:center;margin-top:2.25rem"><a class="btn btn-s" href="/blog#google-form-auto-sync">Learn more: all Google Form Auto Sync articles &rarr;</a></div></div></section>
+
+<footer><div class="wrap ft"><div class="ft-l">
+<img width="96" height="96" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_96/v1788339177/Google_sync_zxk6ny.png" alt="Google Form Auto Sync logo" loading="lazy" decoding="async">
+<span>Google Form Auto Sync by TwinStack Solutions</span></div>
+<div class="ft-links"><a href="https://twinstack.net">Twinstack</a><a href="/about">About</a><a href="/blog#google-form-auto-sync">Blogs</a><a href="https://twinstack.net/case-studies">Case Studies</a><a href="/pricing">Pricing</a><a href="/contact">Contact</a><a href="/privacy-policy">Privacy Policy</a>
+<a href="/trust-center">Trust Center</a>
+</div><span class="ft-c">&copy; 2026 TwinStack Solutions</span></div></footer>
+
+<script>document.documentElement.className+=' js';
+(function(){var n=document.getElementById('nav'),t=0;
+function u(){n.classList.toggle('docked',(window.scrollY||document.documentElement.scrollTop)>26);t=0}
+window.addEventListener('scroll',function(){if(!t){requestAnimationFrame(u);t=1}},{passive:true});u();
+if('IntersectionObserver' in window){var o=new IntersectionObserver(function(e){e.forEach(function(x){
+if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.06});
+var a=document.querySelectorAll('.rv');for(var i=0;i<a.length;i++){a[i].style.transitionDelay=(i%3)*70+'ms';o.observe(a[i])}}
+else{var b=document.querySelectorAll('.rv');for(var j=0;j<b.length;j++)b[j].classList.add('in')}})();</script>
+<!--/email_off--><script id="ts-video-js">
+(function(){document.querySelectorAll('.vd-player').forEach(function(p){var id=p.getAttribute('data-id'),t=p.getAttribute('data-title');
+function play(s){p.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0&start='+(s||0)+'" title="'+t+'" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';}
+var b=p.querySelector('button');if(b)b.addEventListener('click',function(){play(0);});
+var sec=p.closest('section');if(sec)sec.querySelectorAll('.vd-list button[data-t]').forEach(function(x){x.addEventListener('click',function(){play(parseInt(x.getAttribute('data-t'),10));p.scrollIntoView({behavior:'smooth',block:'center'});});});});})();
+</script>
+</body></html>

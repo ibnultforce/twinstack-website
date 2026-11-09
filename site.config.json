@@ -1,0 +1,115 @@
+{
+  "name": "TwinStack Solutions",
+  "shortName": "TwinStack",
+  "url": "https://twinstack.net",
+  "tagline": "Salesforce Consulting Partner",
+  "footerTagline": "",
+  "description": "Certified Salesforce consulting partner and AppExchange product development outsourcer (PDO) based in Dhaka, Bangladesh, serving charities and businesses worldwide.",
+  "language": "en",
+  "locale": "en_US",
+  "foundedYear": "2022",
+  "themeColor": "#0f172a",
+  "brand": {
+    "logoText": "TwinStack Solutions",
+    "logo": "",
+    "logoDark": "",
+    "logoMark": "/assets/img/brand/black-white-minimalist-professional-initial-logo.png",
+    "favicon": "https://res.cloudinary.com/du42kbmmn/image/upload/w_32,h_32,c_fill,r_max,f_auto,q_auto/v1769165197/Black_White_Minimalist_Professional_Initial_Logo_1_eoam8g.png",
+    "defaultOgImage": "/assets/og-home.png"
+  },
+  "contact": {
+    "email": "info@twinstack.net",
+    "phone": "+8801556777043",
+    "address": "Mirpur Cantonment Road, Dhaka 1216, Bangladesh",
+    "hours": "",
+    "whatsapp": "+880 1556-777043",
+    "whatsappUrl": "https://wa.me/8801556777043",
+    "bookingUrl": "https://calendar.app.google/HP3LiuNFisCt6xLo6",
+    "bookingLabel": "Book a call",
+    "responseTime": ""
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/twinstack-solutions/",
+    "youtube": "https://www.youtube.com/@TwinStackSolutions-sf",
+    "appexchange": "https://appexchange.salesforce.com/appxConsultingListingDetail?listingId=a0NHu00000ozjVfMAI",
+    "elioplus": "https://elioplus.com/profiles/channel-partners/228930/twinstack-solutions"
+  },
+  "collections": {
+    "pages": {
+      "dir": "content/pages",
+      "urlPattern": "/:slug.html",
+      "layout": "page",
+      "sort": "order"
+    },
+    "products": {
+      "dir": "content/products",
+      "urlPattern": "/products/:slug.html",
+      "layout": "page",
+      "sort": "order",
+      "index": {
+        "label": "Products",
+        "url": "/products.html",
+        "layout": "page"
+      }
+    },
+    "services": {
+      "dir": "content/services",
+      "urlPattern": "/services/:slug.html",
+      "layout": "page",
+      "sort": "order",
+      "index": {
+        "label": "Services",
+        "url": "/services.html",
+        "layout": "page"
+      }
+    },
+    "blog": {
+      "dir": "content/blog",
+      "urlPattern": "/blog/:slug.html",
+      "layout": "page",
+      "sort": "date:desc",
+      "index": {
+        "label": "Blog",
+        "url": "/blog.html",
+        "layout": "page"
+      }
+    },
+    "caseStudies": {
+      "dir": "content/case-studies",
+      "urlPattern": "/case-studies/:slug.html",
+      "layout": "page",
+      "sort": "order",
+      "index": {
+        "label": "Case studies",
+        "url": "/case-studies.html",
+        "layout": "page"
+      }
+    }
+  },
+  "deploy": {
+    "provider": "github-pages",
+    "cname": "twinstack.net",
+    "branch": "main",
+    "outputDir": "dist"
+  },
+  "seo": {
+    "titleTemplate": "{title} | TwinStack",
+    "homeTitle": "{name} | {tagline}",
+    "twitterHandle": "",
+    "googleVerification": "",
+    "bingVerification": ""
+  },
+  "automation": {
+    "model": "claude-opus-5-5",
+    "defaultAuthor": ""
+  },
+  "updates": {
+    "migrations": [
+      "0001-contact-phone-address-hours"
+    ]
+  },
+  "analytics": {
+    "endpoint": "https://api.twinstack.net/api/collect",
+    "key": "dkk2NfGdt9XY8mWFv-p31_DV"
+  }
+}

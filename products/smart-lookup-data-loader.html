@@ -1,0 +1,703 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<script id="ts-ga-consent">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});try{if(localStorage.getItem('ts_consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}gtag('js',new Date());gtag('config','G-TRGBC4HYEY');</script>
+<script src="/js/ts-analytics.js" defer></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Lookup Data Loader: Free Salesforce CSV Import App</title>
+    <meta name="description" content="Free native Salesforce data loader for CSV imports: upserts, lookups resolved by name or code, automatic field mapping and clear row-level error reporting.">
+    <link rel="canonical" href="https://twinstack.net/products/smart-lookup-data-loader">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:title" content="Smart Lookup Data Loader: Free Salesforce CSV Import App">
+    <meta property="og:description" content="Free native Salesforce data loader for CSV imports: upserts, lookups resolved by name or code, automatic field mapping and clear row-level error reporting.">
+    <meta property="og:url" content="https://twinstack.net/products/smart-lookup-data-loader">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="TwinStack Solutions">
+    <meta property="og:image" content="https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_white,f_jpg,q_auto/v1788420787/Untitled_design_20_daquoh.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Smart Lookup Data Loader: Free Salesforce CSV Import App">
+    <meta name="twitter:description" content="Free native Salesforce data loader for CSV imports: upserts, lookups resolved by name or code, automatic field mapping and clear row-level error reporting.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/du42kbmmn/image/upload/c_pad,w_1200,h_630,b_white,f_jpg,q_auto/v1788420787/Untitled_design_20_daquoh.png">
+<link rel="icon" href="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_64/v1788420787/Untitled_design_20_daquoh.png"><link rel="apple-touch-icon" href="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_180/v1788420787/Untitled_design_20_daquoh.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://res.cloudinary.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --ink:#12151D; --ink2:#464C5C; --ink3:#7C8395;
+ --page:#FFFFFF; --panel:#FFFFFF; --line:#E4E7EF; --line2:#CFD4E0; --wash:#F3F5F9;
+ --acc:#0F76C4; --acc2:#0FA38C; --accd:#0A548E; --accs:#E7F1FA;
+ --disp:'Plus Jakarta Sans','Inter',system-ui,sans-serif;
+ --sans:'Inter','Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+ --mono:'JetBrains Mono',ui-monospace,'SFMono-Regular',monospace;
+ --e:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:112px}
+body{font-family:var(--sans);background:var(--page);color:var(--ink);line-height:1.66;letter-spacing:-.005em;
+ -webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 30px}
+h1,h2,h3{font-family:var(--disp);font-weight:700;letter-spacing:-.032em;line-height:1.1}
+h4{font-family:var(--disp);font-weight:600;letter-spacing:-.018em}
+h2{font-size:clamp(1.85rem,3.2vw,2.6rem);letter-spacing:-.034em}
+.idx{font-family:var(--mono);font-size:.73rem;letter-spacing:.17em;text-transform:uppercase;color:var(--ink3);
+ display:flex;align-items:center;gap:13px;margin-bottom:20px}
+.idx b{color:var(--acc);font-weight:500}
+.idx::after{content:"";flex:0 0 32px;height:1px;background:var(--line2)}
+.lead{color:var(--ink2);font-size:1.06rem;margin-top:18px;max-width:64ch}
+.sec-head{margin-bottom:58px;max-width:62ch}
+section{padding:100px 0;position:relative}
+
+/* ---------- NAV ---------- */
+.nav{position:fixed;top:18px;left:50%;transform:translateX(-50%);z-index:400;width:calc(100% - 36px);max-width:1180px;
+ background:rgba(255,255,255,.82);backdrop-filter:blur(20px) saturate(170%);-webkit-backdrop-filter:blur(20px) saturate(170%);
+ border:1px solid var(--line);border-radius:20px;box-shadow:0 16px 40px -26px rgba(18,21,29,.42);
+ transition:top .5s var(--e),width .5s var(--e),max-width .5s var(--e),border-radius .5s var(--e),
+  box-shadow .42s var(--e),background .42s var(--e),border-color .42s var(--e);will-change:top,width,border-radius}
+.nav::before{content:"";position:absolute;top:0;left:22px;right:22px;height:2px;border-radius:2px;
+ background:linear-gradient(90deg,#0F76C4,#0FA38C,#0A548E,#4FA3D8);opacity:.9;
+ transition:left .5s var(--e),right .5s var(--e)}
+.nav.docked{top:0;width:100%;max-width:100%;border-radius:0;border-color:transparent;
+ border-bottom:1px solid var(--line);background:rgba(255,255,255,.95);box-shadow:0 6px 22px -20px rgba(18,21,29,.5)}
+.nav.docked::before{left:0;right:0}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 20px;max-width:1180px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
+.brand-mark{height:46px;width:46px;display:grid;place-items:center;flex-shrink:0}
+.brand-mark img{width:100%;height:100%;object-fit:contain;transition:transform .45s var(--e)}
+.brand:hover .brand-mark img{transform:scale(1.08) rotate(-5deg)}
+.brand b{font-family:var(--disp);font-size:1.02rem;font-weight:600;display:block;letter-spacing:-.015em;line-height:1.25}
+.brand small{font-family:var(--mono);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink3)}
+.nav-mid{display:flex;align-items:center;gap:3px;flex:1}
+.pill{text-decoration:none;font-size:.87rem;font-weight:500;color:var(--ink2);padding:9px 15px;border-radius:11px;
+ transition:background .22s,color .22s,transform .22s var(--e);white-space:nowrap}
+.pill:hover{background:var(--accs);color:var(--accd);transform:translateY(-1px)}
+.pill.home{color:var(--ink);font-weight:600;border:1px solid var(--line2);background:var(--panel)}
+.pill.home:hover{border-color:var(--acc);background:var(--panel)}
+.nav-cta{background:var(--ink);color:#fff;text-decoration:none;padding:11px 20px;border-radius:11px;font-size:.87rem;
+ font-weight:600;white-space:nowrap;flex-shrink:0;transition:background .24s,transform .24s var(--e),box-shadow .24s}
+.nav-cta:hover{background:var(--acc);transform:translateY(-2px);box-shadow:0 12px 22px -12px rgba(15,118,196,.85)}
+
+/* ---------- HERO ---------- */
+.hero{padding:158px 0 92px;overflow:hidden;background:#FFFFFF}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(820px 460px at 76% 8%,rgba(15,118,196,.10),transparent 64%),radial-gradient(600px 400px at 10% 86%,rgba(15,163,140,.08),transparent 64%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:56px;align-items:center;position:relative;z-index:2}
+.hero-logo{height:84px;width:auto;max-width:200px;object-fit:contain;margin-bottom:26px}
+.badge{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:.73rem;letter-spacing:.03em;
+ color:var(--ink2);background:var(--panel);border:1px solid var(--line);padding:7px 15px;border-radius:30px;margin-bottom:22px}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--acc2);animation:pl 2.2s ease-in-out infinite;flex-shrink:0}
+@keyframes pl{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.8);opacity:.4}}
+.hero h1{font-size:clamp(2.35rem,4.7vw,3.6rem);line-height:1.02;max-width:16ch;letter-spacing:-.038em}
+.hero h1 .hl{color:var(--acc)}
+.hero .sub{margin-top:22px;font-size:1.13rem;color:var(--ink2);max-width:50ch}
+.cta-row{display:flex;gap:13px;margin-top:34px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;font-size:.97rem;
+ padding:15px 28px;border-radius:12px;transition:transform .26s var(--e),background .24s,border-color .24s,box-shadow .26s}
+.btn-p{background:var(--acc);color:#fff;box-shadow:0 12px 26px -12px rgba(15,118,196,.8)}
+.btn-p:hover{background:var(--accd);transform:translateY(-3px);box-shadow:0 20px 34px -12px rgba(15,118,196,.9)}
+.btn-s{border:1px solid var(--line2);color:var(--ink);background:var(--panel)}
+.btn-s:hover{border-color:var(--ink);transform:translateY(-3px)}
+.stats{display:flex;margin-top:38px;padding-top:24px;border-top:1px solid var(--line);flex-wrap:wrap}
+.st{padding-right:32px;margin-right:32px;border-right:1px solid var(--line)}
+.st:last-child{border:0;margin:0;padding:0}
+.st b{display:block;font-family:var(--disp);font-size:1.55rem;font-weight:600;line-height:1.15;color:var(--acc)}
+.st span{font-size:.79rem;color:var(--ink3)}
+
+/* ---------- MEDIA FRAMES (no distortion anywhere) ---------- */
+.fig{border:1px solid var(--line);border-radius:14px;background:var(--wash);overflow:hidden;
+ box-shadow:0 26px 50px -32px rgba(18,21,29,.42);transition:transform .4s var(--e),box-shadow .4s var(--e)}
+.fig:hover{transform:translateY(-6px);box-shadow:0 36px 62px -30px rgba(18,21,29,.46)}
+.fig-bar{display:flex;align-items:center;gap:8px;padding:11px 15px;border-bottom:1px solid var(--line);
+ font-family:var(--mono);font-size:.7rem;color:var(--ink3);background:var(--panel)}
+.fig-bar i{width:7px;height:7px;border-radius:50%;display:block;flex-shrink:0}
+.fig-body{padding:14px;display:grid;place-items:center;background:var(--wash)}
+.fig-body img{width:100%;height:auto;max-height:440px;object-fit:contain;border-radius:6px}
+.fig-sm .fig-body{padding:10px}
+.fig-sm .fig-body img{max-height:200px}
+.stage{position:relative;display:flex;flex-direction:column;gap:16px}
+.chipf{position:absolute;background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:8px 14px;
+ font-family:var(--mono);font-size:.71rem;z-index:6;display:flex;align-items:center;gap:8px;
+ box-shadow:0 14px 28px -14px rgba(18,21,29,.4)}
+.c1{top:-14px;left:-14px;color:var(--acc2)}
+.c2{bottom:-14px;right:-14px;color:var(--accd)}
+.arrowdown{display:grid;place-items:center;font-family:var(--mono);font-size:.72rem;color:var(--ink3);gap:6px}
+.arrowdown i{width:1px;height:26px;background:linear-gradient(180deg,var(--acc),var(--acc2));display:block}
+.logo-panel{border:1px solid var(--line);border-radius:20px;background:var(--panel);aspect-ratio:4/3;
+ display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:0 30px 60px -36px rgba(18,21,29,.42)}
+.logo-panel img{width:44%;max-width:230px;height:auto;object-fit:contain;position:relative;z-index:2;animation:fl 7s ease-in-out infinite}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.ring{position:absolute;border:1px solid var(--line);border-radius:50%;aspect-ratio:1}
+.ring.a{width:34%}.ring.b{width:54%}.ring.c{width:76%}.ring.d{width:98%}
+
+/* ---------- STRIP (animated colour wave) ---------- */
+.strip{position:relative;overflow:hidden;isolation:isolate}
+.strip::before{content:"";position:absolute;inset:0;z-index:-1;
+ background:linear-gradient(90deg,#FFFFFF 0%,#E1EEFA 22%,#BFD9F2 44%,#DCEAF7 68%,#E1EEFA 84%,#FFFFFF 100%);
+ background-size:220% 100%;animation:hue 14s linear infinite}
+@keyframes hue{from{background-position:0% 0}to{background-position:220% 0}}
+.strip-in{display:flex;width:max-content;animation:sl 42s linear infinite}
+.strip-in:hover{animation-play-state:paused}
+.si{display:flex;align-items:center;gap:12px;padding:18px 38px;font-family:var(--mono);font-size:.76rem;
+ color:#123A5C;white-space:nowrap;letter-spacing:.1em;text-transform:uppercase;font-weight:500}
+.si i{width:5px;height:5px;border-radius:50%;display:block;flex-shrink:0;background:#0F76C4}
+@keyframes sl{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- GRIDS ---------- */
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:28px 26px;position:relative;
+ overflow:hidden;transition:transform .3s var(--e),box-shadow .3s var(--e),border-color .3s}
+.card:hover{transform:translateY(-6px);border-color:var(--line2);box-shadow:0 24px 42px -30px rgba(18,21,29,.4)}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--acc);
+ transform:scaleX(0);transform-origin:left;transition:transform .45s var(--e)}
+.card:hover::before{transform:scaleX(1)}
+.card h3,.card h4{font-size:1.04rem;margin-bottom:9px}
+.card p{color:var(--ink2);font-size:.93rem}
+.cnum{font-family:var(--mono);font-size:.75rem;color:var(--ink3);margin-bottom:15px;display:inline-block;
+ transition:color .3s,transform .3s var(--e);letter-spacing:.1em}
+.card:hover .cnum{color:var(--acc);transform:translateX(3px)}
+.xm{width:32px;height:32px;border-radius:9px;border:1px solid var(--line);display:grid;place-items:center;
+ color:#D9534A;margin-bottom:16px;font-size:.9rem;transition:transform .35s var(--e)}
+.card:hover .xm{transform:rotate(90deg)}
+.pull{margin:44px 0 0;padding:26px 30px;border-left:2px solid var(--acc);background:var(--panel);
+ border-radius:0 14px 14px 0;color:var(--ink2);font-size:1.04rem;max-width:80ch;border-top:1px solid var(--line);
+ border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+@media(max-width:1000px){.g4{grid-template-columns:1fr 1fr}}
+@media(max-width:860px){.g3{grid-template-columns:1fr}.g2{grid-template-columns:1fr}}
+@media(max-width:560px){.g4{grid-template-columns:1fr}}
+
+/* ---------- FLOW ---------- */
+.flow{display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
+.node{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:34px 30px;text-align:center;
+ transition:transform .36s var(--e),border-color .36s,box-shadow .36s}
+.node:hover{transform:translateY(-7px);border-color:var(--acc);box-shadow:0 26px 46px -32px rgba(18,21,29,.45)}
+.node-ic{width:54px;height:54px;border-radius:15px;display:grid;place-items:center;margin:0 auto 16px;
+ font-size:1.35rem;background:var(--accs);color:var(--accd)}
+.node h3{font-size:1.1rem;margin-bottom:8px}.node p{color:var(--ink2);font-size:.93rem}
+.node code{font-family:var(--mono);font-size:.79rem;color:var(--accd);background:var(--accs);padding:2px 6px;border-radius:4px}
+.lnk{padding:0 26px;min-width:200px;text-align:center}
+.lnk-l{height:2px;border-radius:2px;background:linear-gradient(90deg,var(--acc),var(--acc2));position:relative;overflow:hidden}
+.lnk-l::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.85),transparent);
+ background-size:50% 100%;background-repeat:no-repeat;animation:sw 2.4s ease-in-out infinite}
+@keyframes sw{0%{background-position:-60% 0}100%{background-position:160% 0}}
+.lnk-t{font-family:var(--mono);font-size:.69rem;color:var(--ink2);border:1px solid var(--line);border-radius:20px;
+ padding:5px 13px;display:inline-block;margin:13px 4px 0;background:var(--panel)}
+.flow-note{margin-top:30px;text-align:center;font-family:var(--mono);font-size:.79rem;color:var(--ink2);
+ border:1px dashed var(--line2);border-radius:12px;padding:15px 22px;display:block;background:var(--panel)}
+@media(max-width:900px){.flow{grid-template-columns:1fr}.lnk{padding:24px 0;min-width:0}
+ .lnk-l{width:2px;height:46px;margin:0 auto;background:linear-gradient(180deg,var(--acc),var(--acc2))}}
+
+/* ---------- RAIL STEPS (pipeline variant) ---------- */
+.rail{position:relative;padding-left:0}
+.rail-track{display:grid;grid-template-columns:repeat(6,1fr);gap:0;position:relative;margin-bottom:34px}
+.rail-track::before{content:"";position:absolute;left:8%;right:8%;top:19px;height:2px;
+ background:linear-gradient(90deg,var(--acc),var(--acc2))}
+.rt{text-align:center;position:relative;padding:0 8px}
+.rt-dot{width:38px;height:38px;border-radius:50%;background:var(--panel);border:2px solid var(--acc);
+ display:grid;place-items:center;margin:0 auto 14px;font-family:var(--mono);font-size:.8rem;color:var(--acc);
+ position:relative;z-index:2;transition:transform .3s var(--e),background .3s,color .3s}
+.rt:hover .rt-dot{transform:scale(1.16);background:var(--acc);color:#fff}
+.rt h4{font-size:.92rem;line-height:1.3}
+.rail-detail{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);
+ border-left:1px solid var(--line);background:var(--panel);border-radius:14px;overflow:hidden}
+.rd{padding:26px 26px 30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+ transition:background .28s var(--e)}
+.rd:hover{background:var(--wash)}
+.rd-n{font-family:var(--mono);font-size:.73rem;color:var(--acc);letter-spacing:.12em;margin-bottom:12px;display:block}
+.rd h4{font-size:1rem;margin-bottom:8px}
+.rd p{color:var(--ink2);font-size:.92rem}
+@media(max-width:960px){.rail-track{display:none}.rail-detail{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.rail-detail{grid-template-columns:1fr}}
+
+/* ---------- FEATURE LEDGER (pipeline variant) ---------- */
+.ledger{border-top:1px solid var(--line2)}
+.lg{display:grid;grid-template-columns:56px 1.05fr 1.55fr;gap:26px;padding:24px 0;border-bottom:1px solid var(--line);
+ align-items:baseline;transition:background .26s,padding-left .3s var(--e)}
+.lg:hover{background:var(--panel);padding-left:14px}
+.lg-n{font-family:var(--mono);font-size:.78rem;color:var(--ink3);transition:color .26s}
+.lg:hover .lg-n{color:var(--acc)}
+.lg h4{font-size:1.06rem}
+.lg p{color:var(--ink2);font-size:.95rem}
+@media(max-width:820px){.lg{grid-template-columns:40px 1fr;gap:16px}.lg p{grid-column:2}}
+
+/* ---------- SPINE STEPS (explorer variant) ---------- */
+.spine{position:relative;padding-left:38px}
+.spine::before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:2px;
+ background:linear-gradient(180deg,var(--acc),var(--acc2))}
+.sp{position:relative;padding:0 0 30px 26px}
+.sp::before{content:"";position:absolute;left:-32px;top:6px;width:14px;height:14px;border-radius:50%;
+ background:var(--page);border:2px solid var(--acc);transition:transform .3s var(--e),background .3s}
+.sp:hover::before{transform:scale(1.4);background:var(--acc)}
+.sp-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 26px;
+ transition:transform .3s var(--e),box-shadow .3s var(--e),border-color .3s}
+.sp:hover .sp-card{transform:translateX(6px);border-color:var(--acc);box-shadow:0 20px 38px -30px rgba(18,21,29,.45)}
+.sp-n{font-family:var(--mono);font-size:.72rem;color:var(--acc);letter-spacing:.13em;display:block;margin-bottom:9px}
+.sp-card h4{font-size:1.05rem;margin-bottom:7px}
+.sp-card p{color:var(--ink2);font-size:.94rem}
+@media(max-width:620px){.spine{padding-left:26px}.sp{padding-left:16px}.sp::before{left:-22px}}
+
+/* ---------- BIG FEATURE CARDS (explorer variant) ---------- */
+.bigs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.big{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:32px 30px;position:relative;
+ overflow:hidden;transition:transform .32s var(--e),box-shadow .32s var(--e),border-color .32s}
+.big:hover{transform:translateY(-6px);border-color:var(--acc);box-shadow:0 26px 46px -32px rgba(18,21,29,.42)}
+.big-n{position:absolute;top:14px;right:22px;font-family:var(--disp);font-size:3.1rem;font-weight:600;
+ color:var(--accs);line-height:1;transition:color .32s,transform .32s var(--e)}
+.big:hover .big-n{transform:scale(1.08)}
+.big h4{font-size:1.1rem;margin-bottom:10px;position:relative;max-width:26ch}
+.big p{color:var(--ink2);font-size:.94rem;position:relative;max-width:42ch}
+@media(max-width:760px){.bigs{grid-template-columns:1fr}}
+
+/* ---------- HERO MOCKS ---------- */
+.pipe{border:1px solid var(--line);border-radius:18px;background:var(--panel);padding:26px;
+ box-shadow:0 30px 58px -34px rgba(18,21,29,.42);display:flex;flex-direction:column;gap:12px}
+.pipe-h{display:flex;align-items:center;justify-content:space-between;font-family:var(--mono);font-size:.7rem;
+ color:var(--ink3);padding-bottom:14px;border-bottom:1px solid var(--line);letter-spacing:.08em;text-transform:uppercase}
+.pipe-tag{background:var(--accs);color:var(--accd);padding:3px 10px;border-radius:12px}
+.pl{display:grid;grid-template-columns:1fr 22px 1fr;align-items:center;gap:10px;padding:12px 14px;
+ border:1px solid var(--line);border-radius:9px;font-family:var(--mono);font-size:.74rem;background:var(--wash);
+ transition:border-color .26s,transform .26s var(--e)}
+.pl:hover{border-color:var(--acc);transform:translateX(4px)}
+.pl .ar{color:var(--acc);text-align:center}
+.pl b{color:var(--accd);font-weight:500}
+.pl-foot{display:flex;justify-content:space-between;align-items:center;padding-top:14px;border-top:1px solid var(--line);
+ font-family:var(--mono);font-size:.72rem;color:var(--ink3)}
+.pl-ok{color:var(--acc2)}
+.expl{border:1px solid var(--line);border-radius:18px;background:var(--panel);overflow:hidden;
+ box-shadow:0 30px 58px -34px rgba(18,21,29,.42)}
+.expl-h{padding:18px 22px;border-bottom:1px solid var(--line);background:var(--accs)}
+.expl-h b{font-family:var(--disp);font-size:1rem;display:block}
+.expl-h span{font-family:var(--mono);font-size:.71rem;color:var(--ink2)}
+.expl-b{padding:20px 22px;display:flex;flex-direction:column;gap:10px}
+.ex{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 15px;border-radius:9px;
+ border:1px solid var(--line);background:var(--wash);font-size:.83rem;transition:transform .26s var(--e),border-color .26s}
+.ex:hover{transform:translateX(5px);border-color:var(--acc)}
+.ex-l{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.76rem;color:var(--ink2)}
+.ex-l i{width:6px;height:6px;border-radius:50%;background:var(--acc);display:block;flex-shrink:0}
+.ex-why{font-family:var(--mono);font-size:.68rem;color:var(--accd);background:var(--accs);padding:3px 9px;
+ border-radius:11px;white-space:nowrap}
+.ex-foot{padding:14px 22px;border-top:1px solid var(--line);font-family:var(--mono);font-size:.71rem;
+ color:var(--ink3);display:flex;justify-content:space-between}
+
+/* ---------- SHOWCASE ---------- */
+.sc{display:grid;grid-template-columns:.92fr 1.08fr;gap:60px;align-items:center;padding:56px 0;border-top:1px solid var(--line)}
+.sc:last-child{border-bottom:1px solid var(--line)}
+.sc:nth-child(even) .sc-m{order:2}.sc:nth-child(even) .sc-c{order:1}
+.sc-tag{font-family:var(--mono);font-size:.71rem;letter-spacing:.17em;text-transform:uppercase;color:var(--acc);
+ display:block;margin-bottom:14px}
+.sc-c h3{font-size:1.55rem;margin-bottom:14px}
+.sc-c p{color:var(--ink2);margin-bottom:20px}
+.tick{list-style:none;border-top:1px solid var(--line)}
+.tick li{padding:12px 0;border-bottom:1px solid var(--line);font-size:.94rem;color:var(--ink2);
+ display:flex;gap:13px;transition:padding-left .28s var(--e)}
+.tick li:hover{padding-left:8px}
+.tick li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--acc);margin-top:10px;flex-shrink:0}
+.mock{border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:28px;
+ display:flex;flex-direction:column;gap:12px;box-shadow:0 26px 50px -34px rgba(18,21,29,.42);
+ transition:transform .4s var(--e)}
+.mock:hover{transform:translateY(-6px)}
+.mr{display:flex;align-items:center;gap:13px;padding:13px 16px;border:1px solid var(--line);border-radius:9px;
+ font-family:var(--mono);font-size:.74rem;color:var(--ink2);background:var(--wash);flex-wrap:wrap}
+.mr b{color:var(--accd);font-weight:500}.mr .ar{color:var(--ink3)}
+.mr.ok{border-left:2px solid var(--acc2)}
+.mbar{height:4px;border-radius:3px;background:linear-gradient(90deg,var(--acc),var(--acc2))}
+@media(max-width:900px){.sc,.sc:nth-child(even){grid-template-columns:1fr;gap:32px}
+ .sc:nth-child(even) .sc-m,.sc:nth-child(even) .sc-c{order:0}}
+
+/* ---------- SECURITY ---------- */
+.sec-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.sq{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px 26px;display:flex;gap:16px;
+ transition:transform .3s var(--e),border-color .3s,box-shadow .3s}
+.sq:hover{transform:translateY(-5px);border-color:var(--acc);box-shadow:0 22px 40px -30px rgba(18,21,29,.4)}
+.sq-ic{width:34px;height:34px;border-radius:9px;background:var(--accs);color:var(--accd);display:grid;place-items:center;
+ flex-shrink:0;font-size:.9rem}
+.sq h4{font-size:1rem;margin-bottom:7px}.sq p{color:var(--ink2);font-size:.92rem}
+@media(max-width:820px){.sec-grid{grid-template-columns:1fr}}
+
+/* ---------- BENEFITS BAND ---------- */
+.band{background:var(--ink);color:#fff}
+.band .idx{color:rgba(255,255,255,.5)}.band .idx b{color:var(--acc2)}
+.band .idx::after{background:rgba(255,255,255,.2)}
+.band .lead{color:rgba(255,255,255,.66)}
+.bg3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.11);
+ border-radius:16px;overflow:hidden}
+.bn{background:#1A1E29;padding:30px 28px;transition:background .3s,transform .3s var(--e)}
+.bn:hover{background:#232836;transform:translateY(-4px)}
+.bn-k{font-family:var(--mono);font-size:.71rem;letter-spacing:.17em;text-transform:uppercase;color:var(--acc2);
+ display:inline-block;margin-bottom:14px;transition:transform .3s var(--e)}
+.bn:hover .bn-k{transform:translateX(4px)}
+.bn h4{font-size:1.03rem;margin-bottom:9px;color:#fff}
+.bn p{color:rgba(255,255,255,.63);font-size:.92rem}
+@media(max-width:900px){.bg3{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.bg3{grid-template-columns:1fr}}
+
+/* ---------- TABLE ---------- */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tbl{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:16px;
+ overflow:hidden;font-size:.93rem;background:var(--panel)}
+.tbl th,.tbl td{padding:16px 20px;text-align:left;border-bottom:1px solid var(--line)}
+.tbl thead th{background:var(--wash);font-family:var(--disp);font-weight:600;font-size:.9rem;border-bottom:1px solid var(--line2)}
+.tbl thead th:last-child{background:var(--accs);color:var(--accd)}
+.tbl td{color:var(--ink2)}
+.tbl td:first-child{color:var(--ink);font-weight:600}
+.tbl td:last-child{background:var(--accs);color:var(--ink);font-weight:500}
+.tbl tbody tr:last-child td{border-bottom:0}
+.tbl tbody tr{transition:background .2s}
+.tbl-note{margin-top:16px;font-family:var(--mono);font-size:.74rem;color:var(--ink3)}
+@media(max-width:820px){.tbl{min-width:700px}}
+
+/* ---------- FAQ ---------- */
+.faq-list{max-width:900px}
+details{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden;
+ transition:border-color .26s,box-shadow .26s}
+details[open]{border-color:var(--acc);box-shadow:0 16px 34px -30px rgba(15,118,196,.8)}
+summary{cursor:pointer;padding:19px 24px;font-family:var(--disp);font-weight:600;font-size:1rem;list-style:none;
+ display:flex;justify-content:space-between;gap:18px;align-items:center;transition:background .2s}
+summary::-webkit-details-marker{display:none}
+summary:hover{background:var(--wash)}
+summary::after{content:"+";font-family:var(--mono);font-size:1.25rem;color:var(--acc);flex-shrink:0;
+ transition:transform .3s var(--e)}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 24px 22px;color:var(--ink2);font-size:.95rem;max-width:76ch}
+details code{font-family:var(--mono);font-size:.86rem;color:var(--accd);background:var(--accs);padding:2px 6px;border-radius:4px}
+
+/* ---------- CTA ---------- */
+.ctab{border-radius:24px;padding:70px 46px;text-align:center;position:relative;overflow:hidden;
+ background:linear-gradient(115deg,#0F76C4 0%,#0C63A6 44%,#0FA38C 100%);color:#fff}
+.ctab::before{content:"";position:absolute;top:-90px;right:-60px;width:280px;height:280px;border-radius:50%;
+ background:rgba(255,255,255,.1)}
+.ctab::after{content:"";position:absolute;bottom:-110px;left:-50px;width:250px;height:250px;border-radius:50%;
+ background:rgba(255,255,255,.08)}
+.ctab-logo{height:76px;width:auto;max-width:180px;object-fit:contain;margin:0 auto 24px;position:relative;
+ filter:drop-shadow(0 12px 24px rgba(0,0,0,.24))}
+.ctab h2{max-width:22ch;margin:0 auto 16px;position:relative;color:#fff}
+.ctab p{color:rgba(255,255,255,.88);max-width:52ch;margin:0 auto 32px;font-size:1.05rem;position:relative}
+.ctab .btn-p{background:#fff;color:var(--accd);box-shadow:0 14px 28px -12px rgba(0,0,0,.3);position:relative}
+.ctab .btn-p:hover{background:#F2F5FF;transform:translateY(-3px)}
+.ctaf{margin-top:20px;font-family:var(--mono);font-size:.74rem;color:rgba(255,255,255,.78);position:relative}
+
+/* ---------- OTHER PRODUCTS ---------- */
+.op-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.op{border:1px solid var(--line);border-radius:20px;background:var(--panel);text-decoration:none;display:flex;
+ flex-direction:column;overflow:hidden;transition:transform .32s var(--e),border-color .32s,box-shadow .32s}
+.op:hover{transform:translateY(-7px);box-shadow:0 28px 50px -32px rgba(18,21,29,.42)}
+.op-top{padding:30px 30px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.op-n{font-family:var(--mono);font-size:.74rem;color:var(--ink3)}
+.op-logo{width:78px;height:78px;border-radius:18px;border:1px solid var(--line);display:grid;place-items:center;
+ padding:11px;background:var(--panel);transition:transform .4s var(--e)}
+.op:hover .op-logo{transform:scale(1.07) rotate(-5deg)}
+.op-logo img{width:100%;height:100%;object-fit:contain}
+.op-b{padding:20px 30px 30px}
+.op h3{font-size:1.36rem;margin-bottom:6px}
+.op .tg{font-style:italic;color:var(--ink2);font-size:.97rem;margin-bottom:16px}
+.chips{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.chip{font-family:var(--mono);font-size:.7rem;color:var(--ink3);border:1px solid var(--line);padding:3px 10px;border-radius:14px}
+.op ul{list-style:none;margin-bottom:20px}
+.op ul li{font-size:.91rem;color:var(--ink2);padding:9px 0;border-bottom:1px solid var(--line);display:flex;gap:11px}
+.op ul li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--acc);margin-top:9px;flex-shrink:0}
+.op .go{font-family:var(--mono);font-size:.83rem;color:var(--acc);display:inline-flex;gap:6px;transition:gap .24s var(--e)}
+.op:hover .go{gap:12px}
+@media(max-width:800px){.op-grid{grid-template-columns:1fr}}
+
+/* ---------- BLOG ---------- */
+.post{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--panel);text-decoration:none;
+ transition:transform .3s var(--e),box-shadow .3s var(--e)}
+.post:hover{transform:translateY(-6px);box-shadow:0 26px 44px -32px rgba(18,21,29,.4)}
+.post .pf{background:var(--wash);border-bottom:1px solid var(--line);padding:14px;display:grid;place-items:center}
+.post .pf img{width:100%;height:auto;max-height:180px;object-fit:contain;border-radius:5px}
+.post-ph{border-bottom:1px solid var(--line);padding:44px 20px;display:grid;place-items:center;
+ background:linear-gradient(135deg,var(--accs),var(--wash))}
+.post-ph span{font-family:var(--mono);font-size:.7rem;color:var(--ink3);letter-spacing:.19em;text-transform:uppercase}
+.post-b{padding:20px 21px 24px}
+.post-t{font-family:var(--mono);font-size:.69rem;color:var(--acc);letter-spacing:.15em;text-transform:uppercase;
+ display:block;margin-bottom:10px}
+.post h4{font-size:1.02rem;line-height:1.33;margin-bottom:8px}
+.post p{font-size:.88rem;color:var(--ink2)}
+
+/* ---------- FOOTER ---------- */
+footer{padding:32px 0;border-top:1px solid var(--line);background:var(--panel)}
+.ft{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.ft-l{display:flex;align-items:center;gap:12px}
+.ft-l img{height:34px;width:34px;object-fit:contain}
+.ft-l span{font-size:.85rem;color:var(--ink2)}
+.ft-links{display:flex;gap:24px;flex-wrap:wrap}
+.ft-links a{text-decoration:none;font-size:.85rem;color:var(--ink2);transition:color .2s}
+.ft-links a:hover{color:var(--acc)}
+.ft-c{font-size:.79rem;color:var(--ink3)}
+
+.js .rv{opacity:0;transform:translateY(24px)}
+.js .rv.in{opacity:1;transform:none;transition:opacity .8s var(--e),transform .8s var(--e)}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;animation-iteration-count:1!important;
+ transition-duration:.001ms!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
+@media(max-width:1020px){.hero{padding:128px 0 74px}.nav{top:10px;width:calc(100% - 20px)}.nav-mid{display:none}
+ .hero-grid{grid-template-columns:1fr;gap:44px}.chipf{display:none}}
+.nav-mid .pill{white-space:nowrap}@media (min-width:1021px) and (max-width:1240px){.nav-in{gap:10px}.nav-mid{gap:0}.nav-mid .pill{padding-left:8px;padding-right:8px;font-size:.78rem}.brand small{display:none}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Smart Lookup Data Loader",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Salesforce",
+      "url": "https://appexchange.salesforce.com/appxListingDetail?listingId=f020d7cb-6467-4dcc-adda-c1ce6c620257",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "@id": "https://twinstack.net/#organization",
+        "name": "TwinStack Solutions"
+      },
+      "description": "Free native Salesforce data loader for CSV imports: upserts, lookups resolved by name or code, automatic field mapping and clear row-level error reporting."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does Smart Lookup Data Loader do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It imports CSV data into Salesforce while resolving lookup relationships during the load, so your file can reference related records by a name, email or code instead of a record ID."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is Smart Lookup Data Loader different from the standard Data Loader?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The standard loader expects record IDs for lookup fields, which usually means preparing the file with a VLOOKUP first. This one resolves those references itself, auto-maps your headers, and can match on several fields at once."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will Smart Lookup Data Loader create duplicate records?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Matching on a combination of fields rather than a single one is what prevents most duplicate creation. You choose which fields identify an existing record before the load runs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens when a row fails in Smart Lookup Data Loader?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Failures are reported at row level, so you can see which line and which field caused the problem, correct it in your file, and re-run only what failed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Smart Lookup Data Loader work with custom objects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Standard and custom objects use the same workflow."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does my data leave Salesforce with Smart Lookup Data Loader?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It is a native package and the load runs inside your org."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does Smart Lookup Data Loader cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is free, with no per-record or per-load charge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a developer to use Smart Lookup Data Loader?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It is built for admins and operations teams, not for developers."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://twinstack.net/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Products",
+          "item": "https://twinstack.net/products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Smart Lookup Data Loader: Free Salesforce CSV Import App",
+          "item": "https://twinstack.net/products/smart-lookup-data-loader"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Import CSV into Salesforce Without Record IDs | Smart Lookup Data Loader (Free AppExchange App)",
+      "description": "Import CSV files into Salesforce using the names you already have, not Salesforce record IDs. Smart Lookup Data Loader is a free, native AppExchange app from TwinStack Solutions.",
+      "thumbnailUrl": [
+        "https://i.ytimg.com/vi/cH-Sbt0p8Cg/maxresdefault.jpg",
+        "https://i.ytimg.com/vi/cH-Sbt0p8Cg/hqdefault.jpg"
+      ],
+      "uploadDate": "2026-10-11",
+      "embedUrl": "https://www.youtube.com/embed/cH-Sbt0p8Cg",
+      "contentUrl": "https://www.youtube.com/watch?v=cH-Sbt0p8Cg",
+      "publisher": {
+        "@id": "https://twinstack.net/#organization"
+      }
+    }
+  ]
+}
+</script>
+<style id="ts-dd">
+.ts-dd{position:relative;display:inline-flex;align-items:center}
+.ts-dd>a{display:inline-flex!important;align-items:center;gap:.3rem}
+.ts-dd>a .ts-dd-car{width:.65rem;height:.65rem;transition:transform .2s;flex:0 0 auto}
+.ts-dd:hover>a .ts-dd-car,.ts-dd:focus-within>a .ts-dd-car{transform:rotate(180deg)}
+.ts-dd:after{content:"";position:absolute;top:100%;left:-12px;right:-12px;height:14px}
+.ts-dd .ts-dd-menu{position:absolute;top:100%;left:50%;transform:translate(-50%,10px);min-width:17rem;padding:.45rem;background:#fff;border:1px solid #e2e8f0;border-radius:.9rem;box-shadow:0 22px 50px -22px rgba(15,23,42,.4);opacity:0;visibility:hidden;transition:opacity .15s,transform .15s,visibility .15s;z-index:80;text-align:left}
+.ts-dd:hover .ts-dd-menu,.ts-dd:focus-within .ts-dd-menu{opacity:1;visibility:visible;transform:translate(-50%,6px)}
+.ts-dd .ts-dd-menu a{display:block!important;padding:.65rem .8rem!important;border-radius:.6rem;color:#0f172a!important;font-weight:600!important;font-size:.95rem!important;line-height:1.3;text-decoration:none!important;background:transparent;white-space:normal;transform:none!important;border:0!important}
+.ts-dd .ts-dd-menu a small{display:block;font-weight:400;color:#64748b;font-size:.8rem;margin-top:.15rem}
+.ts-dd .ts-dd-menu a:hover,.ts-dd .ts-dd-menu a:focus{background:#f0f9ff!important;color:#0284c7!important}
+.ts-dd .ts-dd-menu a[aria-current="page"]{color:#0284c7!important}
+</style>
+<style id="ts-video">
+.vd-sec{background:var(--page,#F5F8FC)}
+.vd-player{position:relative;aspect-ratio:16/9;max-width:960px;border-radius:20px;overflow:hidden;background:var(--ink,#12151D);box-shadow:0 34px 70px -40px rgba(18,21,29,.55)}
+.vd-player img,.vd-player iframe{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover}
+.vd-player button{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;background:transparent;cursor:pointer}
+.vd-play{position:absolute;left:50%;top:50%;width:80px;height:80px;margin:-40px 0 0 -40px;border-radius:50%;background:rgba(255,255,255,.96);display:grid;place-items:center;box-shadow:0 14px 34px -12px rgba(0,0,0,.55);transition:transform .15s}
+.vd-player button:hover .vd-play,.vd-player button:focus-visible .vd-play{transform:scale(1.07)}
+.vd-play svg{width:28px;height:28px;margin-left:5px;fill:var(--acc,#5B3FD9)}
+.vd-player button:focus-visible{outline:3px solid var(--acc,#5B3FD9);outline-offset:-3px}
+.vd-note{font-size:.85rem;color:var(--ink3,#7C8395);margin-top:12px}
+.vd-note a{color:var(--accd,#3F27AC);font-weight:600}
+.vd-list{list-style:none;margin:34px 0 0;padding:0;max-width:960px;display:grid;column-gap:36px;border-top:1px solid var(--line,#E4E7EF)}
+@media(min-width:760px){.vd-list{grid-template-columns:1fr 1fr}}
+.vd-list li{border-bottom:1px solid var(--line,#E4E7EF)}
+.vd-list button,.vd-list span.pt{display:flex;gap:14px;width:100%;text-align:left;background:none;border:0;padding:13px 0;font:inherit;font-size:.95rem;color:var(--ink2,#464C5C);line-height:1.45}
+.vd-list button{cursor:pointer}.vd-list button:hover{color:var(--accd,#3F27AC)}
+.vd-list time{flex:0 0 44px;font-weight:700;color:var(--ink,#12151D);font-variant-numeric:tabular-nums}
+.vd-list span.pt:before{content:"";flex:0 0 6px;height:6px;border-radius:50%;background:var(--acc,#5B3FD9);margin-top:.55em}
+</style>
+<style id="op3">.op-grid{grid-template-columns:repeat(3,1fr)}@media(max-width:1000px){.op-grid{grid-template-columns:1fr;max-width:560px;margin:0 auto}}</style>
+</head><body><!--email_off-->
+<header class="nav" id="nav"><div class="nav-in">
+<a class="brand" href="#top"><span class="brand-mark"><img src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_140/v1788420787/Untitled_design_20_daquoh.png" alt="Smart Lookup Data Loader logo" width="140" height="140" fetchpriority="high" decoding="async"></span>
+<span><b>Smart Lookup</b><small>by TwinStack</small></span></a>
+<nav class="nav-mid"><a class="pill home" href="/">Twinstack</a><a class="pill" href="/pricing">Pricing</a><div class="ts-dd"><a class="pill" href="/services" aria-haspopup="true">Products &amp; Services<svg class="ts-dd-car" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="ts-dd-menu"><a href="/products" aria-current="page">Products<small>Free native AppExchange apps</small></a><a href="/services">Services<small>Consulting, nonprofits, Tableau and more</small></a><a href="/#pdo-journey">Expertise<small>Our path from strategy to AppExchange</small></a></div></div><a class="pill" href="/case-studies">Case Studies</a><a class="pill" href="/blog#smart-lookup-data-loader">Blog</a><a class="pill" href="/cost-estimator">Cost Estimator</a><a class="pill" href="#faq">FAQ</a></nav>
+<a class="nav-cta" href="https://appexchange.salesforce.com/appxListingDetail?listingId=f020d7cb-6467-4dcc-adda-c1ce6c620257" target="_blank" rel="noopener">Install free</a></div></header>
+<section class="hero" id="top"><div class="wrap hero-grid"><div>
+<img width="320" height="320" class="hero-logo" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_320/v1788420787/Untitled_design_20_daquoh.png" alt="Smart Lookup Data Loader logo" fetchpriority="high" decoding="async">
+<span class="badge"><span class="dot"></span>Live on AppExchange · Rated 5.0 · Free</span>
+<h1>Import records that match on <span class="hl">your rules</span>, not just IDs.</h1>
+<p class="sub">A native Salesforce data loader that simplifies CSV imports. Upserts, dynamic lookups, automatic field mapping and row-level error reporting, built for efficient data migration.</p>
+<div class="cta-row"><a class="btn btn-p" href="https://appexchange.salesforce.com/appxListingDetail?listingId=f020d7cb-6467-4dcc-adda-c1ce6c620257" target="_blank" rel="noopener">Get it on AppExchange</a>
+<a class="btn btn-s" href="#how">How it works</a></div>
+<div class="stats"><div class="st"><b>5.0</b><span>AppExchange rating</span></div><div class="st"><b>$0</b><span>Free, no usage cap</span></div><div class="st"><b>Row-level</b><span>Error reporting on every import</span></div></div></div>
+<div class="stage"><div class="pipe">
+<div class="pipe-h"><span>contacts_q3.csv &middot; 604 rows</span><span class="pipe-tag">auto-mapped</span></div>
+<div class="pl"><span>account_name</span><span class="ar">&rarr;</span><b>Account.Name</b></div>
+<div class="pl"><span>owner_email</span><span class="ar">&rarr;</span><b>Owner (lookup)</b></div>
+<div class="pl"><span>ext_code</span><span class="ar">&rarr;</span><b>External_Id__c</b></div>
+<div class="pl"><span>region</span><span class="ar">&rarr;</span><b>Billing_Region__c</b></div>
+<div class="pl-foot"><span>match on: email + ext_code</span><span class="pl-ok">&#10003; 603 upserted &middot; 1 flagged</span></div>
+</div></div></div></section>
+
+<div class="strip"><div class="strip-in"><span class="si"><i></i>CSV import with upserts</span><span class="si"><i></i>Dynamic lookup resolution</span><span class="si"><i></i>Auto-mapped headers</span><span class="si"><i></i>Multi-field matching</span><span class="si"><i></i>Row-level error reporting</span><span class="si"><i></i>100% native</span><span class="si"><i></i>Free forever</span><span class="si"><i></i>CSV import with upserts</span><span class="si"><i></i>Dynamic lookup resolution</span><span class="si"><i></i>Auto-mapped headers</span><span class="si"><i></i>Multi-field matching</span><span class="si"><i></i>Row-level error reporting</span><span class="si"><i></i>100% native</span><span class="si"><i></i>Free forever</span></div></div>
+
+<section class="vd-sec" id="demo"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>&#9654;</b> Video demo</div><h2>See an import without a single record ID.</h2><p class="lead">A five-minute walkthrough, from the sample CSV to the results email. Pick a chapter to jump straight to it.</p></div><div class="vd-player" data-id="cH-Sbt0p8Cg" data-title="Import CSV into Salesforce Without Record IDs | Smart Lookup Data Loader (Free AppExchange App)"><img src="https://i.ytimg.com/vi/cH-Sbt0p8Cg/maxresdefault.jpg" width="1280" height="720" alt="Video demo of Smart Lookup Data Loader" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/cH-Sbt0p8Cg/hqdefault.jpg'"><button type="button" aria-label="Play the Smart Lookup Data Loader video demo"><span class="vd-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span></button></div><p class="vd-note"><a href="https://youtu.be/cH-Sbt0p8Cg" target="_blank" rel="noopener">Watch on YouTube</a></p><ol class="vd-list" aria-label="Video chapters"><li><button type="button" data-t="0"><time>0:00</time><span>The VLOOKUP problem</span></button></li><li><button type="button" data-t="27"><time>0:27</time><span>What Smart Lookup Data Loader does</span></button></li><li><button type="button" data-t="45"><time>0:45</time><span>Pick an object and download a sample CSV</span></button></li><li><button type="button" data-t="67"><time>1:07</time><span>Safe auto-map</span></button></li><li><button type="button" data-t="89"><time>1:29</time><span>Map a column</span></button></li><li><button type="button" data-t="99"><time>1:39</time><span>Lookups by any field (no IDs)</span></button></li><li><button type="button" data-t="139"><time>2:19</time><span>Auto-create records when there's no match</span></button></li><li><button type="button" data-t="164"><time>2:44</time><span>Upsert with multi-field matching</span></button></li><li><button type="button" data-t="197"><time>3:17</time><span>Review before import</span></button></li><li><button type="button" data-t="212"><time>3:32</time><span>Live progress</span></button></li><li><button type="button" data-t="226"><time>3:46</time><span>Results email with success and failure CSV</span></button></li><li><button type="button" data-t="246"><time>4:06</time><span>Past Imports history</span></button></li><li><button type="button" data-t="261"><time>4:21</time><span>Let your team run imports</span></button></li><li><button type="button" data-t="278"><time>4:38</time><span>Get it free</span></button></li></ol></div></section>
+
+<section style="background:#FFFFFF"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>01</b> The problem</div>
+<h2>The standard data loader knows record IDs. Your spreadsheet does not.</h2><p class="lead">Every bulk import runs into the same wall. The CSV has an account name, an email, an external code, but Salesforce wants an eighteen-character ID, and nothing in the file has one.</p></div>
+<div class="g3"><div class="card rv"><div class="xm">&#10005;</div><h3>Manual ID lookups</h3><p>Export the parent records, VLOOKUP the IDs into your file, hope nothing shifted between the export and the import. Repeat for every lookup field.</p></div><div class="card rv"><div class="xm">&#10005;</div><h3>Silent duplicate creation</h3><p>Matching on one field alone creates a second record whenever the value is slightly different, and you only find out weeks later during a report.</p></div><div class="card rv"><div class="xm">&#10005;</div><h3>Opaque failures</h3><p>An import fails partway and returns an error file that has to be reconciled against the original by hand before you can retry it.</p></div></div><p class="pull rv">A load that should take ten minutes turns into an afternoon of spreadsheet surgery, and the risk of a bad import lands on whoever ran it.</p></div></section>
+
+<section id="what" style="background:#FBFCFD"><div class="wrap">
+<div class="sec-head rv"><div class="idx"><b>02</b> What it is</div><h2>A loader that resolves the lookup for you, at import time.</h2><p class="lead">Point it at a CSV, tell it which fields identify a match, and it resolves the related records as it loads. The mapping step that used to happen in a spreadsheet now happens inside Salesforce.</p></div>
+<div class="flow rv"><div class="node"><div class="node-ic">&#9671;</div><h3>Your CSV file</h3><p>Headers are read and auto-mapped to fields on the target object, so most imports need no manual mapping at all.</p></div>
+<div class="lnk"><div class="lnk-l"></div><span class="lnk-t">Auto-mapping</span><span class="lnk-t">Dynamic lookup</span></div>
+<div class="node"><div class="node-ic">&#9737;</div><h3>Your Salesforce org</h3><p>Lookups are resolved dynamically, matching runs across the fields you chose, and records are inserted or upserted.</p></div></div>
+<span class="flow-note rv">Matching runs on multiple fields at once, so near-identical values do not quietly become a second record.</span>
+<p class="lead rv" style="margin:50px auto 0;text-align:center;max-width:72ch">It stays a data loader on purpose. Nothing proprietary sits between your file and your records, so what lands in Salesforce is exactly what you can see in the preview before you run it.</p></div></section>
+
+<section id="how" style="background:#FFFFFF"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>03</b> How it works</div>
+<h2>From file to loaded records.</h2><p class="lead">A short, predictable path, with a checkpoint before anything is written.</p></div><div class="rail"><div class="rail-track rv"><div class="rt"><div class="rt-dot">1</div><h4>Install from AppExchange</h4></div><div class="rt"><div class="rt-dot">2</div><h4>Choose the object</h4></div><div class="rt"><div class="rt-dot">3</div><h4>Upload the CSV</h4></div><div class="rt"><div class="rt-dot">4</div><h4>Review the mapping</h4></div><div class="rt"><div class="rt-dot">5</div><h4>Set the match rule</h4></div><div class="rt"><div class="rt-dot">6</div><h4>Run and review errors</h4></div></div><div class="rail-detail"><div class="rd rv"><span class="rd-n">STEP 01</span><h4>Install from AppExchange</h4><p>The native managed package installs into your org in a few clicks. Nothing external to configure and no separate account to create.</p></div><div class="rd rv"><span class="rd-n">STEP 02</span><h4>Choose the object</h4><p>Pick the target object for the import. Standard or custom, whichever your file belongs to.</p></div><div class="rd rv"><span class="rd-n">STEP 03</span><h4>Upload the CSV</h4><p>Drop in your file. Headers are read immediately and auto-mapped to matching fields on the object.</p></div><div class="rd rv"><span class="rd-n">STEP 04</span><h4>Review the mapping</h4><p>Adjust anything the auto-mapper did not catch, and set which fields should resolve as lookups.</p></div><div class="rd rv"><span class="rd-n">STEP 05</span><h4>Set the match rule</h4><p>Choose the field or combination of fields that identifies an existing record, so the load upserts instead of duplicating.</p></div><div class="rd rv"><span class="rd-n">STEP 06</span><h4>Run and review errors</h4><p>Run the import and read the result row by row, so a failure points at a line in your file rather than a batch ID.</p></div></div></div></div></section>
+
+<section id="features" style="background:#FBFCFD"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>04</b> Features</div>
+<h2>What the loader does.</h2><p class="lead">Built around the parts of a bulk import that usually go wrong.</p></div><div class="ledger"><div class="lg rv"><span class="lg-n">01</span><h4>CSV import with upserts</h4><p>Insert new records and update existing ones in a single pass, rather than splitting a file into two loads.</p></div><div class="lg rv"><span class="lg-n">02</span><h4>Dynamic lookup resolution</h4><p>Related records are resolved during the import, so your file can reference a name or a code instead of an ID.</p></div><div class="lg rv"><span class="lg-n">03</span><h4>Auto-mapped headers</h4><p>Column headers are matched to fields on the target object automatically, leaving only the exceptions to set by hand.</p></div><div class="lg rv"><span class="lg-n">04</span><h4>Multi-field matching</h4><p>Match on a combination of fields rather than one, so near-identical values do not create duplicates.</p></div><div class="lg rv"><span class="lg-n">05</span><h4>Row-level error reporting</h4><p>Every failure is reported against its own row, so you fix a line in your file instead of re-running a whole batch blind.</p></div><div class="lg rv"><span class="lg-n">06</span><h4>Standard and custom objects</h4><p>Load into whichever object the data belongs to, without a different tool for custom ones.</p></div><div class="lg rv"><span class="lg-n">07</span><h4>100% native</h4><p>Runs inside Salesforce. No external service holds your file and no data leaves the org during a load.</p></div><div class="lg rv"><span class="lg-n">08</span><h4>Completely free</h4><p>No licence cost and no per-record fee, however large the file is.</p></div></div></div></section>
+
+<section style="background:#FFFFFF"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>05</b> Inside the app</div>
+<h2>Where the time actually gets saved.</h2></div><div class="sc rv"><div class="sc-m"><div class="mock"><div class="mr"><b>account_name</b><span class="ar">&rarr;</span>Account.Name</div><div class="mr"><b>owner_email</b><span class="ar">&rarr;</span>Owner (lookup)</div><div class="mr"><b>ext_code</b><span class="ar">&rarr;</span>External_Id__c</div><div class="mbar"></div></div></div><div class="sc-c"><span class="sc-tag">Auto-mapping</span><h3>Your headers, already matched</h3><p>The mapping screen opens pre-filled rather than blank, so a clean file often needs no mapping work at all and a messy one needs only the exceptions corrected.</p><ul class="tick"><li>Column headers read straight from the CSV</li><li>Matched against fields on the target object</li><li>Manual override available on any field</li></ul></div></div><div class="sc rv"><div class="sc-m"><div class="mock"><div class="mr ok">acme-emea-014 <span class="ar">resolved &rarr;</span> <b>001Ax0000</b></div><div class="mr ok">j.rivera@acme.com <span class="ar">resolved &rarr;</span> <b>005Ax0000</b></div><div class="mr ok">EMEA-SUB-77 <span class="ar">resolved &rarr;</span> <b>a01Ax0000</b></div><div class="mbar"></div></div></div><div class="sc-c"><span class="sc-tag">Dynamic lookups</span><h3>Reference records by what you actually have</h3><p>Instead of exporting parent records to fetch their IDs, point the loader at the field your file already contains and let it resolve the relationship during the load.</p><ul class="tick"><li>Resolve lookups at import time</li><li>Use names, emails or external codes</li><li>No pre-import VLOOKUP step</li></ul></div></div><div class="sc rv"><div class="sc-m"><div class="mock"><div class="mr ok">Row 1 &ndash; 218 <span class="ar">inserted</span></div><div class="mr">Row 219 <span class="ar">Billing_Country__c</span> <b>invalid picklist</b></div><div class="mr ok">Row 220 &ndash; 604 <span class="ar">upserted</span></div><div class="mbar"></div></div></div><div class="sc-c"><span class="sc-tag">Error reporting</span><h3>Failures you can act on</h3><p>When something does not load, the result tells you which row and which field, so the fix is a correction in your file rather than an investigation.</p><ul class="tick"><li>Reported per row, not per batch</li><li>Points at the field that failed</li><li>Correct and re-run only what failed</li></ul></div></div></div></section>
+
+<section id="security" style="background:#FBFCFD"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>06</b> Security</div>
+<h2>The load runs inside your org.</h2><p class="lead">A data loader handles some of the most sensitive records you have. This one is a native package, so your file is never uploaded to an external service to be processed.</p></div><div class="sec-grid"><div class="sq rv"><span class="sq-ic">&#10003;</span><div><h4>Nothing is uploaded offsite</h4><p>Parsing, matching and inserting all happen inside Salesforce. No third party holds a copy of your file.</p></div></div><div class="sq rv"><span class="sq-ic">&#10003;</span><div><h4>Runs as you</h4><p>The import executes under your user, so your existing object and field permissions apply exactly as they normally would.</p></div></div><div class="sq rv"><span class="sq-ic">&#10003;</span><div><h4>Preview before write</h4><p>You confirm the mapping and the match rule before anything is committed, rather than discovering the result afterwards.</p></div></div><div class="sq rv"><span class="sq-ic">&#10003;</span><div><h4>Row-level audit trail</h4><p>Every row is reported as inserted, upserted or failed, so a completed load can be reconciled against the source file.</p></div></div></div></div></section>
+
+<section class="band" style="background:var(--ink)"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>07</b> Benefits</div>
+<h2>What changes on your next big load.</h2><p class="lead">The tool is only interesting because of the spreadsheet work it removes.</p></div><div class="bg3"><div class="bn rv"><span class="bn-k">Time</span><h4>No pre-import prep</h4><p>The VLOOKUP-the-IDs step disappears, which is usually the longest part of preparing a load.</p></div><div class="bn rv"><span class="bn-k">Data quality</span><h4>Fewer duplicates</h4><p>Matching across several fields catches the near-identical records that single-field matching creates.</p></div><div class="bn rv"><span class="bn-k">Confidence</span><h4>Failures are legible</h4><p>Row-level reporting turns a failed import from an investigation into a correction.</p></div><div class="bn rv"><span class="bn-k">Cost</span><h4>Free to run</h4><p>No licence and no per-record pricing, regardless of how large or frequent your loads are.</p></div><div class="bn rv"><span class="bn-k">Security</span><h4>Nothing leaves the org</h4><p>The load runs natively in Salesforce, so your file is not handed to an external service.</p></div><div class="bn rv"><span class="bn-k">Fit</span><h4>Any object</h4><p>Standard or custom, the same tool and the same workflow either way.</p></div></div></div></section>
+
+<section style="background:#FFFFFF"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>08</b> Comparison</div>
+<h2>Against how bulk imports usually get done.</h2></div><div class="tw rv"><table class="tbl"><thead><tr><th><span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap">Feature</span></th><th>Standard Data Loader</th><th>Spreadsheet prep first</th><th>Smart Lookup Data Loader</th></tr></thead><tbody><tr><td>Lookups by name or code</td><td>No, IDs only</td><td>Manual VLOOKUP</td><td>Resolved at import</td></tr><tr><td>Header mapping</td><td>Manual</td><td>Manual</td><td>Auto-mapped</td></tr><tr><td>Match on several fields</td><td>No</td><td>Not reliably</td><td>Yes</td></tr><tr><td>Error detail</td><td>Batch-level file</td><td>Found afterwards</td><td>Row-level</td></tr><tr><td>Prep time before a load</td><td>Moderate</td><td>High</td><td>Minimal</td></tr><tr><td>Runs inside Salesforce</td><td>Desktop app</td><td>Wherever your sheet is</td><td>Fully native</td></tr><tr><td>Cost</td><td>Free</td><td>Staff time</td><td>Free</td></tr></tbody></table>
+<p class="tbl-note">Comparison reflects publicly documented behaviour at time of writing. Verify before publishing.</p></div></div></section>
+
+<section style="background:#FBFCFD"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>09</b> Who it is for</div>
+<h2>Anyone who loads data into Salesforce more than once a month.</h2></div><div class="ledger"><div class="lg rv"><span class="lg-n">01</span><h4>Salesforce admins</h4><p>Routine bulk updates that currently start with exporting parent records just to fetch their IDs.</p></div><div class="lg rv"><span class="lg-n">02</span><h4>Data migration teams</h4><p>Multi-object migrations where relationships have to be resolved as records land, not afterwards.</p></div><div class="lg rv"><span class="lg-n">03</span><h4>Revenue operations</h4><p>Regular account, contact and opportunity loads from lists that arrive as spreadsheets.</p></div><div class="lg rv"><span class="lg-n">04</span><h4>Consultants</h4><p>Client orgs where the same import has to be run repeatedly and handed over cleanly.</p></div><div class="lg rv"><span class="lg-n">05</span><h4>Marketing operations</h4><p>List uploads that need to attach to existing accounts without creating a second copy of each one.</p></div><div class="lg rv"><span class="lg-n">06</span><h4>Support and service</h4><p>Bulk case or asset loads that reference records by a customer code rather than an ID.</p></div></div></div></section>
+
+<section id="faq" style="background:#FFFFFF"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>10</b> FAQ</div>
+<h2>The questions admins ask first.</h2></div><div class="faq-list"><details class="rv"><summary>What does Smart Lookup Data Loader do?</summary><p>It imports CSV data into Salesforce while resolving lookup relationships during the load, so your file can reference related records by a name, email or code instead of a record ID.</p></details><details class="rv"><summary>How is Smart Lookup Data Loader different from the standard Data Loader?</summary><p>The standard loader expects record IDs for lookup fields, which usually means preparing the file with a VLOOKUP first. This one resolves those references itself, auto-maps your headers, and can match on several fields at once.</p></details><details class="rv"><summary>Will Smart Lookup Data Loader create duplicate records?</summary><p>Matching on a combination of fields rather than a single one is what prevents most duplicate creation. You choose which fields identify an existing record before the load runs.</p></details><details class="rv"><summary>What happens when a row fails in Smart Lookup Data Loader?</summary><p>Failures are reported at row level, so you can see which line and which field caused the problem, correct it in your file, and re-run only what failed.</p></details><details class="rv"><summary>Does Smart Lookup Data Loader work with custom objects?</summary><p>Yes. Standard and custom objects use the same workflow.</p></details><details class="rv"><summary>Does my data leave Salesforce with Smart Lookup Data Loader?</summary><p>No. It is a native package and the load runs inside your org.</p></details><details class="rv"><summary>How much does Smart Lookup Data Loader cost?</summary><p>It is free, with no per-record or per-load charge.</p></details><details class="rv"><summary>Do I need a developer to use Smart Lookup Data Loader?</summary><p>No. It is built for admins and operations teams, not for developers.</p></details></div></div></section>
+
+<section id="get"><div class="wrap"><div class="ctab rv">
+<img width="240" height="240" class="ctab-logo" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_240/v1788420787/Untitled_design_20_daquoh.png" alt="Smart Lookup Data Loader logo" loading="lazy" decoding="async">
+<h2>Stop preparing spreadsheets. Start loading.</h2><p>Install Smart Lookup Data Loader from the Salesforce AppExchange and run your next import without the prep work.</p>
+<a class="btn btn-p" href="https://appexchange.salesforce.com/appxListingDetail?listingId=f020d7cb-6467-4dcc-adda-c1ce6c620257" target="_blank" rel="noopener">Get it on AppExchange</a>
+<p class="ctaf">Free managed package &middot; No credit card &middot; Published by TwinStack Solutions</p></div></div></section>
+
+<section style="background:#FBFCFD"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>11</b> From TwinStack</div>
+<h2>Our other AppExchange products.</h2>
+<p class="lead">Native apps built around the same idea: less manual work between your data and your Salesforce org.</p></div>
+<div class="op-grid"><a class="op rv" href="https://twinstack.net/products/smart-forms-surveys"><div class="op-top"><span class="op-n">01</span><span class="op-logo"><img src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_160/v1793101300/Smart_Forms_Surveys_Tr_cln7sv.png" alt="Smart Forms &amp; Surveys logo" width="160" height="160" loading="lazy" decoding="async"></span></div><div class="op-b"><h3>Smart Forms &amp; Surveys</h3><p class="tg">Native forms. Real records.</p><div class="chips"><span class="chip">Free</span><span class="chip">New</span></div><ul><li>Drag-and-drop form and survey builder</li><li>Public forms on Salesforce Sites</li><li>Creates or updates any object</li><li>No external callouts</li></ul><span class="go">View product &rarr;</span></div></a><a class="op rv" href="https://twinstack.net/products/google-form-auto-sync"><div class="op-top"><span class="op-n">02</span><span class="op-logo"><img src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_160/v1788339177/Google_sync_zxk6ny.png" alt="Google Form Auto Sync logo" width="160" height="160" loading="lazy" decoding="async"></span></div><div class="op-b"><h3>Google Form Auto Sync</h3><p class="tg">Responses, straight into Salesforce.</p><div class="chips"><span class="chip">5.0 &#9733;</span><span class="chip">Free</span><span class="chip">Live</span></div><ul><li>Real-time sync on form submission</li><li>100% native, no middleware</li><li>No Google Sheets in the path</li><li>No third-party server in the path</li></ul><span class="go">View product &rarr;</span></div></a><a class="op rv" href="https://twinstack.net/products/who-sees-what"><div class="op-top"><span class="op-n">03</span><span class="op-logo"><img src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_160/v1788419416/Who_Sees_What_vy8udv.png" alt="Who Sees What logo" width="160" height="160" loading="lazy" decoding="async"></span></div><div class="op-b"><h3>Who Sees What</h3><p class="tg">Why can this user see that?</p><div class="chips"><span class="chip">Free</span><span class="chip">Live</span></div><ul><li>Start from a user, not a permission set</li><li>See every object, field and record</li><li>Shows the exact rule that granted access</li><li>Read-only and fully native</li></ul><span class="go">View product &rarr;</span></div></a></div></div></section>
+
+<section id="blog" style="background:#FFFFFF"><div class="wrap"><div class="sec-head rv"><div class="idx"><b>12</b> Blog</div>
+<h2>Notes from the team.</h2><p class="lead">New posts most weeks: setup guides, integration patterns, and what we learn from the Salesforce community.</p></div>
+<div class="g3"><a class="post rv" href="/blog/salesforce-import-vlookup-record-ids"><div class="post-ph"><span>Guide</span></div><div class="post-b"><span class="post-t">Guide</span><h4>Why every bulk import starts with a VLOOKUP, and how to skip it</h4><p>The record-ID problem behind most Salesforce data loads.</p></div></a><a class="post rv" href="/blog/salesforce-duplicate-records-match-fields"><div class="post-ph"><span>Data quality</span></div><div class="post-b"><span class="post-t">Data quality</span><h4>Single-field matching is how duplicate accounts get created</h4><p>A practical approach to choosing match keys for an import.</p></div></a><a class="post rv" href="/blog/salesforce-import-error-reporting"><div class="post-ph"><span>Workflow</span></div><div class="post-b"><span class="post-t">Workflow</span><h4>Reading a failed import: row-level errors versus batch files</h4><p>What to look at first when a load comes back with failures.</p></div></a></div><div class="ts-more-posts" style="display:flex;justify-content:center;margin-top:2.25rem"><a class="btn btn-s" href="/blog#smart-lookup-data-loader">Learn more: all Smart Lookup Data Loader articles &rarr;</a></div></div></section>
+
+<footer><div class="wrap ft"><div class="ft-l">
+<img width="96" height="96" src="https://res.cloudinary.com/du42kbmmn/image/upload/f_auto,q_auto,w_96/v1788420787/Untitled_design_20_daquoh.png" alt="Smart Lookup Data Loader logo" loading="lazy" decoding="async">
+<span>Smart Lookup Data Loader by TwinStack Solutions</span></div>
+<div class="ft-links"><a href="https://twinstack.net">Twinstack</a><a href="/about">About</a><a href="/blog#smart-lookup-data-loader">Blogs</a><a href="https://twinstack.net/case-studies">Case Studies</a><a href="/pricing">Pricing</a><a href="/contact">Contact</a><a href="/privacy-policy">Privacy Policy</a>
+<a href="/trust-center">Trust Center</a>
+</div><span class="ft-c">&copy; 2026 TwinStack Solutions</span></div></footer>
+
+<script>document.documentElement.className+=' js';
+(function(){var n=document.getElementById('nav'),t=0;
+function u(){n.classList.toggle('docked',(window.scrollY||document.documentElement.scrollTop)>26);t=0}
+window.addEventListener('scroll',function(){if(!t){requestAnimationFrame(u);t=1}},{passive:true});u();
+if('IntersectionObserver' in window){var o=new IntersectionObserver(function(e){e.forEach(function(x){
+if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.06});
+var a=document.querySelectorAll('.rv');for(var i=0;i<a.length;i++){a[i].style.transitionDelay=(i%3)*70+'ms';o.observe(a[i])}}
+else{var b=document.querySelectorAll('.rv');for(var j=0;j<b.length;j++)b[j].classList.add('in')}})();</script>
+<!--/email_off--><script id="ts-video-js">
+(function(){document.querySelectorAll('.vd-player').forEach(function(p){var id=p.getAttribute('data-id'),t=p.getAttribute('data-title');
+function play(s){p.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0&start='+(s||0)+'" title="'+t+'" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';}
+var b=p.querySelector('button');if(b)b.addEventListener('click',function(){play(0);});
+var sec=p.closest('section');if(sec)sec.querySelectorAll('.vd-list button[data-t]').forEach(function(x){x.addEventListener('click',function(){play(parseInt(x.getAttribute('data-t'),10));p.scrollIntoView({behavior:'smooth',block:'center'});});});});})();
+</script>
+</body></html>
