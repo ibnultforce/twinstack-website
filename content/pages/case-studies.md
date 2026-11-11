@@ -99,6 +99,34 @@ scriptBodyClass: font-sans antialiased text-slate-800
                     <button class="imp-filter-btn imp-px-4 imp-py-2 imp-rounded-full imp-border imp-border-slate-200 imp-transition imp-hover:border-brand-500 imp-bg-white imp-shadow-sm imp-interactive-element" onclick="filterSelection('retail', event)">Retail</button>
                 </div>
                 <div class="imp-grid imp-grid-cols-1 imp-md:grid-cols-2 imp-lg:grid-cols-3 imp-gap-8" id="cs-grid">
+                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-nonprofit">
+                        <div class="imp-h-56 imp-overflow-hidden imp-relative">
+                            <img src="/assets/img/uploads/sfs-case-hero.png" alt="A scholarship application form with an attached transcript, beside the title Evergreen Valley Youth Alliance." width="400" height="224" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
+                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Nonprofit</span>
+                        </div>
+                        <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
+                            <span class="imp-ts-kicker">Illustrative example</span>
+                            <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
+                                <a href="/case-studies/evergreen-valley-youth-alliance.html">Evergreen Valley Youth Alliance: Taking Re-Keying Out of Scholarship Season</a>
+                            </h3>
+                            <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">A regional nonprofit replaced spreadsheet re-keying with Smart Forms & Surveys and now reviews every scholarship application the day it arrives.</p>
+                            <a href="/case-studies/evergreen-valley-youth-alliance.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read the Evergreen Valley Youth Alliance case study">Read the case study <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
+                        </div>
+                    </article>
+                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-nonprofit">
+                        <div class="imp-h-56 imp-overflow-hidden imp-relative">
+                            <img src="/assets/img/drawn/service-cloud-voice-call-flow.svg" alt="Service Cloud Voice call journey from inbound call to agent in Salesforce" width="400" height="224" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
+                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Service Cloud</span>
+                        </div>
+                        <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
+                            <span class="imp-ts-kicker">Illustrative example</span>
+                            <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
+                                <a href="/case-studies/salesforce-service-cloud-voice.html">Salesforce Service Cloud Voice: Unifying Phone Support and CRM</a>
+                            </h3>
+                            <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">A support helpline brought calls, voicemail and post-call surveys into one Salesforce agent workspace with smart routing and call records.</p>
+                            <a href="/case-studies/salesforce-service-cloud-voice.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read the Service Cloud Voice case study">Read the case study <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
+                        </div>
+                    </article>
                     <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-retail">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative">
                             <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1789991884/SLDL_CS_1.1_ebip9m.png" alt="Brightwater Outfitters: Retail Data Migration Without the VLOOKUP Pass" width="400" height="224" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">

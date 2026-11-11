@@ -106,164 +106,46 @@ scriptBodyClass: font-sans antialiased text-slate-800
                     <button class="imp-filter-btn imp-px-4 imp-py-2 imp-rounded-full imp-border imp-border-slate-200 imp-transition imp-hover:border-brand-500 imp-bg-white imp-shadow-sm imp-interactive-element" onclick="filterSelection('gfas', event)">Google Form Auto Sync</button>
                     <button class="imp-filter-btn imp-px-4 imp-py-2 imp-rounded-full imp-border imp-border-slate-200 imp-transition imp-hover:border-brand-500 imp-bg-white imp-shadow-sm imp-interactive-element" onclick="filterSelection('wsw', event)">Who Sees What</button>
                     <button class="imp-filter-btn imp-px-4 imp-py-2 imp-rounded-full imp-border imp-border-slate-200 imp-transition imp-hover:border-brand-500 imp-bg-white imp-shadow-sm imp-interactive-element" onclick="filterSelection('sldl', event)">Smart Lookup Data Loader</button>
-                    <button class="imp-filter-btn imp-px-4 imp-py-2 imp-rounded-full imp-border imp-border-slate-200 imp-transition imp-hover:border-brand-500 imp-bg-white imp-shadow-sm imp-interactive-element" onclick="filterSelection('voice', event)">Salesforce Voice</button>
-                    <button class="imp-filter-btn imp-px-4 imp-py-2 imp-rounded-full imp-border imp-border-slate-200 imp-transition imp-hover:border-brand-500 imp-bg-white imp-shadow-sm imp-interactive-element" onclick="filterSelection('tableau', event)">Tableau</button>
+                    <button class="imp-filter-btn imp-px-4 imp-py-2 imp-rounded-full imp-border imp-border-slate-200 imp-transition imp-hover:border-brand-500 imp-bg-white imp-shadow-sm imp-interactive-element" onclick="filterSelection('sfs', event)">Smart Forms and Surveys</button>
                 </div>
                 <div class="imp-grid imp-grid-cols-1 imp-md:grid-cols-2 imp-lg:grid-cols-3 imp-gap-8" id="blog-grid">
-                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-voice imp-guide">
+                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide imp-sfs">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative">
-                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1794298847/salesforce-voice-amazon-connect-features-cover_tvdvqc.jpg" alt="Cover for the Salesforce Voice with Amazon Connect feature guide: a Service Console with an active call, live transcript and sentiment" width="400" height="225" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
-                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Salesforce Voice</span>
+                            <img src="/assets/img/uploads/sfs-blog1-hero.png" alt="A web form on the left with an arrow pointing to a Salesforce Lead record on the right, labelled Created automatically." width="400" height="225" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
+                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Smart Forms and Surveys</span>
                         </div>
                         <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
                             <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
-                                <a href="/blog/salesforce-voice-amazon-connect-features.html">The Definitive Feature Guide: Salesforce Voice with Amazon Connect</a>
+                                <a href="/blog/native-salesforce-forms.html">Why Native Salesforce Forms Beat a Form Tool Plus a Connector</a>
                             </h3>
-                            <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">What Salesforce Voice with Amazon Connect does: smart phone menus, screen pops, live transcripts, call recording, voicemail, surveys, Agentforce and reports.</p>
-                            <a href="/blog/salesforce-voice-amazon-connect-features.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read The Definitive Feature Guide: Salesforce Voice with Amazon Connect">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
+                            <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">Form tools plus connectors add hops between visitors and your CRM. See how Smart Forms & Surveys creates Salesforce records directly from public forms.</p>
+                            <a href="/blog/native-salesforce-forms.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read Why Native Salesforce Forms Beat a Form Tool Plus a Connector">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
                         </div>
                     </article>
-                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-voice imp-guide">
+                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide imp-sfs">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative">
-                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1794298849/salesforce-voice-cost-comparison-cover_b58ajl.jpg" alt="Cover for What Salesforce Voice Really Costs: stacked cost blocks comparing managed Amazon Connect, BYOA and BYOT" width="400" height="225" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
-                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Salesforce Voice</span>
+                            <img src="/assets/img/uploads/sfs-blog2-hero.png" alt="Five numbered steps: set up once, build a form, save and share, visitors submit, records appear." width="400" height="225" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
+                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Smart Forms and Surveys</span>
                         </div>
                         <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
                             <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
-                                <a href="/blog/salesforce-voice-cost-comparison.html">Salesforce Voice Cost Comparison: Salesforce-Managed Amazon Connect vs BYOA vs BYOT</a>
+                                <a href="/blog/build-public-salesforce-form.html">How to Build a Public Salesforce Form in Five Steps (No Code)</a>
                             </h3>
-                            <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">What Salesforce Voice really costs: licence tiers, Amazon Connect usage, partner seat prices and a 50-agent example to compare monthly and first-year TCO.</p>
-                            <a href="/blog/salesforce-voice-cost-comparison.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read Salesforce Voice Cost Comparison: Salesforce-Managed Amazon Connect vs BYOA vs BYOT">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
+                            <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">A step-by-step guide to building a public Salesforce form with Smart Forms & Surveys: setup, fields, conditional questions, sharing and reviewing submissions.</p>
+                            <a href="/blog/build-public-salesforce-form.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read How to Build a Public Salesforce Form in Five Steps">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
                         </div>
                     </article>
-                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-voice imp-guide">
+                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide imp-sfs">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative">
-                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1794298852/salesforce-voice-partner-telephony-comparison-cover_gvq32b.jpg" alt="Cover for Comparing Salesforce Voice Telephony Partners: Omni-Channel connected to Amazon Connect, Zoom, NICE, Talkdesk, Five9, RingCX and Twilio" width="400" height="225" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
-                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Salesforce Voice</span>
+                            <img src="/assets/img/uploads/sfs-blog3-hero.png" alt="A teal shield with a check mark next to the labels Bot checks, Safe file uploads and Create-only access." width="400" height="225" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
+                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Smart Forms and Surveys</span>
                         </div>
                         <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
                             <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
-                                <a href="/blog/salesforce-voice-partner-telephony-comparison.html">Salesforce Voice Partner Telephony: How Amazon Connect, Zoom, NICE, Talkdesk, Five9, RingCX and Twilio Compare</a>
+                                <a href="/blog/secure-public-salesforce-forms.html">Public Salesforce Forms Without the Anxiety: Spam, Uploads and Guest Access</a>
                             </h3>
-                            <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">Compare Salesforce Voice telephony side by side: Amazon Connect, Zoom, NICE, Talkdesk, Five9, RingCX and Twilio, by routing, AI, set-up, support and limits.</p>
-                            <a href="/blog/salesforce-voice-partner-telephony-comparison.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read Salesforce Voice Partner Telephony: How Amazon Connect, Zoom, NICE, Talkdesk, Five9, RingCX and Twilio Compare">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
-                        </div>
-                    </article>
-                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-voice imp-guide">
-                        <div class="imp-h-56 imp-overflow-hidden imp-relative">
-                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1794298848/salesforce-voice-configuration-mistakes-cover_vyubtf.jpg" alt="Cover for Nine Salesforce Voice Configuration Mistakes: a grid of nine numbered tiles from AWS Region to after-call work" width="400" height="225" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
-                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Salesforce Voice</span>
-                        </div>
-                        <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
-                            <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
-                                <a href="/blog/salesforce-voice-configuration-mistakes.html">9 Salesforce Voice Configuration Mistakes That Can Disrupt Future Operations</a>
-                            </h3>
-                            <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">Nine Salesforce Voice set-up mistakes that cause trouble later, from AWS Region and routing choices to number porting, Lambda errors and after-call work.</p>
-                            <a href="/blog/salesforce-voice-configuration-mistakes.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read 9 Salesforce Voice Configuration Mistakes That Can Disrupt Future Operations">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
-                        </div>
-                    </article>
-                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-voice imp-guide">
-                        <div class="imp-h-56 imp-overflow-hidden imp-relative">
-                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1794298850/salesforce-voice-desk-phone-vs-softphone-cover_ftfg3a.jpg" alt="Cover for Why Desk Phones Are the Hard Road: a desk phone linked to an Omni-Channel browser session showing Available" width="400" height="225" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
-                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Salesforce Voice</span>
-                        </div>
-                        <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
-                            <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
-                                <a href="/blog/salesforce-voice-desk-phone-vs-softphone.html">Desk Phone or Softphone? Why Physical Desk Phones Are the Hard Road in Salesforce Voice</a>
-                            </h3>
-                            <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">Why a desk phone cannot keep a Salesforce Voice agent available on its own, what fails, and how auto-login plus auto-accept make it feel browser-free.</p>
-                            <a href="/blog/salesforce-voice-desk-phone-vs-softphone.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read Desk Phone or Softphone? Why Physical Desk Phones Are the Hard Road in Salesforce Voice">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
-                        </div>
-                    </article>
-                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-voice imp-guide">
-                        <div class="imp-h-56 imp-overflow-hidden imp-relative">
-                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1794298851/salesforce-voice-mobile-iphone-android-cover_jgry2j.jpg" alt="Cover for Taking the Call Centre on the Road: a phone showing a field agent call with a Case Created label" width="400" height="225" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
-                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Salesforce Voice</span>
-                        </div>
-                        <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
-                            <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
-                                <a href="/blog/salesforce-voice-mobile-iphone-android.html">Taking the Call Centre on the Road: How We Solved Mobile Calling for Field Agents</a>
-                            </h3>
-                            <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">How we got Salesforce Voice with Amazon Connect working on iPhone and Android for field agents, with cases still created automatically and nothing extra to buy.</p>
-                            <a href="/blog/salesforce-voice-mobile-iphone-android.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read Taking the Call Centre on the Road: How We Solved Mobile Calling for Field Agents">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
-                        </div>
-                    </article>
-                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-tableau imp-nonprofit imp-guide">
-                        <div class="imp-h-56 imp-overflow-hidden imp-relative">
-                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1794299312/salesforce-tableau-nonprofit-reporting-overview_xitypq.png" alt="Cover for Beyond Salesforce Reports: a dot chart of student reach by school and programme, with School D highlighted as lowest" width="400" height="225" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
-                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Tableau</span>
-                        </div>
-                        <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
-                            <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
-                                <a href="/blog/salesforce-tableau-nonprofit-reporting.html">Beyond Salesforce Reports: How We Used Tableau to Find the Students a Nonprofit Missed</a>
-                            </h3>
-                            <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">How we used Salesforce and Tableau to show a family engagement programme which students it reached and which it missed, with seven dashboards on one data model.</p>
-                            <a href="/blog/salesforce-tableau-nonprofit-reporting.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read Beyond Salesforce Reports: How We Used Tableau to Find the Students a Nonprofit Missed">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
-                        </div>
-                    </article>
-                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-tableau imp-nonprofit imp-guide">
-                        <div class="imp-h-56 imp-overflow-hidden imp-relative">
-                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1794299313/tableau-unreached-students-dashboard_javckp.png" alt="Cover for Who Did We Miss?: a grid of squares showing 17 of 120 active students with no recorded contact" width="400" height="225" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
-                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Tableau</span>
-                        </div>
-                        <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
-                            <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
-                                <a href="/blog/tableau-unreached-students-dashboard.html">Who Did We Miss? Using Tableau to Find Students With No Programme Contact</a>
-                            </h3>
-                            <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">A Tableau dashboard that turns "who have we not reached?" into a named list. How to define reached, count students not rows, and where Salesforce reports fit.</p>
-                            <a href="/blog/tableau-unreached-students-dashboard.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read Who Did We Miss? Using Tableau to Find Students With No Programme Contact">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
-                        </div>
-                    </article>
-                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-tableau imp-nonprofit imp-guide">
-                        <div class="imp-h-56 imp-overflow-hidden imp-relative">
-                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1794299317/tableau-relationship-building-dashboard_wzriqi.png" alt="Cover for Relationship-Building Metrics That Matter: stacked bars of home and community visits by month across the school year" width="400" height="225" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
-                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Tableau</span>
-                        </div>
-                        <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
-                            <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
-                                <a href="/blog/tableau-relationship-building-dashboard.html">Relationship-Building Metrics That Matter: A Tableau Dashboard for Visit Coverage and Equity</a>
-                            </h3>
-                            <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">How to measure home and community visits honestly in Tableau: coverage, mix and timing per student, plus equity views by gender, race and grade level.</p>
-                            <a href="/blog/tableau-relationship-building-dashboard.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read Relationship-Building Metrics That Matter: A Tableau Dashboard for Visit Coverage and Equity">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
-                        </div>
-                    </article>
-                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-tableau imp-nonprofit imp-guide">
-                        <div class="imp-h-56 imp-overflow-hidden imp-relative">
-                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1794299313/tableau-academic-partnering-dashboard_jr9oyz.png" alt="Cover for Is Your Academic Partnering Consistent?: bars of students reached in each of five school-year windows, falling from 86% to 44%" width="400" height="225" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
-                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Tableau</span>
-                        </div>
-                        <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
-                            <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
-                                <a href="/blog/tableau-academic-partnering-dashboard.html">Is Your Academic Partnering Consistent? How to Track Student Reach Across the School Year with Tableau</a>
-                            </h3>
-                            <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">Why counting activities misleads, and how a Tableau dashboard tracks academic partnering reach across school-year windows, using a stable denominator.</p>
-                            <a href="/blog/tableau-academic-partnering-dashboard.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read Is Your Academic Partnering Consistent? How to Track Student Reach Across the School Year with Tableau">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
-                        </div>
-                    </article>
-                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-tableau imp-nonprofit imp-guide">
-                        <div class="imp-h-56 imp-overflow-hidden imp-relative">
-                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1794299314/nonprofit-communication-analytics-tableau_t0rynm.png" alt="Cover for Nonprofit Communication Analytics: bars of touchpoints per student and two-way versus one-way contact by channel" width="400" height="225" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
-                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Tableau</span>
-                        </div>
-                        <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
-                            <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
-                                <a href="/blog/nonprofit-communication-analytics-tableau.html">Nonprofit Communication Analytics: Tracking Touchpoints, Channels and Two-Way Contact in Salesforce and Tableau</a>
-                            </h3>
-                            <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">Measure the depth, direction and timing of nonprofit communication with Salesforce and Tableau: touchpoint tiers, two-way contact and monthly channel trends.</p>
-                            <a href="/blog/nonprofit-communication-analytics-tableau.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read Nonprofit Communication Analytics: Tracking Touchpoints, Channels and Two-Way Contact in Salesforce and Tableau">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
-                        </div>
-                    </article>
-                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-tableau imp-nonprofit imp-guide">
-                        <div class="imp-h-56 imp-overflow-hidden imp-relative">
-                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1794299316/nonprofit-performance-dashboard-tableau_kvghxj.png" alt="Cover for Why Your Nonprofit&#x27;s Dashboards Disagree: nine Salesforce objects feeding one data model and seven dashboards" width="400" height="225" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
-                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Tableau</span>
-                        </div>
-                        <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
-                            <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
-                                <a href="/blog/nonprofit-performance-dashboard-tableau.html">Why Your Nonprofit's Dashboards Disagree, and How a Single Tableau Data Model Fixes It</a>
-                            </h3>
-                            <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">Why nonprofit dashboards disagree, and how one Salesforce and Tableau data model with shared filters and definitions keeps seven dashboards consistent.</p>
-                            <a href="/blog/nonprofit-performance-dashboard-tableau.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read Why Your Nonprofit&#x27;s Dashboards Disagree, and How a Single Tableau Data Model Fixes It">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
+                            <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">A public form is open to everyone. Here are the layers that protect your Salesforce org: spam checks, upload limits, create-only access and permission sets.</p>
+                            <a href="/blog/secure-public-salesforce-forms.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read Public Salesforce Forms Without the Anxiety">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
                         </div>
                     </article>
                     <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-nonprofit imp-guide">

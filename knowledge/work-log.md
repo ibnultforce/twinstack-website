@@ -33,3 +33,68 @@ Written automatically: one line per change Claude made to this site that was kep
 - 2026-11-05 · assistant:edit-file · content/pages/services-salesforce-managed-services.md · Fix title ending.
 - 2026-11-05 · assistant:edit-file · content/pages/services-tableau.md · Fix title ending.
 - 2026-11-05 · assistant:write-file · content/data/redirects.json · Save the old-link redirect list in the project so it stays with the site.
+- 2026-11-09 · github-changes · the site's repository · Brought in changes made outside the editor: Make footer consistent on every page and fix hidden gradients
+- 2026-11-10 · github-changes · the site's repository · Brought in changes made outside the editor: Update about.html; Update about.html; Update about.html
+- 2026-11-10 · assistant:add-file-to-site · assets/files/service-cloud-voice-demo.mp4 · Add your uploaded demo video to the site so the case study can play it.
+- 2026-11-10 · assistant:create-image · assets/img/drawn/service-cloud-voice-call-flow.svg · Draw a clean call-journey diagram for the case study.
+- 2026-11-10 · page:edit · content/pages/case-studies-salesforce-service-cloud-voice.md · This is a new, empty page. Write it from scratch. Create a publication-ready case study at /case-studies/salesforce-service-cloud-voice.html. Match the look an…
+  - Wrote the page from scratch with a dark hero section containing a "Back to case studies" link, a "Case study · Service Cloud Voice" badge, the H1, a dated `<time>` element and a "TwinStack Team" byli…
+  - Added the at-a-glance table with Industry, Salesforce and Channels rows, alongside an executive summary section.
+  - Built out H2 sections for the business challenge, the solution, a key-features card grid, a numbered implementation timeline, use cases, benefits, lessons learned and a four-question FAQ.
+  - Placed the drawn diagram `/assets/img/drawn/service-cloud-voice-call-flow.svg` and a responsive 16:9 `<video>` of `/assets/files/service-cloud-voice-demo.mp4` with captions, plus the note box, closin…
+  - Set frontmatter fields title, slug, url, order, date 2026-11-10, description, metaTitle, metaDescription, focusKeyword and tagline.
+- 2026-11-10 · assistant:edit-file · content/pages/case-studies.md · Add the Service Cloud Voice case study as the first card on the Case Studies page.
+- 2026-11-11 · assistant:add-file-to-site · assets/img/uploads/sfs-blog1-hero.png · Add blog 1 hero image.
+- 2026-11-11 · assistant:add-file-to-site · assets/img/uploads/sfs-blog1-inline.png · Add blog 1 diagram.
+- 2026-11-11 · assistant:add-file-to-site · assets/img/uploads/sfs-blog2-hero.png · Add blog 2 hero image.
+- 2026-11-11 · assistant:add-file-to-site · assets/img/uploads/sfs-blog2-inline.png · Add blog 2 diagram.
+- 2026-11-11 · assistant:add-file-to-site · assets/img/uploads/sfs-blog3-hero.png · Add blog 3 hero image.
+- 2026-11-11 · assistant:add-file-to-site · assets/img/uploads/sfs-blog3-inline.png · Add blog 3 diagram.
+- 2026-11-11 · assistant:add-file-to-site · assets/img/uploads/sfs-case-hero.png · Add case study hero image.
+- 2026-11-11 · assistant:add-file-to-site · assets/img/uploads/sfs-case-before-after.png · Add case study before/after diagram.
+- 2026-11-11 · assistant:add-file-to-site · assets/img/uploads/sfs-case-results.png · Add case study results image.
+- 2026-11-11 · page:edit · content/pages/blog-native-salesforce-forms.md · This is a new, empty page. Write it from scratch. Blog post in the style of content/pages/blog-what-is-who-sees-what.md. Responsive. Date 2026-11-11. Copy VERB…
+  - Added frontmatter fields: date (2026-11-11), metaTitle, metaDescription, ogImage, image, and tags array with five entries.
+  - Replaced placeholder header section with styled blog header including back link, tag list, H1, byline, and publication metadata.
+  - Added hero section with introductory paragraph and pull-quote about distance between form and CRM.
+  - Added section with H2 "The hidden cost", explanatory text, and three-column card grid showing form, vendor storage, and sync components.
+  - Added section with H2 "What native actually means", description of Smart Forms & Surveys, inline diagram image with alt text, and explanation of Submissions view.
+- 2026-11-11 · page:edit · content/pages/blog-build-public-salesforce-form.md · This is a new, empty page. Write it from scratch. Blog post in the style of content/pages/blog-what-is-who-sees-what.md. Responsive. Date 2026-11-11. Copy VERB…
+  - Replaced the placeholder hero with a dark hero section: "Back to the blog" link, tag pills, H1 and a "By TwinStack Team" byline dated 2026-11-11.
+  - Set frontmatter date 2026-11-11, description, metaTitle, metaDescription, ogImage and image (/assets/img/uploads/sfs-blog2-hero.png) and five tags.
+  - Moved the intro copy into its own section as a teal-bordered lead paragraph above the steps.
+  - Rendered Steps 1–3 as a vertical stepper (numbered circles joined by a thin line), closing Step 3 with the builder screenshot figure.
+- 2026-11-11 · page:edit · content/pages/blog-secure-public-salesforce-forms.md · This is a new, empty page. Write it from scratch. Blog post in the style of content/pages/blog-what-is-who-sees-what.md. Responsive. Date 2026-11-11. Copy VERB…
+  - Set frontmatter: date 2026-11-11, description/metaDescription, metaTitle, ogImage/image to sfs-blog3-hero.png, and five tags.
+  - Replaced the placeholder hero with a dark hero containing a blog back link, five tag pills, the H1, and author/date line.
+  - Added the intro section, then an inline image sfs-blog3-inline.png with the five-layer alt text.
+  - Added Layer one/two and Layer three sections with blue 1/2 badges, a teal 3 badge, and a teal key-removal callout.
+- 2026-11-11 · page:edit · content/pages/blog-native-salesforce-forms.md · Keep everything already on the page. After the "What native actually means" section, add the following copy VERBATIM in the same style (responsive), then a clo…
+  - Added a "Four things that get easier" H2 with a 2x2 card grid for Ownership, Reporting and automation, Privacy, and Troubleshooting.
+  - Added a "When native is the right fit, and when it isn’t" section with the specified paragraph and a bold closing callout.
+  - Added a dark CTA band with "Ready to try it?", "See Smart Forms & Surveys in action.", and a /contact.html button.
+  - Added a "Related reading" section with the two specified article links and a "Back to the blog" link to /blog.html.
+- 2026-11-11 · page:edit · content/pages/blog-build-public-salesforce-form.md · Keep everything already on the page. Continue the vertical stepper with Steps 4 and 5 (Step 5's circle teal), copy VERBATIM, responsive. Note: the figure curre…
+  - Moved the screenshot out of Step 3 and into the new Step 4 list item, after its first paragraph, with the new "Tell us more" alt text.
+  - Added Step 4 "Add the smart parts" with two paragraphs on conditional fields and uploads/close time, and Step 5 "Save, share and review" with a teal circle and three paragraphs on saving, sharing and…
+  - Set bottom padding on Steps 3 and 4 so the vertical stepper line runs between the new items.
+  - Added a teal "A tip for your first form" callout, a "Build your first form today." CTA band linking to /contact.html, and a Related reading list with two blog links.
+- 2026-11-11 · page:edit · content/pages/blog-secure-public-salesforce-forms.md · Keep everything already on the page. Continue after Layer three with the following, copy VERBATIM, same badge style (Layer four badge amber, Layer five badge v…
+  - Added "Layer four: strict rules for file uploads" section with an amber badge showing 4, after Layer three.
+  - Added "Layer five: create-only access" section with a violet badge showing 5 and two paragraphs.
+  - Added "Keep the admin side tight, too" section naming the FormBuilder_Admin permission set.
+  - Added a five-item checklist with strike-through checkboxes, a "Publish with confidence." CTA band linking to /contact.html, and a Related reading list with two blog links.
+- 2026-11-11 · page:edit · content/pages/case-studies-evergreen-valley-youth-alliance.md · This is a new, empty page. Write it from scratch. Case study in the style of content/pages/case-studies-halton-industrial-supply.md. Responsive; tables scroll…
+  - Set frontmatter fields date (2026-11-11), description, metaTitle, metaDescription, ogImage and image.
+  - Replaced the placeholder hero with a dark header holding a back link, "Illustrative scenario" chip, H1, date and byline.
+  - Added an "At a glance" five-row table in a horizontal-scroll wrapper, plus an amber note box about the fictional organisation.
+  - Added About, The challenge (with pull quote) and Why Smart Forms & Surveys sections, the last on a dark background with the before/after diagram image.
+- 2026-11-11 · page:edit · content/pages/case-studies-evergreen-valley-youth-alliance.md · Keep everything already on the page, but move the before/after diagram out of the "Why Smart Forms & Surveys" section into the end of "The solution" below. Add…
+  - Moved the before/after diagram image out of "Why Smart Forms & Surveys" to the end of the new "The solution" section, with shorter alt text.
+  - Added "The solution" section: intro paragraph, 2x2 grid of four feature cards (Conditional questions, File uploads, A fixed-record lookup, Spam protection and a deadline), and the staff testing note.
+  - Added "The results" section with a results image, a Before/After comparison table (red/mint tinted columns), a savings paragraph and a large pull quote from Maya Okafor.
+  - Added "What's next" section, a dark CTA band ("Want results like these?" with a button to /contact.html) and a "Return to All Case Studies" link to /case-studies.html.
+- 2026-11-11 · assistant:edit-file · content/pages/blog.md · Add the three new Smart Forms & Surveys posts to the top of the Blog page.
+- 2026-11-11 · assistant:edit-file · content/pages/case-studies.md · Add the Evergreen Valley customer story card to the Case Studies page.
+- 2026-11-11 · assistant:edit-file · content/pages/blog.md · Add a "Smart Forms and Surveys" category filter and file the three new posts under it.
+- 2026-11-11 · github-changes · the site's repository · Brought in changes made outside the editor: blog html; Add Salesforce Voice and Tableau blog series (12 posts) - 12 new posts with covers, inline images, capti…
