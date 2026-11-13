@@ -76,3 +76,8 @@ Written automatically: one line per change Claude made to this site that was kep
 - 2026-11-12 · assistant:edit-file · assets/css/imported/services-salesforce-nonprofit.css · Add small style rules for the five-step process and the new diagrams (no effect on existing pages).
 - 2026-11-12 · assistant:write-file · content/pages/services-salesforce-org-migration.md · Create the Salesforce Org Migration service page in the same design as the nonprofit service page.
 - 2026-11-12 · assistant:edit-file · content/pages/services-salesforce-org-migration.md · Remove the process image from the "From first call to cutover" section.
+- 2026-11-13 · page:edit · content/pages/services-salesforce-org-migration.md · can you give me the url of this service page? Change only what this asks for, and keep everything else on the page exactly as it is. Whatever you change must l…
+  - Changed the Service schema `@id` and `url` to the page's `.html` address.
+  - Updated the BreadcrumbList "Salesforce Org Migration" item link to the same `.html` URL.
+  - Left the FAQPage schema entries and all other page content unchanged.
+- 2026-11-13 · assistant:edit-file · content/pages/services.md · Replace the plain Org Migration card with an image card after the dashboard cards, and update the Data Migration description.
