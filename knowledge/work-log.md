@@ -1,37 +1,6 @@
 # Work log
 
 Written automatically: one line per change Claude made to this site that was kept, oldest first. Claude reads this before every request so new work stays consistent with earlier work. Older lines move to knowledge/archive/. Standing decisions belong in knowledge/notes.md, not here.
-- 2026-11-05 · assistant:edit-file · content/pages/case-studies-agvantage-commodities-marketplace.md · Fix title ending and set share image.
-- 2026-11-05 · assistant:edit-file · content/pages/case-studies-brightwater-outfitters-data-migration.md · Fix title ending and set share image.
-- 2026-11-05 · assistant:edit-file · content/pages/case-studies-halton-industrial-supply.md · Fix title ending and set share image.
-- 2026-11-05 · assistant:edit-file · content/pages/case-studies-kestrel-analytics.md · Fix title ending and set share image.
-- 2026-11-05 · assistant:edit-file · content/pages/case-studies-meridian-family-services.md · Fix title ending and set share image.
-- 2026-11-05 · assistant:edit-file · content/pages/case-studies-raro-travel-booking-platform.md · Fix title ending and set share image.
-- 2026-11-05 · assistant:edit-file · content/pages/case-studies-riverbend-community-trust-npsp-migration.md · Fix title ending and set share image.
-- 2026-11-05 · assistant:edit-file · content/pages/case-studies-riverside-community-trust.md · Fix title ending and set share image.
-- 2026-11-05 · assistant:edit-file · content/pages/products.md · Fix title ending and set share image.
-- 2026-11-05 · assistant:edit-file · content/pages/products-google-form-auto-sync.md · Fix title ending, set share image and its own tab icon.
-- 2026-11-05 · assistant:edit-file · content/pages/products-smart-forms-surveys.md · Fix title ending, set share image and its own tab icon.
-- 2026-11-05 · assistant:edit-file · content/pages/products-smart-lookup-data-loader.md · Fix title ending, set share image and its own tab icon.
-- 2026-11-05 · assistant:edit-file · content/pages/products-who-sees-what.md · Fix title ending, set share image and its own tab icon.
-- 2026-11-05 · assistant:edit-file · content/pages/services.md · Fix title ending and set share image.
-- 2026-11-05 · assistant:edit-file · content/pages/services-salesforce-nonprofit.md · Fix title ending and set share image.
-- 2026-11-05 · assistant:edit-file · content/pages/contact.md · Fix title ending.
-- 2026-11-05 · assistant:edit-file · content/pages/cost-estimator.md · Fix title ending.
-- 2026-11-05 · assistant:edit-file · content/pages/home.md · Fix title ending.
-- 2026-11-05 · assistant:edit-file · content/pages/pricing.md · Fix title ending.
-- 2026-11-05 · assistant:edit-file · content/pages/saiful-islam.md · Fix title ending.
-- 2026-11-05 · assistant:edit-file · content/pages/blog.md · Fix title ending.
-- 2026-11-05 · assistant:edit-file · content/pages/trust-center.md · Fix title ending.
-- 2026-11-05 · assistant:edit-file · content/pages/trust-center-jp.md · Fix title ending.
-- 2026-11-05 · assistant:edit-file · content/pages/services-agentforce-ai.md · Fix title ending.
-- 2026-11-05 · assistant:edit-file · content/pages/services-appexchange-app-development.md · Fix title ending.
-- 2026-11-05 · assistant:edit-file · content/pages/services-hire-salesforce-developer.md · Fix title ending.
-- 2026-11-05 · assistant:edit-file · content/pages/services-salesforce-data-migration.md · Fix title ending.
-- 2026-11-05 · assistant:edit-file · content/pages/services-salesforce-implementation.md · Fix title ending.
-- 2026-11-05 · assistant:edit-file · content/pages/services-salesforce-integrations.md · Fix title ending.
-- 2026-11-05 · assistant:edit-file · content/pages/services-salesforce-managed-services.md · Fix title ending.
-- 2026-11-05 · assistant:edit-file · content/pages/services-tableau.md · Fix title ending.
 - 2026-11-05 · assistant:write-file · content/data/redirects.json · Save the old-link redirect list in the project so it stays with the site.
 - 2026-11-09 · github-changes · the site's repository · Brought in changes made outside the editor: Make footer consistent on every page and fix hidden gradients
 - 2026-11-10 · github-changes · the site's repository · Brought in changes made outside the editor: Update about.html; Update about.html; Update about.html
@@ -98,3 +67,12 @@ Written automatically: one line per change Claude made to this site that was kep
 - 2026-11-11 · assistant:edit-file · content/pages/case-studies.md · Add the Evergreen Valley customer story card to the Case Studies page.
 - 2026-11-11 · assistant:edit-file · content/pages/blog.md · Add a "Smart Forms and Surveys" category filter and file the three new posts under it.
 - 2026-11-11 · github-changes · the site's repository · Brought in changes made outside the editor: blog html; Add Salesforce Voice and Tableau blog series (12 posts) - 12 new posts with covers, inline images, capti…
+- 2026-11-12 · assistant:add-file-to-site · assets/img/uploads/org-migration-hero.png · Add the org migration hero image.
+- 2026-11-12 · assistant:add-file-to-site · assets/img/uploads/org-migration-og.png · Add the social sharing image.
+- 2026-11-12 · assistant:add-file-to-site · assets/img/uploads/org-migration-process.png · Add the five-step process image.
+- 2026-11-12 · assistant:add-file-to-site · assets/img/uploads/org-migration-types.png · Add the migration types diagram.
+- 2026-11-12 · assistant:add-file-to-site · assets/img/uploads/org-migration-why-banner.png · Add the "Why TwinStack" banner image.
+- 2026-11-12 · assistant:edit-file · content/pages/services.md · Add an Org Migration card to the Services page and its list of services.
+- 2026-11-12 · assistant:edit-file · assets/css/imported/services-salesforce-nonprofit.css · Add small style rules for the five-step process and the new diagrams (no effect on existing pages).
+- 2026-11-12 · assistant:write-file · content/pages/services-salesforce-org-migration.md · Create the Salesforce Org Migration service page in the same design as the nonprofit service page.
+- 2026-11-12 · assistant:edit-file · content/pages/services-salesforce-org-migration.md · Remove the process image from the "From first call to cutover" section.

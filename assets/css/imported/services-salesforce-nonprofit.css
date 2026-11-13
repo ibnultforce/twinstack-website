@@ -611,3 +611,19 @@
 .imported-page .imp-ts-wm { display:inline-flex!important;flex-direction:column;align-items:flex-start;line-height:1 }
 .imported-page .imp-ts-wm-top { line-height:1;white-space:nowrap }
 .imported-page .imp-ts-wm-sub { display:block;font-size:.5em;font-weight:700;letter-spacing:.01em;color:#343453;-webkit-text-fill-color:#343453;background:none;margin-top:.08em;margin-left:.46em;line-height:1 }
+
+/* Org migration page additions */
+.imported-page .imp-np-fig { margin:2.5rem 0 0 }
+.imported-page .imp-np-fig img { display:block;width:100%;height:auto;border-radius:1.25rem;border:1px solid var(--line,#dbe3ea) }
+.imported-page .imp-np-fig + .imp-np-map,
+.imported-page .imp-np-fig + .imp-np-tw { margin-top:1.5rem }
+.imported-page .imp-np-tw { border:1px solid var(--line,#dbe3ea);border-radius:1.5rem;background:#fff;overflow:hidden }
+.imported-page .imp-np-tw .imp-sc { overflow-x:auto;-webkit-overflow-scrolling:touch }
+.imported-page .imp-np-tw table { width:100%;min-width:42rem;border-collapse:collapse;font-size:.97rem }
+.imported-page .imp-np-tw th { background:#eef3f6;text-align:left;font-weight:700;color:#3c4d63;padding:1rem 1.25rem;font-size:.9rem }
+.imported-page .imp-np-tw td { padding:1.1rem 1.25rem;border-top:1px solid #dbe3ea;vertical-align:top;color:#3c4d63 }
+.imported-page .imp-np-tw td:first-child { font-weight:700;color:#13243b }
+.imported-page .imp-np-tw .imp-ft { padding:1rem 1.25rem;border-top:1px solid #dbe3ea;font-size:.88rem;color:#6b7a8d }
+@media(min-width:900px) {
+.imported-page .imp-np-steps.imp-five { grid-template-columns:repeat(5,1fr);gap:1.5rem }
+}
