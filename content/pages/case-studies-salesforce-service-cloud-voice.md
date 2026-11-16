@@ -118,20 +118,9 @@ tagline: Phone support and CRM in one agent workspace
     <h3 class="mt-12 text-xl font-semibold tracking-tight text-zinc-950">How a call moves through the system</h3>
     <figure class="mt-5">
       <div class="overflow-hidden rounded-2xl border border-zinc-200 bg-zinc-50 p-3 shadow-sm sm:p-5">
-        <img src="/assets/img/drawn/service-cloud-voice-call-flow.svg" alt="Diagram of the call journey: an inbound call is checked against hours of operation and agent availability, then routed to an agent, to voicemail or to an extension, with a call record created in Salesforce and a survey written back after the call." class="h-auto w-full max-w-full" loading="lazy">
+        <img src="/assets/img/uploads/service-cloud-voice-call-flow.jpg" alt="Five-step pipeline diagram: Source, Build, Test, Deploy and Release, with Maven build, Docker containerization and monitoring tools shown beneath the steps." class="h-auto w-full max-w-full" loading="lazy">
       </div>
       <figcaption class="mt-3 text-sm leading-relaxed text-zinc-600">Call flow from first ring to post-call survey, with the call record held in Salesforce throughout.</figcaption>
-    </figure>
-
-    <h3 class="mt-12 text-xl font-semibold tracking-tight text-zinc-950">See the agent experience</h3>
-    <figure class="mt-5">
-      <div class="aspect-video w-full overflow-hidden rounded-2xl border border-zinc-200 bg-zinc-950 shadow-lg">
-        <video class="h-full w-full object-contain" controls preload="metadata" playsinline>
-          <source src="/assets/files/service-cloud-voice-demo.mp4" type="video/mp4">
-          Your browser does not support embedded video. <a href="/assets/files/service-cloud-voice-demo.mp4">Download the walkthrough video</a>.
-        </video>
-      </div>
-      <figcaption class="mt-3 text-sm leading-relaxed text-zinc-600">Walkthrough of the voice experience inside Salesforce</figcaption>
     </figure>
   </div>
 </section>

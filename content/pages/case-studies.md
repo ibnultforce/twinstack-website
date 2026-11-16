@@ -115,7 +115,7 @@ scriptBodyClass: font-sans antialiased text-slate-800
                     </article>
                     <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-nonprofit">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative">
-                            <img src="/assets/img/drawn/service-cloud-voice-call-flow.svg" alt="Service Cloud Voice call journey from inbound call to agent in Salesforce" width="400" height="224" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
+                            <img src="/assets/img/uploads/service-cloud-voice-call-flow.jpg" alt="Five-step pipeline diagram: Source, Build, Test, Deploy and Release" width="400" height="224" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
                             <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Service Cloud</span>
                         </div>
                         <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">

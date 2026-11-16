@@ -81,3 +81,9 @@ Written automatically: one line per change Claude made to this site that was kep
   - Updated the BreadcrumbList "Salesforce Org Migration" item link to the same `.html` URL.
   - Left the FAQPage schema entries and all other page content unchanged.
 - 2026-11-13 · assistant:edit-file · content/pages/services.md · Replace the plain Org Migration card with an image card after the dashboard cards, and update the Data Migration description.
+- 2026-11-16 · page:edit · content/pages/case-studies-salesforce-service-cloud-voice.md · remove the video from the page Change only what this asks for, and keep everything else on the page exactly as it is. Whatever you change must look right and w…
+  - Removed the "See the agent experience" heading and its video figure, including the embedded `service-cloud-voice-demo.mp4` player and the caption "Walkthrough of the voice experience inside Salesforc…
+  - Closed the surrounding section directly after the previous content, leaving the rest of the page unchanged.
+- 2026-11-16 · assistant:add-file-to-site · assets/img/uploads/service-cloud-voice-call-flow.jpg · Add the uploaded diagram image to the site.
+- 2026-11-16 · assistant:edit-file · content/pages/case-studies-salesforce-service-cloud-voice.md · Replace the call-flow diagram with your uploaded image.
+- 2026-11-16 · assistant:edit-file · content/pages/case-studies.md · Use your uploaded image as the cover of the Service Cloud Voice card on the Case Studies page.
