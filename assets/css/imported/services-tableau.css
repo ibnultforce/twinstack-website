@@ -396,8 +396,9 @@
 }
 .imported-page .imp-ts-viz-wrap.imp-ts-viz-wide { max-width:1448px }
 .imported-page #survey-dashboard { scroll-margin-top:110px }
-.imported-page #viz1794902259675 { min-height:1027px }
+.imported-page #survey-dashboard + .imp-ts-viz-wrap .imp-ts-viz-card { overflow-x:hidden;padding-left:24px;padding-right:24px }
 @media(max-width:548px) {
+.imported-page #survey-dashboard + .imp-ts-viz-wrap .imp-ts-viz-card { padding-left:0;padding-right:0;overflow-x:auto }
 .imported-page #viz1794902259675 { min-height:1877px }
 }
 /* inline <style> */

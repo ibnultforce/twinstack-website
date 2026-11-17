@@ -95,3 +95,5 @@ Written automatically: one line per change Claude made to this site that was kep
 - 2026-11-17 · assistant:write-file · assets/js/imported/services-tableau/inline-6.js · Add the sizing script for the new Survey Dashboards embed.
 - 2026-11-17 · assistant:edit-file · assets/css/imported/services-tableau.css · Reserve space for the new dashboard so the page doesn't jump while it loads.
 - 2026-11-17 · assistant:edit-file · content/pages/services-tableau.md · Add the "Nonprofit Cloud Survey Dashboards" section with your Tableau embed below the Nonprofit Cloud dashboard.
+- 2026-11-17 · assistant:write-file · assets/js/imported/services-tableau/inline-6.js · Make the Survey dashboard shrink to fit the page width so it no longer needs side scrolling.
+- 2026-11-17 · assistant:edit-file · assets/css/imported/services-tableau.css · Stop the new dashboard's box from scrolling sideways on computers and tablets.
