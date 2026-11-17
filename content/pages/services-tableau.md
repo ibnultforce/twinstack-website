@@ -47,6 +47,12 @@ scripts:
     nomodule: false
     defer: false
     async: false
+  - src: "/assets/js/imported/services-tableau/inline-6.js"
+    head: false
+    module: false
+    nomodule: false
+    defer: false
+    async: false
 scriptHtmlClass: scroll-smooth
 scriptBodyClass: font-sans antialiased text-slate-800
 ---
@@ -130,6 +136,17 @@ scriptBodyClass: font-sans antialiased text-slate-800
 <div class="imp-tableauPlaceholder" id='viz1793265399814' style='position: relative'><noscript><a href='#'><img alt='Nonprofit Cloud overview dashboard' src="https://public.tableau.com/static/images/No/NonprofitCloudDashboards/Overviewdashboard/1_rss.png" style='border: none' /></a></noscript><object class="imp-tableauViz" style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NonprofitCloudDashboards&#47;Overviewdashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;No&#47;NonprofitCloudDashboards&#47;Overviewdashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>
                 </div>
                 <p class="imp-ts-viz-note">On smaller screens, scroll sideways inside the dashboard, or <a href="https://public.tableau.com/views/NonprofitCloudDashboards/Overviewdashboard" target="_blank" rel="noopener" class="imp-text-brand-600 imp-font-semibold">open it full screen on Tableau Public</a>.</p>
+            </div>
+            <div class="imp-ts-sec-head imp-ts-viz-next" id="survey-dashboard">
+                <span class="imp-ts-kicker">Live Example</span>
+                <h2>Nonprofit Cloud Survey Dashboards</h2>
+                <p>A survey overview dashboard built by TwinStack and published on Tableau Public. Hover, filter and click through it just as your team would.</p>
+            </div>
+            <div class="imp-ts-viz-wrap imp-ts-viz-wide">
+                <div class="imp-ts-viz-card">
+<div class="imp-tableauPlaceholder" id='viz1794902259675' style='position: relative'><noscript><a href='#'><img alt='Survey overview dashboard' src="https://public.tableau.com/static/images/su/surveydashboards_17944906774150/overviewdashboard/1_rss.png" style='border: none' /></a></noscript><object class="imp-tableauViz" style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='surveydashboards_17944906774150&#47;overviewdashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;su&#47;surveydashboards_17944906774150&#47;overviewdashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
+                </div>
+                <p class="imp-ts-viz-note">On smaller screens, scroll sideways inside the dashboard, or <a href="https://public.tableau.com/views/surveydashboards_17944906774150/overviewdashboard" target="_blank" rel="noopener" class="imp-text-brand-600 imp-font-semibold">open it full screen on Tableau Public</a>.</p>
             </div>
         </section>
         <section class="imp-py-24 imp-bg-white imp-relative">

@@ -1,4 +1,40 @@
 {
   "_comment": "Site-wide FAQ. Pages can render all of it, or filter by topic in their own frontmatter.",
-  "items": []
+  "items": [
+    {
+      "topic": "General",
+      "question": "Where is TwinStack based, and who do you work with?",
+      "answer": "TwinStack Solutions is a certified Salesforce consulting partner based in Dhaka, Bangladesh. We work with charities and businesses worldwide, including teams in North America, Europe and Australia, and arrange meetings and support around your time zone."
+    },
+    {
+      "topic": "Services",
+      "question": "What Salesforce services do you offer?",
+      "answer": "Salesforce implementation, Nonprofit Cloud and NPSP, data migration, org migration, integrations, Agentforce and AI, Tableau dashboards, managed services and support, and AppExchange app development."
+    },
+    {
+      "topic": "Pricing",
+      "question": "How much do your services cost?",
+      "answer": "Our rate is US$30 an hour, or A$47 in Australia. You can work with us hourly, on fixed-price projects, on a monthly retainer or with a dedicated developer. See the pricing page for details, or use the cost estimator."
+    },
+    {
+      "topic": "Pricing",
+      "question": "Can I talk to someone before committing?",
+      "answer": "Yes. You can book a free call with us at any time, and org migrations start with a free assessment of your orgs."
+    },
+    {
+      "topic": "Products",
+      "question": "What is a Salesforce PDO partner?",
+      "answer": "A product development outsourcer (PDO) helps companies build and launch their own AppExchange products. We handle strategy and architecture, development in Apex and Lightning Web Components, Security Review, managed packaging and your AppExchange listing."
+    },
+    {
+      "topic": "Products",
+      "question": "Do you have your own apps?",
+      "answer": "Yes. We build free native AppExchange apps: Smart Forms & Surveys, Google Form Auto Sync, Smart Lookup Data Loader and Who Sees What."
+    },
+    {
+      "topic": "Services",
+      "question": "Can you connect Salesforce to our other systems?",
+      "answer": "Yes. We build REST and SOAP API integrations, work with the MuleSoft Anypoint Platform, and set up Zapier and n8n workflows to connect Salesforce with tools such as Jira, Slack, Stripe, HubSpot, Google Workspace and Xero."
+    }
+  ]
 }

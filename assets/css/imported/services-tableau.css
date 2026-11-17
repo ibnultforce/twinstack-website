@@ -395,6 +395,11 @@
 .imported-page #viz1793265399814 { min-height:1677px }
 }
 .imported-page .imp-ts-viz-wrap.imp-ts-viz-wide { max-width:1448px }
+.imported-page #survey-dashboard { scroll-margin-top:110px }
+.imported-page #viz1794902259675 { min-height:1027px }
+@media(max-width:548px) {
+.imported-page #viz1794902259675 { min-height:1877px }
+}
 /* inline <style> */
 .imported-page a.imp-ts-btn-outline { display:inline-flex;align-items:center;justify-content:center;padding:calc(.625rem - 2px) calc(1.25rem - 2px);border:2px solid #0284c7;border-radius:9999px;color:#0284c7;font-weight:600;white-space:nowrap;text-decoration:none;transition:background-color .15s,color .15s }
 .imported-page a.imp-ts-btn-outline:hover { background-color:#0284c7;color:#fff }

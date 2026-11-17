@@ -87,3 +87,11 @@ Written automatically: one line per change Claude made to this site that was kep
 - 2026-11-16 · assistant:add-file-to-site · assets/img/uploads/service-cloud-voice-call-flow.jpg · Add the uploaded diagram image to the site.
 - 2026-11-16 · assistant:edit-file · content/pages/case-studies-salesforce-service-cloud-voice.md · Replace the call-flow diagram with your uploaded image.
 - 2026-11-16 · assistant:edit-file · content/pages/case-studies.md · Use your uploaded image as the cover of the Service Cloud Voice card on the Case Studies page.
+- 2026-11-16 · assistant:update-site-details · content/data/faq.json · Save the draft FAQ (answers taken from what your pages already say).
+- 2026-11-16 · assistant:add-file-to-site · assets/img/uploads/pft-voice-amazon-connect-hero.jpg · Add the case study cover image to the site.
+- 2026-11-16 · assistant:write-file · content/pages/blog-formassembly-in-the-real-world.md · Create the new FormAssembly blog post page at /blog/formassembly-in-the-real-world.html.
+- 2026-11-16 · assistant:edit-file · content/pages/blog.md · Add the new FormAssembly post as the first card on the blog page, under Guides, Integration and Smart Forms and Surveys.
+- 2026-11-16 · assistant:delete-page · content/blog/2026-11-16-formassembly-in-the-real-world-lessons-from-live-salesforce-projects.md · Remove the empty placeholder draft so only the finished FormAssembly post remains.
+- 2026-11-17 · assistant:write-file · assets/js/imported/services-tableau/inline-6.js · Add the sizing script for the new Survey Dashboards embed.
+- 2026-11-17 · assistant:edit-file · assets/css/imported/services-tableau.css · Reserve space for the new dashboard so the page doesn't jump while it loads.
+- 2026-11-17 · assistant:edit-file · content/pages/services-tableau.md · Add the "Nonprofit Cloud Survey Dashboards" section with your Tableau embed below the Nonprofit Cloud dashboard.
