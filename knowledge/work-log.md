@@ -1,75 +1,6 @@
 # Work log
 
 Written automatically: one line per change Claude made to this site that was kept, oldest first. Claude reads this before every request so new work stays consistent with earlier work. Older lines move to knowledge/archive/. Standing decisions belong in knowledge/notes.md, not here.
-- 2026-11-05 · assistant:write-file · content/data/redirects.json · Save the old-link redirect list in the project so it stays with the site.
-- 2026-11-09 · github-changes · the site's repository · Brought in changes made outside the editor: Make footer consistent on every page and fix hidden gradients
-- 2026-11-10 · github-changes · the site's repository · Brought in changes made outside the editor: Update about.html; Update about.html; Update about.html
-- 2026-11-10 · assistant:add-file-to-site · assets/files/service-cloud-voice-demo.mp4 · Add your uploaded demo video to the site so the case study can play it.
-- 2026-11-10 · assistant:create-image · assets/img/drawn/service-cloud-voice-call-flow.svg · Draw a clean call-journey diagram for the case study.
-- 2026-11-10 · page:edit · content/pages/case-studies-salesforce-service-cloud-voice.md · This is a new, empty page. Write it from scratch. Create a publication-ready case study at /case-studies/salesforce-service-cloud-voice.html. Match the look an…
-  - Wrote the page from scratch with a dark hero section containing a "Back to case studies" link, a "Case study · Service Cloud Voice" badge, the H1, a dated `<time>` element and a "TwinStack Team" byli…
-  - Added the at-a-glance table with Industry, Salesforce and Channels rows, alongside an executive summary section.
-  - Built out H2 sections for the business challenge, the solution, a key-features card grid, a numbered implementation timeline, use cases, benefits, lessons learned and a four-question FAQ.
-  - Placed the drawn diagram `/assets/img/drawn/service-cloud-voice-call-flow.svg` and a responsive 16:9 `<video>` of `/assets/files/service-cloud-voice-demo.mp4` with captions, plus the note box, closin…
-  - Set frontmatter fields title, slug, url, order, date 2026-11-10, description, metaTitle, metaDescription, focusKeyword and tagline.
-- 2026-11-10 · assistant:edit-file · content/pages/case-studies.md · Add the Service Cloud Voice case study as the first card on the Case Studies page.
-- 2026-11-11 · assistant:add-file-to-site · assets/img/uploads/sfs-blog1-hero.png · Add blog 1 hero image.
-- 2026-11-11 · assistant:add-file-to-site · assets/img/uploads/sfs-blog1-inline.png · Add blog 1 diagram.
-- 2026-11-11 · assistant:add-file-to-site · assets/img/uploads/sfs-blog2-hero.png · Add blog 2 hero image.
-- 2026-11-11 · assistant:add-file-to-site · assets/img/uploads/sfs-blog2-inline.png · Add blog 2 diagram.
-- 2026-11-11 · assistant:add-file-to-site · assets/img/uploads/sfs-blog3-hero.png · Add blog 3 hero image.
-- 2026-11-11 · assistant:add-file-to-site · assets/img/uploads/sfs-blog3-inline.png · Add blog 3 diagram.
-- 2026-11-11 · assistant:add-file-to-site · assets/img/uploads/sfs-case-hero.png · Add case study hero image.
-- 2026-11-11 · assistant:add-file-to-site · assets/img/uploads/sfs-case-before-after.png · Add case study before/after diagram.
-- 2026-11-11 · assistant:add-file-to-site · assets/img/uploads/sfs-case-results.png · Add case study results image.
-- 2026-11-11 · page:edit · content/pages/blog-native-salesforce-forms.md · This is a new, empty page. Write it from scratch. Blog post in the style of content/pages/blog-what-is-who-sees-what.md. Responsive. Date 2026-11-11. Copy VERB…
-  - Added frontmatter fields: date (2026-11-11), metaTitle, metaDescription, ogImage, image, and tags array with five entries.
-  - Replaced placeholder header section with styled blog header including back link, tag list, H1, byline, and publication metadata.
-  - Added hero section with introductory paragraph and pull-quote about distance between form and CRM.
-  - Added section with H2 "The hidden cost", explanatory text, and three-column card grid showing form, vendor storage, and sync components.
-  - Added section with H2 "What native actually means", description of Smart Forms & Surveys, inline diagram image with alt text, and explanation of Submissions view.
-- 2026-11-11 · page:edit · content/pages/blog-build-public-salesforce-form.md · This is a new, empty page. Write it from scratch. Blog post in the style of content/pages/blog-what-is-who-sees-what.md. Responsive. Date 2026-11-11. Copy VERB…
-  - Replaced the placeholder hero with a dark hero section: "Back to the blog" link, tag pills, H1 and a "By TwinStack Team" byline dated 2026-11-11.
-  - Set frontmatter date 2026-11-11, description, metaTitle, metaDescription, ogImage and image (/assets/img/uploads/sfs-blog2-hero.png) and five tags.
-  - Moved the intro copy into its own section as a teal-bordered lead paragraph above the steps.
-  - Rendered Steps 1–3 as a vertical stepper (numbered circles joined by a thin line), closing Step 3 with the builder screenshot figure.
-- 2026-11-11 · page:edit · content/pages/blog-secure-public-salesforce-forms.md · This is a new, empty page. Write it from scratch. Blog post in the style of content/pages/blog-what-is-who-sees-what.md. Responsive. Date 2026-11-11. Copy VERB…
-  - Set frontmatter: date 2026-11-11, description/metaDescription, metaTitle, ogImage/image to sfs-blog3-hero.png, and five tags.
-  - Replaced the placeholder hero with a dark hero containing a blog back link, five tag pills, the H1, and author/date line.
-  - Added the intro section, then an inline image sfs-blog3-inline.png with the five-layer alt text.
-  - Added Layer one/two and Layer three sections with blue 1/2 badges, a teal 3 badge, and a teal key-removal callout.
-- 2026-11-11 · page:edit · content/pages/blog-native-salesforce-forms.md · Keep everything already on the page. After the "What native actually means" section, add the following copy VERBATIM in the same style (responsive), then a clo…
-  - Added a "Four things that get easier" H2 with a 2x2 card grid for Ownership, Reporting and automation, Privacy, and Troubleshooting.
-  - Added a "When native is the right fit, and when it isn’t" section with the specified paragraph and a bold closing callout.
-  - Added a dark CTA band with "Ready to try it?", "See Smart Forms & Surveys in action.", and a /contact.html button.
-  - Added a "Related reading" section with the two specified article links and a "Back to the blog" link to /blog.html.
-- 2026-11-11 · page:edit · content/pages/blog-build-public-salesforce-form.md · Keep everything already on the page. Continue the vertical stepper with Steps 4 and 5 (Step 5's circle teal), copy VERBATIM, responsive. Note: the figure curre…
-  - Moved the screenshot out of Step 3 and into the new Step 4 list item, after its first paragraph, with the new "Tell us more" alt text.
-  - Added Step 4 "Add the smart parts" with two paragraphs on conditional fields and uploads/close time, and Step 5 "Save, share and review" with a teal circle and three paragraphs on saving, sharing and…
-  - Set bottom padding on Steps 3 and 4 so the vertical stepper line runs between the new items.
-  - Added a teal "A tip for your first form" callout, a "Build your first form today." CTA band linking to /contact.html, and a Related reading list with two blog links.
-- 2026-11-11 · page:edit · content/pages/blog-secure-public-salesforce-forms.md · Keep everything already on the page. Continue after Layer three with the following, copy VERBATIM, same badge style (Layer four badge amber, Layer five badge v…
-  - Added "Layer four: strict rules for file uploads" section with an amber badge showing 4, after Layer three.
-  - Added "Layer five: create-only access" section with a violet badge showing 5 and two paragraphs.
-  - Added "Keep the admin side tight, too" section naming the FormBuilder_Admin permission set.
-  - Added a five-item checklist with strike-through checkboxes, a "Publish with confidence." CTA band linking to /contact.html, and a Related reading list with two blog links.
-- 2026-11-11 · page:edit · content/pages/case-studies-evergreen-valley-youth-alliance.md · This is a new, empty page. Write it from scratch. Case study in the style of content/pages/case-studies-halton-industrial-supply.md. Responsive; tables scroll…
-  - Set frontmatter fields date (2026-11-11), description, metaTitle, metaDescription, ogImage and image.
-  - Replaced the placeholder hero with a dark header holding a back link, "Illustrative scenario" chip, H1, date and byline.
-  - Added an "At a glance" five-row table in a horizontal-scroll wrapper, plus an amber note box about the fictional organisation.
-  - Added About, The challenge (with pull quote) and Why Smart Forms & Surveys sections, the last on a dark background with the before/after diagram image.
-- 2026-11-11 · page:edit · content/pages/case-studies-evergreen-valley-youth-alliance.md · Keep everything already on the page, but move the before/after diagram out of the "Why Smart Forms & Surveys" section into the end of "The solution" below. Add…
-  - Moved the before/after diagram image out of "Why Smart Forms & Surveys" to the end of the new "The solution" section, with shorter alt text.
-  - Added "The solution" section: intro paragraph, 2x2 grid of four feature cards (Conditional questions, File uploads, A fixed-record lookup, Spam protection and a deadline), and the staff testing note.
-  - Added "The results" section with a results image, a Before/After comparison table (red/mint tinted columns), a savings paragraph and a large pull quote from Maya Okafor.
-  - Added "What's next" section, a dark CTA band ("Want results like these?" with a button to /contact.html) and a "Return to All Case Studies" link to /case-studies.html.
-- 2026-11-11 · assistant:edit-file · content/pages/blog.md · Add the three new Smart Forms & Surveys posts to the top of the Blog page.
-- 2026-11-11 · assistant:edit-file · content/pages/case-studies.md · Add the Evergreen Valley customer story card to the Case Studies page.
-- 2026-11-11 · assistant:edit-file · content/pages/blog.md · Add a "Smart Forms and Surveys" category filter and file the three new posts under it.
-- 2026-11-11 · github-changes · the site's repository · Brought in changes made outside the editor: blog html; Add Salesforce Voice and Tableau blog series (12 posts) - 12 new posts with covers, inline images, capti…
-- 2026-11-12 · assistant:add-file-to-site · assets/img/uploads/org-migration-hero.png · Add the org migration hero image.
-- 2026-11-12 · assistant:add-file-to-site · assets/img/uploads/org-migration-og.png · Add the social sharing image.
-- 2026-11-12 · assistant:add-file-to-site · assets/img/uploads/org-migration-process.png · Add the five-step process image.
 - 2026-11-12 · assistant:add-file-to-site · assets/img/uploads/org-migration-types.png · Add the migration types diagram.
 - 2026-11-12 · assistant:add-file-to-site · assets/img/uploads/org-migration-why-banner.png · Add the "Why TwinStack" banner image.
 - 2026-11-12 · assistant:edit-file · content/pages/services.md · Add an Org Migration card to the Services page and its list of services.
@@ -100,3 +31,55 @@ Written automatically: one line per change Claude made to this site that was kep
 - 2026-11-17 · assistant:edit-file · content/pages/services.md · Add a Nonprofit Cloud Survey Dashboards card to the Services page, image left and text right, linking to the survey dashboard on the Tableau page.
 - 2026-11-17 · assistant:edit-file · content/pages/case-studies.md · Add the PFT Salesforce Voice with Amazon Connect card at the top of the Case Studies page.
 - 2026-11-17 · assistant:write-file · content/pages/case-studies-pft-salesforce-voice-amazon-connect.md · Create the PFT Salesforce Voice with Amazon Connect case study page, in the same design as the other case studies.
+- 2026-11-17 · assistant:write-file · content/pages/blog-survey-data-to-action.md · Create the main survey dashboards blog page "From Survey Data to Action", in the same design as your other blog posts, with an image placeholder at the top.
+- 2026-11-17 · assistant:edit-file · content/pages/blog-survey-data-to-action.md · Make the image space at the top of the blog empty (no text), keeping its size so you can add your image later.
+- 2026-11-17 · assistant:write-file · content/pages/blog-survey-overview-dashboard.md · Create related blog 1, "How to Read Survey Results in 5 Minutes", in the same design as the main survey blog, with an empty image space at the top.
+- 2026-11-17 · assistant:write-file · content/pages/blog-survey-topics-and-questions.md · Create related blog 2, "How to Rank Survey Questions and Know Exactly Where to Act", in the same design as the other survey blogs, with an empty image space at…
+- 2026-11-17 · assistant:write-file · content/pages/blog-survey-growth-during-the-year.md · Create related blog 3, "Did Things Get Better This Year?", in the same design as the other survey blogs, with an empty image space at the top.
+- 2026-11-17 · assistant:write-file · content/pages/blog-survey-year-over-year.md · Create related blog 4, "Is This Year Better Than Last?", in the same design as the other survey blogs, with an empty image space at the top.
+- 2026-11-17 · assistant:write-file · content/pages/blog-survey-school-comparison.md · Create related blog 5, "How One Program Used Survey Data to Decide Which Schools Need Support First", in the same design as the other survey blogs, with an emp…
+- 2026-11-17 · assistant:edit-file · content/pages/blog-survey-data-to-action.md · Add a "Related reading" section at the bottom of the main survey blog linking to all five related posts.
+- 2026-11-17 · assistant:edit-file · content/pages/blog.md · Add the six survey dashboard posts to the top of the Blog page under Guides.
+- 2026-11-17 · assistant:edit-file · content/pages/blog-survey-overview-dashboard.md · Add a "Related reading" section at the bottom of this blog linking to the main blog and the other related posts.
+- 2026-11-17 · assistant:edit-file · content/pages/blog-survey-topics-and-questions.md · Add a "Related reading" section at the bottom of this blog linking to the main blog and the other related posts.
+- 2026-11-17 · assistant:edit-file · content/pages/blog-survey-growth-during-the-year.md · Add a "Related reading" section at the bottom of this blog linking to the main blog and the other related posts.
+- 2026-11-17 · assistant:edit-file · content/pages/blog-survey-year-over-year.md · Add a "Related reading" section at the bottom of this blog linking to the main blog and the other related posts.
+- 2026-11-17 · assistant:edit-file · content/pages/blog-survey-data-to-action.md · Remove the sample image address from a hidden note so it no longer counts as a broken link.
+- 2026-11-17 · assistant:edit-file · content/pages/blog-survey-overview-dashboard.md · Remove the sample image address from a hidden note so it no longer counts as a broken link.
+- 2026-11-17 · assistant:edit-file · content/pages/blog-survey-topics-and-questions.md · Remove the sample image address from a hidden note so it no longer counts as a broken link.
+- 2026-11-17 · assistant:edit-file · content/pages/blog-survey-growth-during-the-year.md · Remove the sample image address from a hidden note so it no longer counts as a broken link.
+- 2026-11-17 · assistant:edit-file · content/pages/blog-survey-year-over-year.md · Remove the sample image address from a hidden note so it no longer counts as a broken link.
+- 2026-11-17 · assistant:edit-file · content/pages/blog-survey-school-comparison.md · Remove the sample image address from a hidden note so it no longer counts as a broken link.
+- 2026-11-17 · assistant:create-page · content/pages/case-studies-agvantage-claude-bid-agents.md · Create the AgVantage Claude bid agents case study page, to be filled from your HTML file.
+- 2026-11-17 · assistant:create-page · content/pages/case-studies-ai-excel-data-extractor.md · Create the Excel Data Extractor case study page.
+- 2026-11-17 · assistant:create-page · content/pages/case-studies-warehouse-label-capture-claude.md · Create the warehouse label capture case study page.
+- 2026-11-17 · assistant:create-page · content/pages/case-studies-claude-website-builder.md · Create the Claude website builder case study page.
+- 2026-11-17 · assistant:create-page · content/pages/case-studies-twintrack-claude-code.md · Create the TwinTrack Claude Code case study page.
+- 2026-11-17 · page:convert · content/pages/case-studies-agvantage-claude-bid-agents.md · Keep the page's own HTML and CSS exactly as it is. Use the site's own header and footer, not the ones in the file. Keep the title, description and schema from…
+  - Replaced the page body with the original agvantage-claude-bid-agents.html markup and styling, kept as-is with no text changes.
+  - Added a `stylesheet` field pointing to /assets/css/imported/case-studies-agvantage-claude-bid-agents.css, which holds the page's 300 scoped CSS rules.
+  - Set frontmatter title, description, metaTitle, metaDescription and focusKeyword to the new AgVantage Claude agents copy.
+  - Added `hideCta`, `ownChrome`, `scriptHtmlClass`, `scriptBodyClass` and a `scripts` list (inline-1 in head, deferred ts-analytics.js, inline-2 in body).
+- 2026-11-17 · page:convert · content/pages/case-studies-ai-excel-data-extractor.md · Keep the page's own HTML and CSS exactly as it is. Use the site's own header and footer, not the ones in the file. Keep the title, description and schema from…
+  - Replaced the page body with the HTML of ai-excel-data-extractor.html, keeping its own markup and styling intact.
+  - Moved the page's 300 CSS rules to assets/css/imported/case-studies-ai-excel-data-extractor.css and linked it via the stylesheet field.
+  - Set title, description, metaTitle, metaDescription and focusKeyword; kept slug, url and order, dropped the old content fields.
+  - Added ownChrome, hideCta, scriptHtmlClass/scriptBodyClass and three script entries, including /js/ts-analytics.js.
+- 2026-11-17 · page:convert · content/pages/case-studies-warehouse-label-capture-claude.md · Keep the page's own HTML and CSS exactly as it is. Use the site's own header and footer, not the ones in the file. Keep the title, description and schema from…
+  - Replaced the page body with the HTML of warehouse-label-capture-claude.html copied as-is, own styling intact.
+  - Moved its 300 CSS rules into assets/css/imported/case-studies-warehouse-label-capture-claude.css, scoped to the page and linked via the stylesheet field.
+  - Set title, description, metaTitle, metaDescription, focusKeyword, hideCta, ownChrome, scriptHtmlClass and scriptBodyClass in frontmatter.
+  - Added three script entries (two imported inline scripts plus /js/ts-analytics.js) and removed the old body and content fields.
+- 2026-11-17 · page:convert · content/pages/case-studies-claude-website-builder.md · Keep the page's own HTML and CSS exactly as it is. Use the site's own header and footer, not the ones in the file. Keep the title, description and schema from…
+  - Replaced the page body with the HTML of claude-website-builder.html copied as-is, served at /case-studies/claude-website-builder.html.
+  - Saved the page's 300 CSS rules to /assets/css/imported/case-studies-claude-website-builder.css and set it as the stylesheet.
+  - Set frontmatter title, description, metaTitle, metaDescription and focusKeyword "Claude website builder"; kept slug, url and order.
+  - Added hideCta, ownChrome, three script entries (two imported inline, ts-analytics) and html/body classes scroll-smooth, font-sans antialiased text-slate-800.
+- 2026-11-17 · page:convert · content/pages/case-studies-twintrack-claude-code.md · Keep the page's own HTML and CSS exactly as it is. Use the site's own header and footer, not the ones in the file. Keep the title, description and schema from…
+  - Replaced the page body with the twintrack-claude-code.html HTML copied as-is, keeping its own markup and styling.
+  - Saved its 300 CSS rules scoped to this page as assets/css/imported/case-studies-twintrack-claude-code.css, linked via the `stylesheet` field.
+  - Set `title` to "TwinTrack: Building a Business Platform with Claude Code"; rewrote `description` and added `metaTitle`, `metaDescription`, `focusKeyword`.
+  - Added two imported inline scripts and `/js/ts-analytics.js` to `scripts`; set `hideCta`, `ownChrome`, `scriptHtmlClass` and `scriptBodyClass`.
+- 2026-11-17 · assistant:edit-file · content/pages/case-studies.md · Add the "AI & Claude Implementation" filter button and the five new Claude case study cards at the top of the case studies grid.
+- 2026-11-17 · assistant:edit-file · content/pages/blog.md · Add the Salesforce Voice and Tableau filter buttons and put the 12 Voice and Tableau post cards back on the Blog page, after the Smart Forms and Surveys cards.
+- 2026-11-17 · assistant:edit-file · content/pages/blog-salesforce-voice-amazon-connect-features.md · Change the author to Ishtiaq Hossen, Salesforce Developer.

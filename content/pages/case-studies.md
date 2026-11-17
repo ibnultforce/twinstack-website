@@ -97,8 +97,84 @@ scriptBodyClass: font-sans antialiased text-slate-800
                     <button class="imp-filter-btn imp-px-4 imp-py-2 imp-rounded-full imp-border imp-border-slate-200 imp-transition imp-hover:border-brand-500 imp-bg-white imp-shadow-sm imp-interactive-element" onclick="filterSelection('travel', event)">Travel</button>
                     <button class="imp-filter-btn imp-px-4 imp-py-2 imp-rounded-full imp-border imp-border-slate-200 imp-transition imp-hover:border-brand-500 imp-bg-white imp-shadow-sm imp-interactive-element" onclick="filterSelection('agri', event)">Agribusiness</button>
                     <button class="imp-filter-btn imp-px-4 imp-py-2 imp-rounded-full imp-border imp-border-slate-200 imp-transition imp-hover:border-brand-500 imp-bg-white imp-shadow-sm imp-interactive-element" onclick="filterSelection('retail', event)">Retail</button>
+                    <button class="imp-filter-btn imp-px-4 imp-py-2 imp-rounded-full imp-border imp-border-slate-200 imp-transition imp-hover:border-brand-500 imp-bg-white imp-shadow-sm imp-interactive-element" onclick="filterSelection('claude', event)">AI &amp; Claude Implementation</button>
                 </div>
                 <div class="imp-grid imp-grid-cols-1 imp-md:grid-cols-2 imp-lg:grid-cols-3 imp-gap-8" id="cs-grid">
+<article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-claude imp-agri">
+    <div class="imp-h-56 imp-overflow-hidden imp-relative" role="img" aria-label="Automating grain bid ingestion into Salesforce with Claude agents" style="background:linear-gradient(135deg,#0f172a 0%,#065f46 55%,#10b981 100%);display:flex;flex-direction:column;justify-content:flex-end;gap:.35rem;padding:1.5rem;color:#fff">
+        <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">AI &amp; Claude</span>
+        <span style="font-size:1.6rem;font-weight:800;line-height:1.15">Grain bid agents</span>
+        <span style="font-size:.9rem;color:rgba(255,255,255,.8)">Claude agents · PDF bid sheets to Salesforce</span>
+    </div>
+    <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
+        <span class="imp-ts-kicker">Claude implementation</span>
+        <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
+            <a href="/case-studies/agvantage-claude-bid-agents.html">Automating grain bid ingestion into Salesforce with Claude agents</a>
+        </h3>
+        <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">Two Claude agents turn GrainCorp and Bunge PDF bid sheets into Salesforce bid records every day, flagging anything ambiguous for review.</p>
+        <a href="/case-studies/agvantage-claude-bid-agents.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read the Automating grain bid ingestion into Salesforce with Claude agents case study">Read the case study <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
+    </div>
+</article>
+<article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-claude imp-b2b">
+    <div class="imp-h-56 imp-overflow-hidden imp-relative" role="img" aria-label="Turning messy partner spreadsheets into trusted data with Claude" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 55%,#0ea5e9 100%);display:flex;flex-direction:column;justify-content:flex-end;gap:.35rem;padding:1.5rem;color:#fff">
+        <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">AI &amp; Claude</span>
+        <span style="font-size:1.6rem;font-weight:800;line-height:1.15">Excel Data Extractor</span>
+        <span style="font-size:.9rem;color:rgba(255,255,255,.8)">Claude API · Messy spreadsheets to clean data</span>
+    </div>
+    <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
+        <span class="imp-ts-kicker">Claude implementation</span>
+        <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
+            <a href="/case-studies/ai-excel-data-extractor.html">Turning messy partner spreadsheets into trusted data with Claude</a>
+        </h3>
+        <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">Rules handle familiar spreadsheets, Claude reads the messy ones, and a person confirms anything ambiguous before data is imported.</p>
+        <a href="/case-studies/ai-excel-data-extractor.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read the Turning messy partner spreadsheets into trusted data with Claude case study">Read the case study <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
+    </div>
+</article>
+<article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-claude">
+    <div class="imp-h-56 imp-overflow-hidden imp-relative" role="img" aria-label="Reading warehouse box labels with a phone and Claude" style="background:linear-gradient(135deg,#0f172a 0%,#7c2d12 55%,#f59e0b 100%);display:flex;flex-direction:column;justify-content:flex-end;gap:.35rem;padding:1.5rem;color:#fff">
+        <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">AI &amp; Claude</span>
+        <span style="font-size:1.6rem;font-weight:800;line-height:1.15">Label Capture</span>
+        <span style="font-size:.9rem;color:rgba(255,255,255,.8)">Claude API · Warehouse box labels to CSV</span>
+    </div>
+    <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
+        <span class="imp-ts-kicker">Claude implementation</span>
+        <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
+            <a href="/case-studies/warehouse-label-capture-claude.html">Reading warehouse box labels with a phone and Claude</a>
+        </h3>
+        <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">A phone app finds sharp label crops on the device and Claude reads them into a CSV, for about $0.002 per label.</p>
+        <a href="/case-studies/warehouse-label-capture-claude.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read the Reading warehouse box labels with a phone and Claude case study">Read the case study <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
+    </div>
+</article>
+<article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-claude">
+    <div class="imp-h-56 imp-overflow-hidden imp-relative" role="img" aria-label="A website builder where Claude plans, writes and designs the site" style="background:linear-gradient(135deg,#0f172a 0%,#4c1d95 55%,#a855f7 100%);display:flex;flex-direction:column;justify-content:flex-end;gap:.35rem;padding:1.5rem;color:#fff">
+        <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">AI &amp; Claude</span>
+        <span style="font-size:1.6rem;font-weight:800;line-height:1.15">Website Builder</span>
+        <span style="font-size:.9rem;color:rgba(255,255,255,.8)">Claude API · Internal product</span>
+    </div>
+    <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
+        <span class="imp-ts-kicker">Claude implementation</span>
+        <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
+            <a href="/case-studies/claude-website-builder.html">A website builder where Claude plans, writes and designs the site</a>
+        </h3>
+        <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">Small-business owners go from a business description to a published website, with every Claude change previewed and checked first.</p>
+        <a href="/case-studies/claude-website-builder.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read the A website builder where Claude plans, writes and designs the site case study">Read the case study <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
+    </div>
+</article>
+<article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-claude">
+    <div class="imp-h-56 imp-overflow-hidden imp-relative" role="img" aria-label="Building and running a business platform with Claude Code" style="background:linear-gradient(135deg,#0f172a 0%,#9a3412 50%,#d97757 100%);display:flex;flex-direction:column;justify-content:flex-end;gap:.35rem;padding:1.5rem;color:#fff">
+        <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">AI &amp; Claude</span>
+        <span style="font-size:1.6rem;font-weight:800;line-height:1.15">TwinTrack</span>
+        <span style="font-size:.9rem;color:rgba(255,255,255,.8)">Claude Code · Internal product</span>
+    </div>
+    <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
+        <span class="imp-ts-kicker">Claude implementation</span>
+        <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
+            <a href="/case-studies/twintrack-claude-code.html">Building and running a business platform with Claude Code</a>
+        </h3>
+        <p class="imp-text-slate-500 imp-text-sm imp-mb-4 imp-flex-grow imp-leading-relaxed">Claude Code writes and maintains the platform, keeps docs and tests in step on every change, and fixes failed deploys on its own.</p>
+        <a href="/case-studies/twintrack-claude-code.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read the Building and running a business platform with Claude Code case study">Read the case study <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
+    </div>
+</article>
                     <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative">
                             <img src="/assets/img/uploads/pft-voice-amazon-connect-hero.jpg" alt="PFT Salesforce Voice with Amazon Connect case study cover" width="400" height="224" loading="lazy" class="imp-w-full imp-h-full imp-object-cover">
