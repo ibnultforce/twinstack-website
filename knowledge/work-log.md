@@ -97,3 +97,6 @@ Written automatically: one line per change Claude made to this site that was kep
 - 2026-11-17 · assistant:edit-file · content/pages/services-tableau.md · Add the "Nonprofit Cloud Survey Dashboards" section with your Tableau embed below the Nonprofit Cloud dashboard.
 - 2026-11-17 · assistant:write-file · assets/js/imported/services-tableau/inline-6.js · Make the Survey dashboard shrink to fit the page width so it no longer needs side scrolling.
 - 2026-11-17 · assistant:edit-file · assets/css/imported/services-tableau.css · Stop the new dashboard's box from scrolling sideways on computers and tablets.
+- 2026-11-17 · assistant:edit-file · content/pages/services.md · Add a Nonprofit Cloud Survey Dashboards card to the Services page, image left and text right, linking to the survey dashboard on the Tableau page.
+- 2026-11-17 · assistant:edit-file · content/pages/case-studies.md · Add the PFT Salesforce Voice with Amazon Connect card at the top of the Case Studies page.
+- 2026-11-17 · assistant:write-file · content/pages/case-studies-pft-salesforce-voice-amazon-connect.md · Create the PFT Salesforce Voice with Amazon Connect case study page, in the same design as the other case studies.

@@ -142,6 +142,26 @@ scriptBodyClass: font-sans antialiased text-slate-800
                         </div>
                     </div>
                 </article>
+                <article class="imp-ts-feature" aria-labelledby="np-survey-feature-title">
+                    <div class="imp-ts-feature-media">
+                        <span class="imp-ts-feature-flag">Nonprofit Cloud</span>
+                        <img src="https://public.tableau.com/static/images/su/surveydashboards_17944906774150/overviewdashboard/1.png" alt="Salesforce Nonprofit Cloud survey dashboard built in Tableau by TwinStack" width="1600" height="1027" loading="lazy">
+                    </div>
+                    <div class="imp-ts-feature-body">
+                        <span class="imp-ts-feature-wordmark" style="display:block">Tableau</span>
+                        <h3 id="np-survey-feature-title">Nonprofit Cloud Survey Dashboards</h3>
+                        <p>Interactive Tableau dashboards on your Nonprofit Cloud survey data, so your team can see what participants, donors and communities are telling you.</p>
+                        <ul class="imp-ts-feature-list">
+                            <li>Survey responses turned into clear overview dashboards</li>
+                            <li>Results your team can share with leadership, boards and funders</li>
+                            <li>Filters and drill-down from summary figures to individual results</li>
+                        </ul>
+                        <div class="imp-ts-feature-btns">
+                            <a href="/services/tableau.html#survey-dashboard" class="imp-ts-get-app">View the Live Dashboard <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
+                            <a href="/contact.html" class="imp-ts-outline-sm">Talk to Us</a>
+                        </div>
+                    </div>
+                </article>
                 <article class="imp-ts-feature" aria-labelledby="org-migration-feature-title">
                     <div class="imp-ts-feature-media">
                         <span class="imp-ts-feature-flag">Org merge · Org split</span>
