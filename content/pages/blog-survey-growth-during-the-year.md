@@ -43,7 +43,7 @@ tags:
 <section class="bg-white">
   <div class="mx-auto max-w-3xl px-5 pt-10 sm:px-8 md:pt-12">
     <figure>
-      <div class="aspect-video w-full rounded-2xl bg-zinc-100" aria-hidden="true"></div>
+      <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_auto,q_auto/v1795012081/survey-growth-during-the-year-fall-to-spring_xlgszy.png" alt="Measuring survey growth from fall to spring" width="1200" height="675" class="aspect-video w-full rounded-2xl object-cover shadow-sm">
     </figure>
   </div>
 </section>

@@ -39,6 +39,14 @@ tags:
 </section>
 
 <section class="bg-white">
+  <div class="mx-auto max-w-3xl px-5 pt-10 sm:px-8 md:pt-12">
+    <figure>
+      <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_1200,f_auto,q_auto/v1795012073/formassembly-salesforce-honest-pros-and-cons_sxmxqh.png" alt="FormAssembly and Salesforce: honest pros and cons" width="1200" height="675" class="aspect-video w-full rounded-2xl object-cover shadow-sm">
+    </figure>
+  </div>
+</section>
+
+<section class="bg-white">
   <div class="mx-auto max-w-3xl px-5 py-12 sm:px-8 md:py-16">
     <p class="text-sm font-bold uppercase tracking-widest text-brand">01 · Overview</p>
     <h2 class="mt-2 text-3xl font-semibold tracking-tight text-balance text-zinc-950 sm:text-4xl">What is FormAssembly?</h2>

@@ -101,10 +101,10 @@ scriptBodyClass: font-sans antialiased text-slate-800
                 </div>
                 <div class="imp-grid imp-grid-cols-1 imp-md:grid-cols-2 imp-lg:grid-cols-3 imp-gap-8" id="cs-grid">
 <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-claude imp-agri">
-    <div class="imp-h-56 imp-overflow-hidden imp-relative" role="img" aria-label="Automating grain bid ingestion into Salesforce with Claude agents" style="background:linear-gradient(135deg,#0f172a 0%,#065f46 55%,#10b981 100%);display:flex;flex-direction:column;justify-content:flex-end;gap:.35rem;padding:1.5rem;color:#fff">
+    <div class="imp-h-56 imp-overflow-hidden imp-relative" role="img" aria-label="Automating grain bid ingestion into Salesforce with Claude agents" style="background:#0f172a url('https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1795012068/agvantage-claude-grain-bid-agents_fp376j.png') center/cover no-repeat">
         <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">AI &amp; Claude</span>
-        <span style="font-size:1.6rem;font-weight:800;line-height:1.15">Grain bid agents</span>
-        <span style="font-size:.9rem;color:rgba(255,255,255,.8)">Claude agents · PDF bid sheets to Salesforce</span>
+        
+        
     </div>
     <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
         <span class="imp-ts-kicker">Claude implementation</span>
@@ -116,10 +116,10 @@ scriptBodyClass: font-sans antialiased text-slate-800
     </div>
 </article>
 <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-claude imp-b2b">
-    <div class="imp-h-56 imp-overflow-hidden imp-relative" role="img" aria-label="Turning messy partner spreadsheets into trusted data with Claude" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 55%,#0ea5e9 100%);display:flex;flex-direction:column;justify-content:flex-end;gap:.35rem;padding:1.5rem;color:#fff">
+    <div class="imp-h-56 imp-overflow-hidden imp-relative" role="img" aria-label="Turning messy partner spreadsheets into trusted data with Claude" style="background:#0f172a url('https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1795012066/ai-excel-data-extractor-messy-spreadsheets_qt189k.png') center/cover no-repeat">
         <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">AI &amp; Claude</span>
-        <span style="font-size:1.6rem;font-weight:800;line-height:1.15">Excel Data Extractor</span>
-        <span style="font-size:.9rem;color:rgba(255,255,255,.8)">Claude API · Messy spreadsheets to clean data</span>
+        
+        
     </div>
     <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
         <span class="imp-ts-kicker">Claude implementation</span>
@@ -131,10 +131,10 @@ scriptBodyClass: font-sans antialiased text-slate-800
     </div>
 </article>
 <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-claude">
-    <div class="imp-h-56 imp-overflow-hidden imp-relative" role="img" aria-label="Reading warehouse box labels with a phone and Claude" style="background:linear-gradient(135deg,#0f172a 0%,#7c2d12 55%,#f59e0b 100%);display:flex;flex-direction:column;justify-content:flex-end;gap:.35rem;padding:1.5rem;color:#fff">
+    <div class="imp-h-56 imp-overflow-hidden imp-relative" role="img" aria-label="Reading warehouse box labels with a phone and Claude" style="background:#0f172a url('https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1795012067/warehouse-label-capture-phone-claude_raivdw.png') center/cover no-repeat">
         <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">AI &amp; Claude</span>
-        <span style="font-size:1.6rem;font-weight:800;line-height:1.15">Label Capture</span>
-        <span style="font-size:.9rem;color:rgba(255,255,255,.8)">Claude API · Warehouse box labels to CSV</span>
+        
+        
     </div>
     <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
         <span class="imp-ts-kicker">Claude implementation</span>
@@ -146,10 +146,10 @@ scriptBodyClass: font-sans antialiased text-slate-800
     </div>
 </article>
 <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-claude">
-    <div class="imp-h-56 imp-overflow-hidden imp-relative" role="img" aria-label="A website builder where Claude plans, writes and designs the site" style="background:linear-gradient(135deg,#0f172a 0%,#4c1d95 55%,#a855f7 100%);display:flex;flex-direction:column;justify-content:flex-end;gap:.35rem;padding:1.5rem;color:#fff">
+    <div class="imp-h-56 imp-overflow-hidden imp-relative" role="img" aria-label="A website builder where Claude plans, writes and designs the site" style="background:#0f172a url('https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1795012064/claude-website-builder-small-business_vnacgt.png') center/cover no-repeat">
         <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">AI &amp; Claude</span>
-        <span style="font-size:1.6rem;font-weight:800;line-height:1.15">Website Builder</span>
-        <span style="font-size:.9rem;color:rgba(255,255,255,.8)">Claude API · Internal product</span>
+        
+        
     </div>
     <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
         <span class="imp-ts-kicker">Claude implementation</span>
@@ -161,10 +161,10 @@ scriptBodyClass: font-sans antialiased text-slate-800
     </div>
 </article>
 <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-claude">
-    <div class="imp-h-56 imp-overflow-hidden imp-relative" role="img" aria-label="Building and running a business platform with Claude Code" style="background:linear-gradient(135deg,#0f172a 0%,#9a3412 50%,#d97757 100%);display:flex;flex-direction:column;justify-content:flex-end;gap:.35rem;padding:1.5rem;color:#fff">
+    <div class="imp-h-56 imp-overflow-hidden imp-relative" role="img" aria-label="Building and running a business platform with Claude Code" style="background:#0f172a url('https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1795012069/twintrack-claude-code-business-platform_r0ekqj.png') center/cover no-repeat">
         <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">AI &amp; Claude</span>
-        <span style="font-size:1.6rem;font-weight:800;line-height:1.15">TwinTrack</span>
-        <span style="font-size:.9rem;color:rgba(255,255,255,.8)">Claude Code · Internal product</span>
+        
+        
     </div>
     <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
         <span class="imp-ts-kicker">Claude implementation</span>

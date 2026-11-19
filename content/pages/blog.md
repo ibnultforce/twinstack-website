@@ -113,7 +113,7 @@ scriptBodyClass: font-sans antialiased text-slate-800
                 <div class="imp-grid imp-grid-cols-1 imp-md:grid-cols-2 imp-lg:grid-cols-3 imp-gap-8" id="blog-grid">
                     <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative imp-bg-slate-900 imp-flex imp-items-center imp-justify-center imp-p-6">
-                            <span class="imp-text-white imp-text-2xl imp-font-extrabold imp-text-center imp-leading-tight">From Survey Data to Action</span>
+                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1795012064/survey-data-to-action-salesforce-tableau_fxqslr.png" alt="Cover for From Survey Data to Action: Salesforce and Tableau turning survey feedback into decisions" width="400" height="225" loading="lazy" class="imp-absolute imp-inset-0 imp-w-full imp-h-full imp-object-cover">
                             <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Survey Dashboards</span>
                         </div>
                         <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
@@ -126,7 +126,7 @@ scriptBodyClass: font-sans antialiased text-slate-800
                     </article>
                     <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative imp-bg-slate-900 imp-flex imp-items-center imp-justify-center imp-p-6">
-                            <span class="imp-text-white imp-text-2xl imp-font-extrabold imp-text-center imp-leading-tight">Read Survey Results in 5 Minutes</span>
+                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1795012070/survey-overview-dashboard-read-results-in-5-minutes_qdfnyc.png" alt="Cover for reading survey results in 5 minutes with a survey overview dashboard" width="400" height="225" loading="lazy" class="imp-absolute imp-inset-0 imp-w-full imp-h-full imp-object-cover">
                             <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Survey Dashboards</span>
                         </div>
                         <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
@@ -139,7 +139,7 @@ scriptBodyClass: font-sans antialiased text-slate-800
                     </article>
                     <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative imp-bg-slate-900 imp-flex imp-items-center imp-justify-center imp-p-6">
-                            <span class="imp-text-white imp-text-2xl imp-font-extrabold imp-text-center imp-leading-tight">Rank Survey Questions</span>
+                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1795012074/survey-topics-and-questions-rank-where-to-act_o25oxe.png" alt="Cover for ranking survey questions to know where to act" width="400" height="225" loading="lazy" class="imp-absolute imp-inset-0 imp-w-full imp-h-full imp-object-cover">
                             <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Survey Dashboards</span>
                         </div>
                         <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
@@ -152,7 +152,7 @@ scriptBodyClass: font-sans antialiased text-slate-800
                     </article>
                     <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative imp-bg-slate-900 imp-flex imp-items-center imp-justify-center imp-p-6">
-                            <span class="imp-text-white imp-text-2xl imp-font-extrabold imp-text-center imp-leading-tight">Measure Survey Growth</span>
+                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1795012081/survey-growth-during-the-year-fall-to-spring_xlgszy.png" alt="Cover for measuring survey growth from fall to spring" width="400" height="225" loading="lazy" class="imp-absolute imp-inset-0 imp-w-full imp-h-full imp-object-cover">
                             <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Survey Dashboards</span>
                         </div>
                         <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
@@ -165,7 +165,7 @@ scriptBodyClass: font-sans antialiased text-slate-800
                     </article>
                     <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative imp-bg-slate-900 imp-flex imp-items-center imp-justify-center imp-p-6">
-                            <span class="imp-text-white imp-text-2xl imp-font-extrabold imp-text-center imp-leading-tight">Survey Results Year over Year</span>
+                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1795012080/survey-year-over-year-comparison-trends_kk8ntc.png" alt="Cover for comparing survey results year over year" width="400" height="225" loading="lazy" class="imp-absolute imp-inset-0 imp-w-full imp-h-full imp-object-cover">
                             <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Survey Dashboards</span>
                         </div>
                         <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
@@ -178,7 +178,7 @@ scriptBodyClass: font-sans antialiased text-slate-800
                     </article>
                     <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative imp-bg-slate-900 imp-flex imp-items-center imp-justify-center imp-p-6">
-                            <span class="imp-text-white imp-text-2xl imp-font-extrabold imp-text-center imp-leading-tight">Which Schools Need Support First</span>
+                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1795012069/survey-school-comparison-which-schools-need-support_x9evae.png" alt="Cover for using survey data to decide which schools need support first" width="400" height="225" loading="lazy" class="imp-absolute imp-inset-0 imp-w-full imp-h-full imp-object-cover">
                             <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Survey Dashboards</span>
                         </div>
                         <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
@@ -191,7 +191,7 @@ scriptBodyClass: font-sans antialiased text-slate-800
                     </article>
                     <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide imp-integration imp-sfs">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative imp-bg-slate-900 imp-flex imp-items-center imp-justify-center imp-p-6">
-                            <span class="imp-text-white imp-text-2xl imp-font-extrabold imp-text-center imp-leading-tight">FormAssembly in the Real World</span>
+                            <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1795012073/formassembly-salesforce-honest-pros-and-cons_sxmxqh.png" alt="Cover for FormAssembly and Salesforce: honest pros and cons" width="400" height="225" loading="lazy" class="imp-absolute imp-inset-0 imp-w-full imp-h-full imp-object-cover">
                             <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Integration</span>
                         </div>
                         <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
