@@ -83,3 +83,4 @@ Written automatically: one line per change Claude made to this site that was kep
 - 2026-11-17 · assistant:edit-file · content/pages/case-studies.md · Add the "AI & Claude Implementation" filter button and the five new Claude case study cards at the top of the case studies grid.
 - 2026-11-17 · assistant:edit-file · content/pages/blog.md · Add the Salesforce Voice and Tableau filter buttons and put the 12 Voice and Tableau post cards back on the Blog page, after the Smart Forms and Surveys cards.
 - 2026-11-17 · assistant:edit-file · content/pages/blog-salesforce-voice-amazon-connect-features.md · Change the author to Ishtiaq Hossen, Salesforce Developer.
+- 2026-11-19 · github-changes · the site's repository · Brought in changes published elsewhere: Update Contact TwinStack Solutions
