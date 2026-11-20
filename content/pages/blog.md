@@ -111,10 +111,10 @@ scriptBodyClass: font-sans antialiased text-slate-800
 <button class="imp-filter-btn imp-px-4 imp-py-2 imp-rounded-full imp-border imp-border-slate-200 imp-transition imp-hover:border-brand-500 imp-bg-white imp-shadow-sm imp-interactive-element" onclick="filterSelection('tableau', event)">Tableau</button>
                 </div>
                 <div class="imp-grid imp-grid-cols-1 imp-md:grid-cols-2 imp-lg:grid-cols-3 imp-gap-8" id="blog-grid">
-                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide">
+                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide imp-tableau">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative imp-bg-slate-900 imp-flex imp-items-center imp-justify-center imp-p-6">
                             <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1795012064/survey-data-to-action-salesforce-tableau_fxqslr.png" alt="Cover for From Survey Data to Action: Salesforce and Tableau turning survey feedback into decisions" width="400" height="225" loading="lazy" class="imp-absolute imp-inset-0 imp-w-full imp-h-full imp-object-cover">
-                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Survey Dashboards</span>
+                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Tableau</span>
                         </div>
                         <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
                             <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
@@ -124,10 +124,10 @@ scriptBodyClass: font-sans antialiased text-slate-800
                             <a href="/blog/survey-data-to-action.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read From Survey Data to Action">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
                         </div>
                     </article>
-                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide">
+                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide imp-tableau">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative imp-bg-slate-900 imp-flex imp-items-center imp-justify-center imp-p-6">
                             <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1795012070/survey-overview-dashboard-read-results-in-5-minutes_qdfnyc.png" alt="Cover for reading survey results in 5 minutes with a survey overview dashboard" width="400" height="225" loading="lazy" class="imp-absolute imp-inset-0 imp-w-full imp-h-full imp-object-cover">
-                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Survey Dashboards</span>
+                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Tableau</span>
                         </div>
                         <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
                             <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
@@ -137,10 +137,10 @@ scriptBodyClass: font-sans antialiased text-slate-800
                             <a href="/blog/survey-overview-dashboard.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read How to Read Survey Results in 5 Minutes">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
                         </div>
                     </article>
-                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide">
+                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide imp-tableau">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative imp-bg-slate-900 imp-flex imp-items-center imp-justify-center imp-p-6">
                             <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1795012074/survey-topics-and-questions-rank-where-to-act_o25oxe.png" alt="Cover for ranking survey questions to know where to act" width="400" height="225" loading="lazy" class="imp-absolute imp-inset-0 imp-w-full imp-h-full imp-object-cover">
-                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Survey Dashboards</span>
+                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Tableau</span>
                         </div>
                         <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
                             <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
@@ -150,10 +150,10 @@ scriptBodyClass: font-sans antialiased text-slate-800
                             <a href="/blog/survey-topics-and-questions.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read How to Rank Survey Questions">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
                         </div>
                     </article>
-                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide">
+                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide imp-tableau">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative imp-bg-slate-900 imp-flex imp-items-center imp-justify-center imp-p-6">
                             <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1795012081/survey-growth-during-the-year-fall-to-spring_xlgszy.png" alt="Cover for measuring survey growth from fall to spring" width="400" height="225" loading="lazy" class="imp-absolute imp-inset-0 imp-w-full imp-h-full imp-object-cover">
-                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Survey Dashboards</span>
+                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Tableau</span>
                         </div>
                         <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
                             <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
@@ -163,10 +163,10 @@ scriptBodyClass: font-sans antialiased text-slate-800
                             <a href="/blog/survey-growth-during-the-year.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read Did Things Get Better This Year">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
                         </div>
                     </article>
-                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide">
+                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide imp-tableau">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative imp-bg-slate-900 imp-flex imp-items-center imp-justify-center imp-p-6">
                             <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1795012080/survey-year-over-year-comparison-trends_kk8ntc.png" alt="Cover for comparing survey results year over year" width="400" height="225" loading="lazy" class="imp-absolute imp-inset-0 imp-w-full imp-h-full imp-object-cover">
-                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Survey Dashboards</span>
+                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Tableau</span>
                         </div>
                         <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
                             <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
@@ -176,10 +176,10 @@ scriptBodyClass: font-sans antialiased text-slate-800
                             <a href="/blog/survey-year-over-year.html" class="imp-text-brand-600 imp-font-semibold imp-text-sm imp-flex imp-items-center imp-gap-2 imp-mt-auto imp-hover:text-brand-800 imp-transition" aria-label="Read Is This Year Better Than Last">Read More <svg class="imp-svgi imp-text-xs" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
                         </div>
                     </article>
-                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide">
+                    <article class="imp-blog-card imp-bg-white imp-rounded-xl imp-shadow-md imp-border imp-border-slate-100 imp-overflow-hidden imp-flex imp-flex-col imp-h-full imp-interactive-element imp-filter-item imp-guide imp-tableau">
                         <div class="imp-h-56 imp-overflow-hidden imp-relative imp-bg-slate-900 imp-flex imp-items-center imp-justify-center imp-p-6">
                             <img src="https://res.cloudinary.com/du42kbmmn/image/upload/w_600,f_auto,q_auto/v1795012069/survey-school-comparison-which-schools-need-support_x9evae.png" alt="Cover for using survey data to decide which schools need support first" width="400" height="225" loading="lazy" class="imp-absolute imp-inset-0 imp-w-full imp-h-full imp-object-cover">
-                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Survey Dashboards</span>
+                            <span class="imp-absolute imp-top-4 imp-left-4 imp-bg-white/90 imp-backdrop-blur imp-text-brand-600 imp-text-xs imp-font-bold imp-px-3 imp-py-1 imp-rounded-full imp-shadow-sm">Tableau</span>
                         </div>
                         <div class="imp-p-6 imp-flex imp-flex-col imp-flex-grow">
                             <h3 class="imp-text-xl imp-font-bold imp-text-slate-900 imp-mb-3 imp-hover:text-brand-600 imp-transition imp-leading-tight">
