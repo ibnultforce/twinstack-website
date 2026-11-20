@@ -15,4 +15,4 @@ A path without an extension (`- thank-you`) is the page `thank-you.html`, a path
 - terms.html
 - 404.html
 - blog/index.html
-- blog/blog-salesforce-flow-best-practices.html
+- blog/salesforce-flow-best-practices.html

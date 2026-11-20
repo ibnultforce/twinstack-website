@@ -65,3 +65,5 @@ Written automatically: one line per change Claude made to this site that was kep
 - 2026-11-19 · assistant:edit-file · content/pages/case-studies-twintrack-claude-code.md · Replace the drawn cover with the new cover picture.
 - 2026-11-19 · github-changes · the site's repository · Brought in changes published elsewhere: Update Contact TwinStack Solutions and AI notes about your site; Update Contact TwinStack Solutions and AI notes about…
 - 2026-11-19 · assistant:edit-file · content/pages/blog.md · Add the six survey posts to the Tableau filter and change their label from "Survey Dashboards" to "Tableau".
+- 2026-11-20 · assistant:delete-page · content/blog/2026-11-20-blog-salesforce-flow-best-practices.md · Remove the empty placeholder post so only the finished Flow post exists.
+- 2026-11-20 · assistant:edit-file · content/pages/blog.md · Add the new Flow best practices post as the first card in the Blog list.
