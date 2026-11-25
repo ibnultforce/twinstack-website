@@ -193,6 +193,20 @@ function collectionDirs() {
  * between staged pages regardless of which one moves first. */
 function resolveJob(job) {
   const location = String(job.location || '').replace(/\/$/, '');
+  if (path.isAbsolute(location) || location.split(/[\\/]/).includes('..')) {
+    return { error: `"${job.location}" must be a folder inside the site, without "..".` };
+  }
+  if (job.source) {
+    const source = path.resolve(ROOT, String(job.source));
+    const rel = path.relative(ROOT, source);
+    const parts = rel.split(path.sep);
+    if (rel.startsWith('..') || path.isAbsolute(rel) || parts.some((p) => p.startsWith('.')) || parts[0] === 'node_modules') {
+      return { error: `"source" ${job.source} must be a file inside the site, not hidden and not under node_modules/.` };
+    }
+    if (!/\.(md|html?)$/i.test(rel)) {
+      return { error: `"source" ${job.source} must be a finished page (.md or .html).` };
+    }
+  }
 
   // A location under static/ is a full standalone HTML document (its own
   // <html>/<head>/<style>, not a content fragment) that must be served

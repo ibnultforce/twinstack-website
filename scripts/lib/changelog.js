@@ -7,7 +7,7 @@
  * not the whole project's past, so it stays short and relevant.
  */
 
-import { execSync } from 'node:child_process';
+import { execFileSync } from 'node:child_process';
 
 const MARKER = '@@CHANGELOG-COMMIT@@';
 const SINCE_PATTERN = /<!--\s*changelog-since:\s*([^\s]+)\s*-->/;
@@ -24,8 +24,10 @@ export function generateChangelog(existingContent) {
 
   let raw;
   try {
-    raw = execSync(
-      `git log --first-parent --since="${since}" --date=short --name-status --pretty=format:"${MARKER}%ad|%an|%s"`,
+    // execFileSync with an argument list (no shell): `since` is read from CHANGELOG.md.
+    raw = execFileSync(
+      'git',
+      ['log', '--first-parent', `--since=${since}`, '--date=short', '--name-status', `--pretty=format:${MARKER}%ad|%an|%s`],
       { encoding: 'utf8', maxBuffer: 1024 * 1024 * 32 },
     );
   } catch (error) {

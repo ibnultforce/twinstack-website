@@ -244,7 +244,10 @@ function urlWarnings(text, warnings) {
   for (const m of text.matchAll(/url\(\s*(["']?)([^"')]+)\1\s*\)/gi)) {
     const ref = m[2].trim();
     if (/^(https?:|data:|#)/i.test(ref)) continue;
-    const exists = ref.startsWith('/') && fs.existsSync(path.join(ROOT, ref.split(/[?#]/)[0].slice(1)));
+    // Root-relative, or relative to where the page's stylesheet is written (assets/css/imported/).
+    const file = ref.split(/[?#]/)[0];
+    const resolved = file.startsWith('/') ? file.slice(1) : path.posix.normalize(path.posix.join('assets/css/imported', file));
+    const exists = !resolved.startsWith('../') && fs.existsSync(path.join(ROOT, resolved));
     if (!exists) warnings.add(`the CSS refers to ${ref}, which isn't in this site, so that background, font or image won't load`);
   }
 }

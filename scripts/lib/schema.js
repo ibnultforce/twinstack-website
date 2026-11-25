@@ -84,5 +84,12 @@ export function buildJsonLd({ site, page, faqItems = [] }) {
     });
   }
 
-  return JSON.stringify({ '@context': 'https://schema.org', '@graph': graph });
+  // Printed raw inside <script type="application/ld+json">: escape what could end the
+  // tag or start a comment. \u003c etc. are still valid JSON with the same meaning.
+  return JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })
+    .replace(/</g, '\\u003c')
+    .replace(/>/g, '\\u003e')
+    .replace(/&/g, '\\u0026')
+    .replace(/\u2028/g, '\\u2028')
+    .replace(/\u2029/g, '\\u2029');
 }

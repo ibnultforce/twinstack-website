@@ -55,6 +55,8 @@
  *   node scripts/edit-page.js --list                    show the queue, run nothing
  *
  * Options for a single edit:
+ *   --keep-sidebars          with --from-html (keeping styles): keep the page's own
+ *                            breadcrumbs and sidebars (a copied website's page)
  *   --reference=<path>       a screenshot or mockup of the design the page should
  *                            have (at most 2; PNG, JPEG, GIF or WebP, up to 5 MB):
  *                            Claude replicates its layout, colours and type, and
@@ -174,6 +176,8 @@ const withFooterFlag = Boolean(flag('with-footer'));
 // site's, and --site-chrome always gives it the site's. Without either, ownChrome decides.
 const ownChromeFlag = Boolean(flag('own-chrome'));
 const siteChromeFlag = Boolean(flag('site-chrome'));
+// A copied website's page (the web app's "Copy a website"): its own breadcrumbs and sidebars stay.
+const keepSidebarsFlag = Boolean(flag('keep-sidebars'));
 
 const site = readJson(path.join(ROOT, 'site.config.json'));
 // The Twinstack web app passes the account's chosen model; run by hand, the site's own setting.
@@ -1049,10 +1053,10 @@ function standIns(uploads, globals, remote = new Map()) {
  */
 async function buildStyledPage(source, cssFiles, relFile, jsFiles = [], chromeWanted = { header: false, footer: false }) {
   const { file, html } = readHtmlSource(source);
-  let page = cleanHtml(html, { keepStyles: true, prefix: IMPORT_PREFIX });
+  let page = cleanHtml(html, { keepStyles: true, prefix: IMPORT_PREFIX, keepPageParts: keepSidebarsFlag });
   // A page whose own header or footer isn't the one the site copied keeps its own (see ownChrome).
   const own = chromeWanted.header || chromeWanted.footer || siteChromeFlag ? null : ownChromeFlag ? 'choice' : ownChrome(page);
-  if (own) page = cleanHtml(html, { keepStyles: true, prefix: IMPORT_PREFIX, keepChrome: true });
+  if (own) page = cleanHtml(html, { keepStyles: true, prefix: IMPORT_PREFIX, keepChrome: true, keepPageParts: keepSidebarsFlag });
   if (!page.text && !/<(img|svg)\b/i.test(page.html)) throw new Error(`${file} has no content left once its header and footer are removed`);
   // Where the page was published: its relative images, scripts and stylesheets are still there.
   const base = pageBaseUrl(html);
@@ -1576,7 +1580,7 @@ async function testStyledPage(styled, raw) {
   }
   const decode = (s) => visibleText(s.replace(/&#123;/g, '{').replace(/&#125;/g, '}').replace(/^&#32;$/gm, ''));
   // The same parts left out as in the copy: none of its own header and footer when it kept them.
-  const originalText = decode(cleanHtml(styled.html, { keepStyles: true, prefix: '', keepChrome: styled.ownChrome }).html);
+  const originalText = decode(cleanHtml(styled.html, { keepStyles: true, prefix: '', keepChrome: styled.ownChrome, keepPageParts: keepSidebarsFlag }).html);
   const copiedText = decode(rendered);
   if (originalText !== copiedText) problems.push("the copy's text differs from the original's");
   checks.push(problems.length ? 'pass 1, content: failed' : `pass 1, content: the site's renderer keeps the page as it is, with all ${originalText.length} characters of its text`);
@@ -1667,7 +1671,7 @@ function originalTestDocument(styled) {
   head = head.replace(/<head\b[^>]*>/i, (open) => `${open}${/name\s*=\s*["']?viewport/i.test(head) ? '' : '<meta name="viewport" content="width=device-width, initial-scale=1">'}${unmatched}`);
   const htmlTag = /<html\b[^>]*>/i.exec(source)?.[0] ?? '<html>';
   const bodyTag = /<body\b[^>]*>/i.exec(source)?.[0] ?? '<body>';
-  const cleaned = cleanHtml(styled.html, { keepStyles: true, prefix: '', keepChrome: styled.ownChrome });
+  const cleaned = cleanHtml(styled.html, { keepStyles: true, prefix: '', keepChrome: styled.ownChrome, keepPageParts: keepSidebarsFlag });
   // A copied header and footer are compared too: in the original they're around the content.
   const kept = [styled.chrome?.header && cleaned.chrome.header.html, cleaned.html, styled.chrome?.footer && cleaned.chrome.footer.html].filter(Boolean).join('\n');
   const content = rewriteImages(`${kept}\n${svgDefinitions(styled.html, kept)}`, (src) => siteImage(src, styled.base));
