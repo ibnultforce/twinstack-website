@@ -79,3 +79,13 @@ Written automatically: one line per change Claude made to this site that was kep
   - All remaining sections (FAQ, contact, footer) and page frontmatter were left exactly as they were.
 - 2026-11-20 · github-changes · the site's repository · Brought in changes published elsewhere: Update Insights & Updates and AI notes about your site
 - 2026-11-20 · github-changes · the site's repository · Brought in changes published elsewhere: Update Salesforce Flow Best Practices: 12 Rules for Admins and AI notes about your site; Update 2026-11-20-blog-salesfo…
+- 2026-11-23 · github-changes · the site's repository · Brought in changes published elsewhere: Update Salesforce Org Migration and AI notes about your site; Update Salesforce Flow Best Practices: 12 Rules for Admin…
+- 2026-11-25 · owner:style-text · content/pages/home.md · The owner reset a text colour on the site
+  - “Build your Salesforce product with us”
+- 2026-11-25 · owner:new-page · content/pages/case-studies-agvantage-bid-agents-landing.md · The owner made a page at /case-studies/agvantage-bid-agents-landing
+- 2026-11-25 · page:edit · content/pages/case-studies-agvantage-bid-agents-landing.md · This is a new, empty page. Write it from scratch. Create a modern one-page landing-style case study page (in the style of top one-page landing pages: bold full…
+  - Replaced the placeholder title and sentence with a full case study page for AgVantage Commodities.
+  - Added a dark full-width hero with headline, summary, "Back to Case Studies" link and a "See how it works" button linking to #how-it-works.
+  - Added an at-a-glance stat band, challenge and solution sections, four numbered process steps, a judgement-calls section and a results section.
+  - Added a closing call-to-action band with "Talk to Us" link to /contact.html, plus description, metaTitle, metaDescription and focusKeyword frontmatter.
+- 2026-11-25 · github-changes · the site's repository · Brought in changes published elsewhere: Update the site's tools from the template
